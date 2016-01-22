@@ -1,0 +1,77 @@
+<div reveal-annotations>
+    <div class="col-sm-6">
+        <h3>
+            <button ng-click="lockAnnotations()" type="button" class="btn btn-default pull-right">
+                <i class="fa fa-eye{{vv.revealAnnotations && '-slash'||''}}"></i>
+            </button>
+            {{manifest.label|| text.label}}
+            <button ng-repeat="m in manifests" class="debug"
+                    type="button" ng-click="pickM(m)">
+                {{m.label}}
+            </button>
+            <button type="button" ng-click="pickM(false)" class="debug">
+                {{text[0].label}}
+            </button>
+        </h3>
+        <div ng-if="manifest">
+            <div class="btn-group pull-right">
+                <button type="button" class="btn btn-xs btn-default"
+                        ng-repeat="c in manifest.sequences[0].canvases"
+                        ng-class="{active:inTime(c.otherContent[0].resource,vv.currentTime)}"
+                        ng-click="seekTo(c.otherContent[0].resource)">
+                    {{c.label||$index}}
+                </button>
+            </div>
+            <sc-canvas class="position-relative overflow-hidden btn-block"
+                       ng-class="{visible:vv.revealAnnotations}"
+                       ng-repeat="c in manifest.sequences[0].canvases"
+                       ng-show="inTime(c.otherContent[0].resource, vv.currentTime)">
+                <img selector="c['@id']"
+                     width='100%'
+                     alt="{{c.label}}">
+                <div ng-repeat="a in c.otherContent[1]['@list']"
+                     class="bookmark"
+                     ng-class="{active:inTime(a.on[1],vv.currentTime)}"
+                     ng-click="seekTo(a.on[1])"
+                     ng-style="annotationStyle(a.on[0], c)"></div>
+            </sc-canvas>
+        </div>
+        <div ng-if="!manifest" class="publishedText">
+            <!--show text with all images subordinated-->
+            <div ng-repeat="l in text[0].lines"
+                 ng-init="line = rerum.getResource(l)"
+                 ng-class="{active:inTime(line['oa:hasTarget'][3],vv.currentTime)}">
+                {{getText(line)}}
+            </div>
+        </div>
+    </div>
+    <div ng-controller="wavesurferController" class="col-sm-6"
+         ng-init="music = rerum.getResource(manifest.resources[0])">
+        <h3><button class="btn btn-default pull-right" ng-click="wavesurfer.playPause()">
+                <i class="fa" ng-class="{'fa-play':paused,'fa-pause':!paused}"></i>
+                <span class='timer'>{{vv.currentTime|number:2}}</span>
+            </button> {{music.label}}</h3>
+        <wavesurfer ng-attr-url="{{music.resource['@id']}}"
+                    wave-color="#333"
+                    progress-color="#002147"
+                    min-px-per-sec=1></wavesurfer>
+
+        <div ng-repeat="anno in text[0].lines" class="btn-block fadeIn"
+             ng-init="on=rerum.getResource(anno)['oa:hasTarget'][3]"
+             ng-show="inTime(on, vv.currentTime)">
+
+            <card ng-repeat="target in rerum.getTargets(anno, 'TEXT') track by $index">
+            {{rerum.getResource(target).label || rerum.getResource(target)['@id']}}
+            <p class="publishedText">
+                {{rerum.selectWithOffset(target) || "LOADING ERROR"}}
+            </p>
+            </card>
+
+            <card ng-repeat="target in rerum.getTargets(anno, 'IMAGE') track by $index">
+            {{rerum.getResource(target).label || rerum.getResource(target)['@id']}}
+            <img selector="target" width="100%">
+            </card>
+
+        </div>
+    </div>
+</div>

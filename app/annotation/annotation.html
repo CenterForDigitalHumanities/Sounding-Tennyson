@@ -1,0 +1,56 @@
+<div>
+    <h1>Annotating Tennyson</h1>
+    <select class='form-control position-relative'
+            ng-show="manifests"
+            ng-options="m.label for m in manifests"
+            ng-model="manifest"></select>
+    <select class='form-control position-relative'
+            ng-show="manifest"
+            ng-options="canvas.label for canvas in manifest.sequences[0].canvases"
+            ng-model="vv.annotating"></select>
+    <div class="col-sm-6">
+        <div class="position-relative visible overflow-hidden">
+            <img id="image"
+                 ng-src="{{vv.annotating.images[0].resource['@id']}}"
+                 alt="{{vv.annotating.label}}"
+                 width="100%">
+            <div ng-repeat="a in vv.annotating.otherContent[1]['@list']"
+                 ng-class="{active:vv.currentTime >= inTime(a.on[1])[0] && vv.currentTime < inTime(a.on[1])[1]}"
+                 ng-click="seekTo(a.on[1])"
+                 ng-style="annotationStyle(a.on[0], vv.annotating)"
+                 class="bg-primary bookmark"></div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div ng-if="vv.showAudio" ng-controller="wavesurferController">
+            <h3><button class="btn btn-default pull-right" ng-click="wavesurfer.playPause()">
+                    <i class="fa" ng-class="{'fa-play':paused,'fa-pause':!paused}"></i>
+                    <span class='timer'>{{vv.currentTime|number:2}}</span>
+                </button> {{vv.showAudio.label}}</h3>
+            <wavesurfer ng-attr-url="{{vv.showAudio.sources[0].src}}"
+                        wave-color="#333"
+                        progress-color="#337ab7"
+                        min-px-per-sec=1></wavesurfer>
+        </div>
+        <div class="form-group" ng-controller="makeAnnotationController">
+            <p class='help-block'>
+                Input the source code of the archive.html page in the file created
+                at augmentednotes.com and we'll get it for you.
+            </p>
+            <textarea class="form-control" ng-model='pageText'></textarea>
+            <button class="btn btn-default" ng-click='parseAnnotations(pageText)'>Send it!</button>
+        </div>
+        <div class="panel panel-default" ng-repeat="a in vv.annotating.otherContent[1]['@list']"
+             ng-show="vv.currentTime >= inTime(a.on[1])[0] && vv.currentTime < inTime(a.on[1])[1]">
+            <div class="form-group panel-body">
+                <label class="control-label">Label</label>
+                <input class="form-control" type="text" ng-model="a.label" placeholder="Optional Label">
+                <span ng-repeat="target in a.on">
+                <label class="control-label">Target</label>
+                <input class="form-control" type="text" ng-model="a.on[$index]" title="Realtime Edit">
+            </span>
+            </div>
+        </div>
+        <pre class="pre-scrollable"><div ng-repeat="a in vv.annotating.otherContent[1]['@list']">{{a|json}}</div></pre>
+    </div>
+</div>

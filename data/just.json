@@ -1,0 +1,408 @@
+{
+    "@id": "RB_Manifest",
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@type": "sc:Manifest",
+    "label": "Red Book (5312/3)",
+    "resources": ["BBPiano"],
+    "layers": ["PianoLayer"],
+    "sequences": [{
+        "@id": "red book normal sequence",
+        "@type": "sc:Sequence",
+        "canvases": [{
+            "label": "130",
+            "@id": "RB1",
+            "width": 1000,
+            "height": 1504,
+            "@type": "sc:Canvas",
+            "images": [{
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "on": "RB1",
+                "resource": {
+                    "format": "image/jpeg",
+                    "height": 2000,
+                    "width": 3008,
+                    "@id": "media/RedBook130.JPG",
+                    "@type": "dcterms:Image"
+                }
+            }],
+            "otherContent": [{
+                "@id": "RBAudio1",
+                "@type": "oa:Annotation",
+                "label": "Recording 4, page 1",
+                "motivation": "sc:painting",
+                "resource": "BBPiano#t=0,23.67",
+                "on": "RB1",
+                "within": "PianoLayer"
+            }, {
+                "@id": "PianoMeasures",
+                "@type": "sc:AnnotationList",
+                "label": "measures",
+                "@list": [{
+                    "@id": "0f",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=79.5,177,137.5,247",
+                        "BBPiano#t=0,4.4"
+                    ]
+                }, {
+                    "@id": "1",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=224.5,166,150.5,266.5",
+                        "BBPiano#t=4.4,6.01"
+                    ]
+                }, {
+                    "@id": "2",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=382,160.5,175.5,266.5",
+                        "BBPiano#t=6.01,7.31"
+                    ]
+                }, {
+                    "@id": "3",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=566,160.5,159,273.5",
+                        "BBPiano#t=7.31,8.56"
+                    ],
+                }, {
+                    "@id": "4",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=736,162.5,191.5,272",
+                        "BBPiano#t=8.56,9.73"
+                    ],
+                }, {
+                    "@id": "5",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=51,570,164.5,275.5",
+                        "BBPiano#t=9.73,10.88"
+                    ],
+                }, {
+                    "@id": "6",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "start": 10.88,
+                    "end": 12.13,
+                    "pageIndex": 0,
+                    "on": [
+                        "RB1#xywh=226.5,570,118,273.5",
+                        "BBPiano#t=10.88,12.13"
+                    ],
+                }, {
+                    "@id": "7",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "start": 12.13,
+                    "end": 13.54,
+                    "pageIndex": 0,
+                    "on": [
+                        "RB1#xywh=353.5,572,146.5,281",
+                        "BBPiano#t=12.13,13.54"
+                    ],
+                }, {
+                    "@id": "10",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=69,368,152,53.5",
+                        "BBPiano#t=0,5.24"
+                    ],
+                }, {
+                    "@id": "11",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=246,361,193,61",
+                        "BBPiano#t=5.24,8.7"
+                    ],
+                }, {
+                    "@id": "12",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=376.5,232,193,84",
+                        "BBPiano#t=8.7,11.49"
+                    ],
+                }, {
+                    "@id": "13",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=532,345,182.5,87.5",
+                        "BBPiano#t=11.49,14.42"
+                    ],
+                }, {
+                    "@id": "14",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=732.5,337.5,191.5,86",
+                        "BBPiano#t=14.42,16.95"
+                    ],
+                }, {
+                    "@id": "15",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=40.5,749,152,75",
+                        "BBPiano#t=16.95,20.12"
+                    ],
+                }, {
+                    "@id": "16",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=215.5,656,145,80.5",
+                        "BBPiano#t=20.12,21.98"
+                    ]
+                }, {
+                    "@id": "17",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=219,765,146.5,75",
+                        "BBPiano#t=21.98,24.41"
+                    ]
+                }, {
+                    "@id": "18",
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB1#xywh=376.5,658,125,91",
+                        "BBPiano#t=24.41,27.6"
+                    ]
+                }]
+            }]
+        }, {
+            "label": "131",
+            "@id": "RB2",
+            "width": 1000,
+            "height": 1504,
+            "@type": "sc:Canvas",
+            "images": [{
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "on": "RB2",
+                "resource": {
+                    "format": "image/jpeg",
+                    "height": 2000,
+                    "width": 3008,
+                    "@id": "media/RedBook131.JPG",
+                    "@type": "dcterms:Image"
+                }
+            }],
+            "otherContent": [{
+                "@id": "RBAudio1",
+                "@type": "oa:Annotation",
+                "label": "Recording 4, page 2",
+                "motivation": "sc:painting",
+                "resource": "BBPiano#t=23.68,75",
+                "on": "RB2",
+                "within": "PianoLayer"
+            }, {
+                "@id": "RB2List",
+                "@type": "sc:AnnotationList",
+                "label": "measures",
+                "@list": [{
+                    "@id": 29,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=383.5,770.5,118,73.5",
+                        "BBPiano#t=27.6,30.29"
+                    ]
+                }, {
+                    "@id": 210,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=521.5,647,150.5,127",
+                        "BBPiano#t=30.29,33.3"
+                    ]
+                }, {
+                    "@id": 211,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=695,647,80.5,200.5",
+                        "BBPiano#t=33.3,36.26"
+                    ]
+                }, {
+                    "@id": 212,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=816.5,654.5,120,89.5",
+                        "BBPiano#t=36.26,39.08"
+                    ]
+                }, {
+                    "@id": 213,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=103,885,102,93",
+                        "BBPiano#t=39.08,42.82"
+                    ]
+                }, {
+                    "@id": 214,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=221,886.5,256,118",
+                        "BBPiano#t=42.82,46.94"
+                    ]
+                }, {
+                    "@id": 215,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=500,888.5,259.5,116",
+                        "BBPiano#t=46.94,50.48"
+                    ]
+                }, {
+                    "@id": 216,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=786,903,168,111",
+                        "BBPiano#t=50.48,54.13"
+                    ]
+                }, {
+                    "@id": 217,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=101,990.5,104,100",
+                        "BBPiano#t=54.13,55.49"
+                    ]
+                }, {
+                    "@id": 218,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=228,1026,71.5,84",
+                        "BBPiano#t=55.49,57.55"
+                    ]
+                }, {
+                    "@id": 219,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=328.5,1021,316.5,95",
+                        "BBPiano#t=57.55,58.45"
+                    ]
+                }, {
+                    "@id": 220,
+                    "@type": "oa:Annotation",
+                    "motivation": "sc:painting",
+                    "label": "",
+                    "on": [
+                        "RB2#xywh=680.5,1035,234.5,111",
+                        "BBPiano#t=58.45,59.03"
+                    ]
+                }]
+            }]
+        }, {
+            "label": "132",
+            "@id": "RB3",
+            "width": 1000,
+            "height": 1504,
+            "@type": "sc:Canvas",
+            "images": [{
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "on": "RB3",
+                "resource": {
+                    "format": "image/jpeg",
+                    "height": 2000,
+                    "width": 3008,
+                    "@id": "media/RedBook132.JPG",
+                    "@type": "dcterms:Image"
+                }
+            }],
+            "otherContent": [{
+                "@id": "RBAudio1",
+                "@type": "oa:Annotation",
+                "label": "Recording 4, page 3",
+                "motivation": "sc:painting",
+                "resource": "BBPiano#t=75,112",
+                "on": "RB3",
+                "within": "PianoLayer"
+            }, {
+                "@id": "RBList3",
+                "@type": "sc:AnnotationList",
+                "label": "measures",
+                "@list": []
+            }]
+        }, {
+            "label": "133",
+            "@id": "RB4",
+            "width": 1504,
+            "height": 1000,
+            "@type": "sc:Canvas",
+            "images": [{
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "on": "RB4",
+                "resource": {
+                    "format": "image/jpeg",
+                    "height": 3008,
+                    "width": 2000,
+                    "@id": "media/RedBook133.JPG",
+                    "@type": "dcterms:Image"
+                }
+            }],
+            "otherContent": [{
+                "@id": "RBAudio1",
+                "@type": "oa:Annotation",
+                "label": "Recording 4, page 4",
+                "motivation": "sc:painting",
+                "resource": "BBPiano#t=112,144",
+                "on": "RB4",
+                "within": "PianoLayer"
+            }, {
+                "@id": "RBList4",
+                "@type": "sc:AnnotationList",
+                "label": "measures",
+                "@list": []
+            }]
+        }]
+    }]
+}

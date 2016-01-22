@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!--<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To Break or not to Break?</title>
+                <author>Phyllis Weliver</author>
+                <respStmt>
+                    <resp>composed by</resp>
+                    <name>Patrick Cuba</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Center for Digital Humanities</distributor>
+                <address>
+                    <addrLine>Saint Louis University</addrLine>
+                </address>
+                <availability>
+                    <p>Freely available on a non-commercial basis.</p>
+                </availability>
+                <date when="2016">2016</date>
+            </publicationStmt>
+            <sourceDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Essay generated for the Sounding Tennyson project, creating an interactive 
+                    exhibit for exploring resources and research around the poems and music of Tennyson.</p>
+            </projectDesc>
+            <editorialDecl>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>
+                    <date when="2016-01-19">19 Jan 2016</date> First build by PMC</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <title type="poem">Break, break, break</title> occupies a special place in that it is the only poem that Emily Tennyson set and that her husband, Alfred Tennyson, later recorded on a phonograph. The poet laureate may have deemed it especially worthy of preservation because during his lifetime it had already attracted myriad scansions by composers and poetic theorists. The poem still elicits much critical attention regarding how to speak the first line. The poem has uneven line lengths, varying from seven to eleven beats in addition to the famous three-beat line "Break, break, break." Do we read to the commas between "Break, break, break," thereby stretching the line approximately to the length of the rest of the poem's lines? If we break, how long should the pause be? Or do we roll through the commas as Tennyson frequently does in the extant phonograph recitations.
+            </p>
+            <p>
+                In her diary, Emily Tennyson gestures to the last every time that she mentions the poem. She leaves out the commas when noting that Alfred read Break Break in 1857, a child says Break break to her in 1859, and when Elizabeth Jane, Lady  Charlemont and wife of James Molyneux, 3rd earl of Charlemont reads Break break break in the poet's presence in 1871: 
+                <figure>
+                    Figure 1: Emily Lady Tennyson, 3 Nov 1857, Diary, vol 1, f 126.  TRC/M50.
+                </figure>
+                <figure>
+                    Figure 2 Emily Lady Tennyson, 1 July 1859, Diary, vol 1, f 171.  TRC/M50.4
+                </figure>
+                This, the only extant copy of the diary, was re-written by Emily for Hallam's use in preparing Tennyson’s memoir after his death. The diarist may have consistently omitted the commas because she was writing hurriedly.
+            </p>
+            <p>
+                Emily's piano/vocal scores give us some idea of her husband's recitations, as a note from their son makes clear. In the fly-leaf of one of his mother's four music manuscript books, Hallam made a note at the prompting of a prominent composer who also set some of Tennyson's poems: 
+                <figure>
+                    Figure 4: MS music book settings by Emily Lady Tennyson of Alfred Lord Tennyson’s poems, Catalogue No. 5321, f 1. Tennyson Research Centre, Lincolnshire County Council.
+                </figure>
+                If we examine Emily Tennyson's piano/vocal score of Break, Break, Break, we see that she heard the first line of poem as in the manuscript: 
+                <figure>
+                    Figure 5: Huntington MS.
+                </figure>
+                It does not include a comma after the third "break" as does the published version. The musical setting similarly breaks after the first two words, and then runs over the line break. With fermatas and rests on the first two "breaks," singing this music demands melodramatic emphasis on each of the first two words, before continuing onto the ideas of the rest of the stanza: the speaker's heartbreak heard in the breaking surf. 
+            </p>
+            <p>
+                When "Break, break, break" repeats as the first line of the last stanza, we see that Emily sets the words both to and against punctuation. Reading the two lines as published poetry, they look exactly the same. However, the commas are no longer strongly marked by rests in Emily's setting of line 13. Of course, there is inherent separation between the three stressed words because of the concluding "k", but the overall effect is to carry on.
+            </p>
+        </body>
+    </text>
+</TEI>

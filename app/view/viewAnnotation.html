@@ -1,0 +1,139 @@
+<div>
+    <attribution ng-click="peekUser = !peekUser"
+        ng-show="agent"
+            ng-class="{expanded:peekUser}"
+                 ng-repeat="agent in rerum.getAttributions(vv.annotation) track by $index"
+                 title="{{agent['foaf:name']||agent['@id']||agent|json}}">
+        <i class="fa fa-user pull-right"></i>
+        <div>
+            <strong>{{agent['foaf:name'] || "unnamed"}}</strong>
+            {{agent['@id']}}
+        </div>
+    </attribution>
+    <h3>{{vv.annotation.label||"Viewing Annotation: "+vv.annotation['@id']}}</h3>
+
+    <span class="help-block">{{vv.annotation.description}}</span>
+
+    <card class="annotationText btn-block fadeInOut" ng-repeat="text in rerum.getValues(vv.annotation, 'TEXT') track by $index">
+    {{text}}
+    </card>
+
+    <card class="btn-block fadeInOut" ng-repeat="img in rerum.getValues(vv.annotation, 'IMAGE') track by $index">
+        <img selector="img" width="100%">
+    </card>
+    <card class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='rr:Essay'">
+    <xml-div xml="vv.annotation"></xml-div>
+    </card>
+    <card class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='sc:Canvas'">
+    <a href="#/summary/{{rerum.manifestFromCanvas(vv.annotation['@id'],manifests)['@id']}}">Part of...</a>
+    <img selector="vv.annotation['@id']" width="100%">
+    </card>
+    <card class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='sc:Manifest'">
+    <a href="#/summary/{{c['@id']||c}}" ng-repeat="c in vv.annotation.sequences[0].canvases">
+            <img selector="c['@id']||c" class="col-sm-2 well">
+        </a>
+        <div id="viewer"></div>
+        <script>
+    // $(function() {
+    //   Mirador({
+    //     "id": "viewer",
+    //     "layout": "1x1",
+    //         data: [{ "manifestUri": "app/data/just.json", "location": "local"}],
+    //     // "data": [
+    //     // {"manifestUri": "http://scta.info/iiif/pg-lon/manifest"}],
+    //     "windowObjects": [{
+    //     //             loadedManifest:"auto",
+    //                  availableViews:"ImageView",
+    //                  bottomPanel:false,
+    //                  sidePanel:false,
+    //                  overlay:false,
+    //                  annotationLayer:false,
+    //                  annotationCreation:false,
+    //                  displayLayout:false
+    //              }]
+    //   });
+    // });
+
+        </script>
+    </card>
+
+
+    <tiles>
+        <tile class="pull-left"
+          ng-class="{'expanded':expand}"
+          ng-repeat="ev in vv.annotation.evidence"
+          ng-init="e=rerum.getResource(ev)">
+          <i class="fa fa-expand" ng-click="expand=!expand"
+          ng-class="{'fa-compress':expand}"></i>
+<div class="tile-content">
+        <label>
+            <a href="#/summary/{{e['@id']}}"><i class="fa fa-external-link-square"></i></a>
+        {{e.label||e['@id']}}
+        <span ng-if="e['@type']==='sc:Canvas'">
+in {{rerum.manifestFromCanvas(vv.annotation['@id'],manifests)['@id']}}
+        </span>
+        <small class="help-block">{{d.description}}</small>
+        </label>
+<div ng-repeat="val in rerum.getValues(ev,'TEXT')|dedup"
+        ng-init="v=rerum.getResource(val)">
+        <label>{{v.label || v['@id']}}</label>  {{v.description}}
+        <p class="annotationText" ng-class="{publishedText:v['@id']==='HMS'}">
+            {{rerum.selectWithOffset(e.resource||e['oa:hasBody']) || "LOADING ERROR"}}
+        </p>
+    </div>
+
+    <div ng-repeat="val in rerum.getValues(ev,'IMAGE')|dedup" ng-init="v=rerum.getResource(val)">
+        <label>{{v.label || v['@id']}}</label> {{v.description}}
+        <img selector="val" width="100%">
+    </div>
+
+
+    <div ng-repeat="target in rerum.getTargets(ev,'TEXT')|dedup"
+        ng-init="t=rerum.getResource(target)">
+        <label>{{t.label || t['@id']}}</label>  {{t.description}}
+        <p class="annotationText" ng-class="{publishedText:t['@id']==='HMS'}">
+            {{rerum.selectWithOffset(target) || "LOADING ERROR"}}
+        </p>
+    </div>
+
+    <div ng-repeat="target in rerum.getTargets(ev,'IMAGE')|dedup" ng-init="t=rerum.getResource(target)">
+        <label>{{t.label || t['@id']}}</label> {{t.description}}
+        <img selector="target" width="100%">
+    </div>
+
+    <div ng-if="e['@type']==='sc:Canvas'">
+        <img selector="ev" width="100%">
+    </div>
+
+</div>
+    </tile>
+        <div ng-if="vv.annotation.evidence && vv.annotation.evidence.length">
+            <button class="btn btn-primary btn-xs" ng-click="showTargets=!showTargets"
+        ng-show="rerum.getTargets(vv.annotation).length">
+            Show All Targets
+        </button>
+        <div ng-show="showTargets" class="fadeInOut">
+            <label>Targets:</label>
+            <ul class="list-unstyled">
+                <li ng-repeat="t in rerum.getTargets(vv.annotation)" ng-init="r=rerum.getResource(t)">
+                     <a href="#/summary/{{r['@id']}}"><i class="fa fa-external-link-square"></i></a>
+                     {{r['@type']||"unknown type"}}: {{t}}
+                 </li>
+            </ul>
+        </div>
+        <button class="btn btn-primary btn-xs" ng-click="showValues=!showValues"
+        ng-show="rerum.getValues(vv.annotation).length">
+            Show All Resources
+        </button>
+        <div ng-show="showValues" class="fadeInOut">
+            <label>Resources:</label>
+            <ul class="list-unstyled">
+                <li ng-repeat="val in rerum.getValues(vv.annotation)" ng-init="r=rerum.getResource(val)">
+                    <a href="#/summary/{{r['@id']}}"><i class="fa fa-external-link-square"></i></a>
+                     {{r['@type']||"text"}}: {{val}}
+                 </li>
+            </ul>
+        </div>
+    </div>
+    </tiles>
+</div>

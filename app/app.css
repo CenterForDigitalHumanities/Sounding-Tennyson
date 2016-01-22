@@ -1,0 +1,307 @@
+/** Colours
+ * University of Lincoln - blue
+ * http://www.lincoln.ac.uk/home/abouttheuniversity/press/identity/colours/
+ * RGB - 0 50 95
+ * Hex - #002147 light #91B9A4 grey #747678
+ * accent - RGB - 193 0 118 Hex - #CC3366
+ * Cambridge Uninveristy - cambridge blue
+ * https://www.cam.ac.uk/brand-resources/guidelines/typography-and-colour/rgb-and-websafe-references
+ * RGB - 0 179 190
+ * Hex - #00B1C1
+ **/
+
+.debug {
+    color:purple;
+    font-family: monospace;
+    font-size: 1rem;
+}
+h1,h2,h3,h4 {
+    font-family: 'im_fell_englishregular', serif;
+    text-shadow: -1px 1px 2px rgba(0,0,0,.5);
+    color: #002147;
+}
+body{
+    background-color: #91B9A4; /* cambridge light blue */
+}
+.lighten{
+    background-color: rgba(255,255,255,.87);
+}
+.container::after{
+    box-shadow: inset #000 0 0 25vw -2vw;
+    content:"";
+    height: 100vh;
+    left:0;
+    position: fixed;
+    top:0;
+    width: 100vw;
+    pointer-events:none;
+}
+.masthead {
+    left:0;
+    position: relative;
+    top:0;
+    z-index: 1;
+}
+.masthead h1 {
+    font-family: 'im_fell_englishregular', serif;
+    font-size: 150%;
+    font-weight: bold;
+    opacity: .87;
+    overflow: visible;
+    white-space: nowrap;
+    position: relative;
+    transition:all 250ms;
+    padding-bottom: 15px;
+    margin-bottom: -15px;
+}
+.panel-body h3:first-of-type {
+    margin-top: 0;
+}
+@media (min-width:992px){
+.masthead h1 {
+    font-size: 600%;
+    }
+}
+footer {
+    display: block;
+    width:100%;
+    clear:both;
+}
+
+card {
+    background-color: #EEE;
+    border-radius: 1px;
+    box-shadow: 0 0 10px -4px rgba(0,0,0,.87);
+    display: inline-block;
+    margin:15px 0;
+    position: relative;
+}
+card::after{
+    bottom: 4px;
+    box-shadow: 0 0 8px rgba(0,0,0,.87);
+    content:"";
+    left:40px;right:40px;
+    position:absolute;
+}
+card+card {
+    margin-top: 0;
+}
+sc-canvas {
+    display:block;
+    width:100%;
+    min-height: 4rem;
+    background-color: #747678;
+}
+attribution {
+    border-bottom-left-radius: 10px;
+    box-shadow: inset rgba(0,0,0,.5) 1px -1px 2px;
+    float: right;
+    padding: 1rem;
+    position: relative;
+    right: -15px; top:-15px; /* push to edge of container gutter */
+    background-color: #CC3366;
+         color: #EEE;
+    text-shadow: -1px 1px #990033;
+    width: 36px; height:36px;
+    cursor: pointer;
+    transition:all .25s;
+}
+attribution > div {
+    opacity: 0;
+    transition:all .5s;
+    display: none;
+}
+attribution.expanded div {
+    opacity: 1;
+    display: block;
+}
+attribution.expanded {
+    box-shadow: inset rgba(0,0,0,.5) 0 0 0;
+    width: 200px;
+    height: 80px;
+    z-index: 1;
+}
+tile {
+    display:block;
+    width: 32%;
+    padding: 0;
+    padding-bottom:30%;
+    margin: 1%;
+    overflow: hidden;
+    position:relative;
+    box-shadow: 0 0 3px rgba(0,0,0,.5);
+    transition:all .5s;
+    background-color: #FFF;
+}
+tile:nth-of-type(3n+1){
+    margin-left: 0;
+}
+tile:nth-of-type(3n+3){
+    margin-right: 0;
+}
+tile:hover{
+    box-shadow: 0 0 12px rgba(0,0,0,.5);
+}
+tile>div.tile-content {
+    position: absolute;
+    width:100%;height:100%;
+}
+tile>i.fa {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+    z-index: 1;
+}
+tile.expanded>i.fa{
+    right:18px;
+}
+tile label {
+    height: 0px;
+    line-height: 0;
+    opacity: 0;
+    display: block;
+    padding: 0 1rem;
+}
+tile.expanded {
+    width: 100%;
+    margin: 1% 0;
+    z-index: 2;
+    font-size: 150%;
+    height: 60vh;
+    box-shadow: 0 0 44px rgba(0,0,0,.5);
+}
+tile.ng-animate {
+    z-index: 2;
+}
+tile.expanded>div.tile-content{
+    height: 100%;
+    overflow: auto;
+}
+tile.expanded:nth-child(3n+1){
+    margin-right: -68%
+}
+tile.expanded:nth-child(3n+2){
+    margin:1% -33%
+}
+tile.expanded:nth-child(3n+3){
+    margin-left: -67%
+}
+tile.expanded label {
+    line-height: inherit;
+    height: auto;
+    opacity: inherit;
+}
+wavesurfer {
+    background: url(../media/dh_logo_large.jpg) center center;
+    background-size: cover;
+}
+.swingIn.ng-enter, .swingIn.ng-hide-remove {
+    animation: flipInX .5s;
+}
+.shrinkOut.ng-leave, .shrinkOut.ng-hide-add {
+    animation: zoomOut .5s;
+}
+.bounceInOut.ng-enter,.bounceInOut.ng-hide-remove{
+    animation: bounceIn .5s;
+}
+.bounceInOut.ng-leave,.bounceInOut.ng-hide-add{
+    animation: bounceOut .5s;
+}
+.fadeInOut.ng-enter,.fadeInOut.ng-hide-remove{
+    animation: fadeIn .5s;
+}
+.fadeInOut.ng-leave,.fadeInOut.ng-hide-add{
+    animation: fadeOut .5s;
+}
+.flipInX.ng-enter,.flipInX.ng-hide-remove{
+    animation: flipInX .5s;
+}
+.fadeIn.ng-enter,.fadeIn.ng-hide-remove{
+    animation: fadeIn .5s;
+}
+.bookmark {
+    position:absolute;
+    height:0%;
+    width:0%;
+    top:0%;
+    left:0%;
+    background-color: transparent;
+    transition: opacity 250ms;
+}
+.annotationText {
+    font-family: Tahoma, Geneva, sans-serif;
+    padding: 1rem;
+    background-color: #EEE;
+    text-shadow: 0 1px 0 #FFF;
+}
+.publishedText {
+    font-family: 'im_fell_great_primerregular', serif;
+    padding: 1rem;
+    background-color: #EED;
+    text-shadow: 0 1px 0 #FFF;
+}
+.publishedText .active {
+    color: #00B1C1;
+}
+/*
+FIXME: This bit fakes a printed layout taht only works for this poem right now.
+*/
+.publishedText div:nth-child(4n) {
+    margin-bottom: 1.68rem;
+}
+.publishedText div:nth-child(2n) {
+    text-indent: 2rem;
+}
+.visible .bookmark, .bookmark.active {
+    opacity:.35;
+    box-shadow: inset white 0 0 0 1px, #002147 0 0 0 1px;
+    /*    border-bottom: #002147 solid 3px;*/
+}
+.visible .bookmark.active, .bookmark:hover {
+    box-shadow: inset #002147 0 0 0 1px, #002147 0 0 0 1px;
+    /*    border-bottom: #002147 solid 3px;*/
+    opacity: 1;
+}
+.bookmark.active::after, .bookmark:hover::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #002147;
+    bottom: -5px;
+    position: absolute;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.postion-absolute {
+    position:absolute;
+}
+.position-relative {
+    position:relative;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.timer {
+    min-width: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+}
+.fadeOutLeft.ng-hide-add{
+    -webkit-animation: fadeOutLeft 500ms;
+    animation: fadeOutLeft 500ms
+}
+.fadeInRight.ng-hide-remove{
+    -webkit-animation: fadeInRight 500ms;
+    animation: fadeInRight 500ms
+}
+.flipInY.ng-hide-add{
+    -webkit-animation: flipInY 500ms;
+    animation: flipInY 500ms
+}
+.flipOutY.ng-hide-remove{
+    -webkit-animation: flipOutY 500ms;
+    animation: flipOutY 500ms
+}

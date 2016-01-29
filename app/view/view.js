@@ -17,12 +17,57 @@ sounding.value("ViewValues", {
         time: 0 // default beginning time
     }
 });
-sounding.service("ViewService", function ($http) {
+sounding.service("ViewService", function ($http, $q) {
     var service = this;
     this.fetchManifest = function (url) {
         return $http.get(url);
     };
+    this.fetchXMLDoc = function (url, body) {
+        var xmlDoc = new XMLHttpRequest();
+        var deferred = $q.defer();
+        xmlDoc.open('GET', url);
+        xmlDoc.onreadystatechange = function () {
+            if (xmlDoc.readyState === 4) {
+                if (body) {
+                    deferred.resolve(angular.element(xmlDoc.responseXML).find(body));
+                }
+                deferred.resolve(xmlDoc.responseXML);
+            }
+        };
+        xmlDoc.send();
+        return deferred.promise;
+    };
 });
+sounding.directive('xmlDiv', function ($sce, ViewService) {
+    return {
+        restrict: 'E',
+        scope: {
+            xml: '='
+        },
+        controller: 'viewController',
+        link: function (scope, $element) {
+            ViewService.fetchXMLDoc(scope.xml.resource, scope.xml.view).then(function (xd) {
+                applyStyle(xd);
+            });
+
+            function applyStyle (xmlDoc) {
+                var xsl = new XMLHttpRequest();
+                var xsltProcessor = new XSLTProcessor();
+                xsl.open('GET', scope.xml.style);
+                xsl.onreadystatechange = function () {
+                    if (xsl.readyState === 4) {
+                        xsltProcessor.importStylesheet(xsl.responseXML);
+                        var fragment = xsltProcessor.transformToFragment(xmlDoc, document);
+                        $element.prepend($sce.trustAsHtml(fragment));
+                        scope.$apply();
+                    }
+                };
+                xsl.send();
+            }
+        }
+    };
+});
+
 sounding.controller("viewController", function ($scope, ViewService, ViewValues, Lists, MANIFESTS, TEXT, $cacheFactory, RERUM) {
     $scope.vv = ViewValues;
     $scope.manifests = MANIFESTS;

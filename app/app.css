@@ -305,3 +305,53 @@ FIXME: This bit fakes a printed layout taht only works for this poem right now.
     -webkit-animation: flipOutY 500ms;
     animation: flipOutY 500ms
 }
+
+rr-title {
+    display:inline;
+    font-style: italic;
+}
+rr-title[type='poem']{
+    font-style: normal;
+}
+rr-title[type='poem']:before,rr-title[type='poem']:after{
+    content:'"';
+}
+TEI teiHeader {
+    display:none;
+}
+TEI text {
+    display:block;
+    font-size: 125%;
+    line-height: 1.5;
+}
+
+TEI p {
+    text-indent: 4rem;
+}
+
+TEI figure {
+    width:100%;
+    min-height:12rem;
+    background: #FFF;
+    position:relative;
+    max-height: 30rem;
+    max-width:60rem;
+    padding: .5em;
+    margin: 1em auto;
+    border: solid thin silver;
+    overflow: hidden;
+}
+TEI figure img {
+    max-height: 100%;
+    max-width: 100%;
+}
+TEI figcaption {
+    font-size: 80%;
+    color:#333;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    background: rgba(255,255,255,.7);
+    padding: .5em;
+}

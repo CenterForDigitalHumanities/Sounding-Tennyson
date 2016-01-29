@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!--<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>-->
+<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -42,12 +42,13 @@
     <text>
         <body>
             <p>
-                <title type="poem">Break, break, break</title> occupies a special place in that it is the only poem that Emily Tennyson set and that her husband, Alfred Tennyson, later recorded on a phonograph. The poet laureate may have deemed it especially worthy of preservation because during his lifetime it had already attracted myriad scansions by composers and poetic theorists. The poem still elicits much critical attention regarding how to speak the first line. The poem has uneven line lengths, varying from seven to eleven beats in addition to the famous three-beat line "Break, break, break." Do we read to the commas between "Break, break, break," thereby stretching the line approximately to the length of the rest of the poem's lines? If we break, how long should the pause be? Or do we roll through the commas as Tennyson frequently does in the extant phonograph recitations.
+                <rr-title type="poem">Break, break, break</rr-title> occupies a special place in that it is the only poem that Emily Tennyson set and that her husband, Alfred Tennyson, later recorded on a phonograph. The poet laureate may have deemed it especially worthy of preservation because during his lifetime it had already attracted myriad scansions by composers and poetic theorists. The poem still elicits much critical attention regarding how to speak the first line. The poem has uneven line lengths, varying from seven to eleven beats in addition to the famous three-beat line "Break, break, break." Do we read to the commas between "Break, break, break," thereby stretching the line approximately to the length of the rest of the poem's lines? If we break, how long should the pause be? Or do we roll through the commas as Tennyson frequently does in the extant phonograph recitations.
             </p>
             <p>
                 In her diary, Emily Tennyson gestures to the last every time that she mentions the poem. She leaves out the commas when noting that Alfred read Break Break in 1857, a child says Break break to her in 1859, and when Elizabeth Jane, Lady  Charlemont and wife of James Molyneux, 3rd earl of Charlemont reads Break break break in the poet's presence in 1871: 
                 <figure>
-                    Figure 1: Emily Lady Tennyson, 3 Nov 1857, Diary, vol 1, f 126.  TRC/M50.
+                    <img src="media/5312_fo4v.jpg" />
+                    <figcaption>Figure 1: Emily Lady Tennyson, 3 Nov 1857, Diary, vol 1, f 126.  TRC/M50.</figcaption>
                 </figure>
                 <figure>
                     Figure 2 Emily Lady Tennyson, 1 July 1859, Diary, vol 1, f 171.  TRC/M50.4

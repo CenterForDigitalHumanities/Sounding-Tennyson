@@ -41,39 +41,6 @@ sounding.controller('makeAnnotationController', function ($scope, ViewValues, Vi
         });
     };
 });
-sounding.directive('xmlDiv', function ($sce) {
-    return {
-        restrict: 'E',
-        scope: {
-            xml: '='
-        },
-        link: function (scope, $element) {
-            var xmlDoc = new XMLHttpRequest();
-            xmlDoc.open('GET', scope.xml.resource);
-            xmlDoc.onreadystatechange = function () {
-                if (xmlDoc.readyState === 4) {
-                    applyStyle(xmlDoc);
-                }
-            };
-
-            function applyStyle (xmlDoc) {
-                var xsl = new XMLHttpRequest();
-                var xsltProcessor = new XSLTProcessor();
-                xsl.open('GET', scope.xml.style);
-                xsl.onreadystatechange = function () {
-                    if (xsl.readyState === 4) {
-                        xsltProcessor.importStylesheet(xsl.responseXML);
-                        var fragment = xsltProcessor.transformToFragment(xmlDoc.responseXML, document);
-                        $element.prepend(fragment);
-                        scope.$apply();
-                    }
-                };
-                xsl.send();
-            }
-            xmlDoc.send();
-        }
-    };
-});
 
 sounding.directive('drawBox', function () {
     return {

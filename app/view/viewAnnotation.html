@@ -22,7 +22,8 @@
         <img selector="img" width="100%">
     </card>
     <card class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='rr:Essay'">
-    <xml-div xml="vv.annotation"></xml-div>
+    <!--    <xml-div xml="vv.annotation"></xml-div>-->
+    <x ng-include="vv.annotation.resource"></x>
     </card>
     <card class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='sc:Canvas'">
     <a href="#/summary/{{rerum.manifestFromCanvas(vv.annotation['@id'],manifests)['@id']}}">Part of...</a>

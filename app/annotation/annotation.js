@@ -25,9 +25,20 @@ sounding.controller('makeAnnotationController', function ($scope, ViewValues, Vi
                 annos = augmented_notes_data; // DEBUG, default dummy
             }
         }
+
+        var imgDims = [
+            [4431, 6586],
+            [4480, 6516],
+            [4514, 6690],
+            [4465, 6509],
+            [4577, 6797]
+        ];
+
         angular.forEach(annos.pages, function (p, index) {
-            var image = document.getElementById("image");
-            var ratio = $scope.vv.annotating.width / image.naturalWidth;
+//            var image = document.getElementById("image");
+//            var ratio = $scope.vv.annotating.width / image.naturalWidth;
+            var ratio = $scope.vv.annotating.width / imgDims[index][0];
+//            var ratio = $scope.vv.annotating.width / $scope.vv.annotating.images[0].resource.width;
             for (var i = 0; i < p.measure_ends.length; i++) {
                 var xywh = [p.measure_bounds[i][0] * ratio, p.measure_bounds[i][1] * ratio, p.measure_bounds[i][2] * ratio, p.measure_bounds[i][3] * ratio].join(",");
                 $scope.vv.annotating.otherContent[1]['@list'].push({
@@ -35,7 +46,7 @@ sounding.controller('makeAnnotationController', function ($scope, ViewValues, Vi
                     "@type": "oa:Annotation",
                     motivation: "sc:painting",
                     label: "",
-                    on: ["RB1#xywh=" + xywh, "RBPiano#t=" + (p.measure_ends[i - 1] || 0) + "," + p.measure_ends[i]]
+                    on: ["Eng" + (index + 1) + "#xywh=" + xywh, "Break_Break_Break_Janotha#t=" + (p.measure_ends[i - 1] || 0) + "," + p.measure_ends[i]]
                 });
             }
         });

@@ -10,10 +10,10 @@ sounding.value("ViewValues", {
     ],
     showAudio: {
         sources: [{
-            src: "media/Recording4.m4a", // relative path or URI
+                src: "media/audio/Break_Break_Break_AET.mp3", // relative path or URI
             type: "audio/mpeg"
         }],
-        label: "Recording 4",
+        label: "Break, Break, Break",
         time: 0 // default beginning time
     }
 });

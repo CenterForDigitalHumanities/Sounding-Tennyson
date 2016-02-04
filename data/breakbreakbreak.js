@@ -1532,19 +1532,8 @@ sounding.value('MANIFESTS', [{
         "@id": "ManuscriptPoem",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": "Handwrote",
-        "resources": [{
-                "@id": "Break_Break_Break_Janotha",
-                "@type": "oa:Annotation",
-                "label": "Recording 4",
-                "motivation": "sc:painting",
-                "resource": {
-                    "@id": "media/Recording4.m4a",
-                    "@type": "dctypes:Sound",
-                    "format": "audio/mpeg"
-                }
-            }],
-        "layers": ["PianoLayer"],
+              "label": "Manuscript",
+        "resources": [],
         "sequences": [{
                 "@id": "handwritten poem normal sequence",
                 "@type": "sc:Sequence",
@@ -1566,179 +1555,7 @@ sounding.value('MANIFESTS', [{
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": [{
-                                "@id": "RBAudio1",
-                                "@type": "oa:Annotation",
-                                "label": "Recording 4, page 1",
-                                "motivation": "sc:painting",
-                                "resource": "Break_Break_Break_Janotha#t=0,135",
-                                "on": "MS1",
-                                "within": "PianoLayer"
-                            }, {
-                                "@id": "WrittenPoemBoxes",
-                                "@type": "sc:AnnotationList",
-                                "label": "chunks",
-                                "@list": [{
-                                        "@id": "50",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=79.5,177,137.5,247",
-                                            "Break_Break_Break_Janotha#t=0,4.4"
-                                        ]
-                                    }, {
-                                        "@id": "51",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=224.5,166,150.5,266.5",
-                                            "Break_Break_Break_Janotha#t=4.4,6.01"
-                                        ]
-                                    }, {
-                                        "@id": "52",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=382,160.5,175.5,266.5",
-                                            "Break_Break_Break_Janotha#t=6.01,7.31"
-                                        ]
-                                    }, {
-                                        "@id": "53",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=566,160.5,159,273.5",
-                                            "Break_Break_Break_Janotha#t=7.31,8.56"
-                                        ],
-                                    }, {
-                                        "@id": "54",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=736,162.5,191.5,272",
-                                            "Break_Break_Break_Janotha#t=8.56,9.73"
-                                        ],
-                                    }, {
-                                        "@id": "55",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=51,570,164.5,275.5",
-                                            "Break_Break_Break_Janotha#t=9.73,10.88"
-                                        ],
-                                    }, {
-                                        "@id": "56",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "start": 10.88,
-                                        "end": 12.13,
-                                        "pageIndex": 0,
-                                        "on": [
-                                            "MS1#xywh=226.5,570,118,273.5",
-                                            "Break_Break_Break_Janotha#t=10.88,12.13"
-                                        ],
-                                    }, {
-                                        "@id": "57",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "start": 12.13,
-                                        "end": 13.54,
-                                        "pageIndex": 0,
-                                        "on": [
-                                            "MS1#xywh=353.5,572,146.5,281",
-                                            "Break_Break_Break_Janotha#t=12.13,13.54"
-                                        ],
-                                    }, {
-                                        "@id": "50",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=69,368,152,53.5",
-                                            "Break_Break_Break_Janotha#t=0,5.24"
-                                        ],
-                                    }, {
-                                        "@id": "51",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=246,361,193,61",
-                                            "Break_Break_Break_Janotha#t=5.24,8.7"
-                                        ],
-                                    }, {
-                                        "@id": "52",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=376.5,232,193,84",
-                                            "Break_Break_Break_Janotha#t=8.7,11.49"
-                                        ],
-                                    }, {
-                                        "@id": "53",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=532,345,182.5,87.5",
-                                            "Break_Break_Break_Janotha#t=11.49,14.42"
-                                        ],
-                                    }, {
-                                        "@id": "54",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=732.5,337.5,191.5,86",
-                                            "Break_Break_Break_Janotha#t=14.42,16.95"
-                                        ],
-                                    }, {
-                                        "@id": "55",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=40.5,749,152,75",
-                                            "Break_Break_Break_Janotha#t=16.95,20.12"
-                                        ],
-                                    }, {
-                                        "@id": "56",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=215.5,656,145,80.5",
-                                            "Break_Break_Break_Janotha#t=20.12,21.98"
-                                        ]
-                                    }, {
-                                        "@id": "57",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=219,765,146.5,75",
-                                            "Break_Break_Break_Janotha#t=21.98,24.41"
-                                        ]
-                                    }, {
-                                        "@id": "58",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xy wh=376.5,658,125,91",
-                                            "Break_Break_Break_Janotha#t=24.41,27.6"
-                                        ]
-                                    }]
-                            }]
+                        "otherContent": []
                     }]
             }]
     }, {
@@ -2263,11 +2080,11 @@ sounding.value('ESSAYS', [{
         {
             "label": "author",
             "value": "Phyllis Weliver"
-        }, 
+        },
         {
             "label": "title",
             "value": "To Break or not to Break?"
-        }, 
+        },
         {
             "label": "subtitle",
             "value": "Recording Tennyson’s Recitation of ‘Break, Break, Break’ in Music"
@@ -2291,7 +2108,7 @@ sounding.value('ESSAYS', [{
         {
             "label": "author",
             "value": "Phyllis Weliver"
-        }, 
+        },
         {
             "label": "title",
             "value": "Emily Tennyson's Music Manuscript Books"
@@ -2315,7 +2132,7 @@ sounding.value('ESSAYS', [{
         {
             "label": "author",
             "value": "Phyllis Weliver"
-        }, 
+        },
         {
             "label": "title",
             "value": "Variability and Musical Motion in ‘Break, break, break’"
@@ -2339,7 +2156,7 @@ sounding.value('ESSAYS', [{
         {
             "label": "author",
             "value": "Phyllis Weliver"
-        }, 
+        },
         {
             "label": "title",
             "value": "Performance and Publication of Emily Tennyson’s Music"

@@ -2009,60 +2009,6 @@ sounding.value('TEXT', [{
         "evidence": ["anno_02"],
         "@value": "The Music Album has fermatas, drawing out the note, which don't exist in the Pink and Green versions."
     }
-    // ,{
-    //     "@id": "TextToBreak",
-    //     "@context": "http://iiif.io/api/presentation/2/context.json",
-    //     "@type": "cnt:chars",
-    //     "@value": "Break, break, break occupies a special place in that it is the only poem that Emily Tennyson set and that her husband, Alfred Tennyson, later recorded on a phonograph. The poet laureate may have deemed it especially worthy of preservation because during his lifetime it had already attracted myriad scansions by composers and poetic theorists. The poem still elicits much critical attention regarding how to speak the first line. The poem has uneven line lengths, varying from seven to eleven beats in addition to the famous three-beat line \"Break, break, break.\" Do we read to the commas between \"Break, break, break,\" thereby stretching the line approximately to the length of the rest of the poem's lines? If we break, how long should the pause be? Or do we roll through the commas as Tennyson frequently does in the extant phonograph recitations. In her diary, Emily Tennyson gestures to the last every time that she mentions the poem. She leaves out the commas when noting that Alfred read Break Break in 1857, a child says Break break to her in 1859, and when Elizabeth Jane, Lady  Charlemont and wife of James Molyneux, 3rd earl of Charlemont reads Break break break in the poet's presence in 1871: This, the only extant copy of the diary, was re-written by Emily for Hallam's use in preparing Tennyson’s memoir after his death. The diarist may have consistently omitted the commas because she was writing hurriedly. Emily's piano/vocal scores give us some idea of her husband's recitations, as a note from their son makes clear. In the fly-leaf of one of his mother's four music manuscript books, Hallam made a note at the prompting of a prominent composer who also set some of Tennyson's poems: If we examine Emily Tennyson's piano/vocal score of Break, Break, Break, we see that she heard the first line of poem as in the manuscript: It does not include a comma after the third \"break\" as does the published version. The musical setting similarly breaks after the first two words, and then runs over the line break. With fermatas and rests on the first two \"breaks,\" singing this music demands melodramatic emphasis on each of the first two words, before continuing onto the ideas of the rest of the stanza: the speaker's heartbreak heard in the breaking surf. When \"Break, break, break\" repeats as the first line of the last stanza, we see that Emily sets the words both to and against punctuation. Reading the two lines as published poetry, they look exactly the same. However, the commas are no longer strongly marked by rests in Emily's setting of line 13. Of course, there is inherent separation between the three stressed words because of the concluding \"k\", but the overall effect is to carry on.",
-    //     "formatting": [
-    //         {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=0,19",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#poem,title"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=995,1006",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#poem,title"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=1029,1040",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#poem,title"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=1154,1171",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#poem,title"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=1754,1773",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#poem,title"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=0,850",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#paragraph"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=851,1423",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#paragraph"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=1424,2270",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#paragraph"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=2271,2713",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#paragraph"
-    //         }
-    //     ]
-    // }
     ]);
 sounding.value('AGENTS', [{
         "@id": "sounding/user/01",
@@ -2224,7 +2170,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,250,750,120", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,250,750,120", // target on a sc:Canvas engraving
             "MS1#xywh=220,250,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=3,15" // target on an audio resource
+            "Break_Break_Break_Janotha#t=15.76,22.88" // target on an audio resource
         ]
     }, {
         "@id": "line_2",
@@ -2234,7 +2180,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,100,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,100,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,280,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=15,25" // target on an audio resource
+            "Break_Break_Break_Janotha#t=22.88,32.21" // target on an audio resource
         ]
     }, {
         "@id": "line_3",
@@ -2244,7 +2190,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,140,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,140,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,360,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=25,30" // target on an audio resource
+            "Break_Break_Break_Janotha#t=32.21,40.8" // target on an audio resource
         ]
     }, {
         "@id": "line_4",
@@ -2253,7 +2199,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,180,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,180,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,400,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=30,35" // target on an audio resource
+            "Break_Break_Break_Janotha#t=40.8,51.60" // target on an audio resource
         ]
     }, {
         "@id": "line_5",
@@ -2262,7 +2208,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,220,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,220,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,460,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=35,40" // target on an audio resource
+            "Break_Break_Break_Janotha#t=70.77,79.03" // target on an audio resource
         ]
     }, {
         "@id": "line_6",
@@ -2271,7 +2217,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,280,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,280,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,500,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=40,45" // target on an audio resource
+            "Break_Break_Break_Janotha#t=79.03,86.04" // target on an audio resource
         ]
     }, {
         "@id": "line_7",
@@ -2280,7 +2226,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,320,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,320,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,560,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=45,50" // target on an audio resource
+            "Break_Break_Break_Janotha#t=86.4,92.39" // target on an audio resource
         ]
     }, {
         "@id": "line_8",
@@ -2289,7 +2235,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,400,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,400,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,620,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=50,55" // target on an audio resource
+            "Break_Break_Break_Janotha#t=92.39,101.67" // target on an audio resource
         ]
     }, {
         "@id": "line_9",
@@ -2298,7 +2244,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,450,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,450,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,680,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=55,60" // target on an audio resource
+            "Break_Break_Break_Janotha#t=114.18,121.13" // target on an audio resource
         ]
     }, {
         "@id": "line_10",
@@ -2307,7 +2253,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,500,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,500,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,750,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=60,65" // target on an audio resource
+            "Break_Break_Break_Janotha#t=121.13,129.09" // target on an audio resource
         ]
     }, {
         "@id": "line_11",
@@ -2316,7 +2262,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,550,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,550,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,800,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=65,70" // target on an audio resource
+            "Break_Break_Break_Janotha#t=129.09,138.6" // target on an audio resource
         ]
     }, {
         "@id": "line_12",
@@ -2325,7 +2271,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,600,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,600,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,850,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=70,75" // target on an audio resource
+            "Break_Break_Break_Janotha#t=138.6,148.5" // target on an audio resource
         ]
     }, {
         "@id": "line_13",
@@ -2334,7 +2280,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,650,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,650,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,900,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=75,80" // target on an audio resource
+            "Break_Break_Break_Janotha#t=170.43,179.6" // target on an audio resource
         ]
     }, {
         "@id": "line_14",
@@ -2343,7 +2289,7 @@ sounding.value('ANNOTATIONS', [{
             "RB1#xywh=20,700,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,700,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,950,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=80,85" // target on an audio resource
+            "Break_Break_Break_Janotha#t=179.6,188.95" // target on an audio resource
         ]
     }, {
         "@id": "line_15",
@@ -2352,7 +2298,7 @@ sounding.value('ANNOTATIONS', [{
             "RB2#xywh=20,60,750,40", // target on a sc:Canvas manuscript
             "Eng2#xywh=20,60,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,1000,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=85,90" // target on an audio resource
+            "Break_Break_Break_Janotha#t=188.95,201.3" // target on an audio resource
         ]
     }, {
         "@id": "line_16",
@@ -2361,7 +2307,7 @@ sounding.value('ANNOTATIONS', [{
             "RB2#xywh=20,120,750,40", // target on a sc:Canvas manuscript
             "Eng2#xywh=20,120,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,1100,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=90,95" // target on an audio resource
+            "Break_Break_Break_Janotha#t=201.3,214.6" // target on an audio resource
         ]
     }
 ]);

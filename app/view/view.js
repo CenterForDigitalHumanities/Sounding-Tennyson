@@ -177,7 +177,7 @@ sounding.controller("viewController", function ($scope, ViewService, ViewValues,
                 return textCache.get(line['@id']);
             }
             for (var i = 0; i < line['oa:hasTarget'].length; i++) {
-                if (line['oa:hasTarget'][i].indexOf("HMS") === 0
+                if (line['oa:hasTarget'][i].indexOf("publishedText") === 0
                     && line['oa:hasTarget'][i].indexOf("#offset=") > 0) {
                     offset = line['oa:hasTarget'][i].substr((line['oa:hasTarget'][i].lastIndexOf("#offset=") + 8)).split(",");
                     text = textCache.put(line['@id'], TEXT['@value'].substring(offset[0], offset[1]));

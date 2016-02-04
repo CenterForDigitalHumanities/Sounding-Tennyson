@@ -107,414 +107,96 @@ sounding.value('MANIFESTS', [{
         "@id": "RB_Manifest",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": "Red Book (5312/3)",
+        "label": 'AET, "Break," draft 1 (5321)',
         "resources": ["Break_Break_Break_Janotha"],
         "layers": ["PianoLayer"],
         "sequences": [{
                 "@id": "red book normal sequence",
                 "@type": "sc:Sequence",
                 "canvases": [{
-                        "label": "130",
-                        "@id": "RB1",
-                        "width": 1000,
-                        "height": 1504,
-                        "@type": "sc:Canvas",
-                        "images": [{
-                                "@type": "oa:Annotation",
-                                "motivation": "sc:painting",
-                                "on": "RB1",
-                                "resource": {
-                                    "format": "image/jpeg",
-                                    "height": 2000,
-                                    "width": 3008,
-                                    "@id": "media/RedBook130.JPG",
-                                    "@type": "dcterms:Image"
-                                }
-                            }],
-                        "otherContent": [{
-                                "@id": "RBAudio1",
-                                "@type": "oa:Annotation",
-                                "label": "Recording 4, page 1",
-                                "motivation": "sc:painting",
-                                "resource": "Break_Break_Break_Janotha#t=0,23.67",
-                                "on": "RB1",
-                                "within": "PianoLayer"
-                            }, {
-                                "@id": "PianoMeasures",
-                                "@type": "sc:AnnotationList",
-                                "label": "measures",
-                                "@list": [{
-                                        "@id": "0f",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=79.5,177,137.5,247",
-                                            "Break_Break_Break_Janotha#t=0,4.4"
-                                        ]
-                                    }, {
-                                        "@id": "1",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=224.5,166,150.5,266.5",
-                                            "Break_Break_Break_Janotha#t=4.4,6.01"
-                                        ]
-                                    }, {
-                                        "@id": "2",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=382,160.5,175.5,266.5",
-                                            "Break_Break_Break_Janotha#t=6.01,7.31"
-                                        ]
-                                    }, {
-                                        "@id": "3",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=566,160.5,159,273.5",
-                                            "Break_Break_Break_Janotha#t=7.31,8.56"
-                                        ],
-                                    }, {
-                                        "@id": "4",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=736,162.5,191.5,272",
-                                            "Break_Break_Break_Janotha#t=8.56,9.73"
-                                        ],
-                                    }, {
-                                        "@id": "5",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=51,570,164.5,275.5",
-                                            "Break_Break_Break_Janotha#t=9.73,10.88"
-                                        ],
-                                    }, {
-                                        "@id": "6",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "start": 10.88,
-                                        "end": 12.13,
-                                        "pageIndex": 0,
-                                        "on": [
-                                            "RB1#xywh=226.5,570,118,273.5",
-                                            "Break_Break_Break_Janotha#t=10.88,12.13"
-                                        ],
-                                    }, {
-                                        "@id": "7",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "start": 12.13,
-                                        "end": 13.54,
-                                        "pageIndex": 0,
-                                        "on": [
-                                            "RB1#xywh=353.5,572,146.5,281",
-                                            "Break_Break_Break_Janotha#t=12.13,13.54"
-                                        ],
-                                    }, {
-                                        "@id": "10",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=69,368,152,53.5",
-                                            "Break_Break_Break_Janotha#t=0,5.24"
-                                        ],
-                                    }, {
-                                        "@id": "11",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=246,361,193,61",
-                                            "Break_Break_Break_Janotha#t=5.24,8.7"
-                                        ],
-                                    }, {
-                                        "@id": "12",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=376.5,232,193,84",
-                                            "Break_Break_Break_Janotha#t=8.7,11.49"
-                                        ],
-                                    }, {
-                                        "@id": "13",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=532,345,182.5,87.5",
-                                            "Break_Break_Break_Janotha#t=11.49,14.42"
-                                        ],
-                                    }, {
-                                        "@id": "14",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=732.5,337.5,191.5,86",
-                                            "Break_Break_Break_Janotha#t=14.42,16.95"
-                                        ],
-                                    }, {
-                                        "@id": "15",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=40.5,749,152,75",
-                                            "Break_Break_Break_Janotha#t=16.95,20.12"
-                                        ],
-                                    }, {
-                                        "@id": "16",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=215.5,656,145,80.5",
-                                            "Break_Break_Break_Janotha#t=20.12,21.98"
-                                        ]
-                                    }, {
-                                        "@id": "17",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=219,765,146.5,75",
-                                            "Break_Break_Break_Janotha#t=21.98,24.41"
-                                        ]
-                                    }, {
-                                        "@id": "18",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB1#xywh=376.5,658,125,91",
-                                            "Break_Break_Break_Janotha#t=24.41,27.6"
-                                        ]
-                                    }]
-                            }]
-                    }, {
-                        "label": "131",
-                        "@id": "RB2",
-                        "width": 1000,
-                        "height": 1504,
-                        "@type": "sc:Canvas",
-                        "images": [{
-                                "@type": "oa:Annotation",
-                                "motivation": "sc:painting",
-                                "on": "RB2",
-                                "resource": {
-                                    "format": "image/jpeg",
-                                    "height": 2000,
-                                    "width": 3008,
-                                    "@id": "media/RedBook131.JPG",
-                                    "@type": "dcterms:Image"
-                                }
-                            }],
-                        "otherContent": [{
-                                "@id": "RBAudio1",
-                                "@type": "oa:Annotation",
-                                "label": "Recording 4, page 2",
-                                "motivation": "sc:painting",
-                                "resource": "Break_Break_Break_Janotha#t=23.68,75",
-                                "on": "RB2",
-                                "within": "PianoLayer"
-                            }, {
-                                "@id": "RB2List",
-                                "@type": "sc:AnnotationList",
-                                "label": "measures",
-                                "@list": [{
-                                        "@id": 29,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=383.5,770.5,118,73.5",
-                                            "Break_Break_Break_Janotha#t=27.6,30.29"
-                                        ]
-                                    }, {
-                                        "@id": 210,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=521.5,647,150.5,127",
-                                            "Break_Break_Break_Janotha#t=30.29,33.3"
-                                        ]
-                                    }, {
-                                        "@id": 211,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=695,647,80.5,200.5",
-                                            "Break_Break_Break_Janotha#t=33.3,36.26"
-                                        ]
-                                    }, {
-                                        "@id": 212,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=816.5,654.5,120,89.5",
-                                            "Break_Break_Break_Janotha#t=36.26,39.08"
-                                        ]
-                                    }, {
-                                        "@id": 213,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=103,885,102,93",
-                                            "Break_Break_Break_Janotha#t=39.08,42.82"
-                                        ]
-                                    }, {
-                                        "@id": 214,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=221,886.5,256,118",
-                                            "Break_Break_Break_Janotha#t=42.82,46.94"
-                                        ]
-                                    }, {
-                                        "@id": 215,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=500,888.5,259.5,116",
-                                            "Break_Break_Break_Janotha#t=46.94,50.48"
-                                        ]
-                                    }, {
-                                        "@id": 216,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=786,903,168,111",
-                                            "Break_Break_Break_Janotha#t=50.48,54.13"
-                                        ]
-                                    }, {
-                                        "@id": 217,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=101,990.5,104,100",
-                                            "Break_Break_Break_Janotha#t=54.13,55.49"
-                                        ]
-                                    }, {
-                                        "@id": 218,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=228,1026,71.5,84",
-                                            "Break_Break_Break_Janotha#t=55.49,57.55"
-                                        ]
-                                    }, {
-                                        "@id": 219,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=328.5,1021,316.5,95",
-                                            "Break_Break_Break_Janotha#t=57.55,58.45"
-                                        ]
-                                    }, {
-                                        "@id": 220,
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "RB2#xywh=680.5,1035,234.5,111",
-                                            "Break_Break_Break_Janotha#t=58.45,59.03"
-                                        ]
-                                    }]
-                            }]
-                    }, {
-                        "label": "132",
-                        "@id": "RB3",
-                        "width": 1000,
-                        "height": 1504,
-                        "@type": "sc:Canvas",
-                        "images": [{
-                                "@type": "oa:Annotation",
-                                "motivation": "sc:painting",
-                                "on": "RB3",
-                                "resource": {
-                                    "format": "image/jpeg",
-                                    "height": 2000,
-                                    "width": 3008,
-                                    "@id": "media/RedBook132.JPG",
-                                    "@type": "dcterms:Image"
-                                }
-                            }],
-                        "otherContent": [{
-                                "@id": "RBAudio1",
-                                "@type": "oa:Annotation",
-                                "label": "Recording 4, page 3",
-                                "motivation": "sc:painting",
-                                "resource": "Break_Break_Break_Janotha#t=75,112",
-                                "on": "RB3",
-                                "within": "PianoLayer"
-                            }, {
-                                "@id": "RBList3",
-                                "@type": "sc:AnnotationList",
-                                "label": "measures",
-                                "@list": []
-                            }]
-                    }, {
-                        "label": "133",
-                        "@id": "RB4",
+                        "label": "3r",
+                        "@id": "RB0",
                         "width": 1504,
-                        "height": 1000,
+                        "height": 1888,
                         "@type": "sc:Canvas",
                         "images": [{
                                 "@type": "oa:Annotation",
                                 "motivation": "sc:painting",
-                                "on": "RB4",
+                                "on": "RB0",
                                 "resource": {
                                     "format": "image/jpeg",
-                                    "height": 3008,
-                                    "width": 2000,
-                                    "@id": "media/RedBook133.JPG",
+                                    "height": 1888,
+                                    "width": 1504,
+                                    "@id": "media/red/r5321_fo3r.jpg",
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": [{
-                                "@id": "RBAudio1",
+                        "otherContent": []
+                    }, {
+                        "label": "3v",
+                        "@id": "RB1",
+                        "width": 1384,
+                        "height": 1832,
+                        "@type": "sc:Canvas",
+                        "images": [{
                                 "@type": "oa:Annotation",
-                                "label": "Recording 4, page 4",
                                 "motivation": "sc:painting",
-                                "resource": "Break_Break_Break_Janotha#t=112,144",
-                                "on": "RB4",
-                                "within": "PianoLayer"
-                            }, {
-                                "@id": "RBList4",
-                                "@type": "sc:AnnotationList",
-                                "label": "measures",
-                                "@list": []
-                            }]
+                                "on": "RB1",
+                                "resource": {
+                                    "format": "image/jpeg",
+                                    "height": 1832,
+                                    "width": 1384,
+                                    "@id": "media/red/r5321_fo3v.jpg",
+                                    "@type": "dcterms:Image"
+                                }
+                            }],
+                        "otherContent": []
+                    }, {
+                        "label": "4r",
+                        "@id": "RB2",
+                        "width": 1508,
+                        "height": 1888,
+                        "@type": "sc:Canvas",
+                        "images": [{
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "on": "RB2",
+                                "resource": {
+                                    "format": "image/jpeg",
+                                    "height": 1888,
+                                    "width": 1508,
+                                    "@id": "media/red/r5321_fo4r.jpg",
+                                    "@type": "dcterms:Image"
+                                }
+                            }],
+                        "otherContent": []
+                    }, {
+                "label": "4v",
+                        "@id": "RB3",
+                "width": 1524,
+                "height": 1998,
+                        "@type": "sc:Canvas",
+                        "images": [{
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "on": "RB3",
+                                "resource": {
+                                    "format": "image/jpeg",
+                                    "height": 2000,
+                                    "width": 3008,
+                                    "@id": "media/red/r5321_fo4v.jpg",
+                                    "@type": "dcterms:Image"
+                                }
+                            }],
+                "otherContent": []
                     }]
             }]
     }, {
         "@id": "Janotha_Manifest",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": "Janotha Sunday Hours",
+        "label": 'AET / arr Janotha, "Break"',
+        "description": '"Break, Break, Break," music by Emily Tennyson, arr. by Natalie Janotha, words by Alfred Tennyson, Sunday Hours, vol. 2 (1897): 568–72. P.P.357.fb, The British Library',
         "resources": ["Break_Break_Break_Janotha"],
         "layers": ["PianoLayer"],
         "sequences": [{
@@ -1532,19 +1214,8 @@ sounding.value('MANIFESTS', [{
         "@id": "ManuscriptPoem",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": "Handwrote",
-        "resources": [{
-                "@id": "Break_Break_Break_Janotha",
-                "@type": "oa:Annotation",
-                "label": "Recording 4",
-                "motivation": "sc:painting",
-                "resource": {
-                    "@id": "media/Recording4.m4a",
-                    "@type": "dctypes:Sound",
-                    "format": "audio/mpeg"
-                }
-            }],
-        "layers": ["PianoLayer"],
+        "label": 'AT, "Break," Ms poem',
+        "resources": [],
         "sequences": [{
                 "@id": "handwritten poem normal sequence",
                 "@type": "sc:Sequence",
@@ -1566,179 +1237,7 @@ sounding.value('MANIFESTS', [{
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": [{
-                                "@id": "RBAudio1",
-                                "@type": "oa:Annotation",
-                                "label": "Recording 4, page 1",
-                                "motivation": "sc:painting",
-                                "resource": "Break_Break_Break_Janotha#t=0,135",
-                                "on": "MS1",
-                                "within": "PianoLayer"
-                            }, {
-                                "@id": "WrittenPoemBoxes",
-                                "@type": "sc:AnnotationList",
-                                "label": "chunks",
-                                "@list": [{
-                                        "@id": "50",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=79.5,177,137.5,247",
-                                            "Break_Break_Break_Janotha#t=0,4.4"
-                                        ]
-                                    }, {
-                                        "@id": "51",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=224.5,166,150.5,266.5",
-                                            "Break_Break_Break_Janotha#t=4.4,6.01"
-                                        ]
-                                    }, {
-                                        "@id": "52",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=382,160.5,175.5,266.5",
-                                            "Break_Break_Break_Janotha#t=6.01,7.31"
-                                        ]
-                                    }, {
-                                        "@id": "53",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=566,160.5,159,273.5",
-                                            "Break_Break_Break_Janotha#t=7.31,8.56"
-                                        ],
-                                    }, {
-                                        "@id": "54",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=736,162.5,191.5,272",
-                                            "Break_Break_Break_Janotha#t=8.56,9.73"
-                                        ],
-                                    }, {
-                                        "@id": "55",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=51,570,164.5,275.5",
-                                            "Break_Break_Break_Janotha#t=9.73,10.88"
-                                        ],
-                                    }, {
-                                        "@id": "56",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "start": 10.88,
-                                        "end": 12.13,
-                                        "pageIndex": 0,
-                                        "on": [
-                                            "MS1#xywh=226.5,570,118,273.5",
-                                            "Break_Break_Break_Janotha#t=10.88,12.13"
-                                        ],
-                                    }, {
-                                        "@id": "57",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "start": 12.13,
-                                        "end": 13.54,
-                                        "pageIndex": 0,
-                                        "on": [
-                                            "MS1#xywh=353.5,572,146.5,281",
-                                            "Break_Break_Break_Janotha#t=12.13,13.54"
-                                        ],
-                                    }, {
-                                        "@id": "50",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=69,368,152,53.5",
-                                            "Break_Break_Break_Janotha#t=0,5.24"
-                                        ],
-                                    }, {
-                                        "@id": "51",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=246,361,193,61",
-                                            "Break_Break_Break_Janotha#t=5.24,8.7"
-                                        ],
-                                    }, {
-                                        "@id": "52",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=376.5,232,193,84",
-                                            "Break_Break_Break_Janotha#t=8.7,11.49"
-                                        ],
-                                    }, {
-                                        "@id": "53",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=532,345,182.5,87.5",
-                                            "Break_Break_Break_Janotha#t=11.49,14.42"
-                                        ],
-                                    }, {
-                                        "@id": "54",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=732.5,337.5,191.5,86",
-                                            "Break_Break_Break_Janotha#t=14.42,16.95"
-                                        ],
-                                    }, {
-                                        "@id": "55",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=40.5,749,152,75",
-                                            "Break_Break_Break_Janotha#t=16.95,20.12"
-                                        ],
-                                    }, {
-                                        "@id": "56",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=215.5,656,145,80.5",
-                                            "Break_Break_Break_Janotha#t=20.12,21.98"
-                                        ]
-                                    }, {
-                                        "@id": "57",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xywh=219,765,146.5,75",
-                                            "Break_Break_Break_Janotha#t=21.98,24.41"
-                                        ]
-                                    }, {
-                                        "@id": "58",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "MS1#xy wh=376.5,658,125,91",
-                                            "Break_Break_Break_Janotha#t=24.41,27.6"
-                                        ]
-                                    }]
-                            }]
+                        "otherContent": []
                     }]
             }]
     }, {
@@ -2152,10 +1651,10 @@ sounding.value('MANIFESTS', [{
     }]);
 
 sounding.value('TEXT', [{
-        "@id": "HMS",
+        "@id": "publishedText",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "cnt:chars",
-        "label": "Published Text",
+        "label": 'AT, "Break" (published 1842)',
         // Put all the text in one place and then annotate the stanzas,
         // lines, and words with offsets as needed.
         "@value": "Break, break, break,/" +
@@ -2192,60 +1691,6 @@ sounding.value('TEXT', [{
         "evidence": ["anno_02"],
         "@value": "The Music Album has fermatas, drawing out the note, which don't exist in the Pink and Green versions."
     }
-    // ,{
-    //     "@id": "TextToBreak",
-    //     "@context": "http://iiif.io/api/presentation/2/context.json",
-    //     "@type": "cnt:chars",
-    //     "@value": "Break, break, break occupies a special place in that it is the only poem that Emily Tennyson set and that her husband, Alfred Tennyson, later recorded on a phonograph. The poet laureate may have deemed it especially worthy of preservation because during his lifetime it had already attracted myriad scansions by composers and poetic theorists. The poem still elicits much critical attention regarding how to speak the first line. The poem has uneven line lengths, varying from seven to eleven beats in addition to the famous three-beat line \"Break, break, break.\" Do we read to the commas between \"Break, break, break,\" thereby stretching the line approximately to the length of the rest of the poem's lines? If we break, how long should the pause be? Or do we roll through the commas as Tennyson frequently does in the extant phonograph recitations. In her diary, Emily Tennyson gestures to the last every time that she mentions the poem. She leaves out the commas when noting that Alfred read Break Break in 1857, a child says Break break to her in 1859, and when Elizabeth Jane, Lady  Charlemont and wife of James Molyneux, 3rd earl of Charlemont reads Break break break in the poet's presence in 1871: This, the only extant copy of the diary, was re-written by Emily for Hallam's use in preparing Tennyson’s memoir after his death. The diarist may have consistently omitted the commas because she was writing hurriedly. Emily's piano/vocal scores give us some idea of her husband's recitations, as a note from their son makes clear. In the fly-leaf of one of his mother's four music manuscript books, Hallam made a note at the prompting of a prominent composer who also set some of Tennyson's poems: If we examine Emily Tennyson's piano/vocal score of Break, Break, Break, we see that she heard the first line of poem as in the manuscript: It does not include a comma after the third \"break\" as does the published version. The musical setting similarly breaks after the first two words, and then runs over the line break. With fermatas and rests on the first two \"breaks,\" singing this music demands melodramatic emphasis on each of the first two words, before continuing onto the ideas of the rest of the stanza: the speaker's heartbreak heard in the breaking surf. When \"Break, break, break\" repeats as the first line of the last stanza, we see that Emily sets the words both to and against punctuation. Reading the two lines as published poetry, they look exactly the same. However, the commas are no longer strongly marked by rests in Emily's setting of line 13. Of course, there is inherent separation between the three stressed words because of the concluding \"k\", but the overall effect is to carry on.",
-    //     "formatting": [
-    //         {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=0,19",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#poem,title"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=995,1006",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#poem,title"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=1029,1040",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#poem,title"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=1154,1171",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#poem,title"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=1754,1773",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#poem,title"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=0,850",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#paragraph"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=851,1423",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#paragraph"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=1424,2270",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#paragraph"
-    //         }, {
-    //             "@type": "oa:Annotation",
-    //             "on": "TextToBreak#offset=2271,2713",
-    //             "motivation": "rr:formatting",
-    //             "oa:hasStyle": "MainStyle#paragraph"
-    //         }
-    //     ]
-    // }
     ]);
 sounding.value('AGENTS', [{
         "@id": "sounding/user/01",
@@ -2263,11 +1708,11 @@ sounding.value('ESSAYS', [{
         {
             "label": "author",
             "value": "Phyllis Weliver"
-        }, 
+        },
         {
             "label": "title",
             "value": "To Break or not to Break?"
-        }, 
+        },
         {
             "label": "subtitle",
             "value": "Recording Tennyson’s Recitation of ‘Break, Break, Break’ in Music"
@@ -2291,7 +1736,7 @@ sounding.value('ESSAYS', [{
         {
             "label": "author",
             "value": "Phyllis Weliver"
-        }, 
+        },
         {
             "label": "title",
             "value": "Emily Tennyson's Music Manuscript Books"
@@ -2315,7 +1760,7 @@ sounding.value('ESSAYS', [{
         {
             "label": "author",
             "value": "Phyllis Weliver"
-        }, 
+        },
         {
             "label": "title",
             "value": "Variability and Musical Motion in ‘Break, break, break’"
@@ -2339,7 +1784,7 @@ sounding.value('ESSAYS', [{
         {
             "label": "author",
             "value": "Phyllis Weliver"
-        }, 
+        },
         {
             "label": "title",
             "value": "Performance and Publication of Emily Tennyson’s Music"
@@ -2387,8 +1832,8 @@ sounding.value('ANNOTATIONS', [{
         "@id": "intraAnno_03",
         "@type": "oa:Annotation",
         "description": "observation of comma in published text",
-        "on": "HMS#offset=0,20",
-        "evidence": ["HMS#offset=0,20"],
+        "on": "publishedText#offset=0,20",
+        "evidence": ["publishedText#offset=0,20"],
         "resource": "comment01#offset=96,137"
     }, {
         "@id": "anno_02",
@@ -2402,149 +1847,149 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_1",
         "@type": "oa:Annotation",
-        "resource": "HMS#offset=0,20", // offset selector: start,end
+        "resource": "publishedText#offset=0,20", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,250,750,120", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,250,750,120", // target on a sc:Canvas engraving
             "MS1#xywh=220,250,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=3,15" // target on an audio resource
+            "Break_Break_Break_Janotha#t=15.76,22.88" // target on an audio resource
         ]
     }, {
         "@id": "line_2",
         "@type": "oa:Annotation",
-        "resource": "HMS#offset=21,52", // offset selector: start,end
+        "resource": "publishedText#offset=21,52", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,100,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,100,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,280,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=15,25" // target on an audio resource
+            "Break_Break_Break_Janotha#t=22.88,32.21" // target on an audio resource
         ]
     }, {
         "@id": "line_3",
-        "@type": "oa:Annotation", "resource": "HMS#offset=53,91", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=53,91", // offset selector: start,end
 
         "oa:hasTarget": [
             "RB1#xywh=20,140,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,140,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,360,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=25,30" // target on an audio resource
+            "Break_Break_Break_Janotha#t=32.21,40.8" // target on an audio resource
         ]
     }, {
         "@id": "line_4",
-        "@type": "oa:Annotation", "resource": "HMS#offset=92,122", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=92,122", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,180,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,180,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,400,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=30,35" // target on an audio resource
+            "Break_Break_Break_Janotha#t=40.8,51.60" // target on an audio resource
         ]
     }, {
         "@id": "line_5",
-        "@type": "oa:Annotation", "resource": "HMS#offset=124,156", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=124,156", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,220,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,220,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,460,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=35,40" // target on an audio resource
+            "Break_Break_Break_Janotha#t=70.77,79.03" // target on an audio resource
         ]
     }, {
         "@id": "line_6",
-        "@type": "oa:Annotation", "resource": "HMS#offset=157,196", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=157,196", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,280,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,280,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,500,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=40,45" // target on an audio resource
+            "Break_Break_Break_Janotha#t=79.03,86.04" // target on an audio resource
         ]
     }, {
         "@id": "line_7",
-        "@type": "oa:Annotation", "resource": "HMS#offset=197,224", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=197,224", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,320,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,320,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,560,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=45,50" // target on an audio resource
+            "Break_Break_Break_Janotha#t=86.4,92.39" // target on an audio resource
         ]
     }, {
         "@id": "line_8",
-        "@type": "oa:Annotation", "resource": "HMS#offset=225,262", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=225,262", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,400,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,400,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,620,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=50,55" // target on an audio resource
+            "Break_Break_Break_Janotha#t=92.39,101.67" // target on an audio resource
         ]
     }, {
         "@id": "line_9",
-        "@type": "oa:Annotation", "resource": "HMS#offset=264,291", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=264,291", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,450,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,450,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,680,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=55,60" // target on an audio resource
+            "Break_Break_Break_Janotha#t=114.18,121.13" // target on an audio resource
         ]
     }, {
         "@id": "line_10",
-        "@type": "oa:Annotation", "resource": "HMS#offset=292,322", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=292,322", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,500,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,500,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,750,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=60,65" // target on an audio resource
+            "Break_Break_Break_Janotha#t=121.13,129.09" // target on an audio resource
         ]
     }, {
         "@id": "line_11",
-        "@type": "oa:Annotation", "resource": "HMS#offset=323,362", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=323,362", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,550,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,550,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,800,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=65,70" // target on an audio resource
+            "Break_Break_Break_Janotha#t=129.09,138.6" // target on an audio resource
         ]
     }, {
         "@id": "line_12",
-        "@type": "oa:Annotation", "resource": "HMS#offset=363,402", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=363,402", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,600,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,600,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,850,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=70,75" // target on an audio resource
+            "Break_Break_Break_Janotha#t=138.6,148.5" // target on an audio resource
         ]
     }, {
         "@id": "line_13",
-        "@type": "oa:Annotation", "resource": "HMS#offset=404,423", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=404,423", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,650,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,650,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,900,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=75,80" // target on an audio resource
+            "Break_Break_Break_Janotha#t=170.43,179.6" // target on an audio resource
         ]
     }, {
         "@id": "line_14",
-        "@type": "oa:Annotation", "resource": "HMS#offset=424,456", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=424,456", // offset selector: start,end
         "oa:hasTarget": [
             "RB1#xywh=20,700,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,700,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,950,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=80,85" // target on an audio resource
+            "Break_Break_Break_Janotha#t=179.6,188.95" // target on an audio resource
         ]
     }, {
         "@id": "line_15",
-        "@type": "oa:Annotation", "resource": "HMS#offset=457,499", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=457,499", // offset selector: start,end
         "oa:hasTarget": [
             "RB2#xywh=20,60,750,40", // target on a sc:Canvas manuscript
             "Eng2#xywh=20,60,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,1000,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=85,90" // target on an audio resource
+            "Break_Break_Break_Janotha#t=188.95,201.3" // target on an audio resource
         ]
     }, {
         "@id": "line_16",
-        "@type": "oa:Annotation", "resource": "HMS#offset=500,527", // offset selector: start,end
+        "@type": "oa:Annotation", "resource": "publishedText#offset=500,527", // offset selector: start,end
         "oa:hasTarget": [
             "RB2#xywh=20,120,750,40", // target on a sc:Canvas manuscript
             "Eng2#xywh=20,120,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,1100,750,90", // target on a sc:Canvas handwrote
-            "Break_Break_Break_Janotha#t=90,95" // target on an audio resource
+            "Break_Break_Break_Janotha#t=201.3,214.6" // target on an audio resource
         ]
     }
 ]);

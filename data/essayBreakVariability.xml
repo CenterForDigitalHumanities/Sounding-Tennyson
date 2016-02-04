@@ -91,52 +91,86 @@
             <p>
                 The musical setting helps us to understand how Emily heard the poem in a free anapaestic meter. Mostly iambs (slack-stress) alternate with the anapests (slack-slack-stress), but “Break, break, break,” also has an amphribrach (slack-stress-slack) line or two, a pyrrhic (two slacks) and, in early drafts, a catalytic line (the trochee at the end lacks the final slack):
 
-                <rr-slack-map>
+                <?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: no XML declaration present -->
+            <rr-slack-map>
                 <rr-slack-block>
-                    <rr-slack-line>    /        /           /</rr-slack-line>
-                    <rr-slack-line>Break, | break, │ break,<rr-note-right>three stressed syllables</rr-note-right></rr-slack-line>
-                    <rr-slack-line>               u   u    /         u       /         u   /</rr-slack-line>                   
-                    <rr-slack-line>    On thy cold │ gray stones, │ O Sea!<rr-note-right>anapest, iamb, iamb</rr-note-right></rr-slack-line>
-                    <rr-slack-line>  u   u     /         u    u      /          u     u  /</rr-slack-line>
-                    <rr-slack-line>And I would │ that my tongue │ could utter<rr-note-right>anapest, anapest, anapest</rr-note-right></rr-slack-line>
-                    <rr-slack-line>         u       /       u    u  /      u   /</rr-slack-line>
-                    <rr-slack-line>    The thoughts │ that arise │ in me.<rr-note-right>iamb, anapest, iamb</rr-note-right></rr-slack-line>
+                    <rr-slack-line>
+                        <syl-long>Break</syl-long>,&nbsp;|&nbsp;<syl-long>break</syl-long>,&nbsp;│&nbsp;<syl-long>break</syl-long>,
+                        <rr-note-right>three stressed syllables</rr-note-right>
+                    </rr-slack-line>
+                    <rr-slack-line>
+                        <syl-short>On</syl-short>&nbsp;<syl-short>thy</syl-short>&nbsp;<syl-long>cold</syl-long>&nbsp;│&nbsp;<syl-short>gray</syl-short>&nbsp;<syl-long>stones</syl-long>,&nbsp;│&nbsp;<syl-short>O</syl-short>&nbsp;<syl-long>Sea</syl-long>!
+                        <rr-note-right>anapest,&nbsp;iamb,&nbsp;iamb</rr-note-right>
+                    </rr-slack-line>
+                    <rr-slack-line>
+                        <syl-short>And</syl-short>&nbsp;<syl-short>I</syl-short>&nbsp;<syl-long>would</syl-long>&nbsp;│&nbsp;<syl-short>that</syl-short>&nbsp;<syl-short>my</syl-short>&nbsp;<syl-long>tongue</syl-long>&nbsp;│&nbsp;<syl-short>could</syl-short>&nbsp;<syl-short>ut</syl-short><syl-long>ter</syl-long>
+                        <rr-note-right>anapest,&nbsp;anapest,&nbsp;anapest</rr-note-right>
+                    </rr-slack-line>
+                    <rr-slack-line><syl-short>The</syl-short>&nbsp;<syl-long>thoughts</syl-long>&nbsp;│&nbsp;<syl-short>that</syl-short>&nbsp;<syl-short>a</syl-short><syl-long>rise</syl-long>&nbsp;│&nbsp;in&nbsp;me.<rr-note-right>iamb,&nbsp;anapest,&nbsp;iamb</rr-note-right></rr-slack-line>
                 </rr-slack-block>
 
                 <rr-slack-block>
-                    <rr-slack-line> u    /        u    u    u   /    u         /<rr-note-right>drafts 1& 2, catalytic line: iamb, pyrrhic, amphibrach, stress</rr-note-right></rr-slack-line>
-                    <rr-slack-line><rr-line-note>5</rr-line-note>   O well │ for the  │fisherman’s│ boy,<rr-note-right>final version: iamb, pyrrhic, trochee, iamb: u / │u u│ / u│ u /</rr-note-right></rr-slack-line>            
-                    <rr-slack-line>                     u    u      /            u      u      /     u  u     /</rr-slack-line>    
-                    <rr-slack-line>    That he shouts │ with his  sist│er at play!<rr-note-right>anapest, anapest, anapest</rr-note-right></rr-slack-line>
-                    <rr-slack-line> u    /        u   u    /    u   /</rr-slack-line>
-                    <rr-slack-line>O well │ for the sail│or lad,<rr-note-right>iamb, anapest, iamb</rr-note-right></rr-slack-line>
-                    <rr-slack-line>         u   u    /          u   u    /       u   u    /</rr-slack-line>
-                    <rr-slack-line>    That he sings │ in his boat │ on the bay!<rr-note-right>anapest, anapest, anapest</rr-note-right></rr-slack-line>
+                    <rr-slack-line>
+                        <rr-line-note>5</rr-line-note>
+                        <syl-short>O</syl-short>&nbsp;<syl-long>well</syl-long>&nbsp;│&nbsp;<syl-short>for</syl-short>&nbsp;<syl-short>the</syl-short>&nbsp;│<syl-short>fish</syl-short><syl-long>er</syl-long><syl-short>man’s</syl-short>│&nbsp;<syl-long>boy</syl-long>,
+                        <rr-note-right>final&nbsp;version:&nbsp;iamb,&nbsp;pyrrhic,&nbsp;trochee,&nbsp;iamb:&nbsp;u&nbsp;/&nbsp;│u&nbsp;u│&nbsp;/&nbsp;u│&nbsp;u&nbsp;/</rr-note-right>
+                    </rr-slack-line>           
+                    <rr-slack-line>
+                        <syl-short>That</syl-short>&nbsp;<syl-short>he</syl-short>&nbsp;<syl-long>shouts</syl-long>&nbsp;│&nbsp;<syl-short>with</syl-short>&nbsp;<syl-short>his</syl-short>&nbsp;<syl-long>sist</syl-long>│<syl-short>er</syl-short>&nbsp;<syl-short>at</syl-short>&nbsp;<syl-long>play!</syl-long>
+                        <rr-note-right>anapest,&nbsp;anapest,&nbsp;anapest</rr-note-right>
+                    </rr-slack-line>
+                    <rr-slack-line>
+                        <syl-short>O</syl-short>&nbsp;<syl-long>well</syl-long>&nbsp;│&nbsp;<syl-short>for</syl-short>&nbsp;<syl-short>the</syl-short>&nbsp;<syl-long>sail</syl-long>│<syl-short>or</syl-short>&nbsp;<syl-long>lad</syl-long>,
+                        <rr-note-right>iamb,&nbsp;anapest,&nbsp;iamb</rr-note-right>
+                    </rr-slack-line>
+                    <rr-slack-line>
+                        <syl-short>That</syl-short>&nbsp;<syl-short>he</syl-short>&nbsp;<syl-long>sings</syl-long>&nbsp;│&nbsp;<syl-short>in</syl-short>&nbsp;<syl-short>his</syl-short>&nbsp;<syl-short>boat</syl-short>&nbsp;│&nbsp;<syl-long>on</syl-long>&nbsp;<syl-short>the</syl-short>&nbsp;<syl-short>bay</syl-short>!
+                        <rr-note-right>anapest,&nbsp;anapest,&nbsp;anapest</rr-note-right>
+                    </rr-slack-line>
                 </rr-slack-block>
 
                 <rr-slack-block>
-                    <rr-slack-line>   u   u      /      u     /     u    /</rr-slack-line>
-                    <rr-slack-line>And the state│ ly ships │ go on<rr-note-right>anapest, iamb, iamb</rr-note-right></rr-slack-line>
-                    <rr-slack-line>       u      u     /     u     /   u      u    /</rr-slack-line>  
-                    <rr-slack-line>10  To their ha│ven under │ the hill;<rr-note-right>anapest, amphibrach, iamb</rr-note-right></rr-slack-line>  
-                    <rr-slack-line> u    /  u   u     /       u  u  /      u       /</rr-slack-line>
-                    <rr-slack-line>But O │for the touch │of a van│ish’d hand,<rr-note-right>iamb, anapest, anapest, iamb</rr-note-right></rr-slack-line>
-                    <rr-slack-line>        u    u      /        u  u   /         u   u   /</rr-slack-line>
-                    <rr-slack-line>    And the sound │ of a voice │ that is still!<rr-note-right>anapest, anapest, anapest</rr-note-right></rr-slack-line>
+                    <rr-slack-line>
+                        <syl-short>And</syl-short>&nbsp;<syl-short>the</syl-short>&nbsp;<syl-long>state</syl-long>│&nbsp;<syl-short>ly</syl-short>&nbsp;<syl-long>ships</syl-long>&nbsp;│&nbsp;<syl-short>go</syl-short>&nbsp;<syl-long>on</syl-long>
+                        <rr-note-right>anapest,&nbsp;iamb,&nbsp;iamb</rr-note-right>
+                    </rr-slack-line>
+                    <rr-slack-line>
+                        <rr-line-note>10</rr-line-note>  
+                        <syl-short>To</syl-short>&nbsp;<syl-short>their</syl-short>&nbsp;<syl-long>ha</syl-long>│<syl-short>ven</syl-short>&nbsp;<syl-long>under</syl-long>&nbsp;│&nbsp;<syl-short>the</syl-short>&nbsp;<syl-short>hill</syl-short>;
+                        <rr-note-right>anapest, amphibrach, iamb</rr-note-right>
+                    </rr-slack-line>  
+                    <rr-slack-line>
+                        <syl-short>But</syl-short>&nbsp;<syl-long>O</syl-long>&nbsp;│<syl-short>for</syl-short>&nbsp;<syl-short>the</syl-short>&nbsp;<syl-long>touch</syl-long>&nbsp;│<syl-short>of</syl-short>&nbsp;<syl-short>a</syl-short>&nbsp;<syl-long>van</syl-long>│<syl-short>ish’d</syl-short>&nbsp;<syl-long>hand</syl-long>,
+                        <rr-note-right>iamb,&nbsp;anapest,&nbsp;anapest,&nbsp;iamb</rr-note-right>
+                    </rr-slack-line>
+                    <rr-slack-line>
+                        <syl-short>And</syl-short>&nbsp;<syl-short>the</syl-short>&nbsp;<syl-long>sound</syl-long>&nbsp;│&nbsp;<syl-short>of</syl-short>&nbsp;<syl-short>a</syl-short>&nbsp;<syl-long>voice</syl-long>&nbsp;│&nbsp;<syl-short>that</syl-short>&nbsp;<syl-short>is</syl-short>&nbsp;<syl-long>still</syl-long>!
+                        <rr-note-right>anapest,&nbsp;anapest,&nbsp;anapest</rr-note-right>
+                    </rr-slack-line>
                 </rr-slack-block>
 
                 <rr-slack-block>
-                    <rr-slack-line>   /           /           /</rr-slack-line>
-                    <rr-slack-line>Break, │ break, │ break,<rr-note-right>three stressed syllables</rr-note-right></rr-slack-line>
-                    <rr-slack-line>       u   u     /   u   u      /         u   /</rr-slack-line>
-                    <rr-slack-line>    At the foot │ of thy crags, │ O Sea!<rr-note-right>anapest, anapest, iamb<rr-note-right></rr-slack-line>
-                    <rr-slack-line>  u    u     /     u      /          u  u   /        u     u   /</rr-slack-line>    
-                    <rr-slack-line>15  But the ten│der grace │ of a day │ that is dead<rr-note-right>anapest, iamb, anapest, anapest<rr-note-right></rr-slack-line>
-                    <rr-slack-line>        u    u   /      u        /       u   /</rr-slack-line>
-                    <rr-slack-line>    Will never │ come back │ to me.<rr-note-right>anapest, iamb, iamb<rr-note-right></rr-slack-line>
+                    <rr-slack-line>
+                        <syl-long>Break</syl-long>,&nbsp;│&nbsp;<syl-long>break</syl-long>,&nbsp;│&nbsp;<syl-long>break</syl-long>,
+                        <rr-note-right>three&nbsp;stressed&nbsp;syllables</rr-note-right>
+                    </rr-slack-line>
+                    <rr-slack-line>
+                        <syl-short>At</syl-short>&nbsp;<syl-short>the</syl-short>&nbsp;<syl-long>foot</syl-long>&nbsp;│&nbsp;<syl-short>of</syl-short>&nbsp;<syl-short>thy</syl-short>&nbsp;<syl-long>crags</syl-long>,&nbsp;│&nbsp;<syl-short>O</syl-short>&nbsp;<syl-long>Sea</syl-long>!
+                        <rr-note-right>anapest,>&nbsp;anapest,>&nbsp;iamb</rr-note-right>
+                    </rr-slack-line>
+                    <rr-slack-line>
+                        <rr-line-note>15</rr-line-note>
+                        <syl-short>But</syl-short>&nbsp;<syl-short>the</syl-short>&nbsp;<syl-long>ten</syl-long>│<syl-short>der</syl-short>&nbsp;<syl-long>grace</syl-long>&nbsp;│&nbsp;<syl-short>of</syl-short>&nbsp;<syl-short>a</syl-short>&nbsp;<syl-long>day</syl-long>&nbsp;│&nbsp;<syl-short>that</syl-short>&nbsp;<syl-short>is</syl-short>&nbsp;<syl-long>dead</syl-long>
+                        <rr-note-right>anapest,&nbsp;iamb,&nbsp;anapest,&nbsp;anapest</rr-note-right>
+                    </rr-slack-line>
+                    <rr-slack-line>
+                        <syl-short>Will</syl-short>&nbsp;<syl-short>ne</syl-short><syl-long>ver</syl-long>&nbsp;│&nbsp;<syl-short>come</syl-short>&nbsp;<syl-long>back</syl-long>&nbsp;│&nbsp;<syl-short>to</syl-short>&nbsp;<syl-long>me</syl-long>.
+                        <rr-note-right>anapest,&nbsp;iamb,&nbsp;iamb</rr-note-right>
+                    </rr-slack-line>
                 </rr-slack-block>
+            </rr-slack-map>
 
-                </rr-slack-map>
             </p>
 
             <p>

@@ -396,6 +396,7 @@ rr-slack-block{
 }
 rr-slack-line{
     display: block;
+    margin: 15px 0px;
 }
 rr-line-note{
     color: blue;
@@ -412,4 +413,22 @@ rr-float-r-fig{
 rr-float-l-fig{
     position: relative;
     float: left;
+}
+syl-short{
+    line-height: 2px;
+}
+syl-long{
+    line-height: 2px;
+}
+syl-short::after{
+    content:"u";
+    top: -12px;
+    position: relative;
+    right: 10px;
+}
+syl-long::after{
+    content:"/";
+    top: -12px;
+    position: relative;
+    right: 10px;
 }

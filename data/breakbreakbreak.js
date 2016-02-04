@@ -2258,17 +2258,69 @@ sounding.value('ESSAYS', [{
     "@type": "rr:Essay",
     "label": "To Break or not to Break?",
     "metadataResources": [],
-    "metadata": [{
+    "metadata": [
+        {
             "label": "author",
             "value": "Phyllis Weliver"
-        }, {
+        }, 
+        {
             "label": "title",
             "value": "To Break or not to Break?"
-        }, {
+        }, 
+        {
             "label": "subtitle",
             "value": "Recording Tennyson’s Recitation of ‘Break, Break, Break’ in Music"
-        }],
+        }
+    ],
     "resource": "data/essayBreakToBreak.xml",
+    "style": "data/essayStyle.xsl",
+    "footnotes": [],
+    "endnotes": [],
+    "indices": [],
+    "comments": [],
+    "otherContent": []
+},
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "EssayManuscriptBooks",
+    "@type": "rr:Essay",
+    "label": "Emily Tennyson's Music Manuscript Books",
+    "metadataResources": [],
+    "metadata": [
+        {
+            "label": "author",
+            "value": "Phyllis Weliver"
+        }, 
+        {
+            "label": "title",
+            "value": "Emily Tennyson's Music Manuscript Books"
+        }
+    ],
+    "resource": "data/essayManuscriptBooks.xml",
+    "style": "data/essayStyle.xsl",
+    "footnotes": [],
+    "endnotes": [],
+    "indices": [],
+    "comments": [],
+    "otherContent": []
+},
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "EssayBreakVariability",
+    "@type": "rr:Essay",
+    "label": "Variability and Musical Motion in ‘Break, break, break’",
+    "metadataResources": [],
+    "metadata": [
+        {
+            "label": "author",
+            "value": "Phyllis Weliver"
+        }, 
+        {
+            "label": "title",
+            "value": "Variability and Musical Motion in ‘Break, break, break’"
+        }
+    ],
+    "resource": "data/essayBreakVariability.xml",
     "style": "data/essayStyle.xsl",
     "footnotes": [],
     "endnotes": [],

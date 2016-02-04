@@ -355,3 +355,53 @@ TEI figcaption {
     background: rgba(255,255,255,.7);
     padding: .5em;
 }
+rr-inline-fig{
+    width:100%;
+    min-height:12rem;
+    background: #FFF;
+    position:relative;
+    max-height: 30rem;
+    max-width:60rem;
+    padding: .5em;
+    margin: 1em auto;
+    border: solid thin silver;
+    overflow: hidden;
+    display: inline-table;
+}
+/* bibliography notes */
+rr-bib{
+    display: none;
+}
+
+rr-poem{
+    display :block;
+    font-size: 70%;
+    position: relative;
+    margin: 0 auto;
+}
+rr-poem-block{
+    display: block;
+}
+rr-poem-line{
+    display: block;
+}
+rr-slack-map{
+    display: block;
+    font-size: 70%;
+    position: relative;
+    margin: 0 auto;
+}
+rr-slack-block{
+    display: block;
+}
+rr-slack-line{
+    display: block;
+}
+rr-line-note{
+    color: blue;
+    font-size: 80%;
+}
+rr-note-right{
+    position: relative;
+    right: 0px;
+}

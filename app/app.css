@@ -405,3 +405,11 @@ rr-note-right{
     position: relative;
     right: 0px;
 }
+rr-float-r-fig{
+    position: relative;
+    float:right;
+}
+rr-float-l-fig{
+    position: relative;
+    float: left;
+}

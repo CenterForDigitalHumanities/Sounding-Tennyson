@@ -2191,61 +2191,62 @@ sounding.value('TEXT', [{
         "@type": "cnt:chars",
         "evidence": ["anno_02"],
         "@value": "The Music Album has fermatas, drawing out the note, which don't exist in the Pink and Green versions."
-    },
-    {
-        "@id": "TextToBreak",
-        "@context": "http://iiif.io/api/presentation/2/context.json",
-        "@type": "cnt:chars",
-        "@value": "Break, break, break occupies a special place in that it is the only poem that Emily Tennyson set and that her husband, Alfred Tennyson, later recorded on a phonograph. The poet laureate may have deemed it especially worthy of preservation because during his lifetime it had already attracted myriad scansions by composers and poetic theorists. The poem still elicits much critical attention regarding how to speak the first line. The poem has uneven line lengths, varying from seven to eleven beats in addition to the famous three-beat line \"Break, break, break.\" Do we read to the commas between \"Break, break, break,\" thereby stretching the line approximately to the length of the rest of the poem's lines? If we break, how long should the pause be? Or do we roll through the commas as Tennyson frequently does in the extant phonograph recitations. In her diary, Emily Tennyson gestures to the last every time that she mentions the poem. She leaves out the commas when noting that Alfred read Break Break in 1857, a child says Break break to her in 1859, and when Elizabeth Jane, Lady  Charlemont and wife of James Molyneux, 3rd earl of Charlemont reads Break break break in the poet's presence in 1871: This, the only extant copy of the diary, was re-written by Emily for Hallam's use in preparing Tennyson’s memoir after his death. The diarist may have consistently omitted the commas because she was writing hurriedly. Emily's piano/vocal scores give us some idea of her husband's recitations, as a note from their son makes clear. In the fly-leaf of one of his mother's four music manuscript books, Hallam made a note at the prompting of a prominent composer who also set some of Tennyson's poems: If we examine Emily Tennyson's piano/vocal score of Break, Break, Break, we see that she heard the first line of poem as in the manuscript: It does not include a comma after the third \"break\" as does the published version. The musical setting similarly breaks after the first two words, and then runs over the line break. With fermatas and rests on the first two \"breaks,\" singing this music demands melodramatic emphasis on each of the first two words, before continuing onto the ideas of the rest of the stanza: the speaker's heartbreak heard in the breaking surf. When \"Break, break, break\" repeats as the first line of the last stanza, we see that Emily sets the words both to and against punctuation. Reading the two lines as published poetry, they look exactly the same. However, the commas are no longer strongly marked by rests in Emily's setting of line 13. Of course, there is inherent separation between the three stressed words because of the concluding \"k\", but the overall effect is to carry on.",
-        "formatting": [
-            {
-                "@type": "oa:Annotation",
-                "on": "TextToBreak#offset=0,19",
-                "motivation": "rr:formatting",
-                "oa:hasStyle": "MainStyle#poem,title"
-            }, {
-                "@type": "oa:Annotation",
-                "on": "TextToBreak#offset=995,1006",
-                "motivation": "rr:formatting",
-                "oa:hasStyle": "MainStyle#poem,title"
-            }, {
-                "@type": "oa:Annotation",
-                "on": "TextToBreak#offset=1029,1040",
-                "motivation": "rr:formatting",
-                "oa:hasStyle": "MainStyle#poem,title"
-            }, {
-                "@type": "oa:Annotation",
-                "on": "TextToBreak#offset=1154,1171",
-                "motivation": "rr:formatting",
-                "oa:hasStyle": "MainStyle#poem,title"
-            }, {
-                "@type": "oa:Annotation",
-                "on": "TextToBreak#offset=1754,1773",
-                "motivation": "rr:formatting",
-                "oa:hasStyle": "MainStyle#poem,title"
-            }, {
-                "@type": "oa:Annotation",
-                "on": "TextToBreak#offset=0,850",
-                "motivation": "rr:formatting",
-                "oa:hasStyle": "MainStyle#paragraph"
-            }, {
-                "@type": "oa:Annotation",
-                "on": "TextToBreak#offset=851,1423",
-                "motivation": "rr:formatting",
-                "oa:hasStyle": "MainStyle#paragraph"
-            }, {
-                "@type": "oa:Annotation",
-                "on": "TextToBreak#offset=1424,2270",
-                "motivation": "rr:formatting",
-                "oa:hasStyle": "MainStyle#paragraph"
-            }, {
-                "@type": "oa:Annotation",
-                "on": "TextToBreak#offset=2271,2713",
-                "motivation": "rr:formatting",
-                "oa:hasStyle": "MainStyle#paragraph"
-            }
-        ]
-    }]);
+    }
+    // ,{
+    //     "@id": "TextToBreak",
+    //     "@context": "http://iiif.io/api/presentation/2/context.json",
+    //     "@type": "cnt:chars",
+    //     "@value": "Break, break, break occupies a special place in that it is the only poem that Emily Tennyson set and that her husband, Alfred Tennyson, later recorded on a phonograph. The poet laureate may have deemed it especially worthy of preservation because during his lifetime it had already attracted myriad scansions by composers and poetic theorists. The poem still elicits much critical attention regarding how to speak the first line. The poem has uneven line lengths, varying from seven to eleven beats in addition to the famous three-beat line \"Break, break, break.\" Do we read to the commas between \"Break, break, break,\" thereby stretching the line approximately to the length of the rest of the poem's lines? If we break, how long should the pause be? Or do we roll through the commas as Tennyson frequently does in the extant phonograph recitations. In her diary, Emily Tennyson gestures to the last every time that she mentions the poem. She leaves out the commas when noting that Alfred read Break Break in 1857, a child says Break break to her in 1859, and when Elizabeth Jane, Lady  Charlemont and wife of James Molyneux, 3rd earl of Charlemont reads Break break break in the poet's presence in 1871: This, the only extant copy of the diary, was re-written by Emily for Hallam's use in preparing Tennyson’s memoir after his death. The diarist may have consistently omitted the commas because she was writing hurriedly. Emily's piano/vocal scores give us some idea of her husband's recitations, as a note from their son makes clear. In the fly-leaf of one of his mother's four music manuscript books, Hallam made a note at the prompting of a prominent composer who also set some of Tennyson's poems: If we examine Emily Tennyson's piano/vocal score of Break, Break, Break, we see that she heard the first line of poem as in the manuscript: It does not include a comma after the third \"break\" as does the published version. The musical setting similarly breaks after the first two words, and then runs over the line break. With fermatas and rests on the first two \"breaks,\" singing this music demands melodramatic emphasis on each of the first two words, before continuing onto the ideas of the rest of the stanza: the speaker's heartbreak heard in the breaking surf. When \"Break, break, break\" repeats as the first line of the last stanza, we see that Emily sets the words both to and against punctuation. Reading the two lines as published poetry, they look exactly the same. However, the commas are no longer strongly marked by rests in Emily's setting of line 13. Of course, there is inherent separation between the three stressed words because of the concluding \"k\", but the overall effect is to carry on.",
+    //     "formatting": [
+    //         {
+    //             "@type": "oa:Annotation",
+    //             "on": "TextToBreak#offset=0,19",
+    //             "motivation": "rr:formatting",
+    //             "oa:hasStyle": "MainStyle#poem,title"
+    //         }, {
+    //             "@type": "oa:Annotation",
+    //             "on": "TextToBreak#offset=995,1006",
+    //             "motivation": "rr:formatting",
+    //             "oa:hasStyle": "MainStyle#poem,title"
+    //         }, {
+    //             "@type": "oa:Annotation",
+    //             "on": "TextToBreak#offset=1029,1040",
+    //             "motivation": "rr:formatting",
+    //             "oa:hasStyle": "MainStyle#poem,title"
+    //         }, {
+    //             "@type": "oa:Annotation",
+    //             "on": "TextToBreak#offset=1154,1171",
+    //             "motivation": "rr:formatting",
+    //             "oa:hasStyle": "MainStyle#poem,title"
+    //         }, {
+    //             "@type": "oa:Annotation",
+    //             "on": "TextToBreak#offset=1754,1773",
+    //             "motivation": "rr:formatting",
+    //             "oa:hasStyle": "MainStyle#poem,title"
+    //         }, {
+    //             "@type": "oa:Annotation",
+    //             "on": "TextToBreak#offset=0,850",
+    //             "motivation": "rr:formatting",
+    //             "oa:hasStyle": "MainStyle#paragraph"
+    //         }, {
+    //             "@type": "oa:Annotation",
+    //             "on": "TextToBreak#offset=851,1423",
+    //             "motivation": "rr:formatting",
+    //             "oa:hasStyle": "MainStyle#paragraph"
+    //         }, {
+    //             "@type": "oa:Annotation",
+    //             "on": "TextToBreak#offset=1424,2270",
+    //             "motivation": "rr:formatting",
+    //             "oa:hasStyle": "MainStyle#paragraph"
+    //         }, {
+    //             "@type": "oa:Annotation",
+    //             "on": "TextToBreak#offset=2271,2713",
+    //             "motivation": "rr:formatting",
+    //             "oa:hasStyle": "MainStyle#paragraph"
+    //         }
+    //     ]
+    // }
+    ]);
 sounding.value('AGENTS', [{
         "@id": "sounding/user/01",
         "@type": "foaf:Person",
@@ -2273,7 +2274,7 @@ sounding.value('ESSAYS', [{
         }
     ],
     "resource": "data/essayBreakToBreak.xml",
-    "style": "data/essayStyle.xsl",
+    "style": "",
     "footnotes": [],
     "endnotes": [],
     "indices": [],
@@ -2297,7 +2298,7 @@ sounding.value('ESSAYS', [{
         }
     ],
     "resource": "data/essayManuscriptBooks.xml",
-    "style": "data/essayStyle.xsl",
+    "style": "",
     "footnotes": [],
     "endnotes": [],
     "indices": [],
@@ -2321,13 +2322,38 @@ sounding.value('ESSAYS', [{
         }
     ],
     "resource": "data/essayBreakVariability.xml",
+    "style": "",
+    "footnotes": [],
+    "endnotes": [],
+    "indices": [],
+    "comments": [],
+    "otherContent": []
+},
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "EssayEmilysMusic",
+    "@type": "rr:Essay",
+    "label": "Performance and Publication of Emily Tennyson’s Music",
+    "metadataResources": [],
+    "metadata": [
+        {
+            "label": "author",
+            "value": "Phyllis Weliver"
+        }, 
+        {
+            "label": "title",
+            "value": "Performance and Publication of Emily Tennyson’s Music"
+        }
+    ],
+    "resource": "data/essayEmilysMusic.xml",
     "style": "data/essayStyle.xsl",
     "footnotes": [],
     "endnotes": [],
     "indices": [],
     "comments": [],
     "otherContent": []
-}]);
+}
+]);
 
 sounding.value('ANNOTATIONS', [{
         "@id": "anno_01",

@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Performance and Publication of Emily Tennyson’s Music</title>
+                <author>Phyllis Weliver</author>
+                <respStmt>
+                    <resp>composed by</resp>
+                    <name>Bryan Haberberger</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Center for Digital Humanities</distributor>
+                <address>
+                    <addrLine>Saint Louis University</addrLine>
+                </address>
+                <availability>
+                    <p>Freely available on a non-commercial basis.</p>
+                </availability>
+                <date when="2016">2016</date>
+            </publicationStmt>
+            <sourceDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Essay generated for the Sounding Tennyson project, creating an interactive 
+                    exhibit for exploring resources and research around the poems and music of Tennyson.</p>
+            </projectDesc>
+            <editorialDecl>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>
+                    <date when="2016-01-19">19 Jan 2016</date> First build by BJH</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <rr-float-l-fig>
+                    <figure>
+                    <img src="media/fig13.png"/>
+                    <figcaption>Figure 13: Natalie Janotha to Emily Tennyson, 15 May 1892, Catalogue 6873, TRC.</figcaption>
+                </figure>
+                </rr-float-l-fig>
+                Alfred Tennyson’s recitations – captured in part by his wife’s vocal lines – reached a fairly wide audience through performance and publication. Emily Tennyson published sheet music over the course of almost thirty years for solo voice and piano. It is more than we might expect given Emily’s well-known delicacy.
+            </p>
+            <p>
+                Her music was published either with her original accompaniment or with an arrangement provided by prominent musicians and composers. The former comprise:
+                    <rr-line-indent>(1) “The Song of the Alma River”, music and words Emily Tennyson, both in E major and G major (London: Cramer [1864]). [please put fn in popout] </rr-line-indent>
+                    <rr-line-indent>(2) “Two Child-songs,” music Emily Tennyson, words Alfred Tennyson (London: Novello, [1880]).</rr-line-indent>
+                    The arrangements begin to appear more regularly in the 1880s and 1890s. In 1882, Charles Villiers Stanford arranged and edited Emily’s setting of “Hands all round,” words by Tennyson, in the keys of E and F (London: Boosey, 1882). This song was also arranged for military band by Kappey (London: Boosey, 1882).  Three years later, Frederick Bridge arranged “The Gordon Boys’ Morning & Evening Hymns,” words edited by Tennyson and music by Emily (London: Boosey, [1885]). Most numerous of all are Natalie Janotha’s arrangements of Emily Tennyson’s musical settings of Tennyson’s poems. These published piano/vocal scores are:
+
+                    <rr-line-indent>(1) Songs by Lord Tennyson (London: Chapell [1892]):</rr-line-indent>
+                    <rr-line-indent2>(a) “Look Through Mine Eyes”</rr-line-indent2>
+                    <rr-line-indent2>(b) “In Love, If Love, Be Love”</rr-line-indent2>
+                    <rr-line-indent2>(c) “To Sleep, To Sleep”</rr-line-indent2>
+                    <rr-line-indent2>(d) “Home they brought him”</rr-line-indent2>
+                    <rr-line-indent2>(e) “Lady Let the Rolling Drums”</rr-line-indent2>
+                    <rr-line-indent2>(f) “Airy Fairy Lilian”</rr-line-indent2>
+                    <rr-line-indent2>(g) “Riflemen Form!”</rr-line-indent2>
+                    <rr-line-indent>(3) “Sweet and Low,” The Girl’s Own Paper (1895): 356–8.</rr-line-indent>
+                    <rr-line-indent>(4) “Break, break, break,” Sunday Hours 2 (1897): 568–72.</rr-line-indent2>
+                    For Tennyson’s funeral, Bridge arranged Emily’s setting of “The Two Voices” for four voices (SATB) and organ. It was subsequently published by Novello (1892). After Emily’s death, Bridge arranged her melody for “A Call to Arms” (London: Novello, [1914].
+
+            </p>
+            <p>
+                Janotha, a Polish pianist who had been a student of Clara Schumann, was dedicated to promoting as well as publishing Emily’s compositions. Although adding a Schumannesque mark to the accompaniments, Janotha’s arrangements remained mostly true to the vocal line. When she did not, Emily protested. Janotha extravagantly, emotionally responded:
+                <figure>
+                    <img src="media/fig14.png"/>
+                    <figcaption>Figure 14. Janotha to Emily Tennyson, 15 May 1892, catalogue 6873, TRC.</figcaption>
+                </figure>
+                Janotha involved English composer Charles Wood in making the arrangements. Here, we see that Janotha corrected changes that Wood introduced to Emily’s vocal and piano lines, but without complete fidelity to the original melody. Emily objected.
+            </p>
+            <p>
+                In the arrangements, Janotha thought like a pianist, not a singer. We see this when she maintained the keys of Emily’s settings. The difficulties of Emily’s original key choices are highlighted by a more accomplished composer, Stanford, when setting “Hands all Round” for Charles Santley to sing: [please put this footnote transcription into a link] 18
+                 <figure>
+                    <img src="media/fig15.png"/>
+                </figure>
+                 <figure>
+                    <img src="media/fig16.png"/>
+                    <figcaption>Figure 15. Janotha to Emily Tennyson, 15 May 1892, catalogue 6873, TRC.</figcaption>
+                </figure>
+                Stanford suspects for Emily, too, that a pianist’s instincts (and the look of the staves) guide her song-setting. A baritone cannot sing so low a range as that in which Emily composed – not “with any effect”, at least. 
+            </p>
+            <p>
+                I was grateful to see this choice being made by Stanford, for if a baritone has trouble singing so low, a soprano certainly cannot. I had already discovered these difficulties while learning the music. In consultation with pianist and musicologist, Francesco Izzo, I also made the decision to transpose Emily’s music up. Performing music in different keys from the original was standard practice in the nineteenth century. It was also usual to publish music in more than one key, as Stanford mentions in his letter. 
+            </p>
+            <p>
+                Before the Janotha arrangements were published, she promoted the music through performance. The pianist introduced the compositions semi-privately for about 500 students at Balliol College, Oxford on 25 January 1890; at the Stratford Shakespeare fête in March 1891 (a benefit for Shakespeare’s library); in elite salons in 1891; and publically on the concert stage in March of the same year.  In salons, a trained performer of the highest caliber presented the songs. Mrs. Edith Lyttelton (née Santley) performed Janotha’s arrangement of Emily’s music at the home of Liberal MP, Charles Flower in February 1891 and may have also sang as many as four of them at Mary Gladstone Drew’s concert on 23 November 1891.  Daughter of the celebrated baritone Charles Santley, Edith had frequented the concert stage before she married Robert Lyttelton, a nephew of Prime Minister Gladstone. 
+            </p>
+            <p>
+                When seven of the piano/vocal pieces were presented on 13 March 1891 at St James’s Hall in London, the audience responded well, even encoring “Airy Fairy Lilian.” The Musical Times appreciated “Airy, fairy Lilian” along with “To Sleep” as showing “a higher standard of merit” than the rest of the series.  The press noticed with differing levels of approbation or censure Janotha’s heavily ornate, Schumannesque accompaniments to Emily’s melodies, but they also commented on the vocal lines. The reporter from Truth wrote, “Lady Tennyson’s melodies are, for the most part, entirely unconventional, the irregular rhythms apparently being the result of an attempt to fit the words, but the songs are nevertheless an agreeable change from the average drawing room ballad of the period.” Likewise, the Standard: “She avoids formal rhythms and sequential passages, preferring to follow the flow of the words, whether even or uneven.” 22
+            </p>
+            <p>
+                Janotha kept Emily Tennyson appraised about the pre-publication performances of her songs. [please put this footnote transcription into a link]  Celebrated English soprano Liza Lehmann, who appeared on the same St James’s Hall concert singing Gounod and an English ballad, was impressed enough to ask for the songs.  Later, interest was shown by acclaimed Canadian soprano Emma Albani who “promised to introduce them at Court.”  Within Society, too, Janotha reported to Emily Tennyson the result of the concert: “this public does not forget them, + every – everywhere they mention to me – ‘are the Songs of Lady T. out?’ – at Leeds – ‘ah! your concert was a success – I mean the concert where the Songs were given’ and so on!…”.  Janotha’s arrangements sold out through pre-orders in October 1892, with a few copies reserved and sent to Queen Victoria, the Princess, pianist and composer Clara Schumann, virtuoso violinist Joseph Joachim, the German Empress, baritone George Henschel, Liza Lehmann, baritone Harry Plunket Greene (Hubert Parry’s son-in-law), and others. 27
+            </p>
+            <p>
+                Something of Janotha’s motivation may be glimpsed by an astonishing piece of advice that she gave to Emily just twenty days after Tennyson’s death. Janotha wrote to Emily to say that the first edition of Songs by Lord Tennyson, “though not yet out – is already sold out!!!!!!!!!”  She continued her address to the grieving widow: [please put this footnote transcription into a link] 
+                <figure>
+                    <img src="media/fig17.png"/>
+                </figure>
+                <figure>
+                    <img src="media/fig18.png"/>
+                </figure>
+                <figure>
+                    <img src="media/fig19.png"/>
+                    <figcaption>Figure 16. Janotha to Emily Tennyson, 26 October 1892, catalogue 3814, TRC.</figcaption>
+                </figure>
+            </p>
+
+            <p>
+                <rr-bib>
+                    11 It is unclear how much the materials were cared for between Hallam’s death and 1963, when the stored items were unpacked at the Tennyson Research Centre under Charles Tennyson’s oversight (grandson to the poet). Grace Timmins to Phyllis Weliver, emails, 24 and 28 October 2014.
+
+                    12 For discussions of musical albums, see Michelle Meinhart, “Mourning and Memorial: Memory and Private Mourning in an English Country House during the First World War: Lady Alda Hoare’s Musical Shrine to a Lost Son,” Journal of Musicological Research 33 (2014): 39-95; Jeanice Brooks, “Musical Monuments for the Country House: Music, Collection, and Display at Tatton Park,” Music & Letters 91.4 (2010): 513-35
+
+                    13 Hallam Tennyson, Alfred Lord Tennyson: A Memoir by his Son, 2 vols (1897; New York: Macmillan, 1898) 1: 77.
+
+                    14 Ibid.
+
+                    15 Grace Timmins, email to author, 2/2/16.
+                </rr-bib>
+            </p>
+        </body>
+    </text>
+</TEI>

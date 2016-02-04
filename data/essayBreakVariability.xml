@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Variability and Musical Motion in <rr-title>Break,break,break</rr-title></title>
+                <author>Phyllis Weliver</author>
+                <respStmt>
+                    <resp>composed by</resp>
+                    <name>Bryan Haberberger</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Center for Digital Humanities</distributor>
+                <address>
+                    <addrLine>Saint Louis University</addrLine>
+                </address>
+                <availability>
+                    <p>Freely available on a non-commercial basis.</p>
+                </availability>
+                <date when="2016">2016</date>
+            </publicationStmt>
+            <sourceDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Essay generated for the Sounding Tennyson project, creating an interactive 
+                    exhibit for exploring resources and research around the poems and music of Tennyson.</p>
+            </projectDesc>
+            <editorialDecl>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>
+                    <date when="2016-01-19">19 Jan 2016</date> First build by BJH</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                In 1879, Tennsyon read aloud his poem, “The Revenge,” to Joseph Joachim, a Hungarian-born friend of Brahms and a frequent London concertizer. Tennyson’s London gatherings often featured recitations by the laureate and performances by greatest violinist of the day. When others were gone, the bard liked to smoke and talk with the virtuoso.
+            </p>
+            <p>
+                On this particular occasion, Tennyson followed his recitation with the query, “‘Could you do that on your violin’ – the peace of nature after the thunder of the battle.”   If Joachim began with the thunder, there is good cause to think that he would have rendered nature’s peace with a sudden contrast. In one of the pieces for which Joachim was best known, <rr-link-out xlink:type="simple" xlink:href="https://www.youtube.com/watch?v=lV_YXtUs_Ow">Brahms’ Hungarian Dance in D Minor, No. 2</rr-link-out>, we can hear the tempo picking up and slowing down in an alternation that defies the regularity of any metronome. Of course, Brahms wrote the piece with tempo shifts (ritardando [gradually slower] at the end of phrases, vivace [lively] as a new phrase begins), but Joachim’s transitions are more unpredictable than modern performance practice. We can hear the contrast in a recording of the same piece by the fabulous German violinist, <rr-link-out xlink:type="simple" xlink:href="https://www.youtube.com/watch?v=Q5VbwHGRrwE">Anne-Sophie Mutter</rr-link-out>. It is easy to hear a freer rhythm in Joachim’s version.
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                When "Break, break, break" repeats as the first line of the last stanza, we see that Emily sets the words both to and against punctuation. Reading the two lines as published poetry, they look exactly the same. However, the commas are no longer strongly marked by rests in Emily's setting of line 13. Of course, there is inherent separation between the three stressed words because of the concluding "k", but the overall effect is to carry on.
+            </p>
+        </body>
+    </text>
+</TEI>

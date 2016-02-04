@@ -1,0 +1,173 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Variability and Musical Motion in <rr-title>Break,break,break</rr-title></title>
+                <author>Phyllis Weliver</author>
+                <respStmt>
+                    <resp>composed by</resp>
+                    <name>Bryan Haberberger</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Center for Digital Humanities</distributor>
+                <address>
+                    <addrLine>Saint Louis University</addrLine>
+                </address>
+                <availability>
+                    <p>Freely available on a non-commercial basis.</p>
+                </availability>
+                <date when="2016">2016</date>
+            </publicationStmt>
+            <sourceDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Essay generated for the Sounding Tennyson project, creating an interactive 
+                    exhibit for exploring resources and research around the poems and music of Tennyson.</p>
+            </projectDesc>
+            <editorialDecl>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>
+                    <date when="2016-01-19">19 Jan 2016</date> First build by BJH</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                In 1879, Tennsyon read aloud his poem, “The Revenge,” to Joseph Joachim, a Hungarian-born friend of Brahms and a frequent London concertizer. Tennyson’s London gatherings often featured recitations by the laureate and performances by greatest violinist of the day. When others were gone, the bard liked to smoke and talk with the virtuoso.
+            </p>
+            <p>
+                On this particular occasion, Tennyson followed his recitation with the query, “‘Could you do that on your violin’ – the peace of nature after the thunder of the battle.”8   If Joachim began with the thunder, there is good cause to think that he would have rendered nature’s peace with a sudden contrast. In one of the pieces for which Joachim was best known, <rr-link-out xlink:type="simple" xlink:href="https://www.youtube.com/watch?v=lV_YXtUs_Ow">Brahms’ Hungarian Dance in D Minor, No. 2</rr-link-out>, we can hear the tempo picking up and slowing down in an alternation that defies the regularity of any metronome. Of course, Brahms wrote the piece with tempo shifts (ritardando [gradually slower] at the end of phrases, vivace [lively] as a new phrase begins), but Joachim’s transitions are more unpredictable than modern performance practice. We can hear the contrast in a recording of the same piece by the fabulous German violinist, <rr-link-out xlink:type="simple" xlink:href="https://www.youtube.com/watch?v=Q5VbwHGRrwE">Anne-Sophie Mutter</rr-link-out>. It is easy to hear a freer rhythm in Joachim’s version.
+            </p>
+            <p>
+                Emotional variability is also a good way of thinking about Emily Tennyson’s musical treatment of “Break, break, break.” Rapid alterations of modes and moods can be seen in the key changes of Emily’s setting:
+
+                <rr-poem>
+                    <rr-poem-block>
+                        <e-minor><rr-poem-line>Break, break, break,</rr-poem-line>
+                        <rr-poem-line>  On thy cold gray stones, O Sea!</rr-poem-line>
+                        <rr-poem-line>And I would that my tongue could utter <rr-note-right>[e minor]</rr-note-right></rr-poem-line></e-minor>
+                        <b-major><rr-poem-line>  The thoughts that arise in me.<rr-note-right>[B maj; modulates to V, typical 1st strophe]</rr-note-right></rr-poem-line></b-major>
+                    </rr-poem-block>
+                    
+                    <e-major>
+                    <rr-poem-block> 
+                    <rr-poem-line><rr-line-note>5</rr-line-note> O well for the fisherman’s boy,</rr-poem-line>
+                    <rr-poem-line>That he shouts with his sister at play!</rr-poem-line>
+                    <rr-poem-line>O well for the sailor lad,</rr-poem-line>
+                    <rr-poem-line> That he sings in his boat on the bay!<rr-note-right>[E major]</rr-note-right></rr-poem-line>
+                    </rr-poem-block>
+                    </e-major> 
+
+                    <rr-poem-block>
+                        <e-major><rr-poem-line>And the stately ships go on</rr-poem-line>
+                        <rr-poem-line><rr-line-note>10</rr-line-note>     To their haven under the hill;</rr-poem-line>
+                        <rr-poem-line>But O for the</e-major> <e-minor>touch of a vanish’d hand,<e-minor>     <e-major><rr-note-right>[E major, except verse in<e-major><rr-note-right></rr-poem-line>
+                        <rr-poem-line> And the sound of a voice that is still!<e-minor><rr-note-right>blue -- e minor!]<rr-note-right><e-minor></rr-poem-line>
+                    </rr-poem-block> 
+
+                    <rr-poem-block>
+                        <rr-poem-line>Break, break, break</rr-poem-line>
+                        <rr-poem-line>  At the foot of thy crags, O Sea!<rr-note-right>[e minor]</rr-note-right></rr-poem-line>
+                        <rr-poem-line><rr-line-note>15</rr-line-note>   But the tender grace of a day that is dead</rr-poem-line>
+                        <rr-poem-line>  Will never come back to me.<rr-note-right>[E major]</rr-note-right></rr-poem-line>
+                    </rr-poem-block>
+                </rr-poem>
+                Because of an abrupt change to E minor in the middle of line 11 as well as the chromatic notes (moving by half-steps), “touch of a vanish’d hand” gains harmonic emphasis. 
+            </p>
+            <p>
+                The song changes mood every two to four lines, too, with the help of fermatas between stanzas, pausing and punctuating the shifting emotions. As we can hear when listening to the song, the tragic first stanza transitions to a chirpy second stanza about shouting and singing boys. The third stanza solemnly considers other worlds: after the major keys of the stately ships and the grave (“haven under the hill”), the chromatic slippage out of the tonal center makes “the touch of a vanished hand” sound like ghostly yearning. The final stanza begins with a repetition of the first line, but in variation since the commas are no longer strongly marked with rests [Link to essay, “To Break or not to Break?”]. Halfway through this final stanza, “But” (line 15) signals a further change in direction, with a musical language that echoes that of the “stately ships go on”, thereby casting a religious overtone to “tender grace of a day that is dead”. Such changes in mood can be reflected temporally, too: through tempo shifts after each fermata as well as in the meter of the poem. This strong evidence suggests that Tennyson’s desire to preserve the sound meaning of the poem (by double recordings of “Break, break, break,” in music and on the phonograph’s wax cylinder) was because the poem had several uncommon sonorous moments that included, but were not limited to, how to read “Break, break, break.”
+            </p>
+            <p>
+                The musical setting helps us to understand how Emily heard the poem in a free anapaestic meter. Mostly iambs (slack-stress) alternate with the anapests (slack-slack-stress), but “Break, break, break,” also has an amphribrach (slack-stress-slack) line or two, a pyrrhic (two slacks) and, in early drafts, a catalytic line (the trochee at the end lacks the final slack):
+
+                <rr-slack-map>
+                <rr-slack-block>
+                    <rr-slack-line>    /        /           /</rr-slack-line>
+                    <rr-slack-line>Break, | break, │ break,<rr-note-right>three stressed syllables</rr-note-right></rr-slack-line>
+                    <rr-slack-line>               u   u    /         u       /         u   /</rr-slack-line>                   
+                    <rr-slack-line>    On thy cold │ gray stones, │ O Sea!<rr-note-right>anapest, iamb, iamb</rr-note-right></rr-slack-line>
+                    <rr-slack-line>  u   u     /         u    u      /          u     u  /</rr-slack-line>
+                    <rr-slack-line>And I would │ that my tongue │ could utter<rr-note-right>anapest, anapest, anapest</rr-note-right></rr-slack-line>
+                    <rr-slack-line>         u       /       u    u  /      u   /</rr-slack-line>
+                    <rr-slack-line>    The thoughts │ that arise │ in me.<rr-note-right>iamb, anapest, iamb</rr-note-right></rr-slack-line>
+                </rr-slack-block>
+
+                <rr-slack-block>
+                    <rr-slack-line> u    /        u    u    u   /    u         /<rr-note-right>drafts 1& 2, catalytic line: iamb, pyrrhic, amphibrach, stress</rr-note-right></rr-slack-line>
+                    <rr-slack-line><rr-line-note>5</rr-line-note>   O well │ for the  │fisherman’s│ boy,<rr-note-right>final version: iamb, pyrrhic, trochee, iamb: u / │u u│ / u│ u /</rr-note-right></rr-slack-line>            
+                    <rr-slack-line>                     u    u      /            u      u      /     u  u     /</rr-slack-line>    
+                    <rr-slack-line>    That he shouts │ with his  sist│er at play!<rr-note-right>anapest, anapest, anapest</rr-note-right></rr-slack-line>
+                    <rr-slack-line> u    /        u   u    /    u   /</rr-slack-line>
+                    <rr-slack-line>O well │ for the sail│or lad,<rr-note-right>iamb, anapest, iamb</rr-note-right></rr-slack-line>
+                    <rr-slack-line>         u   u    /          u   u    /       u   u    /</rr-slack-line>
+                    <rr-slack-line>    That he sings │ in his boat │ on the bay!<rr-note-right>anapest, anapest, anapest</rr-note-right></rr-slack-line>
+                </rr-slack-block>
+
+                <rr-slack-block>
+                    <rr-slack-line>   u   u      /      u     /     u    /</rr-slack-line>
+                    <rr-slack-line>And the state│ ly ships │ go on<rr-note-right>anapest, iamb, iamb</rr-note-right></rr-slack-line>
+                    <rr-slack-line>       u      u     /     u     /   u      u    /</rr-slack-line>  
+                    <rr-slack-line>10  To their ha│ven under │ the hill;<rr-note-right>anapest, amphibrach, iamb</rr-note-right></rr-slack-line>  
+                    <rr-slack-line> u    /  u   u     /       u  u  /      u       /</rr-slack-line>
+                    <rr-slack-line>But O │for the touch │of a van│ish’d hand,<rr-note-right>iamb, anapest, anapest, iamb</rr-note-right></rr-slack-line>
+                    <rr-slack-line>        u    u      /        u  u   /         u   u   /</rr-slack-line>
+                    <rr-slack-line>    And the sound │ of a voice │ that is still!<rr-note-right>anapest, anapest, anapest</rr-note-right></rr-slack-line>
+                </rr-slack-block>
+
+                <rr-slack-block>
+                    <rr-slack-line>   /           /           /</rr-slack-line>
+                    <rr-slack-line>Break, │ break, │ break,<rr-note-right>three stressed syllables</rr-note-right></rr-slack-line>
+                    <rr-slack-line>       u   u     /   u   u      /         u   /</rr-slack-line>
+                    <rr-slack-line>    At the foot │ of thy crags, │ O Sea!<rr-note-right>anapest, anapest, iamb<rr-note-right></rr-slack-line>
+                    <rr-slack-line>  u    u     /     u      /          u  u   /        u     u   /</rr-slack-line>    
+                    <rr-slack-line>15  But the ten│der grace │ of a day │ that is dead<rr-note-right>anapest, iamb, anapest, anapest<rr-note-right></rr-slack-line>
+                    <rr-slack-line>        u    u   /      u        /       u   /</rr-slack-line>
+                    <rr-slack-line>    Will never │ come back │ to me.<rr-note-right>anapest, iamb, iamb<rr-note-right></rr-slack-line>
+                </rr-slack-block>
+
+                </rr-slack-map>
+            </p>
+
+            <p>
+                If we leave aside the repeated, “Break, break, break” (ll 1, 13), Emily’s treatment of the rest of the poem suggests that Tennyson gave equal length or quantity to the rest of the syllables rather than lengthening the stressed ones, although there is an important category of exception (the Scotch Snap, to which I return). Without knowing the musical setting, we would almost certainly scan line 3 as anapest-anapest-amphibrach (without the additional length on the last syllable) and the final line as amphibrach-iamb-iamb (without the added emphasis on “never”). The result would be a much less rhythmically variable and emotionally instable than the song presents.
+            </p>
+
+            <p>
+                 One of the most intriguing elements of “Break, break, break,” as well as other poems put to music by Lady Tennyson, is the poet’s use of the Scotch Snap – his shortening of the stressed syllable in “utter” and “never” (ll 3, 16). In their article, <rr-link-out xlink:type="simple" xlink:href="http://theory.esm.rochester.edu/temperley/papers/temperley-temperley-mp.pdf">“Music-Language Correlations and the ‘Scotch Snap,’”<rr-link-out>Nicholas and David Temperley have defined the Snap as a rhythmic figure found in English, Irish, Scottish and American vocal music from as early as 1675, “typically consisting of a division of a quarter-note tactus in the ratio of 1:3, that is, a sixteenth and a dotted eighth, with one syllable on each note, and with the sixteenth on the beat.”  For example, they show how “trouble” in The Beatles’ “Let It Be” is a Snap (61):
+                 <figure>
+                    <img src="media/let_it_be_snap.png" />
+                 </figure>
+                 The Temperleys make clear that from the middle of the eighteenth century, although the Snap appears in many English-language songs, it occurs with significantly greater frequency in Scottish music. This 1:3 ratio can also be found in other divisions in “Break, break, break” as in the eighth: dotted half note of “fisher” (first two drafts only) and “never”, lending jauntiness to “fisher” and emphasizing the finality of “never.” The treatment of “utter” is odd for it extends the Snap to a 1:4 ratio. Strictly speaking, the Snap should be an eighth: dotted quarter, like the treatment of “never”. In recitation, Tennyson seems to have lengthened “utter” into the guttural “er” (“utterrrr”) – an onomatopœtic communication of meaning, but also such an unexpected treatment as to throw us off balance. It is difficult to sing and to say. Similarly, the catalytic line (in Emily Tennyson’s first and second musical drafts), leaving off the expected final slack, is hard to vocalize.
+            </p>
+
+            <p>
+                Line 5 shows a fascinating example of the continuing reworking of the sonorous intent of this line long after the poem was published. The final musical version sets the line as an iamb-pyrrhic-trochee-iamb, which is more regular than the earlier drafts. Without the catalytic line, there is no feeling of lack (a missing slack). Even though Emily Tennyson did not want Natalie Janotha to change her vocal line when she arranged the music [link to essay, “Performance and Publication of Emily Tennyson’s Music”], it is possible that the Tennysons responded to how Janotha changed the line when she arranged the music (she gave equal length to each of the three syllables of “fisherman”). What can be confidently observed, however, is that certain sonorous elements of the poem were reworked by the Tennysons and Janotha. It would seem that the poem, though fixed on the page, shifted what it communicated through sound. 
+            </p>
+
+            <p>
+                I find this multiplicity of sonic meaning very suggestive, for it is hard to decide sometimes the chronology of revisions. As can clearly be seen in each manuscript draft, Emily went back over her original notation and added in heavy breaks after the first two words of the poem. Normally, we only make changes to our last draft. Because all of the drafts have this change, they do not therefore necessarily trace a clear chronology of first, next and last thoughts about the rhythm of line one. The Tennysons kept playing with the poem’s meaning, changing their idea of how to set the poetry to music, and changing it in all drafts.
+            </p>
+
+            <p>
+                I must admit that I prefer the Scotch Snap on “fisher”: it sounds more interesting and communicates emotional imbalance even as the speaker narrates the joy of a young boy. I also like the heavy pauses between the first two “breaks”; it is emotionally intense and contrasts with repeated the “Break, break, break” in the final line. Such variability highlights interpretative processes and, in a sense, performs the poem’s living, off-the-page qualities.
+            </p>
+
+            <p>
+                <rr-bib>
+                    8 Hallam Tennyson, Memoir, 233
+                    9 Underline words have syncopation: short first syllable and elongated second (scotch snap in music)
+                    10 Nicholas Temperley and David Temperley, “Music-Language Correlations and the ‘Scotch Snap,’” Music Perception 29.1 (2011): 51-63 (53). My thanks to Nicholas Temperley for conversations about the quantities in “Break, break, break.”
+                </rr-bib>
+            </p>
+        </body>
+    </text>
+</TEI>

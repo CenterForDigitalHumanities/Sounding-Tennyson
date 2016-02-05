@@ -1330,6 +1330,76 @@ sounding.value('MANIFESTS', [{
                         "otherContent": []
                     }]
             }]
+    }, {
+        "@id": "G_Manifest",
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@type": "sc:Manifest",
+        "label": 'AET, "Break," draft 3 (5312/2)',
+        "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, green MS music book, TRC/Music/5312/2, ff 5r-6r. Lincolnshire County Council, UK.',
+        "resources": [],
+        "layers": ["PianoLayer"],
+        "sequences": [{
+                "@id": "green book normal sequence",
+                "@type": "sc:Sequence",
+                "canvases": [{
+                        "label": "5r",
+                        "@id": "GB1",
+                        "width": 1629,
+                        "height": 2000,
+                        "@type": "sc:Canvas",
+                        "images": [{
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "on": "GB1",
+                                "resource": {
+                                    "format": "image/jpeg",
+                                    "height": 2000,
+                                    "width": 1629,
+                                    "@id": "media/green/r5312-2_fo5r.jpg",
+                                    "@type": "dcterms:Image"
+                                }
+                            }],
+                        "otherContent": []
+                    }, {
+                        "label": "5v",
+                        "@id": "GB2",
+                        "width": 1541,
+                        "height": 2000,
+                        "@type": "sc:Canvas",
+                        "images": [{
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "on": "GB2",
+                                "resource": {
+                                    "format": "image/jpeg",
+                                    "height": 2000,
+                                    "width": 1541,
+                                    "@id": "media/green/r5312-2_fo5v.jpg",
+                                    "@type": "dcterms:Image"
+                                }
+                            }],
+                        "otherContent": []
+                    }, {
+                        "label": "6r",
+                        "@id": "GB3",
+                        "width": 1592,
+                        "height": 2000,
+                        "@type": "sc:Canvas",
+                        "images": [{
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "on": "GB3",
+                                "resource": {
+                                    "format": "image/jpeg",
+                                    "height": 2000,
+                                    "width": 1592,
+                                    "@id": "media/green/r5312-2_fo6r.jpg",
+                                    "@type": "dcterms:Image"
+                                }
+                            }],
+                        "otherContent": []
+                    }]
+            }]
     }]);
 
 sounding.value('TEXT', [{

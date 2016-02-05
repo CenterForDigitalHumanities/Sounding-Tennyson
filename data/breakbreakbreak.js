@@ -112,7 +112,7 @@ sounding.value('MANIFESTS', [{
         "resources": ["Break_Break_Break_Janotha"],
         "layers": ["PianoLayer"],
         "sequences": [{
-                "@id": "red book normal sequence",
+                "@id": "music album normal sequence",
                 "@type": "sc:Sequence",
                 "canvases": [{
                         "label": "3r",
@@ -128,7 +128,7 @@ sounding.value('MANIFESTS', [{
                                     "format": "image/jpeg",
                                     "height": 1888,
                                     "width": 1504,
-                                    "@id": "media/red/r5321_fo3r.jpg",
+                                    "@id": "media/album/r5321_fo3r.jpg",
                                     "@type": "dcterms:Image"
                                 }
                             }],
@@ -147,7 +147,7 @@ sounding.value('MANIFESTS', [{
                                     "format": "image/jpeg",
                                     "height": 1832,
                                     "width": 1384,
-                                    "@id": "media/red/r5321_fo3v.jpg",
+                                    "@id": "media/album/r5321_fo3v.jpg",
                                     "@type": "dcterms:Image"
                                 }
                             }],
@@ -166,7 +166,7 @@ sounding.value('MANIFESTS', [{
                                     "format": "image/jpeg",
                                     "height": 1888,
                                     "width": 1508,
-                                    "@id": "media/red/r5321_fo4r.jpg",
+                                    "@id": "media/album/r5321_fo4r.jpg",
                                     "@type": "dcterms:Image"
                                 }
                             }],
@@ -185,7 +185,7 @@ sounding.value('MANIFESTS', [{
                                     "format": "image/jpeg",
                                     "height": 2000,
                                     "width": 3008,
-                                    "@id": "media/red/r5321_fo4v.jpg",
+                                    "@id": "media/album/r5321_fo4v.jpg",
                                     "@type": "dcterms:Image"
                                 }
                             }],

@@ -201,7 +201,7 @@ sounding.value('MANIFESTS', [{
         "resources": ["Break_Break_Break_Janotha"],
         "layers": ["PianoLayer"],
         "sequences": [{
-                "@id": "engraving normal sequence",
+                "@id": "janotha normal sequence",
                 "@type": "sc:Sequence",
                 "canvases": [{
                         "label": "Page 568",

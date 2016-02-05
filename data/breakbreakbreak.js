@@ -1247,7 +1247,7 @@ sounding.value('MANIFESTS', [{
         "@type": "sc:Manifest",
         "label": 'AET, "Break," draft 2 (5312/1)',
         "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, Pink MS music book. TRC/Music/5312/1, ff 11r-12v, Lincolnshire County Council, UK.',
-        "resources": ["Break_Break_Break_Janotha"],
+        "resources": [],
         "layers": ["PianoLayer"],
         "sequences": [{
                 "@id": "pink book normal sequence",
@@ -1266,183 +1266,11 @@ sounding.value('MANIFESTS', [{
                                     "format": "image/jpeg",
                                     "height": 3402,
                                     "width": 2574,
-                                    "@id": "media/5312-1_fo11r.jpg",
+                                    "@id": "media/pink/r5312-1_fo11r.jpg",
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": [{
-                                "@id": "PBAudio1",
-                                "@type": "oa:Annotation",
-                                "label": "Recording 4, page 1",
-                                "motivation": "sc:painting",
-                                "resource": "Break_Break_Break_Janotha#t=0,23.67",
-                                "on": "PB1",
-                                "within": "PianoLayer"
-                            }, {
-                                "@id": "PB1PianoMeasures",
-                                "@type": "sc:AnnotationList",
-                                "label": "measures",
-                                "@list": [{
-                                        "@id": "a0",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=79.5,177,137.5,247",
-                                            "Break_Break_Break_Janotha#t=0,4.4"
-                                        ]
-                                    }, {
-                                        "@id": "a1",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=224.5,166,150.5,266.5",
-                                            "Break_Break_Break_Janotha#t=4.4,6.01"
-                                        ]
-                                    }, {
-                                        "@id": "a2",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=382,160.5,175.5,266.5",
-                                            "Break_Break_Break_Janotha#t=6.01,7.31"
-                                        ]
-                                    }, {
-                                        "@id": "a3",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=566,160.5,159,273.5",
-                                            "Break_Break_Break_Janotha#t=7.31,8.56"
-                                        ],
-                                    }, {
-                                        "@id": "a4",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=736,162.5,191.5,272",
-                                            "Break_Break_Break_Janotha#t=8.56,9.73"
-                                        ],
-                                    }, {
-                                        "@id": "a5",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=51,570,164.5,275.5",
-                                            "Break_Break_Break_Janotha#t=9.73,10.88"
-                                        ],
-                                    }, {
-                                        "@id": "a6",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "start": 10.88,
-                                        "end": 12.13,
-                                        "pageIndex": 0,
-                                        "on": [
-                                            "PB1#xywh=226.5,570,118,273.5",
-                                            "Break_Break_Break_Janotha#t=10.88,12.13"
-                                        ],
-                                    }, {
-                                        "@id": "a7",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "start": 12.13,
-                                        "end": 13.54,
-                                        "pageIndex": 0,
-                                        "on": [
-                                            "PB1#xywh=353.5,572,146.5,281",
-                                            "Break_Break_Break_Janotha#t=12.13,13.54"
-                                        ],
-                                    }, {
-                                        "@id": "0a",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=69,368,152,53.5",
-                                            "Break_Break_Break_Janotha#t=0,5.24"
-                                        ],
-                                    }, {
-                                        "@id": "1",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=246,361,193,61",
-                                            "Break_Break_Break_Janotha#t=5.24,8.7"
-                                        ],
-                                    }, {
-                                        "@id": "2",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=376.5,232,193,84",
-                                            "Break_Break_Break_Janotha#t=8.7,11.49"
-                                        ],
-                                    }, {
-                                        "@id": "3",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=532,345,182.5,87.5",
-                                            "Break_Break_Break_Janotha#t=11.49,14.42"
-                                        ],
-                                    }, {
-                                        "@id": "4",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=732.5,337.5,191.5,86",
-                                            "Break_Break_Break_Janotha#t=14.42,16.95"
-                                        ],
-                                    }, {
-                                        "@id": "5",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=40.5,749,152,75",
-                                            "Break_Break_Break_Janotha#t=16.95,20.12"
-                                        ],
-                                    }, {
-                                        "@id": "6",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=215.5,656,145,80.5",
-                                            "Break_Break_Break_Janotha#t=20.12,21.98"
-                                        ]
-                                    }, {
-                                        "@id": "7",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=219,765,146.5,75",
-                                            "Break_Break_Break_Janotha#t=21.98,24.41"
-                                        ]
-                                    }, {
-                                        "@id": "8",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB1#xywh=376.5,658,125,91",
-                                            "Break_Break_Break_Janotha#t=24.41,27.6"
-                                        ]
-                                    }]
-                            }]
+                        "otherContent": []
                     }, {
                         "label": "11v",
                         "@id": "PB2",
@@ -1457,133 +1285,11 @@ sounding.value('MANIFESTS', [{
                                     "format": "image/jpeg",
                                     "height": 3501,
                                     "width": 2733,
-                                    "@id": "media/5312-1_fo11v-12r.jpg#xywh=0,0,2733,3501",
+                                    "@id": "media/pink/r5312-1_fo11v.jpg",
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": [{
-                                "@id": "PBAudio3",
-                                "@type": "oa:Annotation",
-                                "label": "Recording 4, page 2",
-                                "motivation": "sc:painting",
-                                "resource": "Break_Break_Break_Janotha#t=23.68,75",
-                                "on": "PB2",
-                                "within": "PianoLayer"
-                            }, {
-                                "@id": "PB2List",
-                                "_comment": "The @id isn't real, the music is only within this file.",
-                                "@type": "sc:AnnotationList",
-                                "label": "measures",
-                                "@list": [{
-                                        "@id": "69",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=383.5,770.5,118,73.5",
-                                            "Break_Break_Break_Janotha#t=27.6,30.29"
-                                        ]
-                                    }, {
-                                        "@id": "610",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=521.5,647,150.5,127",
-                                            "Break_Break_Break_Janotha#t=30.29,33.3"
-                                        ]
-                                    }, {
-                                        "@id": "611",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=695,647,80.5,200.5",
-                                            "Break_Break_Break_Janotha#t=33.3,36.26"
-                                        ]
-                                    }, {
-                                        "@id": "612",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=816.5,654.5,120,89.5",
-                                            "Break_Break_Break_Janotha#t=36.26,39.08"
-                                        ]
-                                    }, {
-                                        "@id": "613",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=103,885,102,93",
-                                            "Break_Break_Break_Janotha#t=39.08,42.82"
-                                        ]
-                                    }, {
-                                        "@id": "614",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=221,886.5,256,118",
-                                            "Break_Break_Break_Janotha#t=42.82,46.94"
-                                        ]
-                                    }, {
-                                        "@id": "615",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=500,888.5,259.5,116",
-                                            "Break_Break_Break_Janotha#t=46.94,50.48"
-                                        ]
-                                    }, {
-                                        "@id": "616",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=786,903,168,111",
-                                            "Break_Break_Break_Janotha#t=50.48,54.13"
-                                        ]
-                                    }, {
-                                        "@id": "617",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=101,990.5,104,100",
-                                            "Break_Break_Break_Janotha#t=54.13,55.49"
-                                        ]
-                                    }, {
-                                        "@id": "618",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=228,1026,71.5,84",
-                                            "Break_Break_Break_Janotha#t=55.49,57.55"
-                                        ]
-                                    }, {
-                                        "@id": "619",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=328.5,1021,316.5,95",
-                                            "Break_Break_Break_Janotha#t=57.55,58.45"
-                                        ]
-                                    }, {
-                                        "@id": "620",
-                                        "@type": "oa:Annotation",
-                                        "motivation": "sc:painting",
-                                        "label": "",
-                                        "on": [
-                                            "PB2#xywh=680.5,1035,234.5,111",
-                                            "Break_Break_Break_Janotha#t=58.45,59.03"
-                                        ]
-                                    }]
-                            }]
+                        "otherContent": []
                     }, {
                         "label": "12r",
                         "@id": "PB3",
@@ -1598,24 +1304,11 @@ sounding.value('MANIFESTS', [{
                                     "format": "image/jpeg",
                                     "height": 3600,
                                     "width": 2877,
-                                    "@id": "media/5312-1_fo11v-12r.jpg#xywh=2733,0,2877,3600",
+                                    "@id": "media/pink/r5312-1_fo12r.jpg",
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": [{
-                                "@id": "PBAudio3",
-                                "@type": "oa:Annotation",
-                                "label": "Recording 4, page 3",
-                                "motivation": "sc:painting",
-                                "resource": "Break_Break_Break_Janotha#t=75,112",
-                                "on": "PB3",
-                                "within": "PianoLayer"
-                            }, {
-                                "@id": "PB3List",
-                                "@type": "sc:AnnotationList",
-                                "label": "measures",
-                                "@list": []
-                            }]
+                        "otherContent": []
                     }, {
                         "label": "12v",
                         "@id": "PB4",
@@ -1630,24 +1323,11 @@ sounding.value('MANIFESTS', [{
                                     "format": "image/jpeg",
                                     "height": 3594,
                                     "width": 2868,
-                                    "@id": "media/5312-1_fo12v.jpg",
+                                    "@id": "media/pink/r5312-1_fo12v.jpg",
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": [{
-                                "@id": "PBAudio4",
-                                "@type": "oa:Annotation",
-                                "label": "Recording 4, page 4",
-                                "motivation": "sc:painting",
-                                "resource": "Break_Break_Break_Janotha#t=112,144",
-                                "on": "PB4",
-                                "within": "PianoLayer"
-                            }, {
-                                "@id": "PB4List",
-                                "@type": "sc:AnnotationList",
-                                "label": "measures",
-                                "@list": []
-                            }]
+                        "otherContent": []
                     }]
             }]
     }]);

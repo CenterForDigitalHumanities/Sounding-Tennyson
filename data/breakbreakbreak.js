@@ -1255,8 +1255,8 @@ sounding.value('MANIFESTS', [{
                 "canvases": [{
                         "label": "11r",
                         "@id": "PB1",
-                        "width": 1287,
-                        "height": 1701,
+                        "width": 1513,
+                        "height": 2000,
                         "@type": "sc:Canvas",
                         "images": [{
                                 "@type": "oa:Annotation",
@@ -1264,8 +1264,8 @@ sounding.value('MANIFESTS', [{
                                 "on": "PB1",
                                 "resource": {
                                     "format": "image/jpeg",
-                                    "height": 3402,
-                                    "width": 2574,
+                                    "height": 2000,
+                                    "width": 1513,
                                     "@id": "media/pink/r5312-1_fo11r.jpg",
                                     "@type": "dcterms:Image"
                                 }
@@ -1274,8 +1274,8 @@ sounding.value('MANIFESTS', [{
                     }, {
                         "label": "11v",
                         "@id": "PB2",
-                        "width": 911,
-                        "height": 1167,
+                        "width": 1567,
+                        "height": 2000,
                         "@type": "sc:Canvas",
                         "images": [{
                                 "@type": "oa:Annotation",
@@ -1283,8 +1283,8 @@ sounding.value('MANIFESTS', [{
                                 "on": "PB2",
                                 "resource": {
                                     "format": "image/jpeg",
-                                    "height": 3501,
-                                    "width": 2733,
+                                    "height": 2000,
+                                    "width": 1567,
                                     "@id": "media/pink/r5312-1_fo11v.jpg",
                                     "@type": "dcterms:Image"
                                 }
@@ -1293,8 +1293,8 @@ sounding.value('MANIFESTS', [{
                     }, {
                         "label": "12r",
                         "@id": "PB3",
-                        "width": 959,
-                        "height": 1200,
+                        "width": 1538,
+                        "height": 2000,
                         "@type": "sc:Canvas",
                         "images": [{
                                 "@type": "oa:Annotation",
@@ -1302,8 +1302,8 @@ sounding.value('MANIFESTS', [{
                                 "on": "PB3",
                                 "resource": {
                                     "format": "image/jpeg",
-                                    "height": 3600,
-                                    "width": 2877,
+                                    "height": 2000,
+                                    "width": 1538,
                                     "@id": "media/pink/r5312-1_fo12r.jpg",
                                     "@type": "dcterms:Image"
                                 }
@@ -1312,8 +1312,8 @@ sounding.value('MANIFESTS', [{
                     }, {
                         "label": "12v",
                         "@id": "PB4",
-                        "width": 956,
-                        "height": 1198,
+                        "width": 1571,
+                        "height": 2000,
                         "@type": "sc:Canvas",
                         "images": [{
                                 "@type": "oa:Annotation",
@@ -1321,8 +1321,8 @@ sounding.value('MANIFESTS', [{
                                 "on": "PB4",
                                 "resource": {
                                     "format": "image/jpeg",
-                                    "height": 3594,
-                                    "width": 2868,
+                                    "height": 2000,
+                                    "width": 1538,
                                     "@id": "media/pink/r5312-1_fo12v.jpg",
                                     "@type": "dcterms:Image"
                                 }

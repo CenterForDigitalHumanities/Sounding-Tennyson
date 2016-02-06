@@ -150,9 +150,9 @@ sounding.controller("viewController", function ($scope, ViewService, ViewValues,
     $scope.findCanvas = function (idPrefix) {
         var selector, line, i;
         for (i = 0; i < TEXT.lines.length; i++) {
-            for (var m = 0; m < TEXT.lines[i]['oa:hasTarget'].length; m++) {
-                if (TEXT.lines[i]['oa:hasTarget'][m].startsWith("EngPiano")) {
-                    if ($scope.inTime(TEXT.lines[i]['oa:hasTarget'][m], ViewValues.currentTime)) {
+            for (var m = 0; m < TEXT.lines[i]['on'].length; m++) {
+                if (TEXT.lines[i]['on'][m].startsWith("EngPiano")) {
+                    if ($scope.inTime(TEXT.lines[i]['on'][m], ViewValues.currentTime)) {
                         line = TEXT.lines[i];
                         break;
                     }
@@ -163,10 +163,10 @@ sounding.controller("viewController", function ($scope, ViewService, ViewValues,
             }
         }
         if (line) {
-            for (i = 0; i < line['oa:hasTarget'].length; i++) {
-                if (line['oa:hasTarget'][i].startsWith(idPrefix)
-                    && line['oa:hasTarget'][i].indexOf("#xywh") > 0) {
-                    selector = line['oa:hasTarget'][i];
+            for (i = 0; i < line['on'].length; i++) {
+                if (line['on'][i].startsWith(idPrefix)
+                    && line['on'][i].indexOf("#xywh") > 0) {
+                    selector = line['on'][i];
                     break;
                 }
             }
@@ -181,9 +181,9 @@ sounding.controller("viewController", function ($scope, ViewService, ViewValues,
     $scope.readAt = function () {
         var text, offset, line;
         for (var i = 0; i < TEXT.lines.length; i++) {
-            for (var m = 0; m < TEXT.lines[i]['oa:hasTarget'].length; m++) {
-                if (TEXT.lines[i]['oa:hasTarget'][m].indexOf("EngPiano") === 0) {
-                    if ($scope.inTime(TEXT.lines[i]['oa:hasTarget'][m], ViewValues.currentTime)) {
+            for (var m = 0; m < TEXT.lines[i]['on'].length; m++) {
+                if (TEXT.lines[i]['on'][m].indexOf("EngPiano") === 0) {
+                    if ($scope.inTime(TEXT.lines[i]['on'][m], ViewValues.currentTime)) {
                         line = TEXT.lines[i];
                         break;
                     }
@@ -197,10 +197,10 @@ sounding.controller("viewController", function ($scope, ViewService, ViewValues,
             if (textCache.get(line['@id'])) {
                 return textCache.get(line['@id']);
             }
-            for (var i = 0; i < line['oa:hasTarget'].length; i++) {
-                if (line['oa:hasTarget'][i].indexOf("publishedText") === 0
-                    && line['oa:hasTarget'][i].indexOf("#offset=") > 0) {
-                    offset = line['oa:hasTarget'][i].substr((line['oa:hasTarget'][i].lastIndexOf("#offset=") + 8)).split(",");
+            for (var i = 0; i < line['on'].length; i++) {
+                if (line['on'][i].indexOf("publishedText") === 0
+                    && line['on'][i].indexOf("#offset=") > 0) {
+                    offset = line['on'][i].substr((line['on'][i].lastIndexOf("#offset=") + 8)).split(",");
                     text = textCache.put(line['@id'], TEXT['@value'].substring(offset[0], offset[1]));
                     break;
                 }
@@ -245,7 +245,7 @@ sounding.controller("viewController", function ($scope, ViewService, ViewValues,
     $scope.allAtTime = function(time,music){
         if(isNaN(time) || !music){return false;}
         return function(entry){
-            var ts = [].concat(entry["oa:hasTarget"],entry.on,entry.resource,entry["oa:hasBody"]);
+            var ts = [].concat(entry["on"],entry.on,entry.resource,entry["oa:hasBody"]);
             var t;
             while(ts.length){
                 t=ts.pop();

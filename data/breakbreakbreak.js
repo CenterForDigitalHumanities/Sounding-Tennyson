@@ -1620,7 +1620,7 @@ sounding.value('ANNOTATIONS', [{
         "@id": "line_1",
         "@type": "oa:Annotation",
         "resource": "publishedText#offset=0,20", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,250,750,120", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,250,750,120", // target on a sc:Canvas engraving
             "MS1#xywh=220,250,750,90", // target on a sc:Canvas handwrote
@@ -1630,7 +1630,7 @@ sounding.value('ANNOTATIONS', [{
         "@id": "line_2",
         "@type": "oa:Annotation",
         "resource": "publishedText#offset=21,52", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,100,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,100,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,280,750,90", // target on a sc:Canvas handwrote
@@ -1640,7 +1640,7 @@ sounding.value('ANNOTATIONS', [{
         "@id": "line_3",
         "@type": "oa:Annotation", "resource": "publishedText#offset=53,91", // offset selector: start,end
 
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,140,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,140,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,360,750,90", // target on a sc:Canvas handwrote
@@ -1649,7 +1649,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_4",
         "@type": "oa:Annotation", "resource": "publishedText#offset=92,122", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,180,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,180,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,400,750,90", // target on a sc:Canvas handwrote
@@ -1658,7 +1658,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_5",
         "@type": "oa:Annotation", "resource": "publishedText#offset=124,156", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,220,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,220,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,460,750,90", // target on a sc:Canvas handwrote
@@ -1667,7 +1667,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_6",
         "@type": "oa:Annotation", "resource": "publishedText#offset=157,196", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,280,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,280,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,500,750,90", // target on a sc:Canvas handwrote
@@ -1676,7 +1676,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_7",
         "@type": "oa:Annotation", "resource": "publishedText#offset=197,224", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,320,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,320,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,560,750,90", // target on a sc:Canvas handwrote
@@ -1685,7 +1685,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_8",
         "@type": "oa:Annotation", "resource": "publishedText#offset=225,262", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,400,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,400,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,620,750,90", // target on a sc:Canvas handwrote
@@ -1694,7 +1694,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_9",
         "@type": "oa:Annotation", "resource": "publishedText#offset=264,291", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,450,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,450,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,680,750,90", // target on a sc:Canvas handwrote
@@ -1703,7 +1703,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_10",
         "@type": "oa:Annotation", "resource": "publishedText#offset=292,322", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,500,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,500,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,750,750,90", // target on a sc:Canvas handwrote
@@ -1712,7 +1712,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_11",
         "@type": "oa:Annotation", "resource": "publishedText#offset=323,362", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,550,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,550,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,800,750,90", // target on a sc:Canvas handwrote
@@ -1721,7 +1721,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_12",
         "@type": "oa:Annotation", "resource": "publishedText#offset=363,402", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,600,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,600,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,850,750,90", // target on a sc:Canvas handwrote
@@ -1730,7 +1730,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_13",
         "@type": "oa:Annotation", "resource": "publishedText#offset=404,423", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,650,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,650,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,900,750,90", // target on a sc:Canvas handwrote
@@ -1739,7 +1739,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_14",
         "@type": "oa:Annotation", "resource": "publishedText#offset=424,456", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB1#xywh=20,700,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,700,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,950,750,90", // target on a sc:Canvas handwrote
@@ -1748,7 +1748,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_15",
         "@type": "oa:Annotation", "resource": "publishedText#offset=457,499", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB2#xywh=20,60,750,40", // target on a sc:Canvas manuscript
             "Eng2#xywh=20,60,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,1000,750,90", // target on a sc:Canvas handwrote
@@ -1757,7 +1757,7 @@ sounding.value('ANNOTATIONS', [{
     }, {
         "@id": "line_16",
         "@type": "oa:Annotation", "resource": "publishedText#offset=500,527", // offset selector: start,end
-        "oa:hasTarget": [
+        "on": [
             "RB2#xywh=20,120,750,40", // target on a sc:Canvas manuscript
             "Eng2#xywh=20,120,750,40", // target on a sc:Canvas engraving
             "MS1#xywh=220,1100,750,90", // target on a sc:Canvas handwrote

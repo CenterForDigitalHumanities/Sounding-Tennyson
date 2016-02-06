@@ -21,89 +21,91 @@ sounding.value('RESOURCES', [{
             "format": "audio/mpeg"
         }
     }]);
-sounding.value('MANIFESTS', [{
-        "@id": "MusicAlbum",
-        "@context": "http://iiif.io/api/presentation/2/context.json",
-        "@type": "sc:Manifest",
-        "label": "Music Album (5312 first drafts)",
-        "sequences": [{
-                "@id": "music album sequence",
-                "@type": "sc:Sequence",
-                "canvases": [{
-                        "label": "3r",
-                        "@id": "MA1",
-                        "width": 956,
-                        "height": 1198,
-                        "@type": "sc:Canvas",
-                        "images": [{
-                                "@type": "oa:Annotation",
-                                "motivation": "sc:painting",
-                                "on": "MA1",
-                                "resource": {
-                                    "format": "image/jpeg",
-                                    "height": 3594,
-                                    "width": 2868,
-                                    "@id": "media/5312_fo3r.jpg",
-                                    "@type": "dcterms:Image"
-                                }
-                            }]
-                    }, {
-                        "label": "3v",
-                        "@id": "MA2",
-                        "width": 1336,
-                        "height": 1815,
-                        "@type": "sc:Canvas",
-                        "images": [{
-                                "@type": "oa:Annotation",
-                                "motivation": "sc:painting",
-                                "on": "MA2",
-                                "resource": {
-                                    "format": "image/jpeg",
-                                    "height": 3630,
-                                    "width": 2672,
-                                    "@id": "media/5312_fo3v-4r.jpg#xywh=0,0,2672,3630",
-                                    "@type": "dcterms:Image"
-                                }
-                            }]
-                    }, {
-                        "label": "4r",
-                        "@id": "MA3",
-                        "width": 1422,
-                        "height": 1815,
-                        "@type": "sc:Canvas",
-                        "images": [{
-                                "@type": "oa:Annotation",
-                                "motivation": "sc:painting",
-                                "on": "MA3",
-                                "resource": {
-                                    "format": "image/jpeg",
-                                    "height": 3630,
-                                    "width": 2844,
-                                    "@id": "media/5312_fo3v-4r.jpg#xywh=2670,0,2844,3630",
-                                    "@type": "dcterms:Image"
-                                }
-                            }]
-                    }, {
-                        "label": "4v",
-                        "@id": "MA4",
-                        "width": 850,
-                        "height": 1082,
-                        "@type": "sc:Canvas",
-                        "images": [{
-                                "@type": "oa:Annotation",
-                                "motivation": "sc:painting",
-                                "on": "MA4",
-                                "resource": {
-                                    "format": "image/jpeg",
-                                    "height": 3246,
-                                    "width": 2551,
-                                    "@id": "media/5312_fo4v.jpg",
-                                    "@type": "dcterms:Image"
-                                }
-                            }]
-                    }]
-            }]
-    }, {
+sounding.value('MANIFESTS', [
+// {
+//         "@id": "MusicAlbum",
+//         "@context": "http://iiif.io/api/presentation/2/context.json",
+//         "@type": "sc:Manifest",
+//         "label": "Music Album (5312 first drafts)",
+//         "sequences": [{
+//                 "@id": "music album sequence",
+//                 "@type": "sc:Sequence",
+//                 "canvases": [{
+//                         "label": "3r",
+//                         "@id": "MA1",
+//                         "width": 956,
+//                         "height": 1198,
+//                         "@type": "sc:Canvas",
+//                         "images": [{
+//                                 "@type": "oa:Annotation",
+//                                 "motivation": "sc:painting",
+//                                 "on": "MA1",
+//                                 "resource": {
+//                                     "format": "image/jpeg",
+//                                     "height": 3594,
+//                                     "width": 2868,
+//                                     "@id": "media/5312_fo3r.jpg",
+//                                     "@type": "dcterms:Image"
+//                                 }
+//                             }]
+//                     }, {
+//                         "label": "3v",
+//                         "@id": "MA2",
+//                         "width": 1336,
+//                         "height": 1815,
+//                         "@type": "sc:Canvas",
+//                         "images": [{
+//                                 "@type": "oa:Annotation",
+//                                 "motivation": "sc:painting",
+//                                 "on": "MA2",
+//                                 "resource": {
+//                                     "format": "image/jpeg",
+//                                     "height": 3630,
+//                                     "width": 2672,
+//                                     "@id": "media/5312_fo3v-4r.jpg#xywh=0,0,2672,3630",
+//                                     "@type": "dcterms:Image"
+//                                 }
+//                             }]
+//                     }, {
+//                         "label": "4r",
+//                         "@id": "MA3",
+//                         "width": 1422,
+//                         "height": 1815,
+//                         "@type": "sc:Canvas",
+//                         "images": [{
+//                                 "@type": "oa:Annotation",
+//                                 "motivation": "sc:painting",
+//                                 "on": "MA3",
+//                                 "resource": {
+//                                     "format": "image/jpeg",
+//                                     "height": 3630,
+//                                     "width": 2844,
+//                                     "@id": "media/5312_fo3v-4r.jpg#xywh=2670,0,2844,3630",
+//                                     "@type": "dcterms:Image"
+//                                 }
+//                             }]
+//                     }, {
+//                         "label": "4v",
+//                         "@id": "MA4",
+//                         "width": 850,
+//                         "height": 1082,
+//                         "@type": "sc:Canvas",
+//                         "images": [{
+//                                 "@type": "oa:Annotation",
+//                                 "motivation": "sc:painting",
+//                                 "on": "MA4",
+//                                 "resource": {
+//                                     "format": "image/jpeg",
+//                                     "height": 3246,
+//                                     "width": 2551,
+//                                     "@id": "media/5312_fo4v.jpg",
+//                                     "@type": "dcterms:Image"
+//                                 }
+//                             }]
+//                     }]
+//             }]
+//     }, 
+    {
         "@id": "RB_Manifest",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
@@ -1238,7 +1240,25 @@ sounding.value('MANIFESTS', [{
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": []
+                        "otherContent": [{
+                                "@id": "JB1",
+                                "@type": "oa:Annotation",
+                                "label": "Performance",
+                                "motivation": "sc:painting",
+                                "resource": "Break_Break_Break_Janotha#t=0,230",
+                                "on": "MS1",
+                                "within": "PianoLayer"
+                            }, {
+                                "@id": "EngPianoMeasures",
+                                "@type": "sc:AnnotationList",
+                                "label": "measures",
+                                "@list": ["line_1", "line_2", "line_3", "line_4", "line_5",
+            "line_6", "line_7", "line_8", "line_9", "line_10",
+            "line_11", "line_12", "line_13", "line_14", "line_15",
+            "line_16"
+        ]
+
+                        }]
                     }]
             }]
     }, {

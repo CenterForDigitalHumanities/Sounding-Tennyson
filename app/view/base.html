@@ -30,7 +30,8 @@
                      width='100%'
                      alt="{{c.label}}">
                 <canvas></canvas>
-                <div ng-repeat="a in c.otherContent[1]['@list']"
+                <div ng-repeat="anno in c.otherContent[1]['@list']"
+                ng-init="a=rerum.getResource(anno)"
                      class="bookmark"
                      ng-class="{active:inTime(a.on[1],vv.currentTime)}"
                      ng-click="seekTo(a.on[1])"

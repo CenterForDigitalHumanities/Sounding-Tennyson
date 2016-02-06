@@ -1623,7 +1623,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,250,750,120", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,250,750,120", // target on a sc:Canvas engraving
-            "MS1#xywh=220,250,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,245,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=15.76,22.88" // target on an audio resource
         ]
     }, {
@@ -1633,7 +1633,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,100,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,100,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,280,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,313,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=22.88,32.21" // target on an audio resource
         ]
     }, {
@@ -1643,7 +1643,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,140,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,140,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,360,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,365,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=32.21,40.8" // target on an audio resource
         ]
     }, {
@@ -1652,7 +1652,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,180,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,180,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,400,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,421,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=40.8,51.60" // target on an audio resource
         ]
     }, {
@@ -1661,7 +1661,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,220,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,220,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,460,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,545,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=70.77,79.03" // target on an audio resource
         ]
     }, {
@@ -1670,7 +1670,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,280,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,280,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,500,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,613,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=79.03,86.04" // target on an audio resource
         ]
     }, {
@@ -1679,7 +1679,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,320,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,320,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,560,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,677,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=86.4,92.39" // target on an audio resource
         ]
     }, {
@@ -1688,7 +1688,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,400,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,400,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,620,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,749,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=92.39,101.67" // target on an audio resource
         ]
     }, {
@@ -1697,7 +1697,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,450,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,450,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,680,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,905,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=114.18,121.13" // target on an audio resource
         ]
     }, {
@@ -1706,7 +1706,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,500,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,500,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,750,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,960,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=121.13,129.09" // target on an audio resource
         ]
     }, {
@@ -1715,7 +1715,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,550,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,550,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,800,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,1017,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=129.09,138.6" // target on an audio resource
         ]
     }, {
@@ -1724,7 +1724,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,600,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,600,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,850,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,1093,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=138.6,148.5" // target on an audio resource
         ]
     }, {
@@ -1733,7 +1733,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,650,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,650,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,900,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,1213,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=170.43,179.6" // target on an audio resource
         ]
     }, {
@@ -1742,7 +1742,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB1#xywh=20,700,750,40", // target on a sc:Canvas manuscript
             "Eng1#xywh=20,700,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,950,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,1290,853,80", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=179.6,188.95" // target on an audio resource
         ]
     }, {
@@ -1751,7 +1751,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB2#xywh=20,60,750,40", // target on a sc:Canvas manuscript
             "Eng2#xywh=20,60,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,1000,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,1350,920,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=188.95,201.3" // target on an audio resource
         ]
     }, {
@@ -1760,7 +1760,7 @@ sounding.value('ANNOTATIONS', [{
         "on": [
             "RB2#xywh=20,120,750,40", // target on a sc:Canvas manuscript
             "Eng2#xywh=20,120,750,40", // target on a sc:Canvas engraving
-            "MS1#xywh=220,1100,750,90", // target on a sc:Canvas handwrote
+            "MS1#xywh=170,1409,853,90", // target on a sc:Canvas handwrote
             "Break_Break_Break_Janotha#t=201.3,214.6" // target on an audio resource
         ]
     }

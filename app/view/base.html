@@ -33,16 +33,16 @@
                 <div ng-repeat="anno in c.otherContent[1]['@list']"
                 ng-init="a=rerum.getResource(anno)"
                      class="bookmark"
-                     ng-class="{active:inTime(a.on[1],vv.currentTime)}"
-                     ng-click="seekTo(a.on[1])"
-                     ng-style="annotationStyle(thisOn(a.on,rerum.getResource(manifest.resources[0])), c)"></div>
+                     ng-class="{active:inTime(thisOn(a.on,vv.showAudio['@id']),vv.currentTime)}"
+                     ng-click="seekTo(thisOn(a.on,vv.showAudio['@id']))"
+                     ng-style="annotationStyle(thisOn(a.on,c['@id']), c)"></div>
             </sc-canvas>
         </div>
         <div ng-if="!manifest" class="publishedText">
             <!--show text with all images subordinated-->
             <div ng-repeat="l in text[0].lines"
                  ng-init="line = rerum.getResource(l)"
-                 ng-class="{active:inTime(line['oa:hasTarget'][3],vv.currentTime)}">
+                 ng-class="{active:inTime(line.on[3],vv.currentTime)}">
                 {{getText(line)}}
             </div>
         </div>
@@ -59,7 +59,7 @@
                     min-px-per-sec=1></wavesurfer>
 
         <div ng-repeat="anno in text[0].lines" class="btn-block fadeIn"
-             ng-init="on=rerum.getResource(anno)['oa:hasTarget'][3]"
+             ng-init="on=rerum.getResource(anno).on[3]"
              ng-show="inTime(on, vv.currentTime)">
 
             <card ng-repeat="target in rerum.getTargets(anno, 'TEXT') track by $index">

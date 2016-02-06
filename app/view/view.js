@@ -88,6 +88,27 @@ sounding.controller("viewController", function ($scope, ViewService, ViewValues,
         ViewValues[on] = time;
         ViewValues.wav.seekTo(time[0] / ViewValues.wav.getDuration());
     };
+/**
+ * Find relevant 'on' URI if oa:Annotation from array of 
+ * on or hasTarget URIs by matching the @id of the intended
+ * target.
+ * @param array arr URIs to search through
+ * @param string target @id to search for
+ * @return string URI of result or ""
+ */
+    $scope.thisOn=function(arr,target){
+        var on="";
+        if(!angular.isArray(arr)){
+            arr=[arr];
+        }
+        for (var i = arr.length - 1; i >= 0; i--) {
+            if(arr[i].startsWith(target)){
+                on=arr[i];
+                break;
+            }
+        };
+        return on;
+    }
     /**
      * Convert 'on' URI in oa:Annotation to CSS object.
      * @param string on URI with #xywh to fetch segment

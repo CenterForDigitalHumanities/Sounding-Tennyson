@@ -35,7 +35,7 @@
                      class="bookmark"
                      ng-class="{active:inTime(a.on[1],vv.currentTime)}"
                      ng-click="seekTo(a.on[1])"
-                     ng-style="annotationStyle(a.on[0], c)"></div>
+                     ng-style="annotationStyle(thisOn(a.on,rerum.getResource(manifest.resources[0])), c)"></div>
             </sc-canvas>
         </div>
         <div ng-if="!manifest" class="publishedText">

@@ -1218,7 +1218,7 @@ sounding.value('MANIFESTS', [
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
         "label": 'AT, "Break," Ms poem',
-        "resources": [],
+        "resources": ["Break_Break_Break_Janotha"],
         "sequences": [{
                 "@id": "handwritten poem normal sequence",
                 "@type": "sc:Sequence",

@@ -377,7 +377,7 @@ rr-poem{
     display :block;
     font-size: 70%;
     position: relative;
-    margin: 0 auto;
+    padding: 5px 24px;
 }
 rr-poem-block{
     display: block;
@@ -385,12 +385,14 @@ rr-poem-block{
 rr-poem-line{
     display: block;
 }
+rr-poem-line:nth-child(even){
+    margin-left: 16px;
+}
 rr-slack-map{
     display: block;
     font-size: 70%;
     position: relative;
-    margin: 0 auto;
-}
+    padding: 5px 24px;}
 rr-slack-block{
     display: block;
 }
@@ -398,13 +400,18 @@ rr-slack-line{
     display: block;
     margin: 15px 0px;
 }
+rr-slack-line:nth-child(even) {
+    margin-left: 16px;
+}
 rr-line-note{
     color: blue;
     font-size: 80%;
+    left: 0px;
+    position: absolute
 }
 rr-note-right{
     position: relative;
-    right: 0px;
+    right: 25px;
 }
 rr-float-r-fig{
     position: relative;
@@ -431,4 +438,13 @@ syl-long::after{
     top: -12px;
     position: relative;
     right: 10px;
+}
+e-minor{
+    color: rgb(0, 153, 153) !important;
+}
+b-major{
+    color: rgb(112,48,160) !important;
+}
+e-major{
+    color: red !important;
 }

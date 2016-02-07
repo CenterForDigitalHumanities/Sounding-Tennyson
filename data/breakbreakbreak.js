@@ -1291,7 +1291,7 @@ sounding.value('MANIFESTS', [
         "@type": "sc:Manifest",
         "label": 'AET, "Break," draft 2 (5312/1)',
         "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, Pink MS music book. TRC/Music/5312/1, ff 11r-12v, Lincolnshire County Council, UK.',
-        "resources": [],
+        "resources": ["Break_Break_Break_AET"],
         "layers": ["PianoLayer"],
         "sequences": [{
                 "@id": "pink book normal sequence",
@@ -1380,7 +1380,7 @@ sounding.value('MANIFESTS', [
         "@type": "sc:Manifest",
         "label": 'AET, "Break," draft 3 (5312/2)',
         "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, green MS music book, TRC/Music/5312/2, ff 5r-6r. Lincolnshire County Council, UK.',
-        "resources": [],
+        "resources": ["Break_Break_Break_AET"],
         "layers": ["PianoLayer"],
         "sequences": [{
                 "@id": "green book normal sequence",

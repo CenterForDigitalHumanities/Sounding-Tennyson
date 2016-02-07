@@ -1,5 +1,5 @@
 sounding.value("ViewValues", {
-    currentTime: 0,
+    currentTime: {},
     // default setup for Break, Break, Break
     showManuscripts: [
         {
@@ -7,16 +7,7 @@ sounding.value("ViewValues", {
             canvas: 0, //index in manifest or URI
             selector: "" // default xywh for display
         }
-    ],
-    showAudio: {
-        '@id':"Break_Break_Break_Janotha",
-        sources: [{
-                src: "media/audio/Break_Break_Break_AET.mp3", // relative path or URI
-            type: "audio/mpeg"
-        }],
-        label: "Break, Break, Break",
-        time: 0 // default beginning time
-    }
+    ]
 });
 sounding.service("ViewService", function ($http, $q) {
     var service = this;
@@ -69,9 +60,15 @@ sounding.directive('xmlDiv', function ($sce, ViewService) {
     };
 });
 
-sounding.controller("viewController", function ($scope, ViewService, ViewValues, Lists, MANIFESTS, TEXT, $cacheFactory, RERUM) {
+sounding.controller("viewController", function ($scope, ViewService, ViewValues, Lists, MANIFESTS,RESOURCES, TEXT, $cacheFactory, RERUM,$rootScope) {
     $scope.vv = ViewValues;
     $scope.manifests = MANIFESTS;
+    $scope.performances = [];
+    angular.forEach(RESOURCES,function(r){
+        if(r.motivation === 'performance'){
+Lists.addIfNotIn(r,$scope.performances);
+        }
+    });
     $scope.text = TEXT;
     var textCache = $cacheFactory.get('textCache') || $cacheFactory('textCache');
     if (!$scope.manifest) {
@@ -85,9 +82,9 @@ sounding.controller("viewController", function ($scope, ViewService, ViewValues,
         ViewValues.lockAnnotations = ViewValues.revealAnnotations = !ViewValues.lockAnnotations;
     };
     $scope.seekTo = function (on) {
-        var time = ViewValues[on] || on.substring(on.lastIndexOf("#t=") + 3).split(",");
-        ViewValues[on] = time;
-        ViewValues.wav.seekTo(time[0] / ViewValues.wav.getDuration());
+        var _on = on.split("#t=");
+        var time = _on[1].split(",")[0];
+  $rootScope.$broadcast('seek',_on[0],time);
     };
 /**
  * Find relevant 'on' URI if oa:Annotation from array of 
@@ -132,11 +129,14 @@ sounding.controller("viewController", function ($scope, ViewService, ViewValues,
      * @param {number} ?time include to check if the current time is in range
      * @return {boolean || array} true false check for value in range or just the times on the selector
      */
-    $scope.inTime = function (on, time) {
+    $scope.inTime = function (on) {
         if (on) {
-            var t = ViewValues[on] || on.substring(on.lastIndexOf("#t=") + 3).split(",");
+            var _on = on.split("#t=");
+            var t = ViewValues[on] || _on[1].split(",");
+            var time = ViewValues.currentTime[_on[0]];
             if (isNaN(time)) {
-                return t;
+                return false;
+                // return t;
             } else {
                 return time >= t[0] && time < t[1];
             }

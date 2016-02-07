@@ -17,7 +17,7 @@
             <div class="btn-group pull-right">
                 <button type="button" class="btn btn-xs btn-default"
                         ng-repeat="c in manifest.sequences[0].canvases"
-                        ng-class="{active:inTime(c.otherContent[0].resource,vv.currentTime)}"
+                        ng-class="{active:inTime(c.otherContent[0].resource)}"
                         ng-click="seekTo(c.otherContent[0].resource)">
                     {{c.label||$index}}
                 </button>
@@ -25,7 +25,7 @@
             <sc-canvas class="position-relative overflow-hidden btn-block"
                        ng-class="{visible:vv.revealAnnotations}"
                        ng-repeat="c in manifest.sequences[0].canvases"
-                       ng-show="inTime(c.otherContent[0].resource, vv.currentTime)">
+                       ng-show="inTime(c.otherContent[0].resource)">
                 <img selector="c['@id']"
                      width='100%'
                      alt="{{c.label}}">
@@ -33,8 +33,8 @@
                 <div ng-repeat="anno in c.otherContent[1]['@list']"
                 ng-init="a=rerum.getResource(anno)"
                      class="bookmark"
-                     ng-class="{active:inTime(thisOn(a.on,vv.showAudio['@id']),vv.currentTime)}"
-                     ng-click="seekTo(thisOn(a.on,vv.showAudio['@id']))"
+                     ng-class="{active:inTime(thisOn(a.on,manifest.resources[0]))}"
+                     ng-click="seekTo(thisOn(a.on,manifest.resources[0]))"
                      ng-style="annotationStyle(thisOn(a.on,c['@id']), c)"></div>
             </sc-canvas>
         </div>
@@ -42,25 +42,29 @@
             <!--show text with all images subordinated-->
             <div ng-repeat="l in text[0].lines"
                  ng-init="line = rerum.getResource(l)"
-                 ng-class="{active:inTime(line.on[3],vv.currentTime)}">
+                 ng-class="{active:inTime(line.on[3])}">
                 {{getText(line)}}
             </div>
         </div>
     </div>
-    <div ng-controller="wavesurferController" class="col-sm-6"
-         ng-init="music = rerum.getResource(manifest.resources[0])">
-        <h3><button class="btn btn-default pull-right" ng-click="wavesurfer.playPause()">
-                <i class="fa" ng-class="{'fa-play':paused,'fa-pause':!paused}"></i>
-                <span class='timer'>{{vv.currentTime|number:2}}</span>
-            </button> {{music.label}}</h3>
+        <div class="col-sm-6" ng-repeat="music in performances" ng-show="thisOn(manifest.resources,music['@id'])">
         <wavesurfer ng-attr-url="{{music.resource['@id']}}"
                     wave-color="#333"
                     progress-color="#002147"
-                    min-px-per-sec=1></wavesurfer>
+                    min-px-per-sec=1>
+        <h4><button class="btn btn-default pull-right" ng-click="wavesurfer.playPause()"
+            ng-show="wavesurfer.ready">
+                <i class="fa" ng-class="{'fa-play':paused,'fa-pause':!paused}"></i>
+                <span class='timer'>{{vv.currentTime[music['@id']]|number:2}}
+                <span ng-hide="vv.currentTime[music['@id']]">Play</span>
+            </span>
+            </button> {{music.label}}</h4>
+                        <div ng-class="{loader:!wavesurfer.ready}"></div>
+</wavesurfer>
 
-        <div ng-repeat="anno in text[0].lines" class="btn-block fadeIn"
+        <!-- <div ng-repeat="anno in text[0].lines" class="btn-block fadeIn"
              ng-init="on=rerum.getResource(anno).on[3]"
-             ng-show="inTime(on, vv.currentTime)">
+             ng-show="inTime(on)">
 
             <card ng-repeat="target in rerum.getTargets(anno, 'TEXT') track by $index">
             {{rerum.getResource(target).label || rerum.getResource(target)['@id']}}
@@ -73,7 +77,6 @@
             {{rerum.getResource(target).label || rerum.getResource(target)['@id']}}
             <img selector="target" width="100%">
             </card>
-
-        </div>
+</div> -->
     </div>
 </div>

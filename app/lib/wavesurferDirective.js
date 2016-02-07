@@ -3,6 +3,7 @@ angular.module('wavesurfer', [])
     .directive('wavesurfer', function (ViewValues) {
         return {
             restrict: 'E',
+            controller:'wavesurferController',
             link: function ($scope, $element, $attrs) {
                 $element.css('display', 'block');
 
@@ -13,14 +14,14 @@ angular.module('wavesurfer', [])
                     wavesurfer.load($attrs.url, $attrs.data || null);
                 }
                 $scope.$emit('wavesurferInit', wavesurfer);
-                // override to get time in Angular
-                WaveSurfer.WebAudio.getCurrentTime = function () {
-                    var time = this.state.getCurrentTime.call(this);
-                    $scope.$evalAsync(function () {
-                        ViewValues.currentTime = time;
-                    });
-                    return time;
-                };
+                // // override to get time in Angular
+                // WaveSurfer.WebAudio.getCurrentTime = function () {
+                //     var time = this.state.getCurrentTime.call(this);
+                //     $scope.$evalAsync(function () {
+                //         ViewValues.currentTime[$scope.music['@id']] = time;
+                //     });
+                //     return time;
+                // };
                 WaveSurfer.seekTo = function (progress) {
                     var paused = this.backend.isPaused();
                     // avoid small scrolls while paused seeking
@@ -43,12 +44,15 @@ angular.module('wavesurfer', [])
     })
 
     .controller('wavesurferController', function ($scope, ViewValues) {
-        ViewValues.wav = $scope.wavesurfer;
         var activeUrl = null;
         $scope.paused = true;
+        $scope.wavesurfer = {};
         $scope.$on('wavesurferInit', function (e, wavesurfer) {
             $scope.wavesurfer = wavesurfer;
-            ViewValues.wav = $scope.wavesurfer;
+            $scope.wavesurfer.on('ready', function () {
+                $scope.wavesurfer.ready = true;
+                $scope.$apply(); 
+            });
             $scope.wavesurfer.on('play', function () {
                 $scope.paused = false;
             });
@@ -58,8 +62,22 @@ angular.module('wavesurfer', [])
             $scope.wavesurfer.on('finish', function () {
                 $scope.paused = true;
                 $scope.wavesurfer.seekTo(0);
-                $scope.$apply();
+                $scope.$apply(); 
             });
+
+            $scope.wavesurfer.on('audioprocess',function(){
+                $scope.$evalAsync(function () {
+                ViewValues.currentTime[$scope.music['@id']] = $scope.wavesurfer.getCurrentTime();
+            });
+            });
+            $scope.$on('seek',function(scope,id,mark){
+                if($scope.music['@id']===id){
+ViewValues.currentTime[$scope.music['@id']] = $scope.wavesurfer.seekTo(mark/$scope.wavesurfer.getDuration());  
+}
+            });
+            // $scope.$evalAsync(function () {
+            //     ViewValues.currentTime[$scope.music['@id']] = $scope.wavesurfer.getCurrentTime();
+            // });
         });
 
         $scope.play = function (url) {
@@ -80,4 +98,14 @@ angular.module('wavesurfer', [])
         $scope.isPlaying = function (url) {
             return url == activeUrl;
         };
+
+                        // override to get time in Angular
+                // WaveSurfer.WebAudio.getCurrentTime = function () {
+                //     var time = this.state.getCurrentTime.call(this);
+                //     $scope.$evalAsync(function () {
+                //         ViewValues.currentTime[$scope.music['@id']] = time;
+                //     });
+                //     return time;
+                // };
+
     });

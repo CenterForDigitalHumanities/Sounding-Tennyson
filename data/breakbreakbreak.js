@@ -3,20 +3,20 @@
 sounding.value('RESOURCES', [{
         "@id": "Break_Break_Break_Janotha",
         "@type": "oa:Annotation",
-        "label": "Break, Break, Break",
-        "motivation": "sc:painting",
+        "label": "Break, Break, Break (Janotha)",
+        "motivation": "performance",
         "resource": {
             "@id": "media/audio/Break_Break_Break_Janotha.mp3",
             "@type": "dctypes:Sound",
             "format": "audio/mpeg"
         }
     }, {
-        "@id": "EngPiano",
+        "@id": "Break_Break_Break_AET",
         "@type": "oa:Annotation",
-        "label": "Recording 4",
-        "motivation": "sc:painting",
+        "label": "Break, Break, Break (AET)",
+        "motivation": "performance",
         "resource": {
-            "@id": "media/Recording4.m4a",
+            "@id": "media/audio/Break_Break_Break_AET.mp3",
             "@type": "dctypes:Sound",
             "format": "audio/mpeg"
         }
@@ -111,7 +111,7 @@ sounding.value('MANIFESTS', [
         "@type": "sc:Manifest",
         "label": 'AET, "Break," draft 1 (5321)',
         "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, red MS music album. TRC/Music/5321, ff 3r-4v. Lincolnshire County Council, UK.',
-        "resources": ["Break_Break_Break_Janotha"],
+        "resources": ["Break_Break_Break_AET"],
         "layers": ["PianoLayer"],
         "sequences": [{
                 "@id": "music album normal sequence",
@@ -153,7 +153,15 @@ sounding.value('MANIFESTS', [
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": []
+                        "otherContent": [{
+                            "@id":"rb1audio",
+                            "@type":"oa:Annotation",
+                                "label": "page 1",
+                                "motivation": "sc:painting",
+                                "resource": "Break_Break_Break_AET#t=0,9",
+                                "on": "RB1",
+                                "within": "PianoLayer"
+                        }]
                     }, {
                         "label": "4r",
                         "@id": "RB2",
@@ -172,7 +180,15 @@ sounding.value('MANIFESTS', [
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": []
+                        "otherContent": [{
+                            "@id":"rb2audio",
+                            "@type":"oa:Annotation",
+                                "label": "page 2",
+                                "motivation": "sc:painting",
+                                "resource": "Break_Break_Break_AET#t=9,74",
+                                "on": "RB2",
+                                "within": "PianoLayer"
+                        }]
                     }, {
                 "label": "4v",
                         "@id": "RB3",
@@ -191,7 +207,15 @@ sounding.value('MANIFESTS', [
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                "otherContent": []
+                "otherContent": [{
+                            "@id":"rb3audio",
+                            "@type":"oa:Annotation",
+                                "label": "page 3",
+                                "motivation": "sc:painting",
+                                "resource": "Break_Break_Break_AET#t=74,118",
+                                "on": "RB3",
+                                "within": "PianoLayer"
+                        }]
                     }]
             }]
     }, {
@@ -232,7 +256,7 @@ sounding.value('MANIFESTS', [
                                 "on": "Eng1",
                                 "within": "PianoLayer"
                             }, {
-                                "@id": "EngPianoMeasures",
+                                "@id": "EngPianoMeasures1",
                                 "@type": "sc:AnnotationList",
                                 "label": "measures",
                                 "@list": [
@@ -595,7 +619,7 @@ sounding.value('MANIFESTS', [
                                 "@type": "oa:Annotation",
                                 "label": "Engraving, page 3",
                                 "motivation": "sc:painting",
-                                "resource": "EngPiano#t=79.64,124.61",
+                                "resource": "Break_Break_Break_Janotha#t=79.64,124.61",
                                 "on": "Eng2",
                                 "within": "PianoLayer"
                             },
@@ -808,7 +832,7 @@ sounding.value('MANIFESTS', [
                                 "@type": "oa:Annotation",
                                 "label": "Engraving, page 4",
                                 "motivation": "sc:painting",
-                                "resource": "EngPiano#t=124.61,178.67",
+                                "resource": "Break_Break_Break_Janotha#t=124.61,178.67",
                                 "on": "Eng2",
                                 "within": "PianoLayer"
                             }, {
@@ -1021,7 +1045,7 @@ sounding.value('MANIFESTS', [
                                 "@type": "oa:Annotation",
                                 "label": "Engraving, page 5",
                                 "motivation": "sc:painting",
-                                "resource": "EngPiano#t=178.67,236",
+                                "resource": "Break_Break_Break_Janotha#t=178.67,236",
                                 "on": "Eng2",
                                 "within": "PianoLayer"
                             },
@@ -1218,7 +1242,7 @@ sounding.value('MANIFESTS', [
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
         "label": 'AT, "Break," Ms poem',
-        "resources": ["Break_Break_Break_Janotha"],
+        "resources": ["Break_Break_Break_Janotha","Break_Break_Break_AET"],
         "sequences": [{
                 "@id": "handwritten poem normal sequence",
                 "@type": "sc:Sequence",
@@ -1249,7 +1273,7 @@ sounding.value('MANIFESTS', [
                                 "on": "MS1",
                                 "within": "PianoLayer"
                             }, {
-                                "@id": "EngPianoMeasures",
+                                "@id": "EngPianoMeasures2",
                                 "@type": "sc:AnnotationList",
                                 "label": "measures",
                                 "@list": ["line_1", "line_2", "line_3", "line_4", "line_5",

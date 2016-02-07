@@ -21,13 +21,14 @@
                  class="bg-primary bookmark"></div>
         </div>
     </div>
-    <div class="col-sm-6">
-        <div ng-if="vv.showAudio" ng-controller="wavesurferController">
+    <div class="col-sm-6" ng-repeat="m in manifest.resources" ng-init="w=rerum.getResource(m)">
+        <div ng-if="w.motivation==='performance'" ng-controller="wavesurferController"
+       >
             <h3><button class="btn btn-default pull-right" ng-click="wavesurfer.playPause()">
                     <i class="fa" ng-class="{'fa-play':paused,'fa-pause':!paused}"></i>
                     <span class='timer'>{{vv.currentTime|number:2}}</span>
-                </button> {{vv.showAudio.label}}</h3>
-            <wavesurfer ng-attr-url="{{vv.showAudio.sources[0].src}}"
+                </button> {{w.label}}</h3>
+            <wavesurfer ng-attr-url="{{w.resource['@id']}}"
                         wave-color="#333"
                         progress-color="#337ab7"
                         min-px-per-sec=1></wavesurfer>

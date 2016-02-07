@@ -341,10 +341,12 @@ TEI figure {
     border: solid thin silver;
     overflow: hidden;
 }
+
 TEI figure img {
     max-height: 100%;
     max-width: 100%;
 }
+
 TEI figcaption {
     font-size: 80%;
     color:#333;
@@ -355,13 +357,13 @@ TEI figcaption {
     background: rgba(255,255,255,.7);
     padding: .5em;
 }
+
 rr-inline-fig{
-    width:100%;
+    max-width: 33%;
     min-height:12rem;
     background: #FFF;
     position:relative;
     max-height: 30rem;
-    max-width:60rem;
     padding: .5em;
     margin: 1em auto;
     border: solid thin silver;
@@ -370,14 +372,17 @@ rr-inline-fig{
 }
 /* bibliography notes */
 rr-bib{
-    display: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 75%;
+    counter-reset: footnoteb;
 }
 
 rr-poem{
     display :block;
     font-size: 70%;
     position: relative;
-    margin: 0 auto;
+    padding: 5px 24px;
 }
 rr-poem-block{
     display: block;
@@ -385,12 +390,14 @@ rr-poem-block{
 rr-poem-line{
     display: block;
 }
+rr-poem-line:nth-child(even){
+    margin-left: 16px;
+}
 rr-slack-map{
     display: block;
     font-size: 70%;
     position: relative;
-    margin: 0 auto;
-}
+    padding: 5px 24px;}
 rr-slack-block{
     display: block;
 }
@@ -398,13 +405,18 @@ rr-slack-line{
     display: block;
     margin: 15px 0px;
 }
+rr-slack-line:nth-child(even) {
+    margin-left: 16px;
+}
 rr-line-note{
     color: blue;
     font-size: 80%;
+    left: 0px;
+    position: absolute
 }
 rr-note-right{
     position: relative;
-    right: 0px;
+    right: 25px;
 }
 rr-float-r-fig{
     position: relative;
@@ -432,6 +444,7 @@ syl-long::after{
     position: relative;
     right: 10px;
 }
+<<<<<<< HEAD
 
 .loader,
 .loader:before,
@@ -495,4 +508,54 @@ syl-long::after{
     height: 5em;
     margin: -.5em auto;
   }
+=======
+e-minor{
+    color: rgb(0, 153, 153) !important;
+}
+b-major{
+    color: rgb(112,48,160) !important;
+}
+e-major{
+    color: red !important;
+}
+rr-footnote{
+
+}
+
+body{
+    counter-reset:footnotea;
+}
+
+
+rr-footnote::after{
+    counter-increment: footnotea;
+    content: counter(footnotea);
+    font-size: 70%;
+    position: relative;
+    right: -2px;
+    top: -5px;
+}
+
+rr-bib rr-footnote::before{
+    counter-increment: footnoteb;
+    content: counter(footnoteb);
+    font-size: 70%;
+    position: relative;
+    left: -2px;
+    top: -5px;
+}
+rr-bib rr-footnote::after{
+    content: "" !important;
+}
+rr-line-indent{
+    margin-left: 25px;
+    position:relative;
+    display:block;
+}
+rr-bib-entry{
+    position:relative;
+    display:block;
+    margin-bottom: 10px;
+
+>>>>>>> refs/remotes/origin/master
 }

@@ -62,8 +62,8 @@
             <p>
                 <rr-inline-fig>
                     <img src="media/mus_man_1.jpg"/>
-                    <figcaption>Fig. 7. Music manuscript books (Red, Pink, Green)</figcaption>
-                </rr-inline-fig>
+<!--                     <figcaption>Fig. 7. Music manuscript books (Red, Pink, Green)</figcaption>
+ -->                </rr-inline-fig>
                 <rr-inline-fig>
                     <img src="media/mus_man_2.jpg"/>
                 </rr-inline-fig>
@@ -77,7 +77,7 @@
             <p>
                 <figure>
                     <img src="media/fig8.jpg" />
-                    <figcaption>Figure 8. 5312/1, f11r. Hallam Tennyson’s writing, pencil note, ‘Copied in green <rr-footnote>book.</rr-footnote>’ </figcaption>
+                    <figcaption>Figure 8. 5312/1, f11r. Hallam Tennyson’s writing, pencil note, ‘Copied in green' <rr-footnote>book.</rr-footnote> </figcaption>
                 </figure>
             </p>
             <p>
@@ -106,15 +106,15 @@
             <p>
                 <rr-bib>
 
-                    <rr-footnote>It</rr-footnote> is unclear how much the materials were cared for between Hallam’s death and 1963, when the stored items were unpacked at the Tennyson Research Centre under Charles Tennyson’s oversight (grandson to the poet). Grace Timmins to Phyllis Weliver, emails, 24 and 28 October 2014.
+                   <rr-bib-entry> <rr-footnote>It</rr-footnote> is unclear how much the materials were cared for between Hallam’s death and 1963, when the stored items were unpacked at the Tennyson Research Centre under Charles Tennyson’s oversight (grandson to the poet). Grace Timmins to Phyllis Weliver, emails, 24 and 28 October 2014.</rr-bib-entry>
 
-                    <rr-footnote>For</rr-footnote> discussions of musical albums, see Michelle Meinhart, “Mourning and Memorial: Memory and Private Mourning in an English Country House during the First World War: Lady Alda Hoare’s Musical Shrine to a Lost Son,” Journal of Musicological Research 33 (2014): 39-95; Jeanice Brooks, “Musical Monuments for the Country House: Music, Collection, and Display at Tatton Park,” Music & Letters 91.4 (2010): 513-35
+                   <rr-bib-entry> <rr-footnote>For</rr-footnote> discussions of musical albums, see Michelle Meinhart, “Mourning and Memorial: Memory and Private Mourning in an English Country House during the First World War: Lady Alda Hoare’s Musical Shrine to a Lost Son,” Journal of Musicological Research 33 (2014): 39-95; Jeanice Brooks, “Musical Monuments for the Country House: Music, Collection, and Display at Tatton Park,” Music & Letters 91.4 (2010): 513-35 </rr-bib-entry>
 
-                    <rr-footnote>Hallam</rr-footnote> Tennyson, Alfred Lord Tennyson: A Memoir by his Son, 2 vols (1897; New York: Macmillan, 1898) 1: 77.
+                 <rr-bib-entry><rr-footnote>Hallam</rr-footnote> Tennyson, Alfred Lord Tennyson: A Memoir by his Son, 2 vols (1897; New York: Macmillan, 1898) 1: 77. </rr-bib-entry>
 
-                    <rr-footnote>Ibid.</rr-footnote>
+                 <rr-bib-entry><rr-footnote>Ibid.</rr-footnote> </rr-bib-entry>
 
-                   <rr-footnote>Grace</rr-footnote> Timmins, email to author, 2/2/16.
+                 <rr-bib-entry><rr-footnote>Grace</rr-footnote> Timmins, email to author, 2/2/16. </rr-bib-entry>
                 </rr-bib>
             </p>
         </body>

@@ -341,10 +341,12 @@ TEI figure {
     border: solid thin silver;
     overflow: hidden;
 }
+
 TEI figure img {
     max-height: 100%;
     max-width: 100%;
 }
+
 TEI figcaption {
     font-size: 80%;
     color:#333;
@@ -355,13 +357,13 @@ TEI figcaption {
     background: rgba(255,255,255,.7);
     padding: .5em;
 }
+
 rr-inline-fig{
-    width:100%;
+    max-width: 33%;
     min-height:12rem;
     background: #FFF;
     position:relative;
     max-height: 30rem;
-    max-width:60rem;
     padding: .5em;
     margin: 1em auto;
     border: solid thin silver;
@@ -370,7 +372,10 @@ rr-inline-fig{
 }
 /* bibliography notes */
 rr-bib{
-    display: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 75%;
+    counter-reset: footnoteb;
 }
 
 rr-poem{
@@ -447,4 +452,44 @@ b-major{
 }
 e-major{
     color: red !important;
+}
+rr-footnote{
+
+}
+
+body{
+    counter-reset:footnotea;
+}
+
+
+rr-footnote::after{
+    counter-increment: footnotea;
+    content: counter(footnotea);
+    font-size: 70%;
+    position: relative;
+    right: -2px;
+    top: -5px;
+}
+
+rr-bib rr-footnote::before{
+    counter-increment: footnoteb;
+    content: counter(footnoteb);
+    font-size: 70%;
+    position: relative;
+    left: -2px;
+    top: -5px;
+}
+rr-bib rr-footnote::after{
+    content: "" !important;
+}
+rr-line-indent{
+    margin-left: 25px;
+    position:relative;
+    display:block;
+}
+rr-bib-entry{
+    position:relative;
+    display:block;
+    margin-bottom: 10px;
+
 }

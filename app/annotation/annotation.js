@@ -27,11 +27,8 @@ sounding.controller('makeAnnotationController', function ($scope, ViewValues, Vi
         }
 
         var imgDims = [
-            [4431, 6586],
-            [4480, 6516],
-            [4514, 6690],
-            [4465, 6509],
-            [4577, 6797]
+            [1513, 2000],
+            [1567+1538, 2000]
         ];
 
         angular.forEach(annos.pages, function (p, index) {

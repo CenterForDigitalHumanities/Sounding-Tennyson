@@ -69,6 +69,18 @@ var sounding = angular.module('sounding',
                     templateUrl: 'app/static/team.html',
                     controller: 'viewController'
                 })
+                .when('/archive', {
+                    templateUrl: 'app/static/archive.html',
+                    controller: function($scope,MANIFESTS,RESOURCES,ANNOTATIONS,ESSAYS,TEXT){
+                        $scope.categories = [
+                            { label: "Essays", list:ESSAYS },
+                            { label: "Manuscripts", list:MANIFESTS },
+                            { label: "Performances", list:RESOURCES },
+                            { label: "Text", list:TEXT },
+                            { label: "Annotations", list:ANNOTATIONS }
+                        ]
+                    }
+                })
                 .when('/welcome', {
                     templateUrl: 'app/view/viewAnnotation.html',
                     controller: 'viewController',

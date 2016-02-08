@@ -45,6 +45,22 @@ var sounding = angular.module('sounding',
                     templateUrl: 'app/annotation/annotation.html',
                     controller: 'viewController'
                 })
+                .when('/about', {
+                    templateUrl: 'app/static/about.html',
+                    controller: 'viewController'
+                })
+                .when('/acknowledgments', {
+                    templateUrl: 'app/static/acknowledgment.html',
+                    controller: 'viewController'
+                })
+                .when('/funding', {
+                    templateUrl: 'app/static/funding.html',
+                    controller: 'viewController'
+                })
+                .when('/glossary', {
+                    templateUrl: 'app/static/glossary.html',
+                    controller: 'viewController'
+                })
                 .when('/welcome', {
                     templateUrl: 'app/view/viewAnnotation.html',
                     controller: 'viewController',

@@ -8,6 +8,8 @@
  * https://www.cam.ac.uk/brand-resources/guidelines/typography-and-colour/rgb-and-websafe-references
  * RGB - 0 179 190
  * Hex - #00B1C1
+
+ * green from pic - 132,140,103
  **/
 
 .debug {
@@ -17,11 +19,13 @@
 }
 h1,h2,h3,h4 {
     font-family: 'im_fell_englishregular', serif;
-    text-shadow: -1px 1px 2px rgba(0,0,0,.5);
     color: #002147;
 }
+h1,h2{
+    text-shadow: -1px 1px 2px rgba(0,0,0,.5);
+}
 body{
-    background-color: #91B9A4; /* cambridge light blue */
+    background-color: rgb(132,140,103); 
 }
 .lighten{
     background-color: rgba(255,255,255,.87);
@@ -35,6 +39,19 @@ body{
     top:0;
     width: 100vw;
     pointer-events:none;
+}
+.navbar{
+    background-color: lavender;
+}
+dl.dl-inline dd,dl.dl-inline dt {
+    display:inline;
+}
+dl.dl-inline dd::after {
+content:'';
+display:inline-block;
+}
+dd+dt {
+    margin-top: 1rem;
 }
 .masthead {
     left:0;
@@ -53,7 +70,9 @@ body{
     transition:all 250ms;
     padding-bottom: 15px;
     margin-bottom: -15px;
-}
+color: cornsilk;
+    text-shadow: -1px 1px 1px darkred;
+    }
 .panel-body h3:first-of-type {
     margin-top: 0;
 }

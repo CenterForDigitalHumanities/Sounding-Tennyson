@@ -353,7 +353,6 @@ TEI figure {
     min-height:12rem;
     background: #FFF;
     position:relative;
-    max-height: 30rem;
     max-width:60rem;
     padding: .5em;
     margin: 1em auto;
@@ -364,12 +363,13 @@ TEI figure {
 TEI figure img {
     max-height: 100%;
     max-width: 100%;
+    /*max-height: 40rem;*/
 }
 
 TEI figcaption {
     font-size: 80%;
     color:#333;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left:0;
     width:100%;
@@ -387,7 +387,18 @@ rr-inline-fig{
     margin: 1em auto;
     border: solid thin silver;
     overflow: hidden;
-    display: inline-table;
+    display: inline-block;
+}
+
+rr-float-l-fig{
+    float: left;
+    width: 209px;
+    margin-right: 20px;
+}
+
+rr-inline-fig img{
+    position:relative;
+    max-height: 30rem;
 }
 /* bibliography notes */
 rr-bib{

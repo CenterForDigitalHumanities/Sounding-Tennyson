@@ -434,8 +434,8 @@ rr-line-note{
     position: absolute
 }
 rr-note-right{
-    position: relative;
-    right: 25px;
+    position: absolute;
+    right: 15px;
 }
 rr-float-r-fig{
     position: relative;
@@ -463,8 +463,6 @@ syl-long::after{
     position: relative;
     right: 10px;
 }
-<<<<<<< HEAD
-
 .loader,
 .loader:before,
 .loader:after {
@@ -527,7 +525,6 @@ syl-long::after{
     height: 5em;
     margin: -.5em auto;
   }
-=======
 e-minor{
     color: rgb(0, 153, 153) !important;
 }
@@ -575,6 +572,4 @@ rr-bib-entry{
     position:relative;
     display:block;
     margin-bottom: 10px;
-
->>>>>>> refs/remotes/origin/master
 }

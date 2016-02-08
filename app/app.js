@@ -61,6 +61,14 @@ var sounding = angular.module('sounding',
                     templateUrl: 'app/static/glossary.html',
                     controller: 'viewController'
                 })
+                .when('/history', {
+                    templateUrl: 'app/static/history.html',
+                    controller: 'viewController'
+                })
+                .when('/team', {
+                    templateUrl: 'app/static/team.html',
+                    controller: 'viewController'
+                })
                 .when('/welcome', {
                     templateUrl: 'app/view/viewAnnotation.html',
                     controller: 'viewController',

@@ -44,11 +44,11 @@ body{
     background-color: lavender;
 }
 dl.dl-inline dd,dl.dl-inline dt {
-    display:inline;
+display:inline;
 }
 dl.dl-inline dd::after {
 content:'';
-display:inline-block;
+display:block;
 }
 dd+dt {
     margin-top: 1rem;

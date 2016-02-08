@@ -80,10 +80,10 @@
                     </rr-poem-block> 
 
                     <rr-poem-block>
-                        <rr-poem-line>Break, break, break</rr-poem-line>
-                        <rr-poem-line>  At the foot of thy crags, O Sea!<rr-note-right>[e minor]</rr-note-right></rr-poem-line>
-                        <rr-poem-line><rr-line-note>15</rr-line-note>   But the tender grace of a day that is dead</rr-poem-line>
-                        <rr-poem-line>  Will never come back to me.<rr-note-right>[E major]</rr-note-right></rr-poem-line>
+                        <e-minor><rr-poem-line>Break, break, break</rr-poem-line>
+                        <rr-poem-line>  At the foot of thy crags, O Sea!<rr-note-right>[e minor]</rr-note-right></rr-poem-line></e-minor>
+                        <rr-poem-line><rr-line-note>15</rr-line-note>   <e-major>But the tender grace of a day that is dead</rr-poem-line>
+                        <rr-poem-line>  Will never come back to me.<rr-note-right>[E major]</rr-note-right></e-major></rr-poem-line>
                     </rr-poem-block>
                 </rr-poem>
                 Because of an abrupt change to E minor in the middle of line 11 and its chromatic treatment (moving by half-steps), “touch of a vanish’d hand” gains harmonic emphasis. 

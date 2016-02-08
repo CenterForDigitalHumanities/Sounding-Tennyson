@@ -378,7 +378,7 @@ TEI figcaption {
 }
 
 rr-inline-fig{
-    max-width: 33%;
+    max-width: 30%;
     min-height:12rem;
     background: #FFF;
     position:relative;

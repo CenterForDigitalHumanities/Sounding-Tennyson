@@ -358,6 +358,7 @@ TEI figure {
     margin: 1em auto;
     border: solid thin silver;
     overflow: hidden;
+    text-align: center;
 }
 
 TEI figure img {

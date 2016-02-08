@@ -1314,7 +1314,15 @@ sounding.value('MANIFESTS', [
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": []
+                        "otherContent": [{
+                                "@id": "p1",
+                                "@type": "oa:Annotation",
+                                "label": "Performance",
+                                "motivation": "sc:painting",
+                                "resource": "Break_Break_Break_AET#t=0,28.01",
+                                "on": "PB1",
+                                "within": "PianoLayer"
+                            }]
                     }, {
                         "label": "11v",
                         "@id": "PB2",
@@ -1333,7 +1341,15 @@ sounding.value('MANIFESTS', [
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": []
+                        "otherContent": [{
+                                "@id": "p2",
+                                "@type": "oa:Annotation",
+                                "label": "Performance",
+                                "motivation": "sc:painting",
+                                "resource": "Break_Break_Break_AET#t=28.01,60.4",
+                                "on": "PB1",
+                                "within": "PianoLayer"
+                            }]
                     }, {
                         "label": "12r",
                         "@id": "PB3",
@@ -1352,7 +1368,15 @@ sounding.value('MANIFESTS', [
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": []
+                        "otherContent": [{
+                                "@id": "p3",
+                                "@type": "oa:Annotation",
+                                "label": "Performance",
+                                "motivation": "sc:painting",
+                                "resource": "Break_Break_Break_AET#t=60.4,114.63",
+                                "on": "PB1",
+                                "within": "PianoLayer"
+                            }]
                     }, {
                         "label": "12v",
                         "@id": "PB4",
@@ -1371,7 +1395,15 @@ sounding.value('MANIFESTS', [
                                     "@type": "dcterms:Image"
                                 }
                             }],
-                        "otherContent": []
+                        "otherContent": [{
+                                "@id": "p4",
+                                "@type": "oa:Annotation",
+                                "label": "Performance",
+                                "motivation": "sc:painting",
+                                "resource": "Break_Break_Break_AET#t=100.6,114.63",
+                                "on": "PB1",
+                                "within": "PianoLayer"
+                            }]
                     }]
             }]
     }, {

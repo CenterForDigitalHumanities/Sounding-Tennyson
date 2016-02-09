@@ -61,6 +61,7 @@ sounding.directive('xmlDiv', function ($sce, ViewService) {
 });
 
 sounding.controller("viewController", function ($scope, ViewService, ViewValues, Lists, MANIFESTS,RESOURCES, TEXT, $cacheFactory, RERUM,$rootScope) {
+    $scope.Lists = Lists;
     $scope.vv = ViewValues;
     $scope.manifests = MANIFESTS;
     $scope.performances = [];
@@ -87,7 +88,7 @@ Lists.addIfNotIn(r,$scope.performances);
   $rootScope.$broadcast('seek',_on[0],time);
     };
 /**
- * Find relevant 'on' URI if oa:Annotation from array of 
+ * Find relevant 'on' URI if oa:Annotation from array of
  * on or hasTarget URIs by matching the @id of the intended
  * target.
  * @param array arr URIs to search through

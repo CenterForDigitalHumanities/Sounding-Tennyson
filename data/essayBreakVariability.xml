@@ -56,10 +56,10 @@
 
                 <rr-poem>
                     <rr-poem-block>
-                        <e-minor><rr-poem-line>Break, break, break,</rr-poem-line>
-                        <rr-poem-line>  On thy cold gray stones, O Sea!</rr-poem-line>
-                        <rr-poem-line>And I would that my tongue could utter <rr-note-right>[e minor]</rr-note-right></rr-poem-line></e-minor>
-                        <b-major><rr-poem-line>  The thoughts that arise in me.<rr-note-right>[B maj; modulates to V, typical 1st strophe]</rr-note-right></rr-poem-line></b-major>
+                        <rr-poem-line><e-minor>Break, break, break,</e-minor></rr-poem-line>
+                        <rr-poem-line> <e-minor> On thy cold gray stones, O Sea!</e-minor></rr-poem-line>
+                        <rr-poem-line><e-minor>And I would that my tongue could utter</e-minor> <rr-note-right>[e minor]</rr-note-right></rr-poem-line>
+                        <rr-poem-line> <b-major> The thoughts that arise in me.<rr-note-right>[B maj; modulates to V, typical 1st strophe]</b-major></rr-note-right></rr-poem-line>
                     </rr-poem-block>
                     
                     <e-major>
@@ -72,18 +72,17 @@
                     </e-major> 
 
                     <rr-poem-block>
-                        <e-major><rr-poem-line>And the stately ships go on</rr-poem-line>
-                        <rr-poem-line><rr-line-note>10</rr-line-note>     To their haven under the hill;</rr-poem-line>
-                        </e-major>
+                        <rr-poem-line><e-major>And the stately ships go on</e-major></rr-poem-line>
+                        <rr-poem-line><rr-line-note>10</rr-line-note><e-major>     To their haven under the hill;</e-major></rr-poem-line>
                         <rr-poem-line><e-major>But O for the </e-major><e-minor>touch of a vanish’d hand,</e-minor><rr-note-right><e-major>[E major, except verse in</e-major></rr-note-right></rr-poem-line>
                         <rr-poem-line><e-major> And the sound of a voice that is still!</e-major><rr-note-right><e-minor>blue -- e minor!]</e-minor></rr-note-right></rr-poem-line>
                     </rr-poem-block> 
 
                     <rr-poem-block>
-                        <e-minor><rr-poem-line>Break, break, break</rr-poem-line>
-                        <rr-poem-line>  At the foot of thy crags, O Sea!<rr-note-right>[e minor]</rr-note-right></rr-poem-line></e-minor>
-                        <rr-poem-line><rr-line-note>15</rr-line-note>   <e-major>But the tender grace of a day that is dead</rr-poem-line>
-                        <rr-poem-line>  Will never come back to me.<rr-note-right>[E major]</rr-note-right></e-major></rr-poem-line>
+                        <rr-poem-line><e-minor>Break, break, break</e-minor></rr-poem-line>
+                        <rr-poem-line><e-minor>  At the foot of thy crags, O Sea!<rr-note-right>[e minor]</rr-note-right></e-minor></rr-poem-line>
+                        <rr-poem-line><rr-line-note>15</rr-line-note>   <e-major>But the tender grace of a day that is dead</e-major></rr-poem-line>
+                        <rr-poem-line><e-major>  Will never come back to me.<rr-note-right>[E major]</rr-note-right></e-major></rr-poem-line>
                     </rr-poem-block>
                 </rr-poem>
                 Because of an abrupt change to E minor in the middle of line 11 and its chromatic treatment (moving by half-steps), “touch of a vanish’d hand” gains harmonic emphasis. 

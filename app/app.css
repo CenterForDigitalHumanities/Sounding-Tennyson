@@ -425,6 +425,7 @@ rr-poem{
 }
 rr-poem-block{
     display: block;
+    margin-bottom: 15px;
 }
 rr-poem-line{
     display: block;
@@ -436,7 +437,9 @@ rr-slack-map{
     display: block;
     font-size: 70%;
     position: relative;
-    padding: 5px 24px;}
+    padding: 5px 24px;
+    text-indent: initial;
+}
 rr-slack-block{
     display: block;
 }
@@ -467,21 +470,25 @@ rr-float-l-fig{
 }
 syl-short{
     line-height: 2px;
+    position: relative;
+    display: inline-block;
 }
 syl-long{
     line-height: 2px;
+    position: relative;
+    display: inline-block;
 }
 syl-short::after{
     content:"u";
     top: -12px;
-    position: relative;
-    right: 10px;
+    position: absolute;
+    left:50%;
 }
 syl-long::after{
     content:"/";
     top: -12px;
-    position: relative;
-    right: 10px;
+    position: absolute;
+    left:50%;
 }
 .loader,
 .loader:before,

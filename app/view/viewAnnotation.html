@@ -11,6 +11,8 @@
         </div>
     </attribution>
     <h3>{{vv.annotation.label||"Viewing Annotation: "+vv.annotation['@id']}}</h3>
+    <h5>{{Lists.getAllByProp("label","subtitle",vv.annotation.metadata)[0].value}}</h5>
+    <small>{{Lists.getAllByProp("label","author",vv.annotation.metadata)[0].value}}</small>
 
     <span class="help-block">{{vv.annotation.description}}</span>
 

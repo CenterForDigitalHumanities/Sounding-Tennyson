@@ -104,7 +104,7 @@ sounding.value('MANIFESTS', [
 //                             }]
 //                     }]
 //             }]
-//     }, 
+//     },
     {
         "@id": "RB_Manifest",
         "@context": "http://iiif.io/api/presentation/2/context.json",
@@ -1543,7 +1543,7 @@ sounding.value('ESSAYS', [{
         },
         {
             "label": "subtitle",
-            "value": "Recording Tennyson’s Recitation of ‘Break, Break, Break’ in Music"
+                "value": 'Recording Tennyson’s Recitation of "Break, Break, Break" in Music'
         }
     ],
     "resource": "data/essayBreakToBreak.xml",

@@ -53,7 +53,7 @@ dl.dl-inline dd::after {
 content:'';
 display:block;
 }
-dd+dt {
+dd+dt, dt+dt {
     margin-top: 1rem;
 }
 .masthead {

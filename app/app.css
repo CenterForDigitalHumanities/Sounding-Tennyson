@@ -25,7 +25,7 @@ h1,h2{
     text-shadow: -1px 1px 2px rgba(0,0,0,.5);
 }
 body{
-    background-color: rgb(132,140,103); 
+    background-color: rgb(132,140,103);
 }
 .lighten{
     background-color: rgba(255,255,255,.87);
@@ -349,7 +349,7 @@ TEI teiHeader {
 TEI text {
     display:block;
     font-size: 125%;
-    line-height: 1.5;
+    line-height: 1.68;
 }
 
 TEI p {
@@ -574,6 +574,10 @@ rr-bib-entry{
     display:block;
     margin-bottom: 10px;
 }
+
+cite {
+    font-style: italic;
+}
 @-webkit-keyframes load1 {
   0%,
   80%,
@@ -601,3 +605,4 @@ rr-bib-entry{
     height: 5em;
     margin: -.5em auto;
   }
+

@@ -71,35 +71,21 @@ var sounding = angular.module('sounding',
                 })
                 .when('/archive', {
                     templateUrl: 'app/static/archive.html',
-                    controller: function($scope,MANIFESTS,RESOURCES,ANNOTATIONS,ESSAYS,TEXT){
+                    controller: function ($scope, MANIFESTS, RESOURCES, ANNOTATIONS, ESSAYS, TEXT) {
                         $scope.categories = [
-                            { label: "Essays", list:ESSAYS },
-                            { label: "Manuscripts", list:MANIFESTS },
-                            { label: "Performances", list:RESOURCES },
-                            { label: "Text", list:TEXT },
-                            { label: "Annotations", list:ANNOTATIONS }
+                            {label: "Essays", list: ESSAYS},
+                            {label: "Manuscripts", list: MANIFESTS},
+                            {label: "Performances", list: RESOURCES},
+                            {label: "Text", list: TEXT},
+                            {label: "Annotations", list: ANNOTATIONS}
                         ]
                     }
                 })
-                .when('/welcome', {
-                    templateUrl: 'app/view/viewAnnotation.html',
-                    controller: 'viewController',
-                    resolve: {
-                        authkey: function ($route) {
-                            return authorize($route);
-                        },
-                        displayAnnotation: function ($route, ViewValues, RERUM, ANNOTATIONS) {
-                            var a = $route.current.params.annotation;
-                            ViewValues.annotation = (a)
-                                ? RERUM.getResource(a)
-                                : ANNOTATIONS[0]; // default to Break, Break observation
-                        },
-                        load: function (MANIFESTS, RESOURCES, TEXT, ANNOTATIONS, ESSAYS, AGENTS, RERUM) {
-                            var everything = MANIFESTS.concat(RESOURCES, TEXT, ANNOTATIONS, ESSAYS, AGENTS);
-                            angular.forEach(everything, function (obj) {
-                                RERUM.extractResources(obj);
-                            });
-                        }
+                .when('/essays', {
+                    templateUrl: 'app/static/essays.html',
+                    controller: function ($scope, ESSAYS, Lists) {
+                        $scope.essays = ESSAYS;
+                        $scope.Lists = Lists;
                     }
                 })
                 .when('/summary/:id', {
@@ -124,7 +110,14 @@ var sounding = angular.module('sounding',
                 })
                 .otherwise(({redirectTo: '/welcome'}));
         }]);
-sounding.controller('mainController', function () {
+sounding.controller('mainController', function ($scope, ViewValues) {
+});
+
+sounding.directive('stFooter', function () {
+    return {
+        restrict: 'E',
+        templateUrl: 'app/components/footer.html'
+    };
 });
 
 

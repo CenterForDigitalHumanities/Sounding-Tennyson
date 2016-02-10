@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+Sounding Tennyson project, PI: Phyllis Weliver
+author: Patrick Cuba
+-->
+<html>
+    <head>
+        <title>Sounding Tennyson</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="all">
+        <link rel="stylesheet" href="app/app.css" media="all">
+        <link href='app/lib/printFont/stylesheet.css' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <style type="text/css">
+            #welcome-panel {
+                margin-top: 65vh;
+                background-color: rgb(132,140,103);
+                position: relative;
+                overflow: auto;
+                z-index: 0;
+                font-size: 125%;
+            }
+            .greenback {
+                position: absolute;
+                left: 0;
+                height: 100vh;
+                background: linear-gradient(to bottom, rgba(132,140,103,0) 0%,rgba(132,140,103,1) 5%,rgba(132,140,103,1) 100%);
+                width: 100vw;
+                top: 60vh;
+            }
+            .masthead{
+                position:fixed;    left: 40px;
+            }
+            footer{
+                position:relative;
+            }
+            figure{
+                padding: 5px;
+                border-radius: 2px;
+                background-color: cornsilk;
+            }
+            figure img{
+                width:100%;
+            }
+            figcaption {
+                font-size: 75%;
+                color: #333;
+            }
+            h3{
+                color: lavender;
+                text-shadow: -1px 1px 0px purple;
+            }
+            a {
+                color:lavender;
+            }
+        </style>
+    </head>
+    <body id="welcome" class="container">
+        <div style="position:fixed;top:0;left:0vw;width:100vw;">
+            <img src="../../media/dh_logo_large.jpg" style="width:100%;" alt="sketch" />
+            <small>Drawing by Alfred Lord Tennyson. This item is reproduced by permission of Lincolnshire County Council, UK.</small>
+        </div>
+
+        <div class="masthead">
+            <h1>Sounding Tennyson</h1>
+        </div>
+        <div class="greenback"></div>
+        <div id="welcome-panel">
+            <div class="visible-lg visible-md" style="height:10rem;position: relative;"></div>
+            <h3>Exploring the sound of Tennyson’s poetry</h3>
+            <ul class="col-xs-12 col-sm-6 col-md-8">
+                <li><a href="index.html#/summary/RB_Manifest">Discover</a> Lady Tennyson’s musical settings of "Break, break, break"</li>
+                <li><a href="index.html#/essays">Read</a> related commentary</li>
+                <li>Annotate</li>
+            <li>In future, we will present all 24 compositions with music by Emily Lady Tennyson and words by Alfred Lord Tennyson</li>
+            </ul>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <figure>
+            <img src="../../media/piano_cover.jpg" />
+            <figcaption>
+                Using Queen Victoria’s piano, we made the recordings in the
+                Tennysons’ restored drawing room. Farringford, Isle of Wight, UK.
+            </figcaption>
+        </figure>
+            </div>
+        </div>
+        <footer class="text-center">
+            <a href="index.html#/about">about</a>
+            <a href="index.html#/funding">funding</a>
+            <a href="index.html#/team">project team</a>
+            <a href="index.html#/acknowledgments">acknowledgments</a>
+            <a href="index.html#/history">project history</a>
+        </footer>
+        <script>
+            (function(){
+                document.addEventListener('DOMContentLoaded', function(){
+                document.getElementById("welcome-panel").scrollIntoView(true);
+                }, false);
+            })();
+        </script>
+    </body>
+</html>

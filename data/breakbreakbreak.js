@@ -1554,30 +1554,30 @@ sounding.value('ESSAYS', [{
     "comments": [],
     "otherContent": []
 },
-{
-    "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "EssayManuscriptBooks",
-    "@type": "rr:Essay",
-    "label": "Emily Tennyson's Music Manuscript Books",
-    "metadataResources": [],
-    "metadata": [
-        {
-            "label": "author",
-            "value": "Phyllis Weliver"
-        },
-        {
-            "label": "title",
-            "value": "Emily Tennyson's Music Manuscript Books"
-        }
-    ],
-    "resource": "data/essayManuscriptBooks.xml",
-    "style": "",
-    "footnotes": [],
-    "endnotes": [],
-    "indices": [],
-    "comments": [],
-    "otherContent": []
-},
+//{
+//    "@context": "http://iiif.io/api/presentation/2/context.json",
+//    "@id": "EssayManuscriptBooks",
+//    "@type": "rr:Essay",
+//    "label": "Emily Tennyson's Music Manuscript Books",
+//    "metadataResources": [],
+//    "metadata": [
+//        {
+//            "label": "author",
+//            "value": "Phyllis Weliver"
+//        },
+//        {
+//            "label": "title",
+//            "value": "Emily Tennyson's Music Manuscript Books"
+//        }
+//    ],
+//    "resource": "data/essayManuscriptBooks.xml",
+//    "style": "",
+//    "footnotes": [],
+//    "endnotes": [],
+//    "indices": [],
+//    "comments": [],
+//    "otherContent": []
+//},
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
     "@id": "EssayBreakVariability",
@@ -1602,30 +1602,30 @@ sounding.value('ESSAYS', [{
     "comments": [],
     "otherContent": []
 },
-{
-    "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "EssayEmilysMusic",
-    "@type": "rr:Essay",
-    "label": "Performance and Publication of Emily Tennyson’s Music",
-    "metadataResources": [],
-    "metadata": [
-        {
-            "label": "author",
-            "value": "Phyllis Weliver"
-        },
-        {
-            "label": "title",
-            "value": "Performance and Publication of Emily Tennyson’s Music"
-        }
-    ],
-    "resource": "data/essayEmilysMusic.xml",
-    "style": "data/essayStyle.xsl",
-    "footnotes": [],
-    "endnotes": [],
-    "indices": [],
-    "comments": [],
-    "otherContent": []
-}
+//{
+//    "@context": "http://iiif.io/api/presentation/2/context.json",
+//    "@id": "EssayEmilysMusic",
+//    "@type": "rr:Essay",
+//    "label": "Performance and Publication of Emily Tennyson’s Music",
+//    "metadataResources": [],
+//    "metadata": [
+//        {
+//            "label": "author",
+//            "value": "Phyllis Weliver"
+//        },
+//        {
+//            "label": "title",
+//            "value": "Performance and Publication of Emily Tennyson’s Music"
+//        }
+//    ],
+//    "resource": "data/essayEmilysMusic.xml",
+//    "style": "data/essayStyle.xsl",
+//    "footnotes": [],
+//    "endnotes": [],
+//    "indices": [],
+//    "comments": [],
+//    "otherContent": []
+//}
 ]);
 
 sounding.value('ANNOTATIONS', [{

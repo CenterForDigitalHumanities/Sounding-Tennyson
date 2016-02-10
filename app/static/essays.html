@@ -1,0 +1,10 @@
+<div>
+    <ul>
+        <li ng-repeat="i in essays">
+            <a ng-href="#/summary/{{i['@id']}}">{{Lists.getAllByProp("label", "author", i.metadata)[0].value}}
+                <cite>{{i.label||i['@id']||$index}}</cite> {{Lists.getAllByProp("label", "subtitle", i.metadata)[0].value}}
+            </a>
+        </li>
+    </ul>
+
+</div>

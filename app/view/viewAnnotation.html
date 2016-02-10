@@ -16,17 +16,18 @@
 
     <span class="help-block">{{vv.annotation.description}}</span>
 
-    <card class="annotationText btn-block fadeInOut" ng-repeat="text in rerum.getValues(vv.annotation, 'TEXT') track by $index">
+    <card class="annotationText btn-block fadeInOut" ng-repeat="text in rerum.getValues(vv.annotation, 'TEXT') track by $index"
+          ng-show="rerum.getValues(vv.annotation, 'TEXT').length">
     {{text}}
     </card>
 
     <card class="btn-block fadeInOut" ng-repeat="img in rerum.getValues(vv.annotation, 'IMAGE') track by $index">
         <img selector="img" width="100%">
     </card>
-    <card class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='rr:Essay'">
-    <!--    <xml-div xml="vv.annotation"></xml-div>-->
+    <div class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='rr:Essay'">
+        <!--    <xml-div xml="vv.annotation"></xml-div>-->
     <x ng-include="vv.annotation.resource"></x>
-    </card>
+    </div>
     <card class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='sc:Canvas'">
     <a href="#/summary/{{rerum.manifestFromCanvas(vv.annotation['@id'],manifests)['@id']}}">Part of...</a>
     <img selector="vv.annotation['@id']" width="100%">

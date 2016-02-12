@@ -17,7 +17,6 @@ author: Patrick Cuba
         <style type="text/css">
             #welcome-panel {
                 margin-top: 65vh;
-                background-color: rgb(132,140,103);
                 position: relative;
                 overflow: auto;
                 z-index: 0;
@@ -27,7 +26,7 @@ author: Patrick Cuba
                 position: absolute;
                 left: 0;
                 height: 100vh;
-                background: linear-gradient(to bottom, rgba(132,140,103,0) 0%,rgba(132,140,103,1) 5%,rgba(132,140,103,1) 100%);
+                background: linear-gradient(to bottom, rgba(132,140,103,0) 0%,rgba(132,140,103,0) 10%,rgba(132,140,103,1) 25%,rgba(132,140,103,1) 100%);
                 width: 100vw;
                 top: 60vh;
             }
@@ -56,13 +55,25 @@ author: Patrick Cuba
             a {
                 color:lavender;
             }
+            .well a {
+                color: inherit;
+            }
+            .well {
+                transition: all .5s;
+            }
+            .well:hover {
+                background-color: cornsilk;
+            }
         </style>
     </head>
     <body id="welcome" class="container">
         <div style="position:fixed;top:0;left:0vw;width:100vw;">
-            <img src="media/dh_logo_large.jpg" style="width:100%;" alt="sketch" />
-            <small>Alfred Tennyson, doodle (age 9?), flyleaf to his copy of Virgil. 
-                TRC/AT/2281. This item is reproduced by permission of Lincolnshire County Council, UK.</small>
+            <img src="media/dh_logo_large.jpg" style="width:100%;" alt="Alfred Tennyson, doodle (age 9), in his copy of Opera, Publius Virgilius Maro (Oxford: Clarendon Press, 1817) flyleaf, TRC/AT/2281.  This item is reproduced by permission of Lincolnshire County Council, UK." />
+            <small style="color: rgba(255,255,255,.5);" class="text-center center-block">
+                Alfred Tennyson, doodle (age 9), in his copy of Opera, Publius
+                Virgilius Maro (Oxford: Clarendon Press, 1817) flyleaf, TRC/AT/2281.
+                This item is reproduced by permission of Lincolnshire County Council, UK.
+            </small>
         </div>
 
         <div class="masthead">
@@ -71,11 +82,33 @@ author: Patrick Cuba
         <div class="greenback"></div>
         <div id="welcome-panel">
             <div class="visible-lg visible-md" style="height:10rem;position: relative;"></div>
-            <h3>Exploring the sound of Tennyson’s poetry</h3>
-            <div class="col-xs-12 col-sm-6 col-md-8 lead">
-                <p><a href="app.html#/summary/RB_Manifest">Discover</a> Lady Tennyson’s musical settings of "Break, break, break"</p>
-                <p><a href="app.html#/essays">Read</a> related commentary</p>
-                <p>In future, we will present all 24 compositions with music by Emily Lady Tennyson and words by Alfred Lord Tennyson</p>
+            <h3>Exploring the sound of Tennyson's poetry</h3>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+                <div class="well clearfix">
+                    <a href='app.html/#/break'>
+                        <h2 class="col-md-4">
+                        <i class='fa fa-volume-up'></i> listen</h2>
+                        <p class="col-md-8">Interact with the first recordings of Tennyson's
+                            poetry as musically set by his wife, Emily.</p>
+                    </a>
+                </div>
+                <div class="well clearfix">
+                    <a href='app.html/#/essays'>
+                        <h2 class="col-md-4">
+                        <i class='fa fa-book'></i> learn</h2>
+                        <p class="col-md-8">Read essays supported with digitized resources
+                            from all over the world.</p>
+                    </a>
+                </div>
+                <div class="well clearfix">
+                    <a href='app.html/#/archive'>
+                        <h2 class="col-md-4">
+                        <i class='fa fa-search'></i> explore</h2>
+                    <p class="col-md-8">Browse digitized objects from the Tennysons' life and works,
+                        exploring their connection to each other and to scholarship.</p>
+                    </a>
+                </div>
+                <h3 class="pull-right">Step back to Farringford&hellip;</h3>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <figure>

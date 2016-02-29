@@ -27,12 +27,8 @@ sounding.controller('makeAnnotationController', function ($scope, ViewValues, Vi
         }
 
         var imgDims = [
-            [2032, 2866],
-            [2032, 2866],
-            [2032, 2866],
-            [2032, 2866],
-            [2032, 2866],
-            [2032, 2866]
+            [1277, 1650],
+            [1277, 1650]
         ];
 
         angular.forEach(annos.pages, function (p, index) {
@@ -50,11 +46,11 @@ sounding.controller('makeAnnotationController', function ($scope, ViewValues, Vi
                     return Math.round(num);
                 }).join(",");
                 $scope.vv.annotating.otherContent[1]['@list'].push({
-                    "@id": i,
+                    "@id": i + "p" + index,
                     "@type": "oa:Annotation",
                     motivation: "sc:painting",
                     label: "",
-                    on: ["Henschel" + (index + 1) + "#xywh=" + xywh, "Break_Break_Break_Henschel#t=" + (p.measure_ends[i - 1] || 0) + "," + p.measure_ends[i]]
+                    on: ["AETE" + (index + 1) + "#xywh=" + xywh, "Break_Break_Break_AET#t=" + (p.measure_ends[i - 1] || 0) + "," + p.measure_ends[i]]
                 });
             }
         });

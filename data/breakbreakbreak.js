@@ -2972,8 +2972,8 @@ sounding.value('MANIFESTS', [
                     "canvases": [{
                         "label": "5r",
                         "@id": "GB1",
-                        "width": 1629,
-                        "height": 2000,
+                        "width": 1629*1.5, // weird trouble with augmented notes
+                        "height": 2000*1.5,
                         "@type": "sc:Canvas",
                         "images": [{
                             "@type": "oa:Annotation",
@@ -2987,12 +2987,224 @@ sounding.value('MANIFESTS', [
                                 "@type": "dcterms:Image"
                             }
                         }],
-                        "otherContent": []
+                        "otherContent": [{
+                "@id":"Gaudio",
+                "@type":"oa:Annotation",
+                "label": "page 1",
+                "motivation": "sc:painting",
+                "resource": "Break_Break_Break_AET#t=0,35.2",
+                "on": "Henschel1",
+                "within": "PianoLayer"
+            },{
+                "@id": "G1PianoMeasures",
+                "@type": "sc:AnnotationList",
+                "label": "measures",
+                "@list": [{
+  "@id": "0g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=258,205,450,472",
+    "Break_Break_Break_AET#t=0,2.47"
+  ]
+},
+{
+  "@id": "1g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=732,205,276,472",
+    "Break_Break_Break_AET#t=2.47,3.87"
+  ]
+},
+{
+  "@id": "2g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1035,205,285,472",
+    "Break_Break_Break_AET#t=3.87,5.11"
+  ]
+},
+{
+  "@id": "3g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1342,205,365,472",
+    "Break_Break_Break_AET#t=5.11,7.07"
+  ]
+},
+{
+  "@id": "4g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1743,205,388,472",
+    "Break_Break_Break_AET#t=7.07,8.4"
+  ]
+},
+{
+  "@id": "5g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=268,686,472,406",
+    "Break_Break_Break_AET#t=8.4,9.31"
+  ]
+},
+{
+  "@id": "6g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=767,686,250,406",
+    "Break_Break_Break_AET#t=9.31,10.82"
+  ]
+},
+{
+  "@id": "7g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1035,686,254,406",
+    "Break_Break_Break_AET#t=10.82,12.06"
+  ]
+},
+{
+  "@id": "8g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1311,686,254,406",
+    "Break_Break_Break_AET#t=12.06,13.33"
+  ]
+},
+{
+  "@id": "9g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1588,686,161,406",
+    "Break_Break_Break_AET#t=13.33,15.01"
+  ]
+},
+{
+  "@id": "10g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=268,1115,330,655",
+    "Break_Break_Break_AET#t=15.01,17.81"
+  ]
+},
+{
+  "@id": "11g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=624,1115,187,655",
+    "Break_Break_Break_AET#t=17.81,20.53"
+  ]
+},
+{
+  "@id": "12g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=839,1115,410,655",
+    "Break_Break_Break_AET#t=20.53,23.07"
+  ]
+},
+{
+  "@id": "13g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1267,1115,263,655",
+    "Break_Break_Break_AET#t=23.07,24.95"
+  ]
+},
+{
+  "@id": "14g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1552,1115,232,655",
+    "Break_Break_Break_AET#t=24.95,26.84"
+  ]
+},
+{
+  "@id": "15g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1815,1115,321,655",
+    "Break_Break_Break_AET#t=26.84,28.94"
+  ]
+},
+{
+  "@id": "16g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=268,1788,585,660",
+    "Break_Break_Break_AET#t=28.94,30.35"
+  ]
+},
+{
+  "@id": "17g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=878,1788,312,660",
+    "Break_Break_Break_AET#t=30.35,31.95"
+  ]
+},
+{
+  "@id": "18g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1217,1788,272,660",
+    "Break_Break_Break_AET#t=31.95,33.9"
+  ]
+},
+{
+  "@id": "19g0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB1#xywh=1507,1788,589,660",
+    "Break_Break_Break_AET#t=33.9,35.2"
+  ]
+}]
+              }]
                     }, {
                         "label": "5v",
                         "@id": "GB2",
-                        "width": 1541,
-                        "height": 2000,
+                        "width": 1541 * .8, // weird augmented notes trouble...
+                        "height": 2000 * .8,
                         "@type": "sc:Canvas",
                         "images": [{
                             "@type": "oa:Annotation",
@@ -3006,12 +3218,284 @@ sounding.value('MANIFESTS', [
                                 "@type": "dcterms:Image"
                             }
                         }],
-                        "otherContent": []
+                        "otherContent": [{
+                "@id":"Gaudio",
+                "@type":"oa:Annotation",
+                "label": "page 2",
+                "motivation": "sc:painting",
+                "resource": "Break_Break_Break_AET#t=35.2,76.62",
+                "on": "GB2",
+                "within": "PianoLayer"
+            },{
+                "@id": "G2PianoMeasures",
+                "@type": "sc:AnnotationList",
+                "label": "measures",
+                "@list": [{
+  "@id": "0g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=126,126,179,345",
+    "Break_Break_Break_AET#t=0,37.61"
+  ]
+},
+{
+  "@id": "1g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=328,126,54,345",
+    "Break_Break_Break_AET#t=37.61,39.2"
+  ]
+},
+{
+  "@id": "2g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=408,126,54,345",
+    "Break_Break_Break_AET#t=39.2,41.14"
+  ]
+},
+{
+  "@id": "3g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=494,126,157,345",
+    "Break_Break_Break_AET#t=41.14,42.4"
+  ]
+},
+{
+  "@id": "4g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=682,126,175,345",
+    "Break_Break_Break_AET#t=42.4,44"
+  ]
+},
+{
+  "@id": "5g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=875,126,206,345",
+    "Break_Break_Break_AET#t=44,45.45"
+  ]
+},
+{
+  "@id": "6g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=126,498,296,314",
+    "Break_Break_Break_AET#t=45.45,46.7"
+  ]
+},
+{
+  "@id": "7g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=444,498,108,314",
+    "Break_Break_Break_AET#t=46.7,48.15"
+  ]
+},
+{
+  "@id": "8g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=570,498,112,314",
+    "Break_Break_Break_AET#t=48.15,49.67"
+  ]
+},
+{
+  "@id": "9g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=709,498,126,314",
+    "Break_Break_Break_AET#t=49.67,51.15"
+  ]
+},
+{
+  "@id": "10g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=852,498,72,314",
+    "Break_Break_Break_AET#t=51.15,52.67"
+  ]
+},
+{
+  "@id": "11g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=947,498,135,314",
+    "Break_Break_Break_AET#t=52.67,54.31"
+  ]
+},
+{
+  "@id": "12g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=126,830,274,309",
+    "Break_Break_Break_AET#t=54.31,55.73"
+  ]
+},
+{
+  "@id": "13g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=413,830,139,309",
+    "Break_Break_Break_AET#t=55.73,57.13"
+  ]
+},
+{
+  "@id": "14g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=570,830,67,309",
+    "Break_Break_Break_AET#t=57.13,59.51"
+  ]
+},
+{
+  "@id": "15g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=664,830,103,309",
+    "Break_Break_Break_AET#t=59.51,60.63"
+  ]
+},
+{
+  "@id": "16g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=785,830,94,309",
+    "Break_Break_Break_AET#t=60.63,62.26"
+  ]
+},
+{
+  "@id": "17g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=897,830,108,309",
+    "Break_Break_Break_AET#t=62.26,64.11"
+  ]
+},
+{
+  "@id": "18g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=1023,830,58,309",
+    "Break_Break_Break_AET#t=64.11,65"
+  ]
+},
+{
+  "@id": "19g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=121,1157,179,314",
+    "Break_Break_Break_AET#t=65,66.01"
+  ]
+},
+{
+  "@id": "20g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=323,1157,63,314",
+    "Break_Break_Break_AET#t=66.01,67.35"
+  ]
+},
+{
+  "@id": "21g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=408,1157,108,314",
+    "Break_Break_Break_AET#t=67.35,68.98"
+  ]
+},
+{
+  "@id": "22g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=534,1157,126,314",
+    "Break_Break_Break_AET#t=68.98,71.33"
+  ]
+},
+{
+  "@id": "23g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=677,1157,108,314",
+    "Break_Break_Break_AET#t=71.33,72.91"
+  ]
+},
+{
+  "@id": "24g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=816,1157,112,314",
+    "Break_Break_Break_AET#t=72.91,74.73"
+  ]
+},
+{
+  "@id": "25g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB2#xywh=951,1162,126,309",
+    "Break_Break_Break_AET#t=74.73,76.62"
+  ]
+}]
+              }]
                     }, {
                         "label": "6r",
                         "@id": "GB3",
-                        "width": 1592,
-                        "height": 2000,
+                        "width": 1541 * .84, // weird augmented notes trouble...
+                        "height": 2000 * .84,
                         "@type": "sc:Canvas",
                         "images": [{
                             "@type": "oa:Annotation",
@@ -3025,7 +3509,189 @@ sounding.value('MANIFESTS', [
                                 "@type": "dcterms:Image"
                             }
                         }],
-                        "otherContent": []
+                        "otherContent": [{
+                "@id":"Gaudio",
+                "@type":"oa:Annotation",
+                "label": "page 3",
+                "motivation": "sc:painting",
+                "resource": "Break_Break_Break_AET#t=76.62,118",
+                "on": "GB3",
+                "within": "PianoLayer"
+            },{
+                "@id": "G3PianoMeasures",
+                "@type": "sc:AnnotationList",
+                "label": "measures",
+                "@list": [{
+  "@id": "26g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=126,130,311,323",
+    "Break_Break_Break_AET#t=76.62,78.45"
+  ]
+},
+{
+  "@id": "27g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=453,130,141,318",
+    "Break_Break_Break_AET#t=78.45,80.15"
+  ]
+},
+{
+  "@id": "28g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=628,130,155,323",
+    "Break_Break_Break_AET#t=80.15,82.15"
+  ]
+},
+{
+  "@id": "29g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=803,130,65,323",
+    "Break_Break_Break_AET#t=82.15,85.77"
+  ]
+},
+{
+  "@id": "30g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=897,130,155,318",
+    "Break_Break_Break_AET#t=85.77,89.3"
+  ]
+},
+{
+  "@id": "31g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=126,480,181,332",
+    "Break_Break_Break_AET#t=89.3,91.4"
+  ]
+},
+{
+  "@id": "32g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=337,480,159,332",
+    "Break_Break_Break_AET#t=91.4,94.16"
+  ]
+},
+{
+  "@id": "33g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=516,480,150,332",
+    "Break_Break_Break_AET#t=94.16,95.58"
+  ]
+},
+{
+  "@id": "34g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=687,480,87,332",
+    "Break_Break_Break_AET#t=95.58,97.48"
+  ]
+},
+{
+  "@id": "35g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=799,480,141,332",
+    "Break_Break_Break_AET#t=97.48,100.48"
+  ]
+},
+{
+  "@id": "36g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=960,480,96,332",
+    "Break_Break_Break_AET#t=100.48,102"
+  ]
+},
+{
+  "@id": "37g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=126,835,222,301",
+    "Break_Break_Break_AET#t=102,104"
+  ]
+},
+{
+  "@id": "38g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=377,835,132,301",
+    "Break_Break_Break_AET#t=104,105.6"
+  ]
+},
+{
+  "@id": "39g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=525,835,123,301",
+    "Break_Break_Break_AET#t=105.6,107.7"
+  ]
+},
+{
+  "@id": "40g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=678,835,110,301",
+    "Break_Break_Break_AET#t=107.7,109.65"
+  ]
+},
+{
+  "@id": "41g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=803,835,92,301",
+    "Break_Break_Break_AET#t=109.65,111.75"
+  ]
+},
+{
+  "@id": "42g1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "GB3#xywh=920,835,83,301",
+    "Break_Break_Break_AET#t=111.75,118"
+  ]
+}]
+              }]
                     }]
                 }]
             }]);

@@ -27,8 +27,12 @@ sounding.controller('makeAnnotationController', function ($scope, ViewValues, Vi
         }
 
         var imgDims = [
-            [1513, 2000],
-            [1567+1538, 2000]
+            [2032, 2866],
+            [2032, 2866],
+            [2032, 2866],
+            [2032, 2866],
+            [2032, 2866],
+            [2032, 2866]
         ];
 
         angular.forEach(annos.pages, function (p, index) {
@@ -37,13 +41,20 @@ sounding.controller('makeAnnotationController', function ($scope, ViewValues, Vi
             var ratio = $scope.vv.annotating.width / imgDims[index][0];
 //            var ratio = $scope.vv.annotating.width / $scope.vv.annotating.images[0].resource.width;
             for (var i = 0; i < p.measure_ends.length; i++) {
-                var xywh = [p.measure_bounds[i][0] * ratio, p.measure_bounds[i][1] * ratio, p.measure_bounds[i][2] * ratio, p.measure_bounds[i][3] * ratio].join(",");
+                var xywh = [
+                    p.measure_bounds[i][0] * ratio,
+                    p.measure_bounds[i][1] * ratio,
+                    p.measure_bounds[i][2] * ratio,
+                    p.measure_bounds[i][3] * ratio
+                ].map(function (num) {
+                    return Math.round(num);
+                }).join(",");
                 $scope.vv.annotating.otherContent[1]['@list'].push({
                     "@id": i,
                     "@type": "oa:Annotation",
                     motivation: "sc:painting",
                     label: "",
-                    on: ["Eng" + (index + 1) + "#xywh=" + xywh, "Break_Break_Break_Janotha#t=" + (p.measure_ends[i - 1] || 0) + "," + p.measure_ends[i]]
+                    on: ["Henschel" + (index + 1) + "#xywh=" + xywh, "Break_Break_Break_Henschel#t=" + (p.measure_ends[i - 1] || 0) + "," + p.measure_ends[i]]
                 });
             }
         });

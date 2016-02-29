@@ -85,7 +85,7 @@ Lists.addIfNotIn(r,$scope.performances);
     $scope.seekTo = function (on) {
         var _on = on.split("#t=");
         var time = _on[1].split(",")[0];
-  $rootScope.$broadcast('seek',_on[0],time);
+        $rootScope.$broadcast('seekTo', _on[0], time);
     };
 /**
  * Find relevant 'on' URI if oa:Annotation from array of

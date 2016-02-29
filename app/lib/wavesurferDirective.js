@@ -37,13 +37,15 @@ angular.module('wavesurfer', [])
                         this.backend.play();
                     }
                     this.params.scrollParent = oldScrollParent;
+
+                    ViewValues.currentTime[$scope.music['@id']] = progress * this.getDuration();
                     this.fireEvent('seek', progress);
                 };
             }
         };
     })
 
-    .controller('wavesurferController', function ($scope, ViewValues) {
+    .controller('wavesurferController', function ($scope, $rootScope, ViewValues) {
         var activeUrl = null;
         $scope.paused = true;
         $scope.wavesurfer = {};
@@ -51,7 +53,8 @@ angular.module('wavesurfer', [])
             $scope.wavesurfer = wavesurfer;
             $scope.wavesurfer.on('ready', function () {
                 $scope.wavesurfer.ready = true;
-                $scope.$apply(); 
+                ViewValues.currentTime[$scope.music['@id']] = $scope.wavesurfer.getCurrentTime();
+                $scope.$apply();
             });
             $scope.wavesurfer.on('play', function () {
                 $scope.paused = false;
@@ -62,19 +65,22 @@ angular.module('wavesurfer', [])
             $scope.wavesurfer.on('finish', function () {
                 $scope.paused = true;
                 $scope.wavesurfer.seekTo(0);
-                $scope.$apply(); 
+                $scope.$apply();
             });
 
-            $scope.wavesurfer.on('audioprocess',function(){
+            $scope.wavesurfer.on('audioprocess', function () {
                 $scope.$evalAsync(function () {
                 ViewValues.currentTime[$scope.music['@id']] = $scope.wavesurfer.getCurrentTime();
             });
             });
-            $scope.$on('seek',function(scope,id,mark){
-                if($scope.music['@id']===id){
-ViewValues.currentTime[$scope.music['@id']] = $scope.wavesurfer.seekTo(mark/$scope.wavesurfer.getDuration());  
-}
+            $scope.$on('seekTo', function (scope, id, mark) {
+                if ($scope.music['@id'] === id) {
+                    mark = parseFloat(mark);
+                    $scope.wavesurfer.seekTo(mark / $scope.wavesurfer.getDuration());
+                ViewValues.currentTime[id] = mark;
+                }
             });
+
             // $scope.$evalAsync(function () {
             //     ViewValues.currentTime[$scope.music['@id']] = $scope.wavesurfer.getCurrentTime();
             // });

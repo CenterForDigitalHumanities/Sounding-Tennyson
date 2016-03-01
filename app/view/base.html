@@ -83,7 +83,7 @@
         </div>
     <div class="col-sm-6" ng-controller="viewController">
         <card ng-repeat="line in lines" ng-show="thisOn(manifest.resources,line.mid[0]).length && inTime(line.mid.join('#t='))">
-        {{line.label}}
+        {{line.label}} {{thisOn(manifest.resources,line.mid[0])}} {{inTime(line.mid.join('#t='))}}
         <img selector="line.selector" width="100%">
         </card>
     </div>

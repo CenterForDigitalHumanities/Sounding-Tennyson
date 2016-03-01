@@ -254,7 +254,7 @@ sounding.value('MANIFESTS', [
               "label": "",
               "on": [
               "Henschel2#xywh=218,250,506,344",
-              "Break_Break_Break_Henschel#t=0,62.45"
+              "Break_Break_Break_Henschel#t=60.03,62.45"
               ]
           },
           {
@@ -368,7 +368,7 @@ sounding.value('MANIFESTS', [
           "label": "",
           "on": [
           "Henschel3#xywh=229,255,457,352",
-          "Break_Break_Break_Henschel#t=0,83.76"
+          "Break_Break_Break_Henschel#t=81.22,83.76"
           ]
       },
       {
@@ -510,7 +510,7 @@ sounding.value('MANIFESTS', [
   "label": "",
   "on": [
     "Henschel4#xywh=210,245,296,336",
-    "Break_Break_Break_Henschel#t=0,115.76"
+    "Break_Break_Break_Henschel#t=112.84,115.76"
   ]
 },
 {
@@ -712,7 +712,7 @@ sounding.value('MANIFESTS', [
   "label": "",
   "on": [
     "Henschel5#xywh=232,226,342,382",
-    "Break_Break_Break_Henschel#t=0,174.26"
+    "Break_Break_Break_Henschel#t=169.6,174.26"
   ]
 },
 {
@@ -844,7 +844,7 @@ sounding.value('MANIFESTS', [
   "label": "",
   "on": [
     "Henschel6#xywh=212,250,535,328",
-    "Break_Break_Break_Henschel#t=0,203.91"
+    "Break_Break_Break_Henschel#t=201.29,203.91"
   ]
 },
 {
@@ -1361,7 +1361,7 @@ sounding.value('MANIFESTS', [
   "label": "",
   "on": [
     "AETE2#xywh=124,168,225,373",
-    "Break_Break_Break_AET#t=0,55.5"
+    "Break_Break_Break_AET#t=54.11,55.5"
   ]
 },
 {
@@ -1982,7 +1982,7 @@ sounding.value('MANIFESTS', [
                     "label": "",
                     "on": [
                     "Eng2#xywh=62.64308035714286,101.1002232142857,117.92522321428571,197.39330357142856",
-                    "Break_Break_Break_Janotha#t=0,33.97"
+                    "Break_Break_Break_Janotha#t=31.7,33.97"
                     ]
                 },
                 {
@@ -2399,7 +2399,7 @@ sounding.value('MANIFESTS', [
                         "label": "",
                         "on": [
                         "Eng4#xywh=61.34624860022396,85.46270996640537,126.46069428891377,204.68846584546472",
-                        "Break_Break_Break_Janotha#t=0,127.45"
+                        "Break_Break_Break_Janotha#t=124.61,127.45"
                         ]
                     },
                     {
@@ -3237,7 +3237,7 @@ sounding.value('MANIFESTS', [
   "label": "",
   "on": [
     "GB2#xywh=126,126,179,345",
-    "Break_Break_Break_AET#t=0,37.61"
+    "Break_Break_Break_AET#t=35.2,37.61"
   ]
 },
 {

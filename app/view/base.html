@@ -60,10 +60,12 @@
             </span>
             </button> {{music.label}}</h4>
                         <div ng-class="{loader:!wavesurfer.ready}" class="clearfix"></div>
-</wavesurfer>
+        </wavesurfer>
 
-        <!-- <div ng-repeat="anno in text[0].lines" class="btn-block fadeIn"
-             ng-init="on=rerum.getResource(anno).on[3]"
+
+
+            <!--            <div ng-repeat="anno in text[0].lines" class="btn-block fadeIn"
+                             ng-init="on=rerum.getResource(anno).on[3]"
              ng-show="inTime(on)">
 
             <card ng-repeat="target in rerum.getTargets(anno, 'TEXT') track by $index">
@@ -77,6 +79,12 @@
             {{rerum.getResource(target).label || rerum.getResource(target)['@id']}}
             <img selector="target" width="100%">
             </card>
-</div> -->
+                     </div> -->
+        </div>
+    <div class="col-sm-6" ng-controller="viewController">
+        <card ng-repeat="line in lines" ng-show="thisOn(manifest.resources,line.mid[0]).length && inTime(line.mid.join('#t='))">
+        {{line.label}}
+        <img selector="line.selector" width="100%">
+        </card>
     </div>
 </div>

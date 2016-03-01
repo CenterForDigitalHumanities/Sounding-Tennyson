@@ -1,3 +1,5 @@
+/* global angular */
+
 sounding.value("ViewValues", {
     currentTime: {},
     // default setup for Break, Break, Break
@@ -60,7 +62,7 @@ sounding.directive('xmlDiv', function ($sce, ViewService) {
     };
 });
 
-sounding.controller("viewController", function ($scope, ViewService, ViewValues, Lists, MANIFESTS,RESOURCES, TEXT, $cacheFactory, RERUM,$rootScope) {
+sounding.controller("viewController", function ($scope, ViewService, ViewValues, Lists, MANIFESTS,RESOURCES,ANNOTATIONS, TEXT, $cacheFactory, RERUM,$rootScope) {
     $scope.Lists = Lists;
     $scope.vv = ViewValues;
     $scope.manifests = MANIFESTS;
@@ -101,7 +103,7 @@ Lists.addIfNotIn(r,$scope.performances);
             arr=[arr];
         }
         for (var i = arr.length - 1; i >= 0; i--) {
-            if(arr[i].startsWith(target)){
+            if (arr[i] && arr[i].startsWith(target)) {
                 on=arr[i];
                 break;
             }
@@ -133,6 +135,9 @@ Lists.addIfNotIn(r,$scope.performances);
     $scope.inTime = function (on) {
         if (on) {
             var _on = on.split("#t=");
+            if (!_on[1]) {
+                return false;
+            }
             var t = ViewValues[on] || _on[1].split(",");
             var time = ViewValues.currentTime[_on[0]];
             if (isNaN(time)) {
@@ -242,7 +247,7 @@ Lists.addIfNotIn(r,$scope.performances);
                 }
             }
             return false;
-        }
+        };
     };
     $scope.allAtTime = function(time,music){
         if(isNaN(time) || !music){return false;}
@@ -259,8 +264,97 @@ Lists.addIfNotIn(r,$scope.performances);
                         }
                     }
             return false;
-        }
+        };
     };
+    $scope.lines = (function () {
+        var lines = [];
+        var annotations = [];
+        angular.forEach(MANIFESTS, function (m) {
+            angular.forEach(m.sequences[0].canvases, function (c) {
+                angular.forEach(c.otherContent, function (a) {
+                    if (a['@list']) {
+                        annotations = annotations.concat(a['@list']);
+                    }
+                });
+            });
+        });
+        angular.forEach(annotations, function (a) {
+            if(a.on){
+            if(!angular.isArray(a.on)){
+                a.on = [a.on];
+            }
+                for (var i = 0; i < a.on.length; i++) {
+                    var _ton = a.on[i].split("#t=");
+                    if (_ton[1]) {
+                        // found a time clip, so get the canvas on
+                        for (var j = 0; j < a.on.length; j++) {
+                            var _con = a.on[j].split("#xywh=");
+                            if (_con[1]) {
+                                var canvas = RERUM.getResource(_con[0]);
+                                var pos = _con[1].split(",");
+                                lines.push({
+                                    mid: _ton,
+                                    label: _con[0],
+                                    selector: _con[0] + "#xywh=0," + pos[1] + "," + canvas.width + "," + pos[3]
+                                });
+                                break;
+                            }
+                        }
+                        break; // one match per anno
+                    }
+                }
+            }
+        });
+        return lines;
+    })();
+
+//    $scope.getLines = function (music) {
+//        var selector = function (annos, canvas) {
+//            for (var i = 0; i < annos.length; i++) {
+//                var _ons = annos[i].on;
+//                if (!angular.isArray(_ons)) {
+//                    _ons = [_ons];
+//                }
+//                for (var j = 0; j < _ons.length; j++) {
+//                    if ($scope.inTime(_ons[j])) {
+//                        // make a row selector
+//                        var pos = _ons[j].split(",");
+//                        var sel = canvas['@id'] + "#xywh=0,"
+//                            + pos[1] + ","
+//                            + canvas.width + ","
+//                            + pos[3];
+//                        return sel;
+//                    }
+//                }
+//            }
+//        }
+//        var lines = [];
+//        angular.forEach(MANIFESTS,function(m){
+//            if((m.resources[0]['@id'] || m.resources[0]) === music['@id']){
+//                // TODO: look through array for the match
+//                for (var i = 0; i < m.sequences[0].canvases.length; i++) {
+//                    if (m.sequences[0].canvases[i].otherContent[0]
+//                        && $scope.inTime(m.sequences[0].canvases[i].otherContent[0].resource)) {
+//                        if (!m.sequences[0].canvases[i].otherContent[1]) {
+//                            break;
+//                            // No augmented notes applied yet.
+//                        }
+//                        var annos = m.sequences[0].canvases[i].otherContent[1]['@list'];
+//                        var width = m.sequences[0].canvases[i].width;
+//                        var line = {
+//                            label: m.label,
+//                            selector: selector(annos, m.sequences[0].canvases[i])
+//                        };
+//                        if (line.selector) {
+//                            lines.push(line);
+//                        }
+//                        break; // stop looking after the first
+//                    }
+//                }
+//            }
+//        });
+//        return lines;
+//    };
     $scope.$watch('vv.showManuscripts', function () {
         angular.forEach(ViewValues.showManuscripts, function (m) {
             var index = Lists.indexBy(m.manifest, "path", $scope.manifests);

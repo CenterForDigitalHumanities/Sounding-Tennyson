@@ -1,0 +1,58 @@
+<div reveal-annotations>
+    <div class="col-sm-6">
+        <h3>
+            <button ng-click="lockAnnotations()" type="button" class="btn btn-default pull-right"
+                    tooltip="{{vv.revealAnnotations && 'Hide'||'Show'}} all image annotations">
+                <i class="fa fa-eye{{vv.revealAnnotations && '-slash'||''}}"></i>
+            </button>
+            {{manifest.label|| text.label}}
+        </h3>
+        <div>
+            <div class="btn-group pull-right">
+                <button type="button" class="btn btn-xs btn-default"
+                        ng-repeat="c in manifest.sequences[0].canvases"
+                        ng-class="{active:inTime(c.otherContent[0].resource)}"
+                        ng-click="seekTo(c.otherContent[0].resource)">
+                    {{c.label||$index}}
+                </button>
+            </div>
+            <sc-canvas class="position-relative overflow-hidden btn-block"
+                       ng-class="{visible:vv.revealAnnotations}"
+                       ng-repeat="c in manifest.sequences[0].canvases"
+                       ng-show="inTime(c.otherContent[0].resource)">
+                <img selector="c['@id']"
+                     width='100%'
+                     alt="{{c.label}}">
+                <canvas></canvas>
+                <div ng-repeat="anno in c.otherContent[1]['@list']"
+                ng-init="a=rerum.getResource(anno)"
+                     class="bookmark"
+                     ng-class="{active:inTime(thisOn(a.on,manifest.resources[0]))}"
+                     ng-click="seekTo(thisOn(a.on,manifest.resources[0]))"
+                     ng-style="annotationStyle(thisOn(a.on,c['@id']), c)"></div>
+            </sc-canvas>
+        </div>
+    </div>
+    <div class="col-sm-6" ng-repeat="m in manifest.resources" ng-init="music=rerum.getResource(m)">
+        <wavesurfer ng-attr-url="{{music.resource['@id']}}"
+                    wave-color="#333"
+                    progress-color="#002147"
+                    min-px-per-sec=1>
+        <h4><button class="btn btn-default pull-right" ng-click="wavesurfer.playPause()"
+            ng-show="wavesurfer.ready">
+                <i class="fa" ng-class="{'fa-play':paused,'fa-pause':!paused}"></i>
+                <span class='timer'>{{vv.currentTime[music['@id']]|number:2}}
+                <span ng-hide="vv.currentTime[music['@id']]">Play</span>
+            </span>
+            </button> {{music.label}}</h4>
+                        <div ng-class="{loader:!wavesurfer.ready}" class="clearfix"></div>
+        </wavesurfer>
+
+        </div>
+    <div class="col-sm-6" ng-controller="viewController">
+        <card ng-repeat="line in lines" ng-show="thisOn(manifest.resources,line.mid[0]).length && inTime(line.mid.join('#t='))">
+        {{line.label}} {{thisOn(manifest.resources,line.mid[0])}} {{inTime(line.mid.join('#t='))}}
+        <img selector="line.selector" width="100%">
+        </card>
+    </div>
+</div>

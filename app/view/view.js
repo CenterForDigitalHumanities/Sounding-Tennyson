@@ -62,7 +62,7 @@ sounding.directive('xmlDiv', function ($sce, ViewService) {
     };
 });
 
-sounding.controller("viewController", function ($scope, ViewService, ViewValues, Lists, MANIFESTS,RESOURCES,ANNOTATIONS, TEXT, $cacheFactory, RERUM,$rootScope) {
+sounding.controller("viewController", function ($scope, ViewService, ViewValues, Lists, MANIFESTS, RESOURCES, ANNOTATIONS, TEXT, $cacheFactory, RERUM, $rootScope) {
     $scope.Lists = Lists;
     $scope.vv = ViewValues;
     $scope.manifests = MANIFESTS;
@@ -75,7 +75,7 @@ Lists.addIfNotIn(r,$scope.performances);
     $scope.text = TEXT;
     var textCache = $cacheFactory.get('textCache') || $cacheFactory('textCache');
     if (!$scope.manifest) {
-        $scope.manifest = MANIFESTS[2];
+        $scope.manifest = ViewValues.manifest || MANIFESTS[2];
     }
     $scope.rerum = RERUM;
     $scope.pickM = function (m) {

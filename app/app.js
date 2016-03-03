@@ -41,6 +41,26 @@ var sounding = angular.module('sounding',
                         }
                     }
                 })
+                .when('/manuscript/:id', {
+                    templateUrl: 'app/view/viewManuscript.html',
+                    controller: 'viewController',
+                    resolve: {
+                        authkey: function ($route) {
+                            return authorize($route);
+                        },
+                        load: function ($route, MANIFESTS, ViewValues, RESOURCES, TEXT, ANNOTATIONS, ESSAYS, AGENTS, RERUM) {
+                            var everything = MANIFESTS.concat(RESOURCES, TEXT, ANNOTATIONS, ESSAYS, AGENTS);
+                            angular.forEach(everything, function (obj) {
+                                RERUM.extractResources(obj);
+                            });
+                            var m = $route.current.params.id;
+                            ViewValues.manifest = (m)
+                                ? RERUM.getResource(m)
+                                : MANIFESTS[0]; // default
+                            return ViewValues.manifest;
+                        }
+                    }
+                })
                 .when('/annotate', {
                     templateUrl: 'app/annotation/annotation.html',
                     controller: 'viewController'

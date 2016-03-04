@@ -219,9 +219,12 @@ tile.expanded label {
     height: auto;
     opacity: inherit;
 }
-wavesurfer div+wave{
+wavesurfer {
     background: url(../media/dh_logo_large.jpg) center center;
     background-size: cover;
+}
+wavesurfer h4 {
+    padding: 1rem;
 }
 .swingIn.ng-enter, .swingIn.ng-hide-remove {
     animation: flipInX .5s;

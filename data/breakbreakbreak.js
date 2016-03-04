@@ -2851,8 +2851,8 @@ sounding.value('MANIFESTS', [
                     "canvases": [{
                         "label": "11r",
                         "@id": "PB1",
-                        "width": 1513,
-                        "height": 2000,
+                        "width": 1513*1.7,
+                        "height": 2000*1.7,
                         "@type": "sc:Canvas",
                         "images": [{
                             "@type": "oa:Annotation",
@@ -2874,12 +2874,187 @@ sounding.value('MANIFESTS', [
                             "resource": "Break_Break_Break_AET#t=0,28.01",
                             "on": "PB1",
                             "within": "PianoLayer"
-                        }]
-                    }, {
+                        },
+                    {
+                        "@id": "pb1Measures",
+                        "@type": "sc:AnnotationList",
+                        "label": "measures",
+                        "@list": [{
+  "@id": "0p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=111,226,502,806",
+    "Break_Break_Break_AET#t=0,2.63"
+  ]
+},
+{
+  "@id": "1p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=640,226,322,806",
+    "Break_Break_Break_AET#t=2.63,4.04"
+  ]
+},
+{
+  "@id": "2p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=981,226,428,806",
+    "Break_Break_Break_AET#t=4.04,5.33"
+  ]
+},
+{
+  "@id": "3p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=1441,226,336,806",
+    "Break_Break_Break_AET#t=5.33,6.88"
+  ]
+},
+{
+  "@id": "4p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=1805,226,460,806",
+    "Break_Break_Break_AET#t=6.88,8.18"
+  ]
+},
+{
+  "@id": "5p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=134,1261,493,746",
+    "Break_Break_Break_AET#t=8.18,9.34"
+  ]
+},
+{
+  "@id": "6p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=658,1261,313,746",
+    "Break_Break_Break_AET#t=9.34,10.61"
+  ]
+},
+{
+  "@id": "7p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=1004,1261,304,746",
+    "Break_Break_Break_AET#t=10.61,11.85"
+  ]
+},
+{
+  "@id": "8p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=1345,1261,341,746",
+    "Break_Break_Break_AET#t=11.85,13.18"
+  ]
+},
+{
+  "@id": "9p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=1718,1261,249,746",
+    "Break_Break_Break_AET#t=13.18,14.38"
+  ]
+},
+{
+  "@id": "10p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=1998,1261,313,746",
+    "Break_Break_Break_AET#t=14.38,15.01"
+  ]
+},
+{
+  "@id": "11p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=161,2026,488,792",
+    "Break_Break_Break_AET#t=15.01,17.39"
+  ]
+},
+{
+  "@id": "12p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=672,2026,203,792",
+    "Break_Break_Break_AET#t=17.39,20.17"
+  ]
+},
+{
+  "@id": "13p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=893,2026,424,792",
+    "Break_Break_Break_AET#t=20.17,23.08"
+  ]
+},
+{
+  "@id": "14p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=1340,2026,327,792",
+    "Break_Break_Break_AET#t=23.08,24.89"
+  ]
+},
+{
+  "@id": "15p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=1699,2026,304,792",
+    "Break_Break_Break_AET#t=24.89,26.44"
+  ]
+},
+{
+  "@id": "16p0",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB1#xywh=2040,2026,322,792",
+    "Break_Break_Break_AET#t=26.44,28.01"
+  ]
+}]
+                    }]
+                  }, {
                         "label": "11v",
                         "@id": "PB2",
-                        "width": 1567,
-                        "height": 2000,
+                        "width": 1567*.85,
+                        "height": 2000*.85,
                         "@type": "sc:Canvas",
                         "images": [{
                             "@type": "oa:Annotation",
@@ -2898,15 +3073,220 @@ sounding.value('MANIFESTS', [
                             "@type": "oa:Annotation",
                             "label": "Performance",
                             "motivation": "sc:painting",
-                            "resource": "Break_Break_Break_AET#t=28.01,60.4",
+                            "resource": "Break_Break_Break_AET#t=28.01,57.91",
                             "on": "PB1",
                             "within": "PianoLayer"
-                        }]
+                        },
+                    {
+                        "@id": "pb2Measures",
+                        "@type": "sc:AnnotationList",
+                        "label": "measures",
+                        "@list": [{
+  "@id": "0p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=147,120,367,396",
+    "Break_Break_Break_AET#t=28.01,30.02"
+  ]
+},
+{
+  "@id": "1p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=543,120,161,396",
+    "Break_Break_Break_AET#t=30.02,31.47"
+  ]
+},
+{
+  "@id": "2p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=726,120,161,396",
+    "Break_Break_Break_AET#t=31.47,33.02"
+  ]
+},
+{
+  "@id": "3p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=910,120,308,396",
+    "Break_Break_Break_AET#t=33.02,34.56"
+  ]
+},
+{
+  "@id": "4p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=144,511,235,372",
+    "Break_Break_Break_AET#t=34.56,36.27"
+  ]
+},
+{
+  "@id": "5p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=401,511,63,372",
+    "Break_Break_Break_AET#t=36.27,38.24"
+  ]
+},
+{
+  "@id": "6p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=487,511,78,372",
+    "Break_Break_Break_AET#t=38.24,39.68"
+  ]
+},
+{
+  "@id": "7p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=587,511,176,372",
+    "Break_Break_Break_AET#t=39.68,40.7"
+  ]
+},
+{
+  "@id": "8p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=785,511,200,372",
+    "Break_Break_Break_AET#t=40.7,42.45"
+  ]
+},
+{
+  "@id": "9p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=1012,511,215,372",
+    "Break_Break_Break_AET#t=42.45,43.62"
+  ]
+},
+{
+  "@id": "10p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=149,893,343,386",
+    "Break_Break_Break_AET#t=43.62,45.35"
+  ]
+},
+{
+  "@id": "11p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=514,893,122,386",
+    "Break_Break_Break_AET#t=45.35,46.33"
+  ]
+},
+{
+  "@id": "12p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=655,893,132,386",
+    "Break_Break_Break_AET#t=46.33,48"
+  ]
+},
+{
+  "@id": "13p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=812,893,186,386",
+    "Break_Break_Break_AET#t=48,49.12"
+  ]
+},
+{
+  "@id": "14p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=1012,893,127,386",
+    "Break_Break_Break_AET#t=49.12,50.53"
+  ]
+},
+{
+  "@id": "15p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=149,1279,288,362",
+    "Break_Break_Break_AET#t=50.53,52.18"
+  ]
+},
+{
+  "@id": "16p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=460,1279,166,362",
+    "Break_Break_Break_AET#t=52.18,53.53"
+  ]
+},
+{
+  "@id": "17p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=660,1281,142,357",
+    "Break_Break_Break_AET#t=53.53,55.25"
+  ]
+},
+{
+  "@id": "18p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=824,1281,113,357",
+    "Break_Break_Break_AET#t=55.25,57"
+  ]
+},
+{
+  "@id": "19p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB2#xywh=966,1276,171,362",
+    "Break_Break_Break_AET#t=57,57.91"
+  ]
+}]
+                      }]
                     }, {
                         "label": "12r",
                         "@id": "PB3",
-                        "width": 1538,
-                        "height": 2000,
+                        "width": 1538*.9,
+                        "height": 2000*.9,
                         "@type": "sc:Canvas",
                         "images": [{
                             "@type": "oa:Annotation",
@@ -2925,10 +3305,275 @@ sounding.value('MANIFESTS', [
                             "@type": "oa:Annotation",
                             "label": "Performance",
                             "motivation": "sc:painting",
-                            "resource": "Break_Break_Break_AET#t=60.4,114.63",
+                            "resource": "Break_Break_Break_AET#t=57.91,114.63",
                             "on": "PB1",
                             "within": "PianoLayer"
-                        }]
+                        },
+                    {
+                        "@id": "pb2Measures",
+                        "@type": "sc:AnnotationList",
+                        "label": "measures",
+                        "@list": [{
+  "@id": "20p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=90,125,230,372",
+    "Break_Break_Break_AET#t=57.91,59.67"
+  ]
+},
+{
+  "@id": "21p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=344,125,117,377",
+    "Break_Break_Break_AET#t=59.67,61.2"
+  ]
+},
+{
+  "@id": "22p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=464,125,142,377",
+    "Break_Break_Break_AET#t=61.2,63.02"
+  ]
+},
+{
+  "@id": "23p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=632,125,83,372",
+    "Break_Break_Break_AET#t=63.02,64.47"
+  ]
+},
+{
+  "@id": "24p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=740,125,132,372",
+    "Break_Break_Break_AET#t=64.47,66.22"
+  ]
+},
+{
+  "@id": "25p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=904,125,88,372",
+    "Break_Break_Break_AET#t=66.22,68.28"
+  ]
+},
+{
+  "@id": "26p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=1014,125,132,372",
+    "Break_Break_Break_AET#t=68.28,69.82"
+  ]
+},
+{
+  "@id": "27p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=82,528,249,367",
+    "Break_Break_Break_AET#t=69.82,71.64"
+  ]
+},
+{
+  "@id": "28p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=359,528,137,367",
+    "Break_Break_Break_AET#t=71.64,73.15"
+  ]
+},
+{
+  "@id": "29p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=525,528,195,367",
+    "Break_Break_Break_AET#t=73.15,74.84"
+  ]
+},
+{
+  "@id": "30p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=745,528,176,367",
+    "Break_Break_Break_AET#t=74.84,76.67"
+  ]
+},
+{
+  "@id": "31p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=951,528,191,367",
+    "Break_Break_Break_AET#t=76.67,78.25"
+  ]
+},
+{
+  "@id": "32p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=94,912,211,372",
+    "Break_Break_Break_AET#t=78.25,80.77"
+  ]
+},
+{
+  "@id": "33p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=339,912,98,372",
+    "Break_Break_Break_AET#t=80.77,83.09"
+  ]
+},
+{
+  "@id": "34p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=461,912,83,372",
+    "Break_Break_Break_AET#t=83.09,85.23"
+  ]
+},
+{
+  "@id": "35p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=569,912,176,372",
+    "Break_Break_Break_AET#t=85.23,87.59"
+  ]
+},
+{
+  "@id": "36p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=781,912,132,372",
+    "Break_Break_Break_AET#t=87.59,89.05"
+  ]
+},
+{
+  "@id": "37p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=934,912,113,372",
+    "Break_Break_Break_AET#t=89.05,90.71"
+  ]
+},
+{
+  "@id": "38p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=1068,912,142,372",
+    "Break_Break_Break_AET#t=90.71,93.17"
+  ]
+},
+{
+  "@id": "39p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=92,1301,166,347",
+    "Break_Break_Break_AET#t=93.17,94.9"
+  ]
+},
+{
+  "@id": "40p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=278,1301,147,347",
+    "Break_Break_Break_AET#t=94.9,96.46"
+  ]
+},
+{
+  "@id": "41p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=447,1298,156,352",
+    "Break_Break_Break_AET#t=96.46,98.01"
+  ]
+},
+{
+  "@id": "42p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=627,1298,108,352",
+    "Break_Break_Break_AET#t=98.01,99.55"
+  ]
+},
+{
+  "@id": "43p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=755,1298,147,352",
+    "Break_Break_Break_AET#t=99.55,101.36"
+  ]
+},
+{
+  "@id": "44p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=928,1298,113,352",
+    "Break_Break_Break_AET#t=101.36,103.35"
+  ]
+},
+{
+  "@id": "45p1",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "label": "",
+  "on": [
+    "PB3#xywh=1060,1298,171,352",
+    "Break_Break_Break_AET#t=103.35,108.54"
+  ]
+}]
+                      }]
                     }, {
                         "label": "12v",
                         "@id": "PB4",

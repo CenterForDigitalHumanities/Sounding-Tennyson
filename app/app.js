@@ -54,15 +54,19 @@ var sounding = angular.module('sounding',
                                 RERUM.extractResources(obj);
                             });
                             var m = $route.current.params.id;
+                            var t = $route.current.params.t;
                             ViewValues.manifest = (m)
-                                ? RERUM.getResource(m)
+                            ? RERUM.getResource(m)
                                 : MANIFESTS[0]; // default
-                            return ViewValues.manifest;
+                                if(t){
+                                    ViewValues.currentTime[ViewValues.manifest.resources[0]]=parseFloat(t);
+                                }
+                                return ViewValues.manifest;
+                            }
                         }
-                    }
-                })
-                .when('/annotate', {
-                    templateUrl: 'app/annotation/annotation.html',
+                    })
+.when('/annotate', {
+    templateUrl: 'app/annotation/annotation.html',
                     controller: 'viewController'
                 })
                 .when('/about', {

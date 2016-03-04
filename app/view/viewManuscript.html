@@ -27,8 +27,8 @@
                 <div ng-repeat="anno in c.otherContent[1]['@list']"
                 ng-init="a=rerum.getResource(anno)"
                      class="bookmark"
-                     ng-class="{active:inTime(thisOn(a.on,manifest.resources[0]))}"
-                     ng-click="seekTo(thisOn(a.on,manifest.resources[0]))"
+                     ng-class="{active:inTime(thisOn(a.on,manifest.resources))}"
+                     ng-click="seekTo(thisOn(a.on,manifest.resources))"
                      ng-style="annotationStyle(thisOn(a.on,c['@id']), c)"></div>
             </sc-canvas>
         </div>
@@ -45,7 +45,9 @@
                 <span ng-hide="vv.currentTime[music['@id']]">Play</span>
             </span>
             </button> {{music.label}}</h4>
-                        <div ng-class="{loader:!wavesurfer.ready}" class="clearfix"></div>
+                        <div ng-class="{loader:!wavesurfer.ready,error:error}" 
+                        ng-hide="wavesurfer.ready"
+                        class="clearfix">loading error...</div>
         </wavesurfer>
 
         </div>

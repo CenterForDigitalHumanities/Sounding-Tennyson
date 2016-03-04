@@ -62,6 +62,9 @@ angular.module('wavesurfer', [])
             $scope.wavesurfer.on('pause', function () {
                 $scope.paused = true;
             });
+                        $scope.wavesurfer.on('error', function () {
+                $scope.error = true;
+            });
             $scope.wavesurfer.on('finish', function () {
                 $scope.paused = true;
                 $scope.wavesurfer.seekTo(0);

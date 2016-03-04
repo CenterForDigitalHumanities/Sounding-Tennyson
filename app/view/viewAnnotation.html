@@ -33,6 +33,7 @@
     <img selector="vv.annotation['@id']" width="100%">
     </card>
     <card class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='sc:Manifest'">
+        <a class="btn btn-primary btn-block" href="#/manuscript/{{vv.annotation['@id']}}">View Detail for {{vv.annotation.label||vv.annotation.title||vv.annotation['@id']}} </a>
     <a href="#/summary/{{c['@id']||c}}" ng-repeat="c in vv.annotation.sequences[0].canvases">
             <img selector="c['@id']||c" class="col-sm-2 well">
         </a>

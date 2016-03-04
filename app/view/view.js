@@ -85,9 +85,18 @@ Lists.addIfNotIn(r,$scope.performances);
         ViewValues.lockAnnotations = ViewValues.revealAnnotations = !ViewValues.lockAnnotations;
     };
     $scope.seekTo = function (on) {
+        if(!angular.isArray(on)){
+            on=[on]
+        }
+        for(var i=0; i<on.length;i++){
         var _on = on.split("#t=");
+        if(!_on[1]){
+            continue;
+        }
         var time = _on[1].split(",")[0];
-        $rootScope.$broadcast('seekTo', _on[0], time);
+        return $rootScope.$broadcast('seekTo', _on[0], time);
+    }
+    console.warn("Warning: No time discovered in selector.");
     };
 /**
  * Find relevant 'on' URI if oa:Annotation from array of
@@ -133,6 +142,10 @@ Lists.addIfNotIn(r,$scope.performances);
      * @return {boolean || array} true false check for value in range or just the times on the selector
      */
     $scope.inTime = function (on) {
+        if(!angular.isArray(on)){
+            on=[on];
+        }
+        for(var i=0;i<on.length;i++){
         if (on) {
             var _on = on.split("#t=");
             if (!_on[1]) {
@@ -141,12 +154,15 @@ Lists.addIfNotIn(r,$scope.performances);
             var t = ViewValues[on] || _on[1].split(",");
             var time = ViewValues.currentTime[_on[0]];
             if (isNaN(time)) {
-                return false;
+                continue;
                 // return t;
-            } else {
-                return time >= t[0] && time < t[1];
+            } else if(time >= t[0] && time < t[1]){
+                return true;
+                // TODO: return array of IDs intime for comparison at front
             }
         }
+    }
+    return false;
     };
     /**
      * Find the line of poetry currently in focus and show that piece of the

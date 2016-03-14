@@ -89,7 +89,7 @@ Lists.addIfNotIn(r,$scope.performances);
             on=[on]
         }
         for(var i=0; i<on.length;i++){
-        var _on = on.split("#t=");
+        var _on = on[i].split("#t=");
         if(!_on[1]){
             continue;
         }
@@ -146,16 +146,15 @@ Lists.addIfNotIn(r,$scope.performances);
             on=[on];
         }
         for(var i=0;i<on.length;i++){
-        if (on) {
-            var _on = on.split("#t=");
+        if (on[i]) {
+            var _on = on[i].split("#t=");
             if (!_on[1]) {
-                return false;
+                continue;
             }
-            var t = ViewValues[on] || _on[1].split(",");
+            var t = ViewValues[on[i]] || _on[1].split(",");
             var time = ViewValues.currentTime[_on[0]];
             if (isNaN(time)) {
                 continue;
-                // return t;
             } else if(time >= t[0] && time < t[1]){
                 return true;
                 // TODO: return array of IDs intime for comparison at front

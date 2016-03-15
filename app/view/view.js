@@ -78,11 +78,11 @@ sounding.directive('scCanvas', function (ViewValues, ViewService) {
         // },
         // controller: 'viewController',
         link: function (scope, $element) {
-            scope.$watch(ViewValues.currentTime,function(o,n){
+            scope.$watchCollection('vv.currentTime',function(o,n){
                 if (o && (o!==n)
                     && !scope.inTime(scope.manifest.sequences[0].canvases[ViewValues.selectedCanvas].otherContent[0].resource)){
                     updateCanvas(scope);
-                    $scope.$apply();
+                    // scope.$apply();
                 }
             },true)
         }

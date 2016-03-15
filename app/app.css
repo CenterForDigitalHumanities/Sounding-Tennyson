@@ -615,3 +615,7 @@ cite {
     margin: -.5em auto;
   }
 
+/** debuggy stuff **/
+img[selector]+canvas{
+    display: none;
+}

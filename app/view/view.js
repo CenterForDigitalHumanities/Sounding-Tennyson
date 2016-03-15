@@ -61,11 +61,39 @@ sounding.directive('xmlDiv', function ($sce, ViewService) {
         }
     };
 });
+sounding.directive('scCanvas', function (ViewValues, ViewService) {
+    function updateCanvas (scope){
+            var newSelection = [];
+            angular.forEach(scope.manifest.sequences[0].canvases, function(c, $index){
+                if(scope.inTime(c.otherContent[0].resource)){
+                    newSelection.push($index);
+                }
+            });
+            ViewValues.selectedCanvas = newSelection;
+        };
+    return {
+        restrict: 'E',
+        // scope: {
+        //     xml: '='
+        // },
+        // controller: 'viewController',
+        link: function (scope, $element) {
+            scope.$watch(ViewValues.currentTime,function(o,n){
+                if (o && (o!==n)
+                    && !scope.inTime(scope.manifest.sequences[0].canvases[ViewValues.selectedCanvas].otherContent[0].resource)){
+                    updateCanvas(scope);
+                    $scope.$apply();
+                }
+            },true)
+        }
+    };
+});
 
 sounding.controller("viewController", function ($scope, ViewService, ViewValues, Lists, MANIFESTS, RESOURCES, ANNOTATIONS, TEXT, $cacheFactory, RERUM, $rootScope) {
     $scope.Lists = Lists;
     $scope.vv = ViewValues;
     $scope.manifests = MANIFESTS;
+    ViewValues.selectedCanvas = [0];
     $scope.performances = [];
     angular.forEach(RESOURCES,function(r){
         if(r.motivation === 'performance'){
@@ -78,8 +106,15 @@ Lists.addIfNotIn(r,$scope.performances);
         $scope.manifest = ViewValues.manifest || MANIFESTS[2];
     }
     $scope.rerum = RERUM;
+    /**
+     * @deprecated
+    **/
     $scope.pickM = function (m) {
         $scope.manifest = m;
+    };
+    $scope.pickCanvas = function(index){
+        ViewValues.selectedCanvas = [index];
+        $scope.seekTo($scope.manifest.sequences[0].canvases[index].otherContent[0].resource);
     };
     $scope.lockAnnotations = function () {
         ViewValues.lockAnnotations = ViewValues.revealAnnotations = !ViewValues.lockAnnotations;
@@ -163,6 +198,19 @@ Lists.addIfNotIn(r,$scope.performances);
     }
     return false;
     };
+ /*   $scope.$watch('vv.currentTime',function(oldVal,newVal){
+        if(oldVal                       // not init
+            && (oldVal!==newVal)        // playing
+            && !$scope.inTime($scope.manifest.sequences[0].canvases[ViewValues.selectedCanvas].otherContent[0].resource)){
+            var newSelection = [];
+            angular.forEach($scope.manifest.sequences[0].canvases, function(c, $index){
+                if($scope.inTime(c.otherContent[0].resource)){
+                    newSelection.push($index);
+                }
+            });
+            ViewValues.selectedCanvas = newSelection;
+        }
+    });*/
     /**
      * Find the line of poetry currently in focus and show that piece of the
      * engraved score.

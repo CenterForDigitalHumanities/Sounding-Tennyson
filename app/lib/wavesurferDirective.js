@@ -70,6 +70,12 @@ angular.module('wavesurfer', [])
                 $scope.wavesurfer.seekTo(0);
                 $scope.$apply();
             });
+            $scope.wavesurfer.on('seek', function (progress) {
+                $scope.$evalAsync(function () {
+                    var mark = progress * $scope.wavesurfer.getDuration();
+                    ViewValues.currentTime[$scope.m] = mark;
+                });
+            });
 
             $scope.wavesurfer.on('audioprocess', function () {
                 $scope.$evalAsync(function () {

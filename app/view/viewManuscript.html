@@ -11,15 +11,15 @@
             <div class="btn-group pull-right">
                 <button type="button" class="btn btn-xs btn-default"
                         ng-repeat="c in manifest.sequences[0].canvases"
-                        ng-class="{active:inTime(c.otherContent[0].resource)}"
-                        ng-click="seekTo(c.otherContent[0].resource)">
+                        ng-class="{active:vv.selectedCanvas.indexOf($index)+1}"
+                        ng-click="pickCanvas($index)">
                     {{c.label||$index}}
                 </button>
             </div>
             <sc-canvas class="position-relative overflow-hidden btn-block"
                        ng-class="{visible:vv.revealAnnotations}"
-                       ng-repeat="c in manifest.sequences[0].canvases"
-                       ng-show="inTime(c.otherContent[0].resource)">
+                       ng-repeat="cindex in vv.selectedCanvas"
+                       ng-init="c=manifest.sequences[0].canvases[cindex]">
                 <img selector="c['@id']"
                      width='100%'
                      alt="{{c.label}}">
@@ -33,7 +33,9 @@
             </sc-canvas>
         </div>
     </div>
-    <div class="col-sm-6" ng-repeat="m in manifest.resources" ng-init="music=rerum.getResource(m)">
+    <div class="col-sm-6" ng-repeat="m in manifest.resources"
+    ng-show="thisOn(manifest.resources,music['@id'])"
+     ng-init="music=rerum.getResource(m)">
         <wavesurfer ng-attr-url="{{music.resource['@id']}}"
                     wave-color="#333"
                     progress-color="#002147"

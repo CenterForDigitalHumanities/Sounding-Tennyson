@@ -64,11 +64,14 @@ sounding.directive('xmlDiv', function ($sce, ViewService) {
 sounding.directive('scCanvas', function (ViewValues, ViewService) {
     function updateCanvas (scope){
             var newSelection = [];
-            angular.forEach(scope.manifest.sequences[0].canvases, function(c, $index){
-                if(scope.inTime(c.otherContent[0].resource)){
+            angular.forEach(ViewValues.manifest.sequences[0].canvases, function(c, $index){
+                if(c.otherContent[0] && scope.inTime(c.otherContent[0].resource)){
                     newSelection.push($index);
                 }
             });
+            if(newSelection.length===0){
+                newSelection=[0];
+            }
             ViewValues.selectedCanvas = newSelection;
         };
     return {
@@ -80,7 +83,9 @@ sounding.directive('scCanvas', function (ViewValues, ViewService) {
         link: function (scope, $element) {
             scope.$watchCollection('vv.currentTime',function(o,n){
                 if (o && (o!==n)
-                    && !scope.inTime(scope.manifest.sequences[0].canvases[ViewValues.selectedCanvas].otherContent[0].resource)){
+                    && ViewValues.manifest.sequences[0].canvases[ViewValues.selectedCanvas].otherContent
+                    && (!ViewValues.manifest.sequences[0].canvases[ViewValues.selectedCanvas].otherContent[0]
+                    || !scope.inTime(ViewValues.manifest.sequences[0].canvases[ViewValues.selectedCanvas].otherContent[0].resource))){
                     updateCanvas(scope);
                     // scope.$apply();
                 }
@@ -102,19 +107,20 @@ Lists.addIfNotIn(r,$scope.performances);
     });
     $scope.text = TEXT;
     var textCache = $cacheFactory.get('textCache') || $cacheFactory('textCache');
-    if (!$scope.manifest) {
-        $scope.manifest = ViewValues.manifest || MANIFESTS[2];
+    if (!ViewValues.manifest) {
+        ViewValues.manifest = MANIFESTS[2];
     }
     $scope.rerum = RERUM;
     /**
      * @deprecated
     **/
     $scope.pickM = function (m) {
-        $scope.manifest = m;
+        ViewValues.manifest = m;
     };
     $scope.pickCanvas = function(index){
         ViewValues.selectedCanvas = [index];
-        $scope.seekTo($scope.manifest.sequences[0].canvases[index].otherContent[0].resource);
+        if(ViewValues.manifest.sequences[0].canvases[index].otherContent[0])
+        $scope.seekTo(ViewValues.manifest.sequences[0].canvases[index].otherContent[0].resource);
     };
     $scope.lockAnnotations = function () {
         ViewValues.lockAnnotations = ViewValues.revealAnnotations = !ViewValues.lockAnnotations;
@@ -329,9 +335,10 @@ Lists.addIfNotIn(r,$scope.performances);
             return false;
         };
     };
-    $scope.lines = (function () {
-        var lines = [];
+    ViewValues.lines = ViewValues.lines = (function () {
+        var lines = {};
         var annotations = [];
+        var rows = [];
         angular.forEach(MANIFESTS, function (m) {
             angular.forEach(m.sequences[0].canvases, function (c) {
                 angular.forEach(c.otherContent, function (a) {
@@ -343,9 +350,9 @@ Lists.addIfNotIn(r,$scope.performances);
         });
         angular.forEach(annotations, function (a) {
             if(a.on){
-            if(!angular.isArray(a.on)){
-                a.on = [a.on];
-            }
+                if(!angular.isArray(a.on)){
+                    a.on = [a.on];
+                }
                 for (var i = 0; i < a.on.length; i++) {
                     var _ton = a.on[i].split("#t=");
                     if (_ton[1]) {
@@ -355,7 +362,7 @@ Lists.addIfNotIn(r,$scope.performances);
                             if (_con[1]) {
                                 var canvas = RERUM.getResource(_con[0]);
                                 var pos = _con[1].split(",");
-                                lines.push({
+                                rows.push({
                                     mid: _ton,
                                     label: _con[0],
                                     selector: _con[0] + "#xywh=0," + pos[1] + "," + canvas.width + "," + pos[3]
@@ -368,8 +375,29 @@ Lists.addIfNotIn(r,$scope.performances);
                 }
             }
         });
+        angular.forEach(RESOURCES, function(r){
+            lines[r['@id']] = [];
+            angular.forEach(rows, function(row){
+                if(row.mid[0] === r['@id']){
+                    lines[r['@id']].push(row);
+                }
+            });
+        });
         return lines;
     })();
+    $scope.findManifest = function(cid,prop){
+        var manifest;
+        for(var i=0;i<MANIFESTS.length;i++){
+            var c = MANIFESTS[i].sequences[0].canvases;
+            for(var j=0;j<c.length;j++){
+                if(c[j]['@id']===cid){
+                    manifest = prop ? MANIFESTS[i][prop] : MANIFESTS[j];
+                    return manifest;
+                }
+            }
+        }
+        return manifest;
+    };
 
 //    $scope.getLines = function (music) {
 //        var selector = function (annos, canvas) {

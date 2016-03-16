@@ -127,6 +127,9 @@ sounding.directive('selector', function () {
                     $element.addClass('ng-hide');
                     return false;
                 }
+                if ($element.next()[0] && $element.next()[0].tagName === "CANVAS"){
+                    $element.next().remove(); // delete any backup <canvas> that has been added
+                }
                 var dataURL = cache.get("image" + $scope.selector); // dataURL for cropped image
                 if(dataURL){
                     try {

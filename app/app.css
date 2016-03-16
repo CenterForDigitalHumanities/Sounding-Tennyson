@@ -27,6 +27,9 @@ h1,h2{
 body{
     background-color: rgb(132,140,103);
 }
+[ng-click]{
+    cursor: pointer;
+}
 .lighten{
     background-color: rgba(255,255,255,.87);
 }

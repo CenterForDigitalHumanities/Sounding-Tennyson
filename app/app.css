@@ -76,8 +76,7 @@ dd+dt, dt+dt {
     transition:all 250ms;
     padding-bottom: 15px;
     margin-bottom: -15px;
-color: cornsilk;
-    text-shadow: -1px 1px 1px darkred;
+    color: cornsilk;
     }
 .panel-body h3:first-of-type {
     margin-top: 0;

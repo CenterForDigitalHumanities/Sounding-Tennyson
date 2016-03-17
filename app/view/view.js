@@ -143,7 +143,7 @@ Lists.addIfNotIn(r,$scope.performances);
  * on or hasTarget URIs by matching the @id of the intended
  * target.
  * @param array arr URIs to search through
- * @param string target @id to search for
+ * @param string target [@id] to search for
  * @return string URI of result or ""
  */
     $scope.thisOn=function(arr,target){
@@ -151,12 +151,17 @@ Lists.addIfNotIn(r,$scope.performances);
         if(!angular.isArray(arr)){
             arr=[arr];
         }
-        for (var i = arr.length - 1; i >= 0; i--) {
-            if (arr[i] && arr[i].startsWith(target)) {
-                on=arr[i];
-                break;
-            }
-        };
+        if(!angular.isArray(target)){
+            target=[target];
+        }
+        for(var t=0;t<target.length;t++){
+            for (var i = arr.length - 1; i >= 0; i--) {
+                if (arr[i] && arr[i].startsWith(target[t])) {
+                    on=arr[i];
+                    break;
+                }
+            };
+        }
         return on;
     }
     /**

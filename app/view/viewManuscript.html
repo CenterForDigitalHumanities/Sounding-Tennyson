@@ -34,11 +34,11 @@
 </div>
 <div class="col-sm-6" ng-repeat="m in vv.manifest.resources"
 ng-show="thisOn(vv.manifest.resources,music['@id'])"
-ng-init="music=rerum.getResource(m)">
+ng-init="music=rerum.getResource(m);windex=$index;">
 <button ng-click="vv.showWav[music['@id']]=true" ng-if="!vv.showWav[music['@id']]" 
 class="btn btn-lg btn-primary btn-block">
 <i class="fa fa-music"></i>
-Load Music and Collation</button>
+Load {{music.label||'Music'}} and Collation</button>
 <wavesurfer ng-if="vv.showWav[music['@id']]"
 ng-attr-url="{{music.resource['@id']}}"
 wave-color="#333"
@@ -56,7 +56,7 @@ ng-hide="wavesurfer.ready"
 class="clearfix">loading error...</div>
 </wavesurfer>
 <div ng-controller="viewController">
-<card ng-repeat="line in vv.lines[vv.manifest.resources[0]]"
+<card ng-repeat="line in vv.lines[vv.manifest.resources[windex]]"
  ng-if="vv.showWav[music['@id']]"
 ng-show="(line.selector.indexOf(vv.manifest.sequences[0].canvases[vv.selectedCanvas]['@id']) === -1 ) && thisOn(vv.manifest.resources,line.mid[0]).length && inTime(line.mid.join('#t='))">
 <a ng-click="pickM(rerum.getResource(findManifest(line.label,'@id')))">{{findManifest(line.label,'label')}}

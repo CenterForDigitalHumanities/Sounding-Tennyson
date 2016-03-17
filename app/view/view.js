@@ -87,7 +87,6 @@ sounding.directive('scCanvas', function (ViewValues, ViewService) {
                     && (!ViewValues.manifest.sequences[0].canvases[ViewValues.selectedCanvas].otherContent[0]
                     || !scope.inTime(ViewValues.manifest.sequences[0].canvases[ViewValues.selectedCanvas].otherContent[0].resource))){
                     updateCanvas(scope);
-                    // scope.$apply();
                 }
             },true)
         }

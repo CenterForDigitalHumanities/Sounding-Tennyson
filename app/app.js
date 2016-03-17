@@ -99,10 +99,16 @@ var sounding = angular.module('sounding',
                         $scope.categories = [
                             {label: "Essays", list: ESSAYS},
                             {label: "Manuscripts", list: MANIFESTS},
-                            {label: "Performances", list: RESOURCES},
-                            {label: "Text", list: TEXT},
-                            {label: "Annotations", list: ANNOTATIONS}
+                            {label: "Text", list: [TEXT[0]]},
+                            {label: "Annotations", list: [ANNOTATIONS[0]]}
                         ]
+                    }
+                })
+                .when('/music', {
+                    templateUrl: 'app/static/music.html',
+                    controller: function ($scope, MANIFESTS, Lists) {
+                        $scope.music = MANIFESTS;
+                        $scope.Lists = Lists;
                     }
                 })
                 .when('/essays', {

@@ -17,7 +17,7 @@
     <span class="help-block">{{vv.annotation.description}}</span>
 
     <card class="annotationText btn-block fadeInOut" ng-repeat="text in rerum.getValues(vv.annotation, 'TEXT') track by $index"
-          ng-show="rerum.getValues(vv.annotation, 'TEXT').length">
+          ng-hide="vv.annotation['@type']==='rr:Essay'">
     {{text}}
     </card>
 
@@ -112,7 +112,7 @@ in {{rerum.manifestFromCanvas(vv.annotation['@id'],manifests)['@id']}}
 
 </div>
     </tile>
-        <div ng-if="vv.annotation.evidence && vv.annotation.evidence.length">
+        <!-- <div ng-if="vv.annotation.evidence && vv.annotation.evidence.length">
             <button class="btn btn-primary btn-xs" ng-click="showTargets=!showTargets"
         ng-show="rerum.getTargets(vv.annotation).length">
             Show All Targets
@@ -139,6 +139,6 @@ in {{rerum.manifestFromCanvas(vv.annotation['@id'],manifests)['@id']}}
                  </li>
             </ul>
         </div>
-    </div>
+    </div> -->
     </tiles>
 </div>

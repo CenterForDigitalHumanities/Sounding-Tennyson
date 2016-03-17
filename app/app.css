@@ -225,6 +225,7 @@ tile.expanded label {
 wavesurfer {
     background: url(../media/dh_logo_large.jpg) center center;
     background-size: cover;
+    margin: 15px 0;
 }
 wavesurfer h4 {
     padding: 1rem;

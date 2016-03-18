@@ -1,8 +1,8 @@
 <div>
     <dl ng-repeat="p in performances">
-    <h3>{{p.label}}</h3>
+    <h3 ng-bind-html="p.label"></h3>
         <dt ng-repeat-start="i in music[p['@id']]">
-            <a ng-href="#/manuscript/{{i['@id']}}">{{i.label}}</a></dt>
+            <a ng-href="#/manuscript/{{i['@id']}}" ng-bind-html="i.label"></a></dt>
                 <dd ng-repeat-end>{{i.description}}</dd>
     </dl>
 

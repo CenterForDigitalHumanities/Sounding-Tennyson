@@ -3,7 +3,7 @@
 	<h4>{{category.label}}</h4>
 	<ul>
 	<li ng-repeat="i in category.list">
-		<a ng-href="#/summary/{{i['@id']}}">{{i.label||i['@id']||$index}}</a> <span class="label label-primary pull-right">{{i['@type']}}</span>
+		<a ng-href="#/summary/{{i['@id']}}" ng-bind-html="i.label||i['@id']||$index"></a> <span class="label label-primary pull-right">{{i['@type']}}</span>
 	</li>
 	</ul>
 </div>

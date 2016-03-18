@@ -1,13 +1,17 @@
 <div reveal-annotations>
-    <div class="col-sm-6">
+    <div class="col-sm-9" ng-class="{'col-sm-6':vv.showWav}">
         <h3>
+            <button ng-click="vv.showWav=undefined" ng-show="vv.showWav" 
+class="btn btn-primary" tooltip="Show only the manuscript">
+<i class="fa fa-expand"></i>
+</button>
             <button ng-click="lockAnnotations()" type="button" class="btn btn-default pull-right"
             tooltip="{{vv.revealAnnotations && 'Hide'||'Show'}} all image annotations">
             <i class="fa fa-eye{{vv.revealAnnotations && '-slash'||''}}"></i>
         </button>
-        {{vv.manifest.label|| text.label}}
+        <span ng-bind-html="vv.manifest.label|| text.label"></span>
     </h3>
-    <div>
+    <div class="form-group">
         <div class="btn-group pull-right">
             <button type="button" class="btn btn-xs btn-default"
             ng-repeat="c in vv.manifest.sequences[0].canvases"
@@ -31,12 +35,27 @@
     ng-style="annotationStyle(thisOn(a.on,vv.manifest.sequences[0].canvases[cindex]['@id']), vv.manifest.sequences[0].canvases[cindex])"></div>
 </sc-canvas>
 </div>
+<div ng-show="vv.manifest.metadata">
+<button ng-click="vv.showData[vv.manifest['@id']]=!vv.showData[vv.manifest['@id']]"
+class="btn btn-info btn-block btn-responsive">
+<i class="fa fa-info-circle"></i>
+Metadata</button>
+<div class="metadata well" collapse="!vv.showData[vv.manifest['@id']]">
+<dl ng-class="{'dl-horizontal':!vv.showWav}">
+    <span ng-repeat="m in vv.manifest.metadata">
+    <dt ng-repeat-start="(key,value) in m" title={{key}}>{{key}}</dt>
+    <dd ng-repeat-end>{{value.join(',')||value}}</dd>
+</span>
+</span>
+</dl>
 </div>
-<div class="col-sm-6" ng-repeat="m in vv.manifest.resources"
+</div>
+</div>
+<div class="col-sm-6" ng-class="{'col-sm-3':!vv.showWav}" ng-repeat="m in vv.manifest.resources"
 ng-show="thisOn(vv.manifest.resources,music['@id'])"
 ng-init="music=rerum.getResource(m);windex=$index;">
 <button ng-click="vv.showWav[music['@id']]=true" ng-if="!vv.showWav[music['@id']]" 
-class="btn btn-lg btn-primary btn-block">
+class="btn btn-lg btn-default btn-block btn-responsive">
 <i class="fa fa-music"></i>
 Load {{music.label||'Music'}} and Collation</button>
 <wavesurfer ng-if="vv.showWav[music['@id']]"
@@ -58,8 +77,9 @@ class="clearfix">loading error...</div>
 <div ng-controller="viewController">
 <card ng-repeat="line in vv.lines[vv.manifest.resources[windex]]"
  ng-if="vv.showWav[music['@id']]"
-ng-show="(line.selector.indexOf(vv.manifest.sequences[0].canvases[vv.selectedCanvas]['@id']) === -1 ) && thisOn(vv.manifest.resources,line.mid[0]).length && inTime(line.mid.join('#t='))">
-<a ng-click="pickM(rerum.getResource(findManifest(line.label,'@id')))">{{findManifest(line.label,'label')}}
+ ng-show="(line.selector.indexOf(vv.manifest.sequences[0].canvases[vv.selectedCanvas]['@id']) === -1 ) && thisOn(vv.manifest.resources,line.mid[0]).length && inTime(line.mid.join('#t='))">
+<a ng-click="pickM(rerum.getResource(findManifest(line.label,'@id')))">
+    <span ng-bind-html="findManifest(line.label,'label')"></span>
 <img selector="line.selector" width="100%"></a>
 </card>
 </div>

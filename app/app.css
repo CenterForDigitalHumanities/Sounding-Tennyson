@@ -30,6 +30,10 @@ body{
 [ng-click]{
     cursor: pointer;
 }
+.btn-responsive {
+    white-space: normal !important;
+    word-wrap: break-word;
+}
 .lighten{
     background-color: rgba(255,255,255,.87);
 }
@@ -58,6 +62,9 @@ display:block;
 }
 dd+dt, dt+dt {
     margin-top: 1rem;
+}
+.metadata dt {
+    text-transform: capitalize;
 }
 .masthead {
     left:0;

@@ -503,6 +503,9 @@ syl-long::after{
     position: absolute;
     left:50%;
 }
+n_t_p{
+    display: none;
+}
 .error {
 width: 100%;
     padding: 0rem 2rem;
@@ -562,7 +565,39 @@ body{
     counter-reset:footnotea;
 }
 
+rr-list-indent{
+    counter-reset:listnumval;
+    margin-left: 25px;
+    display: block;
+    position:relative;
+}
 
+rr-list-letters{
+    counter-reset:listletterval;
+    display: block;
+    position:relative;
+}
+rr-list-letters-indent{
+    counter-reset:listletterval;
+    display: block;
+    position:relative;
+    margin-left: 10px;
+}
+rr-list-letter::before{
+    counter-increment: listletterval;
+    content: "("+counter(listnumval,lower-alpha)+")";
+    display: block;
+    position: relative;
+    margin-right: 4px;
+}
+
+rr-list-indent rr-list-num::before{
+    counter-increment: listnumval;
+    content: "("+counter(listnumval)+")";
+    display: block;
+    position: relative;
+    margin-right: 4px;
+}
 rr-footnote::after{
     counter-increment: footnotea;
     content: counter(footnotea);

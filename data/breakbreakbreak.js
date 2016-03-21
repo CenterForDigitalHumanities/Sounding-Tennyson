@@ -3,7 +3,7 @@
 sounding.value('RESOURCES', [{
   "@id": "Break_Break_Break_Janotha",
   "@type": "oa:Annotation",
-  "label": "Break, Break, Break (Janotha)",
+        "label": "Break, Break, Break (arr Janotha)",
   "motivation": "performance",
   "resource": {
     "@id": "media/audio/Break_Break_Break_Janotha.mp3",
@@ -13,7 +13,7 @@ sounding.value('RESOURCES', [{
 }, {
   "@id": "Break_Break_Break_AET",
   "@type": "oa:Annotation",
-  "label": "Break, Break, Break (AET)",
+        "label": "Break, Break, Break (Emily Tennyson)",
   "motivation": "performance",
   "resource": {
     "@id": "media/audio/Break_Break_Break_AET.mp3",
@@ -36,7 +36,7 @@ sounding.value('MANIFESTS', [
   "@id": "Henschel_Manifest",
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@type": "sc:Manifest",
-  "label": 'Henschel, &ldquo;Break," Engraving',
+  "label": 'Henschel, &ldquo;Break"',
   "description": 'from https://musopen.org/sheetmusic/17538/george-henschel/break-break-break/',
   "resources": ["Break_Break_Break_Henschel"],
   "layers": ["PianoLayer"],
@@ -967,7 +967,7 @@ sounding.value('MANIFESTS', [
   "@id": "AET_Engraving_Manifest",
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@type": "sc:Manifest",
-  "label": 'AET, &ldquo;Break," Engraving',
+        "label": 'Emily Tennyson, &ldquo;Break," Engraving',
   "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, Engraving',
   "resources": ["Break_Break_Break_AET"],
   "layers": ["PianoLayer"],
@@ -1664,7 +1664,7 @@ sounding.value('MANIFESTS', [
         "@id": "RB_Manifest",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": 'AET, &ldquo;Break," draft 1 (5321)',
+        "label": 'Emily Tennyson, &ldquo;Break," draft 1 (5321)',
         "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, red MS music album. TRC/Music/5321, ff 3r-4v. Lincolnshire County Council, UK.',
         "resources": ["Break_Break_Break_AET"],
         "layers": ["PianoLayer"],
@@ -2439,8 +2439,8 @@ sounding.value('MANIFESTS', [
         "@id": "Janotha_Manifest",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": 'AET / arr Janotha, &ldquo;Break"',
-        "description": '"Break, Break, Break," music by Emily Tennyson, arr. by Natalie Janotha, words by Alfred Tennyson, Sunday Hours, vol. 2 (1897): 568–72. P.P.357.fb, The British Library',
+        "label": 'Emily Tennyson / arr Janotha, &ldquo;Break"',
+        "description": '"Break, Break, Break," music by Emily Tennyson, arr. by Natalie Janotha, words by Alfred Tennyson, <i>Sunday Hours</i>, vol. 2 (1897): 568–72. P.P.357.fb, The British Library',
         "resources": ["Break_Break_Break_Janotha"],
         "layers": ["PianoLayer"],
         "sequences": [{
@@ -3458,7 +3458,7 @@ sounding.value('MANIFESTS', [
               "@id": "ManuscriptPoem",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-              "label": 'AT, &ldquo;Break," Ms poem',
+        "label": 'Alfred Tennyson, &ldquo;Break," Ms poem',
               "resources": ["Break_Break_Break_Janotha","Break_Break_Break_AET"],
               "sequences": [{
                 "@id": "handwritten poem normal sequence",
@@ -3506,14 +3506,14 @@ sounding.value('MANIFESTS', [
               "@id": "AET-MSS-5312-001",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-              "label": 'AET, &ldquo;Break," draft 2 (5312/1)',
+        "label": 'Emily Tennyson, &ldquo;Break," draft 2 (5312/1)',
               "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, Pink MS music book. TRC/Music/5312/1, ff 11r-12v, Lincolnshire County Council, UK.',
               "resources": ["Break_Break_Break_AET"],
               "metadata":[
               { "title" : "Emily Tennyson's manuscipt music notebook 1" },
               { "creator" : "Tennyson, Lady Emily (1813-1896)" },
               { "contributor" : "Tennyson, Lord Alfred (1809-1892)" },
-              { "date" : "c.1834-c.1860" }, 
+              { "date" : "c.1834-c.1860" },
               { "source" : "Lincolnshire County Council" },
               { "subject" : ["Tennyson, Emily Sellwood Tennyson, Baronness, 1813-1896—Musical settings.",
                   "Tennyson, Alfred Tennyson, Baron, 1809-1892—Musical settings.",
@@ -4300,7 +4300,7 @@ sounding.value('MANIFESTS', [
               "@id": "G_Manifest",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-              "label": 'AET, &ldquo;Break," draft 3 (5312/2)',
+        "label": 'Emily Tennyson, &ldquo;Break," draft 3 (5312/2)',
               "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, green MS music book, TRC/Music/5312/2, ff 5r-6r. Lincolnshire County Council, UK.',
               "resources": ["Break_Break_Break_AET"],
               "layers": ["PianoLayer"],
@@ -5038,7 +5038,7 @@ sounding.value('TEXT', [{
   "@id": "publishedText",
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@type": "cnt:chars",
-  "label": 'AT, &ldquo;Break" (published 1842)',
+        "label": 'Alfred Tennyson, &ldquo;Break" (published 1842)',
         // Put all the text in one place and then annotate the stanzas,
         // lines, and words with offsets as needed.
         "@value": "Break, break, break,/" +
@@ -5099,7 +5099,7 @@ sounding.value('ESSAYS', [{
   },
   {
     "label": "subtitle",
-    "value": 'Recording Tennyson’s Recitation of "Break, Break, Break" in Music'
+                "value": 'Emily Tennyson’s Scansion of "Break, break, break"'
   }
   ],
   "resource": "data/essayBreakToBreak.xml",

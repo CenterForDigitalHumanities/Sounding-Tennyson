@@ -34,6 +34,9 @@ body{
     white-space: normal !important;
     word-wrap: break-word;
 }
+ul.diamond {
+    list-style-image: url("http://165.134.241.141/sounding/app/lib/diamond-12.gif");
+}
 .lighten{
     background-color: rgba(255,255,255,.87);
 }

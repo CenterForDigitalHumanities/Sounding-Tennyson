@@ -1,7 +1,7 @@
 <div reveal-annotations>
     <div class="col-sm-9" ng-class="{'col-sm-6':vv.showWav}">
         <h3>
-            <button ng-click="vv.showWav=undefined" ng-show="vv.showWav" 
+            <button ng-click="vv.showWav=undefined" ng-show="vv.showWav"
 class="btn btn-primary" tooltip="Show only the manuscript">
 <i class="fa fa-expand"></i>
 </button>
@@ -54,10 +54,10 @@ Metadata</button>
 <div class="col-sm-6" ng-class="{'col-sm-3':!vv.showWav}" ng-repeat="m in vv.manifest.resources"
 ng-show="thisOn(vv.manifest.resources,music['@id'])"
 ng-init="music=rerum.getResource(m);windex=$index;">
-<button ng-click="vv.showWav[music['@id']]=true" ng-if="!vv.showWav[music['@id']]" 
-class="btn btn-lg btn-default btn-block btn-responsive">
-<i class="fa fa-music"></i>
-Load {{music.label||'Music'}} and Collation</button>
+<button ng-click="vv.showWav[music['@id']]=true" ng-if="!vv.showWav[music['@id']]"
+class="btn btn-default btn-block btn-responsive">
+    <div class="help-block"> <i class="fa fa-music"></i> Load audio file and interactive media</div>
+    {{music.label||'Music'}}</button>
 <wavesurfer ng-if="vv.showWav[music['@id']]"
 ng-attr-url="{{music.resource['@id']}}"
 wave-color="#333"
@@ -70,7 +70,7 @@ min-px-per-sec=1>
         <span ng-hide="vv.currentTime[music['@id']]">Play</span>
     </span>
 </button> {{music.label}}</h4>
-<div ng-class="{loader:!wavesurfer.ready,error:error}" 
+<div ng-class="{loader:!wavesurfer.ready,error:error}"
 ng-hide="wavesurfer.ready"
 class="clearfix">loading error...</div>
 </wavesurfer>

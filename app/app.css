@@ -164,6 +164,12 @@ attribution.expanded {
     height: 80px;
     z-index: 1;
 }
+attribution.expanded.wide {
+    width: 100%;
+}
+attribution .citation {
+    cursor: auto;
+}
 tile {
     display:block;
     width: 32%;

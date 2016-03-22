@@ -93,12 +93,15 @@ sounding.directive('scCanvas', function (ViewValues, ViewService) {
     };
 });
 
-sounding.controller("viewController", function ($scope, ViewService, ViewValues, Lists, MANIFESTS, RESOURCES, ANNOTATIONS, TEXT, $cacheFactory, RERUM, $rootScope) {
+sounding.controller("viewController", function ($scope, $filter, ViewService, ViewValues, Lists, MANIFESTS, RESOURCES, ANNOTATIONS, TEXT, $cacheFactory, RERUM, $rootScope) {
     $scope.Lists = Lists;
     $scope.vv = ViewValues;
     $scope.manifests = MANIFESTS;
     ViewValues.selectedCanvas = [0];
     $scope.performances = [];
+    $scope.about = {
+        citation: '<div style="text-align:left !important;text-indent: -2rem;padding-left: 2rem;"><i class="fa fa-quote-left fa-2x pull-right"></i> Weliver, Phyllis and Ewan Jones. "About <i>Sounding Tennyson</i>." <i>Sounding Tennyson</i>. 31 March 2016. Accessed ' + $filter('date')(Date.now(), 'dd MMMM yyyy') + '.</div>'
+    };
     angular.forEach(RESOURCES,function(r){
         if(r.motivation === 'performance'){
 Lists.addIfNotIn(r,$scope.performances);

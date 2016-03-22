@@ -37,6 +37,10 @@ body{
 ul.diamond {
     list-style-image: url("http://165.134.241.141/sounding/app/lib/diamond-12.gif");
 }
+ul.citationList{
+    text-indent: -2em;
+    padding-left: 2em;
+}
 .lighten{
     background-color: rgba(255,255,255,.87);
 }

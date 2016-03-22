@@ -16,7 +16,7 @@ author: Patrick Cuba
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <style type="text/css">
             #welcome-panel {
-                margin-top: 65vh;
+                margin-top: 0;
                 position: relative;
                 overflow: auto;
                 z-index: 0;
@@ -27,8 +27,9 @@ author: Patrick Cuba
                 left: 0;
                 height: 100vh;
                 background: linear-gradient(to bottom, rgba(132,140,103,0) 0%,rgba(132,140,103,0) 10%,rgba(132,140,103,1) 25%,rgba(132,140,103,1) 100%);
-                width: 100vw;
-                top: 60vh;
+                width: 100%;
+                top: 60vw;
+                margin-top: -15vh;
             }
             .masthead{
                 position:fixed;    left: 40px;
@@ -50,7 +51,6 @@ author: Patrick Cuba
             }
             h3{
                 color: lavender;
-                text-shadow: -1px 1px 0px purple;
             }
             a {
                 color:lavender;
@@ -64,10 +64,17 @@ author: Patrick Cuba
             .well:hover {
                 background-color: cornsilk;
             }
+            @media (min-width: 768px){
+                #welcome-panel {
+                    margin-top: 70vh;
+                }
+            }
         </style>
     </head>
-    <body id="welcome" class="container">
-        <div style="position:fixed;top:0;left:0vw;width:100vw;">
+    <body id="welcome">
+        <img class="visible-xs" src="media/dh_logo_large.jpg" style="width:100%;" alt="Alfred Tennyson, doodle (age 9), in his copy of Opera, Publius Virgilius Maro (Oxford: Clarendon Press, 1817) flyleaf, TRC/AT/2281.  This item is reproduced by permission of Lincolnshire County Council, UK." />
+        <div class="container">
+            <div style="position:fixed;top:0;left:0vw;width:100vw;" class="hidden-xs">
             <img src="media/dh_logo_large.jpg" style="width:100%;" alt="Alfred Tennyson, doodle (age 9), in his copy of Opera, Publius Virgilius Maro (Oxford: Clarendon Press, 1817) flyleaf, TRC/AT/2281.  This item is reproduced by permission of Lincolnshire County Council, UK." />
             <small style="color: rgba(255,255,255,.5);" class="text-center center-block">
                 Alfred Tennyson, doodle (age 9), in his copy of <i>Opera</i>, Publius
@@ -75,41 +82,47 @@ author: Patrick Cuba
                 This item is reproduced by permission of Lincolnshire County Council, UK.
             </small>
         </div>
-
         <div class="masthead">
             <h1>Sounding Tennyson</h1>
         </div>
-        <div class="greenback"></div>
-        <div id="welcome-panel">
-            <div class="visible-lg visible-md" style="height:10rem;position: relative;"></div>
-            <h3>Exploring the sound of Tennyson's poetry</h3>
-            <div class="col-xs-12 col-sm-6 col-md-8">
-                <div class="well clearfix">
+            <div class="greenback hidden-xs"></div>
+            <div id="welcome-panel">
+                <div class="visible-lg visible-md" style="height:10rem;position: relative;"></div>
+                <h3 class="hidden-lg">Exploring the sound of Tennyson's poetry</h3>
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <h3 class="hidden-xs hidden-sm hidden-md">Exploring the sound of Tennyson's poetry</h3>
+                    <div class="well clearfix">
                     <a href='app.html#/music'>
-                        <h2 class="col-md-4">
-                        <i class='fa fa-volume-up'></i> listen</h2>
+                        <h2 class="col-md-4 hidden-sm">
+                            <i class='fa fa-volume-up'></i> listen</h2>
+                        <h4 class="visible-sm">
+                            <i class='fa fa-volume-up'></i> listen</h4>
                         <p class="col-md-8">Interact with the first recordings of Tennyson's
                             poetry as musically set by his wife, Emily.</p>
                     </a>
                 </div>
                 <div class="well clearfix">
                     <a href='app.html#/essays'>
-                        <h2 class="col-md-4">
-                        <i class='fa fa-book'></i> learn</h2>
+                        <h2 class="col-md-4 hidden-sm">
+                            <i class='fa fa-book'></i> learn</h2>
+                        <h4 class="visible-sm">
+                            <i class='fa fa-book'></i> learn</h4>
                         <p class="col-md-8">Read essays supported with digitized resources.</p>
                     </a>
                 </div>
                 <div class="well clearfix">
                     <a href='app.html#/archive'>
-                        <h2 class="col-md-4">
-                        <i class='fa fa-search'></i> explore</h2>
-                    <p class="col-md-8">Browse digitized objects from the Tennysons' life and works,
-                        exploring their connection to each other and to scholarship.</p>
+                        <h2 class="col-md-4 hidden-sm">
+                            <i class='fa fa-search'></i> explore</h2>
+                        <h4 class="visible-sm">
+                            <i class='fa fa-search'></i> explore</h4>
+                        <p class="col-md-8">Browse digitized objects from the Tennysons' life and works,
+                            exploring their connection to each other and to scholarship.</p>
                     </a>
                 </div>
-                <h3 class="pull-right">Step back to Farringford&hellip;</h3>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h3 class="pull-right hidden-sm hidden-xs">Step back to Farringford&hellip;</h3>
+                </div>
+                <div class="hidden-xs col-sm-6 col-md-4">
                 <figure>
             <img src="media/piano_cover.jpg" />
             <figcaption>
@@ -117,9 +130,10 @@ author: Patrick Cuba
                 Tennysons' restored drawing room. Farringford, Isle of Wight, UK.
             </figcaption>
         </figure>
+                </div>
+                <h3 class="pull-right visible-sm visible-xs">Step back to Farringford&hellip;</h3>
             </div>
-        </div>
-        <footer class="text-center">
+            <footer class="text-center">
             <a href="app.html#/about">about</a>
             <a href="app.html#/funding">funding</a>
             <a href="app.html#/team">project team</a>
@@ -134,5 +148,6 @@ author: Patrick Cuba
                 }, false);
             })();
         </script>
+        </div>
     </body>
 </html>

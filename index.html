@@ -18,18 +18,20 @@ author: Patrick Cuba
             #welcome-panel {
                 margin-top: 0;
                 position: relative;
-                overflow: auto;
+                overflow: visible;
                 z-index: 0;
                 padding-bottom: 3rem;
             }
-            .greenback {
+            .greenback,#welcome-panel::after {
+                content:"";
                 position: absolute;
-                left: 0;
+                left: -100%;
                 height: 100vh;
                 background: linear-gradient(to bottom, rgba(132,140,103,0) 0%,rgba(132,140,103,0) 10%,rgba(132,140,103,1) 25%,rgba(132,140,103,1) 100%);
-                width: 100%;
-                top: 60vw;
-                margin-top: -15vh;
+                width: 300%;
+                top: 0;
+                margin-top: -240px;
+                z-index: -1;
             }
             .masthead{
                 position:fixed;    left: 40px;
@@ -68,6 +70,19 @@ author: Patrick Cuba
                 #welcome-panel {
                     margin-top: 70vh;
                 }
+                .greenback{
+                    margin-top: -140px;
+                }
+            }
+            @media (min-width: 992px){
+                .greenback{
+                    margin-top: -200px;
+                }
+            }
+            @media (min-width: 1200px){
+                .greenback{
+                    margin-top: -480px;
+                }
             }
         </style>
     </head>
@@ -85,9 +100,7 @@ author: Patrick Cuba
         <div class="masthead">
             <h1>Sounding Tennyson</h1>
         </div>
-            <div class="greenback hidden-xs"></div>
             <div id="welcome-panel">
-                <div class="visible-lg visible-md" style="height:10rem;position: relative;"></div>
                 <h3 class="hidden-lg">Exploring the sound of Tennyson's poetry</h3>
                 <div class="col-xs-12 col-sm-6 col-md-8">
                     <h3 class="hidden-xs hidden-sm hidden-md">Exploring the sound of Tennyson's poetry</h3>

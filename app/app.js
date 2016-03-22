@@ -77,6 +77,10 @@ var sounding = angular.module('sounding',
                     templateUrl: 'app/static/acknowledgment.html',
                     controller: 'viewController'
                 })
+                .when('/permissions', {
+                    templateUrl: 'app/static/permissions.html',
+                    controller: 'viewController'
+                })
                 .when('/funding', {
                     templateUrl: 'app/static/funding.html',
                     controller: 'viewController'
@@ -150,7 +154,7 @@ var sounding = angular.module('sounding',
                         }
                     }
                 })
-                .otherwise(({redirectTo: '/welcome'}));
+                .otherwise(({redirectTo: '404'}));
         }]);
 sounding.controller('mainController', function ($scope, ViewValues) {
 });

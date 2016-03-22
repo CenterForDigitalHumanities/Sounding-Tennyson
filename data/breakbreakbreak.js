@@ -36,7 +36,7 @@ sounding.value('MANIFESTS', [
   "@id": "Henschel_Manifest",
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@type": "sc:Manifest",
-  "label": 'Henschel, &ldquo;Break"',
+  "label": 'Henschel, “Break”',
   "description": 'from https://musopen.org/sheetmusic/17538/george-henschel/break-break-break/',
   "resources": ["Break_Break_Break_Henschel"],
   "layers": ["PianoLayer"],
@@ -967,8 +967,8 @@ sounding.value('MANIFESTS', [
   "@id": "AET_Engraving_Manifest",
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@type": "sc:Manifest",
-        "label": 'Emily Tennyson, &ldquo;Break," Engraving',
-  "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, Engraving',
+        "label": 'Emily Tennyson, “Break," Engraving',
+  "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, Engraving',
   "resources": ["Break_Break_Break_AET"],
   "layers": ["PianoLayer"],
   "sequences": [{
@@ -1664,8 +1664,8 @@ sounding.value('MANIFESTS', [
         "@id": "RB_Manifest",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": 'Emily Tennyson, &ldquo;Break," draft 1 (5321)',
-        "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, red MS music album. TRC/Music/5321, ff 3r-4v. Lincolnshire County Council, UK.',
+        "label": 'Emily Tennyson, “Break," draft 1 (5321)',
+        "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, red MS music album. TRC/Music/5321, ff 3r-4v. Lincolnshire County Council, UK.',
         "resources": ["Break_Break_Break_AET"],
         "layers": ["PianoLayer"],
         "sequences": [{
@@ -2439,7 +2439,7 @@ sounding.value('MANIFESTS', [
         "@id": "Janotha_Manifest",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": 'Emily Tennyson / arr Janotha, &ldquo;Break"',
+        "label": 'Emily Tennyson / arr Janotha, “Break”',
         "description": '"Break, Break, Break," music by Emily Tennyson, arr. by Natalie Janotha, words by Alfred Tennyson, <i>Sunday Hours</i>, vol. 2 (1897): 568–72. P.P.357.fb, The British Library',
         "resources": ["Break_Break_Break_Janotha"],
         "layers": ["PianoLayer"],
@@ -3458,7 +3458,7 @@ sounding.value('MANIFESTS', [
               "@id": "ManuscriptPoem",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-        "label": 'Alfred Tennyson, &ldquo;Break," Ms poem',
+        "label": 'Alfred Tennyson, “Break," Ms poem',
               "resources": ["Break_Break_Break_Janotha","Break_Break_Break_AET"],
               "sequences": [{
                 "@id": "handwritten poem normal sequence",
@@ -3506,8 +3506,8 @@ sounding.value('MANIFESTS', [
               "@id": "AET-MSS-5312-001",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-        "label": 'Emily Tennyson, &ldquo;Break," draft 2 (5312/1)',
-              "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, Pink MS music book. TRC/Music/5312/1, ff 11r-12v, Lincolnshire County Council, UK.',
+        "label": 'Emily Tennyson, “Break," draft 2 (5312/1)',
+              "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, Pink MS music book. TRC/Music/5312/1, ff 11r-12v, Lincolnshire County Council, UK.',
               "resources": ["Break_Break_Break_AET"],
               "metadata":[
               { "title" : "Emily Tennyson's manuscipt music notebook 1" },
@@ -3523,7 +3523,7 @@ sounding.value('MANIFESTS', [
                   "Poets, English—19th century.",
                   "Authors' spouses—Great Britain—Diaries.",
                   "Songs with piano—19th century."] },
-              { "description" : 'Pink manuscript music book setting by Emily Lady Tennyson of Alfred Lord Tennyson\'s "Break, Break, Break", written in black ink with pencil markings' },
+              { "description" : 'Pink manuscript music book setting by Emily Lady Tennyson of Alfred Lord Tennyson\'s "Break, Break, Break”, written in black ink with pencil markings' },
               { "website" : "http://www.soundingtennyson.org" },
               { "contributing institution" : "Lincolnshire County Council" },
               { "publisher" : "Sounding Tennyson" },
@@ -4300,8 +4300,8 @@ sounding.value('MANIFESTS', [
               "@id": "G_Manifest",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-        "label": 'Emily Tennyson, &ldquo;Break," draft 3 (5312/2)',
-              "description": '"Break, Break, Break", music by Emily Tennyson, words by Alfred Tennyson, green MS music book, TRC/Music/5312/2, ff 5r-6r. Lincolnshire County Council, UK.',
+        "label": 'Emily Tennyson, “Break," draft 3 (5312/2)',
+              "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, green MS music book, TRC/Music/5312/2, ff 5r-6r. Lincolnshire County Council, UK.',
               "resources": ["Break_Break_Break_AET"],
               "layers": ["PianoLayer"],
               "sequences": [{
@@ -5038,7 +5038,7 @@ sounding.value('TEXT', [{
   "@id": "publishedText",
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@type": "cnt:chars",
-        "label": 'Alfred Tennyson, &ldquo;Break" (published 1842)',
+        "label": 'Alfred Tennyson, “Break” (published 1842)',
         // Put all the text in one place and then annotate the stanzas,
         // lines, and words with offsets as needed.
         "@value": "Break, break, break,/" +
@@ -5094,12 +5094,20 @@ sounding.value('ESSAYS', [{
     "value": "Phyllis Weliver"
   },
   {
+    "label":"citeAuthor",
+    "value":"Weliver, Phyllis"
+  },
+  {
+    "label":"publicationDate",
+    "value":"31 March 2016"
+  },
+  {
     "label": "title",
     "value": "To Break or not to Break?"
   },
   {
     "label": "subtitle",
-                "value": 'Emily Tennyson’s Scansion of "Break, break, break"'
+                "value": 'Emily Tennyson’s Scansion of “Break, break, break”'
   }
   ],
   "resource": "data/essayBreakToBreak.xml",
@@ -5121,7 +5129,15 @@ sounding.value('ESSAYS', [{
            "label": "author",
            "value": "Phyllis Weliver"
        },
-       {
+{
+    "label":"citeAuthor",
+    "value":"Weliver, Phyllis"
+  },
+  {
+    "label":"publicationDate",
+    "value":"31 March 2016"
+  },
+         {
            "label": "title",
            "value": "Emily Tennyson's Music Manuscript Books"
        }
@@ -5145,7 +5161,15 @@ sounding.value('ESSAYS', [{
     "label": "author",
     "value": "Phyllis Weliver"
   },
+{
+    "label":"citeAuthor",
+    "value":"Weliver, Phyllis"
+  },
   {
+    "label":"publicationDate",
+    "value":"31 March 2016"
+  },
+    {
     "label": "title",
     "value": "Variability and Musical Motion in ‘Break, break, break’"
   }
@@ -5169,7 +5193,15 @@ sounding.value('ESSAYS', [{
            "label": "author",
            "value": "Phyllis Weliver"
        },
-       {
+{
+    "label":"citeAuthor",
+    "value":"Weliver, Phyllis"
+  },
+  {
+    "label":"publicationDate",
+    "value":"31 March 2016"
+  },
+         {
            "label": "title",
            "value": "Performance and Publication of Emily Tennyson’s Music"
        }

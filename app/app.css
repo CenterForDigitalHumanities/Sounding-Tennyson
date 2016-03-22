@@ -37,7 +37,7 @@ body{
 ul.diamond {
     list-style-image: url("http://165.134.241.141/sounding/app/lib/diamond-12.gif");
 }
-ul.citationList{
+ul.citationList,.citation{
     text-indent: -2em;
     padding-left: 2em;
 }
@@ -368,7 +368,6 @@ TEI teiHeader {
 }
 TEI text {
     display:block;
-    font-size: 125%;
     line-height: 1.68;
 }
 
@@ -433,13 +432,13 @@ rr-inline-fig img{
 rr-bib{
     display: block;
     margin-top: 20px;
-    font-size: 75%;
+    font-size: 80%;
     counter-reset: footnoteb;
 }
 
 rr-poem{
     display :block;
-    font-size: 70%;
+    font-size: 80%;
     position: relative;
     padding: 5px 24px;
 }
@@ -455,7 +454,7 @@ rr-poem-line:nth-child(even){
 }
 rr-slack-map{
     display: block;
-    font-size: 70%;
+    font-size: 80%;
     position: relative;
     padding: 5px 24px;
     text-indent: initial;

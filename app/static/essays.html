@@ -1,20 +1,12 @@
 <div>
-    <ul>
-        <li ng-repeat="i in essays">
-            <a ng-href="#/summary/{{i['@id']}}">{{Lists.getAllByProp("label", "author", i.metadata)[0].value}}
-                <cite>{{i.label||i['@id']||$index}}</cite> {{Lists.getAllByProp("label", "subtitle", i.metadata)[0].value}}
+<div ng-repeat="c in categories">
+<h3 ng-bind-html="c.label"></h3>
+    <dl>
+        <dt ng-repeat-start="i in c.list">
+            <a ng-href="#/summary/{{i['@id']}}"><cite>{{i.label||i['@id']||$index}}</cite> {{Lists.getAllByProp("label", "subtitle", i.metadata)[0].value}}
             </a>
-        </li>
-    </ul>
-
-    Weliver, Phyllis. "Title." <i>Sounding Tennyson</i>. 31 March 2016. Accessed CURRENT_DATE. URI.
-
-    "Break, break, break"
-    - To Break
-    - Variability
-
-    Contextual Essays
-    - Music Books
-    - Performance and publication
-
+        </dt>
+            <dd ng-repeat-end class="citation" ng-bind-html="cite(i)" ng-controller="viewController"></dd>
+    </dl>
+</div>
 </div>

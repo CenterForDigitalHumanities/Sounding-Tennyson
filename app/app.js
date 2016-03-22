@@ -132,6 +132,15 @@ var sounding = angular.module('sounding',
                     controller: function ($scope, ESSAYS, Lists) {
                         $scope.essays = ESSAYS;
                         $scope.Lists = Lists;
+                        $scope.categories = [
+                        {
+                            label: '“Break, Break, Break”',
+                            list:[ESSAYS[0],ESSAYS[2]]
+                        },{
+                            label: 'Contextual Essays',
+                            list:[ESSAYS[1],ESSAYS[3]]
+                        }
+                        ];
                     }
                 })
                 .when('/summary/:id', {

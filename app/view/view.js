@@ -9,9 +9,9 @@ sounding.value("ViewValues", {
             canvas: 0, //index in manifest or URI
             selector: "" // default xywh for display
         }
-    ]
+    ],
 });
-sounding.service("ViewService", function ($http, $q) {
+sounding.service("ViewService", function ($http, $q,ViewValues,$filter) {
     var service = this;
     this.fetchManifest = function (url) {
         return $http.get(url);
@@ -31,6 +31,7 @@ sounding.service("ViewService", function ($http, $q) {
         xmlDoc.send();
         return deferred.promise;
     };
+    ViewValues.todayString = $filter('date')(Date.now(), 'dd MMMM yyyy');
 });
 sounding.directive('xmlDiv', function ($sce, ViewService) {
     return {
@@ -102,9 +103,25 @@ sounding.controller("viewController", function ($scope, $filter, ViewService, Vi
     $scope.about = {
         citation: '<div style="text-align:left !important;text-indent: -2rem;padding-left: 2rem;"><i class="fa fa-quote-left fa-2x pull-right"></i> Weliver, Phyllis and Ewan Jones. "About <i>Sounding Tennyson</i>." <i>Sounding Tennyson</i>. 31 March 2016. Accessed ' + $filter('date')(Date.now(), 'dd MMMM yyyy') + '.</div>'
     };
+    $scope.cite = function(res){
+        var author = Lists.getAllByProp("label", "citeAuthor", res.metadata)[0].value || Lists.getAllByProp("label", "author", res.metadata)[0].value;
+        var title = Lists.getAllByProp("label", "title", res.metadata)[0].value || res.label;
+        var publicationDate = Lists.getAllByProp("label", "publicationDate", res.metadata)[0].value || "31 March 2016";
+        var access = "Accessed "+ViewValues.todayString;
+        var uri = res.resource || res['@id'];
+        if (["?","!",".",":"].indexOf(author.slice(-1))===-1) 
+            author+='.';
+        title = (["?","!",".",":"].indexOf(title.slice(-1))>-1) 
+        ? '"'+title+'"'
+        : '"'+title+'."';
+        publicationDate+=".";
+        access+=".";
+        uri= "http://soundingtennyson.org/"+uri+".";
+        return [author,title,publicationDate,access,uri].join(" ");
+    };
     angular.forEach(RESOURCES,function(r){
         if(r.motivation === 'performance'){
-Lists.addIfNotIn(r,$scope.performances);
+            Lists.addIfNotIn(r,$scope.performances);
         }
     });
     $scope.text = TEXT;

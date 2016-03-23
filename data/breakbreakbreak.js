@@ -5213,6 +5213,44 @@ sounding.value('ESSAYS', [{
    "indices": [],
    "comments": [],
    "otherContent": []
+},{
+   "@context": "http://iiif.io/api/presentation/2/context.json",
+   "@id": "Cecilia1839",
+   "@type": "rr:Essay",
+   "label": "Cecilia Tennyson (poet’s sister) recites, 1839",
+   "metadata":[
+   {
+    "label":"title",
+    "value":"Cecilia Tennyson (poet’s sister) recites, 1839"
+   },{
+    "label":"citeAuthor",
+    "value":"unknown"
+   },{
+    "label":"publicationDate",
+    "value":"31 March 2016"
+   }],
+   "resource":"data/witnessCecilaTennyson.xml",
+   "note":{
+    "text":"Louisa Lanesborough stayed with Alfred Tennyson’s sisters in May 1839 at Beech Hill, having disguised herself as the nurse of her consumptive friend, Mrs. Neville (“Mimosa”), and assuming the name Marion Langlais. Mary and Emily Tennyson, Louisa Lanesborough, and Mary Neville together were part of a literary circle called “The Husks” who idolized the young Alfred Tennyson’s poetry.",
+    "citation":"Bartle Teeling, “A Visit to the Tennysons in 1839,” <cite>Blackwood’s Edinburgh Magazine</cite> CLV (May 1894): 605–21 (605–6)."
+   }
+},{
+   "@context": "http://iiif.io/api/presentation/2/context.json",
+   "@id": "TennysonRecites",
+   "@type": "rr:Essay",
+   "label": "Tennyson recites, 1857, 1890",
+   "metadata":[
+   {
+    "label":"title",
+    "value":"Tennyson recites, 1857, 1890"
+   },{
+    "label":"citeAuthor",
+    "value":"unknown"
+   },{
+    "label":"publicationDate",
+    "value":"31 March 2016"
+   }],
+   "resource":"data/witnessTennysonRecites.xml"
 }
 ]);
 

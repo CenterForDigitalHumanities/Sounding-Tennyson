@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cecilia Tennyson (poet’s sister) recites, 1839</title>
+                <author>Phyllis Weliver</author>
+                <respStmt>
+                    <resp>composed by</resp>
+                    <name>Patrick Cuba</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Center for Digital Humanities</distributor>
+                <address>
+                    <addrLine>Saint Louis University</addrLine>
+                </address>
+                <availability>
+                    <p>Freely available on a non-commercial basis.</p>
+                </availability>
+                <date when="2016">2016</date>
+            </publicationStmt>
+            <sourceDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Essay generated for the Sounding Tennyson project, creating an interactive 
+                    exhibit for exploring resources and research around the poems and music of Tennyson.</p>
+            </projectDesc>
+            <editorialDecl>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>
+                    <date when="2016-01-19">19 Jan 2016</date> First build by PMC</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+            	<em>Sunday</em>, 16.— […] At four o’clock brushed and combed her hair for dinner, during which I was again alone till near six, when my mistress came up to be ‘Mimosa’ for a while, and I was called to tea, after which I got Miss Laura’s milk-and-water and made her a piece of toast, and heard her say her hymns. Mistress came to curl her hair, and went down again; and I was dreadfully sleepy and tired, so much so that after a vain attempt to read and write I fell fast asleep in the great chair, roused only by the sound of coming voice, ‘mistress,’ and Miss Mary [Tennyson], and Miss Cecilia [Tennyson]. I was desired to brush her hair, which I did, whilst Cecilia read Alfred’s poetry, ‘Break, break, break!’ out loud, and <em>talked ‘husky,’</em> but not for long. They saw that she was dreadfully tired, and left her; but she would not got to bed, and talked away till very late, when I crept into bed with her and slept as sound as a rock<rr-footnote>.</rr-footnote> 
+            </p>
+            <rr-bib>
+                    <rr-bib-entry><rr-footnote>Louisa</rr-footnote> Lanesborough, 16 May 1839, Journal (1839–40), in Bartle Teeling, “A Visit to the Tennysons in 1839,” Blackwood’s Edinburgh Magazine CLV (May 1894): 605–21 (609). Original emphasis.</rr-bib-entry>
+                </rr-bib>
+                        </body>
+    </text>
+</TEI>

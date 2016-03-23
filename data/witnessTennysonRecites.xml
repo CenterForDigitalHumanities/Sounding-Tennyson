@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tennyson recites, 1857, 1890</title>
+                <author>Phyllis Weliver</author>
+                <respStmt>
+                    <resp>composed by</resp>
+                    <name>Patrick Cuba</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Center for Digital Humanities</distributor>
+                <address>
+                    <addrLine>Saint Louis University</addrLine>
+                </address>
+                <availability>
+                    <p>Freely available on a non-commercial basis.</p>
+                </availability>
+                <date when="2016">2016</date>
+            </publicationStmt>
+            <sourceDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Essay generated for the Sounding Tennyson project, creating an interactive 
+                    exhibit for exploring resources and research around the poems and music of Tennyson.</p>
+            </projectDesc>
+            <editorialDecl>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>
+                    <date when="2016-01-19">19 Jan 2016</date> First build by PMC</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <h4>Emily Tennyson’s account</h4>
+                We drive with Mrs Cameron to see the Carlyles. Mr Carlyle admits us tho’ against rule to admit guests in the morning. We return thro’ Wimbledon Park. Mr Henry Taylor, Mr Lear, Williams, Mr Rossetti, Mr Holman Hunt, Mr Woolner dine. Lady Charlotte &amp; her party come in the evening. All pleased with Mr Lear’s singing. A [Alfred] reads the Morte d’Arthur &amp; Break break after he has sent me to bed. Most hospitably most kindly have we been received by our friends in their houses. We are grateful for all the enjoyment we have had<rr-footnote>.</rr-footnote> 
+            </p>
+             <p>
+                <h4>Hallam Tennyson’s account</h4>
+                <em>March 15th</em>. My father quoted Goethe's “Kennst du das Land?” and “Wer nie sein Brod” at dinner, admiring them greatly. He said he thought that seven of his own best songs (of the deeper kind) were “All along the Valley,” “Courage, poor Heart of Stone,” “Break, Break, Break,” “The Bugle Song,” “Ask me no more,” “Tears, Idle Tears,” and “Crossing the Bar<rr-footnote>.”</rr-footnote> 
+            </p>
+            <rr-bib>
+                    <rr-bib-entry><rr-footnote>Emily</rr-footnote> Tennyson, 3 November 1857, Diary, vol. 1, f 126, TRC/M50. Lincolnshire County Council, UK.</rr-bib-entry>
+                    <rr-bib-entry><rr-footnote>Hallam</rr-footnote> Tennyson, 15 March 1890, Journal, cited in <cite>Alfred Lord Tennyson: A Memoir</cite>, 2 vols (London: Macmillan, 1899) 2: 376–7.</rr-bib-entry>
+                </rr-bib>
+                        </body>
+    </text>
+</TEI>

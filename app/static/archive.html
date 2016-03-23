@@ -3,12 +3,8 @@
 	<h4>{{category.label}}</h4>
 	<ul>
             <li ng-repeat="i in category.list">
-                a_NAME
                 <a ng-href="#/summary/{{i['@id']}}" ng-bind-html="i.label || i['@id'] || $index"></a>
-                <span class="label label-primary pull-right">{{i['@type']}}</span>
-            </li>
+                       </li>
         </ul>
-
-        - earwitness
 </div>
 </div>

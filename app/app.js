@@ -101,8 +101,9 @@ var sounding = angular.module('sounding',
                     templateUrl: 'app/static/archive.html',
                     controller: function ($scope, MANIFESTS, RESOURCES, ANNOTATIONS, ESSAYS, TEXT) {
                         $scope.categories = [
-                            {label: "Essays", list: ESSAYS},
+                            {label: "Essays", list: ESSAYS.slice(0,3)},
                             {label: "Manuscripts", list: MANIFESTS},
+                            {label: "Earwitness Accounts", list: ESSAYS.slice(4)},
                             {label: "Text", list: [TEXT[0]]},
                             {label: "Annotations", list: [ANNOTATIONS[0]]}
                         ]

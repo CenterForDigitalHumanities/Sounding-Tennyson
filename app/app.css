@@ -515,7 +515,7 @@ syl-long::after{
     position: absolute;
     left:50%;
 }
-n_t_p{
+n_f_p,n_t_p{
     display: none;
 }
 .error {

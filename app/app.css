@@ -615,8 +615,7 @@ rr-footnote::after{
     content: counter(footnotea);
     font-size: 70%;
     position: relative;
-    right: -2px;
-    top: -5px;
+    vertical-align: super;
 }
 
 rr-bib rr-footnote::before{
@@ -634,6 +633,7 @@ rr-line-indent{
     margin-left: 25px;
     position:relative;
     display:block;
+    text-indent: 0;
 }
 rr-bib-entry{
     position:relative;

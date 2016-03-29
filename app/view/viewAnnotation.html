@@ -26,7 +26,13 @@
 
     <card class="annotationText btn-block fadeInOut" ng-repeat="text in rerum.getValues(vv.annotation, 'TEXT') track by $index"
           ng-hide="vv.annotation['@type']==='rr:Essay'">
-    {{text}}
+    <div ng-hide="vv.annotation.lines">{{text}}</div>
+    <div class="publishedText" ng-show="vv.annotation.lines">
+    <div ng-repeat="l in vv.annotation.lines"
+                 ng-init="line = rerum.getResource(l)">
+                {{getText(line)}}
+            </div>
+            </div>
     </card>
 
     <card class="btn-block fadeInOut" ng-repeat="img in rerum.getValues(vv.annotation, 'IMAGE') track by $index">

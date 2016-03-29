@@ -1,22 +1,22 @@
 /* global sounding */
 
 sounding.value('RESOURCES', [{
-  "@id": "Break_Break_Break_Janotha",
-  "@type": "oa:Annotation",
-        "label": "Break, Break, Break (arr Janotha)",
-  "motivation": "performance",
-  "resource": {
-    "@id": "media/audio/Break_Break_Break_Janotha.mp3",
-    "@type": "dctypes:Sound",
-    "format": "audio/mpeg"
-  }
-}, {
   "@id": "Break_Break_Break_AET",
   "@type": "oa:Annotation",
         "label": "Break, Break, Break (Emily Tennyson)",
   "motivation": "performance",
   "resource": {
     "@id": "media/audio/Break_Break_Break_AET.mp3",
+    "@type": "dctypes:Sound",
+    "format": "audio/mpeg"
+  }
+}, {
+  "@id": "Break_Break_Break_Janotha",
+  "@type": "oa:Annotation",
+        "label": "Break, Break, Break (arr Janotha)",
+  "motivation": "performance",
+  "resource": {
+    "@id": "media/audio/Break_Break_Break_Janotha.mp3",
     "@type": "dctypes:Sound",
     "format": "audio/mpeg"
   }
@@ -5107,7 +5107,7 @@ sounding.value('ESSAYS', [{
   },
   {
     "label": "subtitle",
-                "value": 'Emily Tennyson’s Scansion of “Break, break, break”'
+                "value": 'Emily Tennyson’s Scansion of “Break, Break, Break”'
   }
   ],
   "resource": "data/essayBreakToBreak.xml",
@@ -5154,7 +5154,7 @@ sounding.value('ESSAYS', [{
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@id": "EssayBreakVariability",
   "@type": "rr:Essay",
-  "label": "Variability and Musical Motion in ‘Break, break, break’",
+  "label": "Variability and Musical Motion in ‘Break, Break, Break’",
   "metadataResources": [],
   "metadata": [
   {
@@ -5171,7 +5171,7 @@ sounding.value('ESSAYS', [{
   },
     {
     "label": "title",
-    "value": "Variability and Musical Motion in ‘Break, break, break’"
+    "value": "Variability and Musical Motion in ‘Break, Break, Break’"
   }
   ],
   "resource": "data/essayBreakVariability.xml",
@@ -5251,6 +5251,57 @@ sounding.value('ESSAYS', [{
     "value":"31 March 2016"
    }],
    "resource":"data/witnessTennysonRecites.xml"
+},{
+   "@context": "http://iiif.io/api/presentation/2/context.json",
+   "@id": "ChildRecites",
+   "@type": "rr:Essay",
+   "label": "A child recites to Emily Tennyson, 1859",
+   "metadata":[
+   {
+    "label":"title",
+    "value":"A child recites to Emily Tennyson, 1859"
+   },{
+    "label":"citeAuthor",
+    "value":"unknown"
+   },{
+    "label":"publicationDate",
+    "value":"31 March 2016"
+   }],
+   "resource":"data/witnessChildRecites.xml"
+},{
+   "@context": "http://iiif.io/api/presentation/2/context.json",
+   "@id": "JaneRecites",
+   "@type": "rr:Essay",
+   "label": "Elizabeth Jane, Lady Charlemont reads “Break, Break, Break” to Tennyson, 1871",
+   "metadata":[
+   {
+    "label":"title",
+    "value":"Elizabeth Jane, Lady Charlemont reads “Break, Break, Break” to Tennyson, 1871"
+   },{
+    "label":"citeAuthor",
+    "value":"unknown"
+   },{
+    "label":"publicationDate",
+    "value":"31 March 2016"
+   }],
+   "resource":"data/witnessJaneRecites.xml"
+},{
+   "@context": "http://iiif.io/api/presentation/2/context.json",
+   "@id": "TennysonHearsGeorg",
+   "@type": "rr:Essay",
+   "label": "Tennyson hearing Georg Henschel sing his musical setting of “Break, Break, Break,” 1880",
+   "metadata":[
+   {
+    "label":"title",
+    "value":"Tennyson hearing Georg Henschel sing his musical setting of “Break, Break, Break,” 1880"
+   },{
+    "label":"citeAuthor",
+    "value":"unknown"
+   },{
+    "label":"publicationDate",
+    "value":"31 March 2016"
+   }],
+   "resource":"data/witnessTennysonHearsGeorg.xml"
 }
 ]);
 

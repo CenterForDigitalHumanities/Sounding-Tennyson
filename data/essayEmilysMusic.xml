@@ -55,29 +55,29 @@
 
             <p>
                 Second, situating Janotha’s contributions within the full list of Emily’s publications shows them to be part of a larger process. Emily’s music was printed either with the original accompaniment or with an arrangement provided by prominent musicians and composers. The former comprise:
-                <rr-list-indent>
-                    <rr-list-num>
+               <ol class="parens-number">
+                    <li>
                         “The Song of the Alma River”, music and words Emily Tennyson, both in E major and G major (London: Cramer [1864]).
-                    </rr-list-num>
-                    <rr-list-num>
+                    </li>
+                    <li>
                         “Two Child-songs,” music Emily Tennyson, words Alfred Tennyson (London: Novello, [1880]).
-                    </rr-list-num>
-               </rr-list-indent>
+                    </li>
+               </ol>
                The arrangements begin to appear more regularly in the 1880s and 1890s. In 1882, Irish composer Charles Villiers Stanford arranged and edited Emily’s setting of “Hands all round,” words by Tennyson, in the keys of E and F (London: Boosey, 1882). This song was also arranged for military band by Kappey (London: Boosey, 1882).  Three years later, Frederick Bridge (organist for Westminster Abbey) arranged “The Gordon Boys’ Morning & Evening Hymns,” words edited by Tennyson and music by Emily (London: Boosey, [1885]). Most numerous of all are Janotha’s arrangements of Emily’s settings of Tennyson’s poems. These published piano/vocal scores are:
-               <rr-list-indent>
-                    <rr-list-num><i>Songs by Lord Tennyson</i> (London: Chapell [1892]):</rr-list-num>
-                    <rr-list-letters>
-                        <rr-list-letter>“Look Through Mine Eyes”</rr-list-letter>
-                        <rr-list-letter>“In Love, If Love, Be Love”
-                        <rr-list-letter>“To Sleep, To Sleep”
-                        <rr-list-letter>“Home they brought him”
-                        <rr-list-letter>“Lady Let the Rolling Drums”
-                        <rr-list-letter>“Airy Fairy Lilian”
-                        <rr-list-letter>“Riflemen Form!”
-                    </rr-list-letters>
-                    <rr-list-num>(2) “Sweet and Low,” <i>The Girl’s Own Paper</i> (1895): 356–8.
-                    <rr-list-num>(3) “Break, break, break,” <i>Sunday Hours 2</i> (1897): 568–72.
-               </rr-list-indent>
+               <ol class="parens-number">
+                    <li><i>Songs by Lord Tennyson</i> (London: Chapell [1892]):</rr-list-num>
+                    <ol class="parens-alpha" style="list-style:lower-latin;">
+                        <li>“Look Through Mine Eyes”</li>
+                        <li>“In Love, If Love, Be Love”</li>
+                        <li>“To Sleep, To Sleep”</li>
+                        <li>“Home they brought him”</li>
+                        <li>“Lady Let the Rolling Drums”</li>
+                        <li>“Airy Fairy Lilian”</li>
+                        <li>“Riflemen Form!”</li>
+                    </ol></li>
+                    <li>“Sweet and Low,” <i>The Girl’s Own Paper</i> (1895): 356–8.</li>
+                    <li>“Break, Break, Break,” <i>Sunday Hours 2</i> (1897): 568–72.</li>
+               </ol>
                For Tennyson’s funeral in Westminster Abbey on 12 October 1892, Bridge arranged Emily’s setting of “The Two Voices” for four voices (SATB) and organ (London: Novello, 1892). Long after Emily’s death in 1896, Bridge also arranged her melody for “A Call to Arms” for solo, chorus and symphony (London: Novello, [1914]). The last appeared three or four months after World War I began, available in both traditional staff notation and Tonic Sol-fa (moveable <i>doh</i>), probably because many Victorian and Edwardian choristers only read Tonic <rr-footnote>Sol-fa.</rr-footnote>
             </p>
 
@@ -95,10 +95,10 @@
             <p>
                 Yet while Emily endeavored to maintain the original contour of the melodic and rhythmic line, and Janotha strove for beauty, surely the success of the songs’ dissemination partly came down to singability. The difficulties of Emily’s original key choices are highlighted by a more accomplished composer, Stanford, when setting “Hands all Round” for Charles Santley to sing:
                 <figure>
-                    <img src="media/janotha_to_emily_1.jpg" />
+                    <img src="media/charles_to_emily_1.jpg" />
                 </figure>
                 <figure>
-                    <img src="media/janotha_to_emily_1.jpg" />
+                    <img src="media/charles_to_emily_2.jpg" />
                     <figcaption>
                         Figure 2. Charles Villiers Stanford to Emily Tennyson, 20 February 1882, TRC/Letters/7394. This item is reproduced by permission of Lincolnshire County Council, <rr-footnote>UK.</rr-footnote> <n_t_p>[please put this footnote transcription into a link]</n_t_p>
                     </figcaption>
@@ -134,7 +134,7 @@
                 </figure>
 
                 <figure>
-                    <img src="media/janotha_to_emily_5.jpg" />
+                    <img src="media/janotha_to_emily_5.png" />
                     <figcaption>
                         Figure 4. Janotha to Emily Tennyson, 26 October 1892, TRC/Letters/3814. This item is reproduced by permission of Lincolnshire County Council, <rr-footnote>UK.</rr-footnote> <n_t_p>[please put this footnote transcription into a link]</n_t_p>
                     </figcaption>
@@ -143,15 +143,15 @@
             </p>
 
             <p>
-                Several years later, however, two more songs were made public. Janotha chose from among the fifteen songs sent to her in 1890, of which she had already published seven in 1892. She avoided “Rise Britons Rise,” “Arm, arm, arm!”, “Courage Poor Heart of Stone,” “O Lark!”, “The Sea Fairies” and “Dead Mountain <rr-footnote>Flowers”</rr-footnote>  in favor of “Sweet and Low” from <cite>The Princess</cite>. The last was printed in the wildly popular <cite>The Girl’s Own Paper</cite> in 1895. Established by the Religious Tract Society fifteen years before, this magazine quickly reached over 250,000 <rr-footnote>readers.</rr-footnote>   “Break, break, break,” also arranged by Janotha, appeared in the second and last volume of the journal, <cite>Sunday Hours</cite>, and was dedicated to Queen Victoria. Featured thus, the latter setting shows Janotha’s enduring pious nationalism.
+                Several years later, however, two more songs were made public. Janotha chose from among the fifteen songs sent to her in 1890, of which she had already published seven in 1892. She avoided “Rise Britons Rise,” “Arm, arm, arm!”, “Courage Poor Heart of Stone,” “O Lark!”, “The Sea Fairies” and “Dead Mountain <rr-footnote>Flowers”</rr-footnote>  in favor of “Sweet and Low” from <cite>The Princess</cite>. The last was printed in the wildly popular <cite>The Girl’s Own Paper</cite> in 1895. Established by the Religious Tract Society fifteen years before, this magazine quickly reached over 250,000 <rr-footnote>readers.</rr-footnote>   “Break, Break, Break,” also arranged by Janotha, appeared in the second and last volume of the journal, <cite>Sunday Hours</cite>, and was dedicated to Queen Victoria. Featured thus, the latter setting shows Janotha’s enduring pious nationalism.
             </p>
 
             <p>
-                “Break, break, break” was, moreover, an obvious choice in 1897. It was published posthumously to both Tennysons (a year after Emily’s death), and dealt with the loss of a friend “pretended to be gone, but who was always here already with God as He is now also always here”, if we might borrow Janotha’s words to Emily upon Tennyson’s death (see above). The poem conveys a similar sentiment, while yearning for material presence: “But O for the touch of a vanished hand, / And the sound of a voice that is still.” (ll 11-12). Of the enormous popularity of this poem in phonograph demonstrations, Matthew Rubery observes that “Tennyson does not ask for the voice itself, only the sound of a voice. The distinction was not lost on contemporary <rr-footnote>observers.”</rr-footnote>   Impressing the demonstrator’s voice on tinfoil sheets or wax cylinders, however, was less multiform and polyphonic than Emily’s musical “impression” of Tennyson’s readings. Arranged by Janotha, the musically-set elegy now featured three vanished hands and three still voices: Arthur Hallam (the original lost friend in the poem), Alfred Tennyson (the written words in his hand; the musical impression of his reciting voice), and Emily Tennyson (written notes and pianistic touch; her singing voice).
+                “Break, Break, Break” was, moreover, an obvious choice in 1897. It was published posthumously to both Tennysons (a year after Emily’s death), and dealt with the loss of a friend “pretended to be gone, but who was always here already with God as He is now also always here”, if we might borrow Janotha’s words to Emily upon Tennyson’s death (see above). The poem conveys a similar sentiment, while yearning for material presence: “But O for the touch of a vanished hand, / And the sound of a voice that is still.” (ll 11-12). Of the enormous popularity of this poem in phonograph demonstrations, Matthew Rubery observes that “Tennyson does not ask for the voice itself, only the sound of a voice. The distinction was not lost on contemporary <rr-footnote>observers.”</rr-footnote>   Impressing the demonstrator’s voice on tinfoil sheets or wax cylinders, however, was less multiform and polyphonic than Emily’s musical “impression” of Tennyson’s readings. Arranged by Janotha, the musically-set elegy now featured three vanished hands and three still voices: Arthur Hallam (the original lost friend in the poem), Alfred Tennyson (the written words in his hand; the musical impression of his reciting voice), and Emily Tennyson (written notes and pianistic touch; her singing voice).
             </p>
 
             <p>
-                Unfortunately, due to the demise of the <i>Sunday Hours</i>, this disseminated meaning must have reached a limited audience. In more recent years, too, it has languished; the British Library owns the only extant copy of the short-lived magazine while the Lincolnshire County Council maintains a photocopy of the relevant pages from the <i>Sunday Hours</i>. With the Sounding Tennyson website, the musical setting of “Break, break, break” can be widely disseminated for the first time. With time, we will also add Emily Tennyson’s other musical settings, some of which reached thousands of people at the turn of the century.
+                Unfortunately, due to the demise of the <i>Sunday Hours</i>, this disseminated meaning must have reached a limited audience. In more recent years, too, it has languished; the British Library owns the only extant copy of the short-lived magazine while the Lincolnshire County Council maintains a photocopy of the relevant pages from the <i>Sunday Hours</i>. With the Sounding Tennyson website, the musical setting of “Break, Break, Break” can be widely disseminated for the first time. With time, we will also add Emily Tennyson’s other musical settings, some of which reached thousands of people at the turn of the century.
             </p>
 
             <rr-bib>

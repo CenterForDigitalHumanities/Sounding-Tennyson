@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tennyson hearing Georg Henschel sing his musical setting of “Break, Break, Break,” 1880</title>
+                <author>Phyllis Weliver</author>
+                <respStmt>
+                    <resp>composed by</resp>
+                    <name>Patrick Cuba</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Center for Digital Humanities</distributor>
+                <address>
+                    <addrLine>Saint Louis University</addrLine>
+                </address>
+                <availability>
+                    <p>Freely available on a non-commercial basis.</p>
+                </availability>
+                <date when="2016">2016</date>
+            </publicationStmt>
+            <sourceDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Essay generated for the Sounding Tennyson project, creating an interactive 
+                    exhibit for exploring resources and research around the poems and music of Tennyson.</p>
+            </projectDesc>
+            <editorialDecl>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>
+                    <date when="2016-01-19">19 Jan 2016</date> First build by PMC</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <h4>Lady St Helier (Mary Jeune)'s account</h4>
+            <p>
+                We once went to a concert given by Lord and Lady Tennyson in Eaton Square, and an 
+                amusing little incident occurs to me with regard to that evening. Mr. Henschel had 
+                gone there to sing the poet some of his songs, which he had set to music. One of 
+                the most beautiful was his arrangement of "Break, break, break." Lady Tennyson, 
+                who was not at all strong, was lying on a sofa, and Lord Tennyson was sitting close 
+                beside her. He looked magnificent, his great head thrown back, his fine eyes fixed 
+                on the singer, listening intently to the music, while the whole audience waited in 
+                breathless excitement to hear his verdict. When Henschel had finished the song there 
+                was a pause, and Lord Tennyson drew his handkerchief out of his pocket and put it 
+                up to his face. This was interpreted as evidence of how much he was touched and 
+                moved by what he had just heard, and simultaneously nearly the whole audience got 
+                out their pocket-handkerchiefs in affectionate imitation of the verdict of the 
+                poet<rr-footnote>.</rr-footnote> 
+            </p>
+            <h4>Mary Gladstone's account</h4>
+            <p>Thurs 18 to Sat 20 [March 1880]</p>
+<p>These days were full of agitations + excitement. interviews + discussions with advisees, […] in the middle had luncheon with Tennysons to meet Henschell [sic]. He sang his own music to “Break break break” while Tennyson sat listening + frowning + when the end came “never a word spake he” – flew off to St Mary’s to hear the Hamilton organ. found Mr Fuller Maitland playing it. it’s very wonderful – Herbert made his first speech at the City Liberal Club + we dined with Charles + Mary afterwards [...]<rr-footnote></rr-footnote></p> 
+
+            <figure>
+<img src="media/georg_fig1" alt="MS 46259, Vol. XLI, ff 54v–55r" />
+<figcaption>
+© The British Library Board, Mary Gladstone, 18–20 March 1880, Diary, Add MS 46259, Vol. XLI, ff 54v–55r.
+</figcaption>
+            </figure>
+            <p>
+                We once went to a concert given by Lord and Lady Tennyson in Eaton Square, and an 
+                amusing little incident occurs to me with regard to that evening. Mr. Henschel had 
+                gone there to sing the poet some of his songs, which he had set to music. One of 
+                the most beautiful was his arrangement of "Break, break, break." Lady Tennyson, 
+                who was not at all strong, was lying on a sofa, and Lord Tennyson was sitting close 
+                beside her. He looked magnificent, his great head thrown back, his fine eyes fixed 
+                on the singer, listening intently to the music, while the whole audience waited in 
+                breathless excitement to hear his verdict. When Henschel had finished the song there 
+                was a pause, and Lord Tennyson drew his handkerchief out of his pocket and put it 
+                up to his face. This was interpreted as evidence of how much he was touched and 
+                moved by what he had just heard, and simultaneously nearly the whole audience got 
+                out their pocket-handkerchiefs in affectionate imitation of the verdict of the 
+                poet<rr-footnote>.</rr-footnote> 
+            </p>
+            <rr-bib>
+                    <rr-bib-entry><rr-footnote>
+Lady St Helier (Mary Jeune), <cite>Memories of Fifty Years</cite> (London: Edward Arnold, 1909) 163–4.
+</rr-footnote></rr-bib-entry>
+<rr-bib-entry><rr-footnote>
+Mary Gladstone, 18–20 March 1880, Diary, Add MS 46259, ff 54v–55r. The British Library. Mary’s father, W.E. Gladstone was at this time in the midst of the election that would return the majority to the Liberal party and establish his second premiership.
+</rr-footnote></rr-bib-entry>
+                </rr-bib>
+                        </body>
+    </text>
+</TEI>

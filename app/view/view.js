@@ -104,14 +104,17 @@ sounding.controller("viewController", function ($scope, $filter, ViewService, Vi
         citation: '<div style="text-align:left !important;text-indent: -2rem;padding-left: 2rem;"><i class="fa fa-quote-left fa-2x pull-right"></i> Weliver, Phyllis and Ewan Jones. "About <i>Sounding Tennyson</i>." <i>Sounding Tennyson</i>. 31 March 2016. Accessed ' + $filter('date')(Date.now(), 'dd MMMM yyyy') + '.</div>'
     };
     $scope.cite = function(res){
-        var author = Lists.getAllByProp("label", "citeAuthor", res.metadata)[0].value || Lists.getAllByProp("label", "author", res.metadata)[0].value;
-        var title = Lists.getAllByProp("label", "title", res.metadata)[0].value || res.label;
-        var publicationDate = Lists.getAllByProp("label", "publicationDate", res.metadata)[0].value || "31 March 2016";
+        var tmp_author = Lists.getAllByProp("label", "citeAuthor", res.metadata).concat(Lists.getAllByProp("label", "author", res.metadata));
+        var author = tmp_author[0] && tmp_author[0].value;
+        var tmp_title = Lists.getAllByProp("label", "title", res.metadata);
+        var title = (tmp_title[0] && tmp_title[0].value) || res.label;
+        var tmp_pdate = Lists.getAllByProp("label", "publicationDate", res.metadata);
+        var publicationDate = (tmp_pdate[0] && tmp_pdate[0].value) || "31 March 2016";
         var access = "Accessed "+ViewValues.todayString;
         var uri = res.resource || res['@id'];
-        if (["?","!",".",":"].indexOf(author.slice(-1))===-1) 
+        if (author && ["?","!",".",":"].indexOf(author.slice(-1))===-1) 
             author+='.';
-        title = (["?","!",".",":"].indexOf(title.slice(-1))>-1) 
+        title = (title && ["?","!",".",":"].indexOf(title.slice(-1))>-1) 
         ? '"'+title+'"'
         : '"'+title+'."';
         publicationDate+=".";

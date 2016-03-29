@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Elizabeth Jane, Lady Charlemont reads “Break, Break, Break” to Tennyson, 1871</title>
+                <author>Phyllis Weliver</author>
+                <respStmt>
+                    <resp>composed by</resp>
+                    <name>Patrick Cuba</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Center for Digital Humanities</distributor>
+                <address>
+                    <addrLine>Saint Louis University</addrLine>
+                </address>
+                <availability>
+                    <p>Freely available on a non-commercial basis.</p>
+                </availability>
+                <date when="2016">2016</date>
+            </publicationStmt>
+            <sourceDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Essay generated for the Sounding Tennyson project, creating an interactive 
+                    exhibit for exploring resources and research around the poems and music of Tennyson.</p>
+            </projectDesc>
+            <editorialDecl>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>
+                    <date when="2016-01-19">19 Jan 2016</date> First build by PMC</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                Mrs Greville, Lady Charlemont, Mr Locker, &amp; Admiral Englefield come to luncheon. 
+                A [Alfred] &amp; Hallam have called on Mrs Hodgson in the morning &amp; asked her to 
+                meet Mrs Greville in the afternoon. She &amp; her sister Miss Forsyth come. A [Alfred] 
+                reads Boadicea &amp; part of Maud to them &amp; Lady Charlemont recites or rather acts 
+                the Sisters after A [Alfred] has at her request read it &amp; then she reads Break 
+                break break. [space] All have tea &amp; go, except Mr Locker, just as Mr &amp; Mrs 
+                Farrar arrive<rr-footnote>.</rr-footnote> 
+            </p>
+            <rr-bib>
+                    <rr-bib-entry><rr-footnote>
+Emily Tennyson, 30 June 1871, Diary, vol. 2, f 180, TRC/M50. Lincolnshire County Council, UK.
+</rr-footnote></rr-bib-entry>
+                </rr-bib>
+                        </body>
+    </text>
+</TEI>

@@ -111,18 +111,16 @@ var sounding = angular.module('sounding',
                 })
                 .when('/music', {
                     templateUrl: 'app/static/music.html',
-                    controller: function ($scope, MANIFESTS, RESOURCES, Lists) {
-                        $scope.music = {};
+                    controller: function ($scope, MANIFESTS, RESOURCES, RERUM,Lists) {
+                        $scope.music = {
+                            "Break_Break_Break_AET":["RB_Manifest","AET-MSS-5312-001","G_Manifest","AET_Engraving_Manifest"],
+                            "Break_Break_Break_Janotha":["Janotha_Manifest"],
+                            "Break_Break_Break_Henschel":["Henschel_Manifest"]
+                        };
                         $scope.performances = RESOURCES;
-                        angular.forEach(RESOURCES, function(r){
-                            angular.forEach(MANIFESTS, function(m){
-                                if(m.resources.indexOf(r['@id'])>-1){
-                                    if($scope.music[r['@id']]){
-                                        $scope.music[r['@id']].push(m);
-                                    } else {
-                                        $scope.music[r['@id']] = [m];
-                                    }
-                                }
+                        angular.forEach($scope.music, function(r,m){
+                            angular.forEach(r, function(man,i){
+                                $scope.music[m][i]=Lists.getAllByProp("@id",man,MANIFESTS)[0];
                             });
                         });
                         $scope.Lists = Lists;

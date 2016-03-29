@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A child recites to Emily Tennyson, 1859</title>
+                <author>Phyllis Weliver</author>
+                <respStmt>
+                    <resp>composed by</resp>
+                    <name>Patrick Cuba</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Center for Digital Humanities</distributor>
+                <address>
+                    <addrLine>Saint Louis University</addrLine>
+                </address>
+                <availability>
+                    <p>Freely available on a non-commercial basis.</p>
+                </availability>
+                <date when="2016">2016</date>
+            </publicationStmt>
+            <sourceDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Essay generated for the Sounding Tennyson project, creating an interactive 
+                    exhibit for exploring resources and research around the poems and music of Tennyson.</p>
+            </projectDesc>
+            <editorialDecl>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <list>
+                <item>
+                    <date when="2016-01-19">19 Jan 2016</date> First build by PMC</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                Mrs Cameron goes. Frederic crosses with her. Meanwhile Hallam &amp; I call on Captain &amp; Mrs. Hamond in their new house. Very charming it is. A [Alfred] will delight in the lawn. Their little Carry says, Break break to me in such a touching sweet voice. While the Grants &amp; Mr. Ferrier are dining with us there is a fearful thunder storm, hailstones as big as Walnuts, the kitchen two or three inches deep in water which comes into nearly every bedroom. Merwood pierces holes in the bathroom ceiling to let the water off &amp; so preserve the ceiling. [paragraph break] Just before the storm begins Mrs Cameron’s Ellen arrives to our astonishment. She is sent to ask for the manuscript of Guinevere. A [Alfred] does not care about his manuscripts. He gives them to anyone who asks. To me they are more precious than words can say. Every page almost a memory. He is so good as to say that if I do not like to part from it and he has promised it, he will copy it out rather than that I should have to part from it<rr-footnote>.</rr-footnote> 
+            </p>
+            <rr-bib>
+                    <rr-bib-entry><rr-footnote>
+Emily Tennyson, 1 July 1859, Diary, vol. 1, f 171, TRC/M50. Lincolnshire County Council, UK.
+</rr-footnote></rr-bib-entry>
+                </rr-bib>
+                        </body>
+    </text>
+</TEI>

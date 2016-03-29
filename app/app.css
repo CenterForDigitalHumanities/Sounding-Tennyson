@@ -595,7 +595,7 @@ rr-list-letters-indent{
     position:relative;
     margin-left: 10px;
 }
-rr-list-letter::before{
+rr-list-letter::before,.parens-alpha li::before{
     counter-increment: listletterval;
     content: "("+counter(listnumval,lower-alpha)+")";
     display: block;
@@ -603,12 +603,26 @@ rr-list-letter::before{
     margin-right: 4px;
 }
 
-rr-list-indent rr-list-num::before{
+rr-list-indent rr-list-num::before,.parens-number li::before{
     counter-increment: listnumval;
     content: "("+counter(listnumval)+")";
     display: block;
     position: relative;
     margin-right: 4px;
+}
+@counter-style parens-number{
+    prefix:"(";
+    suffix:")";
+    fallback:decimal;
+    system:numeric;
+    symbols:decimal;
+}
+@counter-style parens-alpha{
+    prefix:"(";
+    suffix:")";
+    fallback:lower-latin;
+    system:alphabetic;
+    symbols:lower-latin;
 }
 rr-footnote::after{
     counter-increment: footnotea;

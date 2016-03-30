@@ -3,7 +3,7 @@
 sounding.value('RESOURCES', [{
   "@id": "Break_Break_Break_AET",
   "@type": "oa:Annotation",
-        "label": "Break, Break, Break (Emily Tennyson)",
+  "label": "Break, Break, Break (Emily Tennyson)",
   "motivation": "performance",
   "resource": {
     "@id": "media/audio/Break_Break_Break_AET.mp3",
@@ -13,7 +13,7 @@ sounding.value('RESOURCES', [{
 }, {
   "@id": "Break_Break_Break_Janotha",
   "@type": "oa:Annotation",
-        "label": "Break, Break, Break (arr Janotha)",
+  "label": "Break, Break, Break (arr Janotha)",
   "motivation": "performance",
   "resource": {
     "@id": "media/audio/Break_Break_Break_Janotha.mp3",
@@ -41,7 +41,7 @@ sounding.value('MANIFESTS', [
   "resources": ["Break_Break_Break_Henschel"],
   "layers": ["PianoLayer"],
   "metadata":[
-{}
+  {}
   ],
   "sequences": [{
     "@id": "Henschel normal sequence",
@@ -967,7 +967,7 @@ sounding.value('MANIFESTS', [
   "@id": "AET_Engraving_Manifest",
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@type": "sc:Manifest",
-        "label": 'Emily Tennyson, “Break," Engraving',
+  "label": 'Emily Tennyson, “Break," Engraving',
   "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, Engraving',
   "resources": ["Break_Break_Break_AET"],
   "layers": ["PianoLayer"],
@@ -1721,105 +1721,105 @@ sounding.value('MANIFESTS', [
               "@type": "sc:AnnotationList",
               "label": "measures",
               "@list": [{
-  "@id": "0a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB1#xywh=146,1120,145,268",
-    "Break_Break_Break_AET#t=0,2.54"
-  ]
-},
-{
-  "@id": "1a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB1#xywh=326,1120,145,268",
-    "Break_Break_Break_AET#t=2.54,3.84"
-  ]
-},
-{
-  "@id": "2a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB1#xywh=496,1120,197,268",
-    "Break_Break_Break_AET#t=3.84,5.33"
-  ]
-},
-{
-  "@id": "3a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB1#xywh=713,1120,178,268",
-    "Break_Break_Break_AET#t=5.33,6.77"
-  ]
-},
-{
-  "@id": "4a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB1#xywh=911,1120,112,268",
-    "Break_Break_Break_AET#t=6.77,7.99"
-  ]
-},
-{
-  "@id": "5a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB1#xywh=1043,1120,159,268",
-    "Break_Break_Break_AET#t=7.99,9.18"
-  ]
-},
-{
-  "@id": "6a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB1#xywh=151,1389,178,220",
-    "Break_Break_Break_AET#t=9.18,10.45"
-  ]
-},
-{
-  "@id": "7a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB1#xywh=354,1384,230,225",
-    "Break_Break_Break_AET#t=10.45,11.62"
-  ]
-},
-{
-  "@id": "8a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB1#xywh=614,1384,131,225",
-    "Break_Break_Break_AET#t=11.62,12.89"
-  ]
-},
-{
-  "@id": "9a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB1#xywh=779,1384,51,225",
-    "Break_Break_Break_AET#t=12.89,15.18"
-  ]
-}]
+                "@id": "0a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB1#xywh=146,1120,145,268",
+                "Break_Break_Break_AET#t=0,2.54"
+                ]
+              },
+              {
+                "@id": "1a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB1#xywh=326,1120,145,268",
+                "Break_Break_Break_AET#t=2.54,3.84"
+                ]
+              },
+              {
+                "@id": "2a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB1#xywh=496,1120,197,268",
+                "Break_Break_Break_AET#t=3.84,5.33"
+                ]
+              },
+              {
+                "@id": "3a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB1#xywh=713,1120,178,268",
+                "Break_Break_Break_AET#t=5.33,6.77"
+                ]
+              },
+              {
+                "@id": "4a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB1#xywh=911,1120,112,268",
+                "Break_Break_Break_AET#t=6.77,7.99"
+                ]
+              },
+              {
+                "@id": "5a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB1#xywh=1043,1120,159,268",
+                "Break_Break_Break_AET#t=7.99,9.18"
+                ]
+              },
+              {
+                "@id": "6a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB1#xywh=151,1389,178,220",
+                "Break_Break_Break_AET#t=9.18,10.45"
+                ]
+              },
+              {
+                "@id": "7a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB1#xywh=354,1384,230,225",
+                "Break_Break_Break_AET#t=10.45,11.62"
+                ]
+              },
+              {
+                "@id": "8a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB1#xywh=614,1384,131,225",
+                "Break_Break_Break_AET#t=11.62,12.89"
+                ]
+              },
+              {
+                "@id": "9a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB1#xywh=779,1384,51,225",
+                "Break_Break_Break_AET#t=12.89,15.18"
+                ]
+              }]
             }]
           }, {
             "label": "4r",
@@ -1852,375 +1852,375 @@ sounding.value('MANIFESTS', [
               "@type": "sc:AnnotationList",
               "label": "measures",
               "@list": [{
-  "@id": "10a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=49,94,173,385",
-    "Break_Break_Break_AET#t=15.18,16.95"
-  ]
-},
-{
-  "@id": "11a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=252,94,69,385",
-    "Break_Break_Break_AET#t=16.95,19.83"
-  ]
-},
-{
-  "@id": "12a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=341,94,131,385",
-    "Break_Break_Break_AET#t=19.83,22.83"
-  ]
-},
-{
-  "@id": "13a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=497,94,98,390",
-    "Break_Break_Break_AET#t=22.83,24.45"
-  ]
-},
-{
-  "@id": "14a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=615,94,112,390",
-    "Break_Break_Break_AET#t=24.45,26.05"
-  ]
-},
-{
-  "@id": "15a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=733,94,46,390",
-    "Break_Break_Break_AET#t=26.05,27.3"
-  ]
-},
-{
-  "@id": "16a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=799,94,65,390",
-    "Break_Break_Break_AET#t=27.3,28.21"
-  ]
-},
-{
-  "@id": "17a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=875,94,135,390",
-    "Break_Break_Break_AET#t=28.21,29.1"
-  ]
-},
-{
-  "@id": "18a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=1035,94,93,390",
-    "Break_Break_Break_AET#t=29.1,30.75"
-  ]
-},
-{
-  "@id": "19a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=1148,94,122,390",
-    "Break_Break_Break_AET#t=30.75,31.85"
-  ]
-},
-{
-  "@id": "20a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=72,515,102,361",
-    "Break_Break_Break_AET#t=31.85,32.35"
-  ]
-},
-{
-  "@id": "21a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=199,515,159,361",
-    "Break_Break_Break_AET#t=32.35,33.4"
-  ]
-},
-{
-  "@id": "22a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=374,515,84,361",
-    "Break_Break_Break_AET#t=33.4,35.55"
-  ]
-},
-{
-  "@id": "23a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=483,515,46,361",
-    "Break_Break_Break_AET#t=35.55,37.2"
-  ]
-},
-{
-  "@id": "24a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=530,515,46,361",
-    "Break_Break_Break_AET#t=37.2,38.26"
-  ]
-},
-{
-  "@id": "25a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=596,515,112,361",
-    "Break_Break_Break_AET#t=38.26,39.97"
-  ]
-},
-{
-  "@id": "26a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=738,515,135,361",
-    "Break_Break_Break_AET#t=39.97,41.29"
-  ]
-},
-{
-  "@id": "27a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=898,525,164,343",
-    "Break_Break_Break_AET#t=41.29,42.65"
-  ]
-},
-{
-  "@id": "28a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=1073,525,197,343",
-    "Break_Break_Break_AET#t=42.65,43.55"
-  ]
-},
-{
-  "@id": "29a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=58,888,102,352",
-    "Break_Break_Break_AET#t=43.55,43.98"
-  ]
-},
-{
-  "@id": "30a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=181,888,84,352",
-    "Break_Break_Break_AET#t=43.98,45.31"
-  ]
-},
-{
-  "@id": "31a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=280,888,102,352",
-    "Break_Break_Break_AET#t=45.31,46.78"
-  ]
-},
-{
-  "@id": "32a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=398,888,107,352",
-    "Break_Break_Break_AET#t=46.78,48.21"
-  ]
-},
-{
-  "@id": "33a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=530,888,84,352",
-    "Break_Break_Break_AET#t=48.21,49.5"
-  ]
-},
-{
-  "@id": "34a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=634,888,102,352",
-    "Break_Break_Break_AET#t=49.5,51"
-  ]
-},
-{
-  "@id": "35a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=771,888,122,352",
-    "Break_Break_Break_AET#t=51,52.28"
-  ]
-},
-{
-  "@id": "36a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=926,888,117,352",
-    "Break_Break_Break_AET#t=52.28,53.69"
-  ]
-},
-{
-  "@id": "37a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=1073,888,192,352",
-    "Break_Break_Break_AET#t=53.69,56.04"
-  ]
-},
-{
-  "@id": "38a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=39,1261,178,352",
-    "Break_Break_Break_AET#t=56.04,56.6"
-  ]
-},
-{
-  "@id": "39a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=242,1261,79,352",
-    "Break_Break_Break_AET#t=56.6,58.01"
-  ]
-},
-{
-  "@id": "40a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=346,1261,89,352",
-    "Break_Break_Break_AET#t=58.01,59.89"
-  ]
-},
-{
-  "@id": "41a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=459,1261,89,352",
-    "Break_Break_Break_AET#t=59.89,61.54"
-  ]
-},
-{
-  "@id": "42a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=577,1261,93,352",
-    "Break_Break_Break_AET#t=61.54,63.04"
-  ]
-},
-{
-  "@id": "43a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=695,1261,117,352",
-    "Break_Break_Break_AET#t=63.04,64.76"
-  ]
-},
-{
-  "@id": "44a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=832,1261,107,352",
-    "Break_Break_Break_AET#t=64.76,66.88"
-  ]
-},
-{
-  "@id": "45a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=978,1261,84,352",
-    "Break_Break_Break_AET#t=66.88,68.38"
-  ]
-},
-{
-  "@id": "46a0",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB2#xywh=1087,1261,140,352",
-    "Break_Break_Break_AET#t=68.38,70.12"
-  ]
-}]
+                "@id": "10a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=49,94,173,385",
+                "Break_Break_Break_AET#t=15.18,16.95"
+                ]
+              },
+              {
+                "@id": "11a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=252,94,69,385",
+                "Break_Break_Break_AET#t=16.95,19.83"
+                ]
+              },
+              {
+                "@id": "12a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=341,94,131,385",
+                "Break_Break_Break_AET#t=19.83,22.83"
+                ]
+              },
+              {
+                "@id": "13a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=497,94,98,390",
+                "Break_Break_Break_AET#t=22.83,24.45"
+                ]
+              },
+              {
+                "@id": "14a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=615,94,112,390",
+                "Break_Break_Break_AET#t=24.45,26.05"
+                ]
+              },
+              {
+                "@id": "15a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=733,94,46,390",
+                "Break_Break_Break_AET#t=26.05,27.3"
+                ]
+              },
+              {
+                "@id": "16a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=799,94,65,390",
+                "Break_Break_Break_AET#t=27.3,28.21"
+                ]
+              },
+              {
+                "@id": "17a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=875,94,135,390",
+                "Break_Break_Break_AET#t=28.21,29.1"
+                ]
+              },
+              {
+                "@id": "18a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=1035,94,93,390",
+                "Break_Break_Break_AET#t=29.1,30.75"
+                ]
+              },
+              {
+                "@id": "19a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=1148,94,122,390",
+                "Break_Break_Break_AET#t=30.75,31.85"
+                ]
+              },
+              {
+                "@id": "20a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=72,515,102,361",
+                "Break_Break_Break_AET#t=31.85,32.35"
+                ]
+              },
+              {
+                "@id": "21a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=199,515,159,361",
+                "Break_Break_Break_AET#t=32.35,33.4"
+                ]
+              },
+              {
+                "@id": "22a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=374,515,84,361",
+                "Break_Break_Break_AET#t=33.4,35.55"
+                ]
+              },
+              {
+                "@id": "23a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=483,515,46,361",
+                "Break_Break_Break_AET#t=35.55,37.2"
+                ]
+              },
+              {
+                "@id": "24a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=530,515,46,361",
+                "Break_Break_Break_AET#t=37.2,38.26"
+                ]
+              },
+              {
+                "@id": "25a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=596,515,112,361",
+                "Break_Break_Break_AET#t=38.26,39.97"
+                ]
+              },
+              {
+                "@id": "26a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=738,515,135,361",
+                "Break_Break_Break_AET#t=39.97,41.29"
+                ]
+              },
+              {
+                "@id": "27a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=898,525,164,343",
+                "Break_Break_Break_AET#t=41.29,42.65"
+                ]
+              },
+              {
+                "@id": "28a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=1073,525,197,343",
+                "Break_Break_Break_AET#t=42.65,43.55"
+                ]
+              },
+              {
+                "@id": "29a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=58,888,102,352",
+                "Break_Break_Break_AET#t=43.55,43.98"
+                ]
+              },
+              {
+                "@id": "30a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=181,888,84,352",
+                "Break_Break_Break_AET#t=43.98,45.31"
+                ]
+              },
+              {
+                "@id": "31a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=280,888,102,352",
+                "Break_Break_Break_AET#t=45.31,46.78"
+                ]
+              },
+              {
+                "@id": "32a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=398,888,107,352",
+                "Break_Break_Break_AET#t=46.78,48.21"
+                ]
+              },
+              {
+                "@id": "33a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=530,888,84,352",
+                "Break_Break_Break_AET#t=48.21,49.5"
+                ]
+              },
+              {
+                "@id": "34a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=634,888,102,352",
+                "Break_Break_Break_AET#t=49.5,51"
+                ]
+              },
+              {
+                "@id": "35a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=771,888,122,352",
+                "Break_Break_Break_AET#t=51,52.28"
+                ]
+              },
+              {
+                "@id": "36a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=926,888,117,352",
+                "Break_Break_Break_AET#t=52.28,53.69"
+                ]
+              },
+              {
+                "@id": "37a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=1073,888,192,352",
+                "Break_Break_Break_AET#t=53.69,56.04"
+                ]
+              },
+              {
+                "@id": "38a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=39,1261,178,352",
+                "Break_Break_Break_AET#t=56.04,56.6"
+                ]
+              },
+              {
+                "@id": "39a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=242,1261,79,352",
+                "Break_Break_Break_AET#t=56.6,58.01"
+                ]
+              },
+              {
+                "@id": "40a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=346,1261,89,352",
+                "Break_Break_Break_AET#t=58.01,59.89"
+                ]
+              },
+              {
+                "@id": "41a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=459,1261,89,352",
+                "Break_Break_Break_AET#t=59.89,61.54"
+                ]
+              },
+              {
+                "@id": "42a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=577,1261,93,352",
+                "Break_Break_Break_AET#t=61.54,63.04"
+                ]
+              },
+              {
+                "@id": "43a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=695,1261,117,352",
+                "Break_Break_Break_AET#t=63.04,64.76"
+                ]
+              },
+              {
+                "@id": "44a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=832,1261,107,352",
+                "Break_Break_Break_AET#t=64.76,66.88"
+                ]
+              },
+              {
+                "@id": "45a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=978,1261,84,352",
+                "Break_Break_Break_AET#t=66.88,68.38"
+                ]
+              },
+              {
+                "@id": "46a0",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB2#xywh=1087,1261,140,352",
+                "Break_Break_Break_AET#t=68.38,70.12"
+                ]
+              }]
             }]
           }, {
             "label": "4v",
@@ -2253,188 +2253,188 @@ sounding.value('MANIFESTS', [
               "@type": "sc:AnnotationList",
               "label": "measures",
               "@list": [{
-  "@id": "0a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=153,124,248,720",
-    "Break_Break_Break_AET#t=70.12,71.68"
-  ]
-},
-{
-  "@id": "1a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=422,124,297,720",
-    "Break_Break_Break_AET#t=71.68,73.33"
-  ]
-},
-{
-  "@id": "2a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=742,124,206,720",
-    "Break_Break_Break_AET#t=73.33,74.73"
-  ]
-},
-{
-  "@id": "3a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=974,124,239,720",
-    "Break_Break_Break_AET#t=74.73,76.18"
-  ]
-},
-{
-  "@id": "4a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=1227,124,148,720",
-    "Break_Break_Break_AET#t=76.18,78.5"
-  ]
-},
-{
-  "@id": "5a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=1400,124,143,720",
-    "Break_Break_Break_AET#t=78.5,80.99"
-  ]
-},
-{
-  "@id": "6a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=1567,124,140,720",
-    "Break_Break_Break_AET#t=80.99,83.08"
-  ]
-},
-{
-  "@id": "7a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=1720,124,239,720",
-    "Break_Break_Break_AET#t=83.08,85.49"
-  ]
-},
-{
-  "@id": "8a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=1989,124,214,720",
-    "Break_Break_Break_AET#t=85.49,86.87"
-  ]
-},
-{
-  "@id": "9a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=149,866,256,720",
-    "Break_Break_Break_AET#t=86.87,88.58"
-  ]
-},
-{
-  "@id": "10a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=431,866,260,720",
-    "Break_Break_Break_AET#t=88.58,91"
-  ]
-},
-{
-  "@id": "11a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=713,866,156,720",
-    "Break_Break_Break_AET#t=91,92.85"
-  ]
-},
-{
-  "@id": "12a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=887,866,193,720",
-    "Break_Break_Break_AET#t=92.85,94.35"
-  ]
-},
-{
-  "@id": "13a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=1098,866,235,720",
-    "Break_Break_Break_AET#t=94.35,95.94"
-  ]
-},
-{
-  "@id": "14a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=1351,866,252,720",
-    "Break_Break_Break_AET#t=95.94,97.4"
-  ]
-},
-{
-  "@id": "15a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=1628,866,281,720",
-    "Break_Break_Break_AET#t=97.4,99.26"
-  ]
-},
-{
-  "@id": "16a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=1932,866,190,720",
-    "Break_Break_Break_AET#t=99.26,101.32"
-  ]
-},
-{
-  "@id": "17a1",
-  "@type": "oa:Annotation",
-  "motivation": "sc:painting",
-  "label": "",
-  "on": [
-    "RB3#xywh=2134,866,82,720",
-    "Break_Break_Break_AET#t=101.32,118"
-  ]
-}]
+                "@id": "0a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=153,124,248,720",
+                "Break_Break_Break_AET#t=70.12,71.68"
+                ]
+              },
+              {
+                "@id": "1a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=422,124,297,720",
+                "Break_Break_Break_AET#t=71.68,73.33"
+                ]
+              },
+              {
+                "@id": "2a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=742,124,206,720",
+                "Break_Break_Break_AET#t=73.33,74.73"
+                ]
+              },
+              {
+                "@id": "3a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=974,124,239,720",
+                "Break_Break_Break_AET#t=74.73,76.18"
+                ]
+              },
+              {
+                "@id": "4a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=1227,124,148,720",
+                "Break_Break_Break_AET#t=76.18,78.5"
+                ]
+              },
+              {
+                "@id": "5a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=1400,124,143,720",
+                "Break_Break_Break_AET#t=78.5,80.99"
+                ]
+              },
+              {
+                "@id": "6a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=1567,124,140,720",
+                "Break_Break_Break_AET#t=80.99,83.08"
+                ]
+              },
+              {
+                "@id": "7a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=1720,124,239,720",
+                "Break_Break_Break_AET#t=83.08,85.49"
+                ]
+              },
+              {
+                "@id": "8a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=1989,124,214,720",
+                "Break_Break_Break_AET#t=85.49,86.87"
+                ]
+              },
+              {
+                "@id": "9a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=149,866,256,720",
+                "Break_Break_Break_AET#t=86.87,88.58"
+                ]
+              },
+              {
+                "@id": "10a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=431,866,260,720",
+                "Break_Break_Break_AET#t=88.58,91"
+                ]
+              },
+              {
+                "@id": "11a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=713,866,156,720",
+                "Break_Break_Break_AET#t=91,92.85"
+                ]
+              },
+              {
+                "@id": "12a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=887,866,193,720",
+                "Break_Break_Break_AET#t=92.85,94.35"
+                ]
+              },
+              {
+                "@id": "13a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=1098,866,235,720",
+                "Break_Break_Break_AET#t=94.35,95.94"
+                ]
+              },
+              {
+                "@id": "14a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=1351,866,252,720",
+                "Break_Break_Break_AET#t=95.94,97.4"
+                ]
+              },
+              {
+                "@id": "15a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=1628,866,281,720",
+                "Break_Break_Break_AET#t=97.4,99.26"
+                ]
+              },
+              {
+                "@id": "16a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=1932,866,190,720",
+                "Break_Break_Break_AET#t=99.26,101.32"
+                ]
+              },
+              {
+                "@id": "17a1",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "label": "",
+                "on": [
+                "RB3#xywh=2134,866,82,720",
+                "Break_Break_Break_AET#t=101.32,118"
+                ]
+              }]
+            }]
           }]
         }]
-      }]
       }, {
         "@id": "Janotha_Manifest",
         "@context": "http://iiif.io/api/presentation/2/context.json",
@@ -3458,7 +3458,7 @@ sounding.value('MANIFESTS', [
               "@id": "ManuscriptPoem",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-        "label": 'Alfred Tennyson, “Break," Ms poem',
+              "label": 'Alfred Tennyson, “Break," Ms poem',
               "resources": ["Break_Break_Break_Janotha","Break_Break_Break_AET"],
               "sequences": [{
                 "@id": "handwritten poem normal sequence",
@@ -3506,7 +3506,7 @@ sounding.value('MANIFESTS', [
               "@id": "AET-MSS-5312-001",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-        "label": 'Emily Tennyson, “Break," draft 2 (5312/1)',
+              "label": 'Emily Tennyson, “Break," draft 2 (5312/1)',
               "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, Pink MS music book. TRC/Music/5312/1, ff 11r-12v, Lincolnshire County Council, UK.',
               "resources": ["Break_Break_Break_AET"],
               "metadata":[
@@ -3516,13 +3516,13 @@ sounding.value('MANIFESTS', [
               { "date" : "c.1834-c.1860" },
               { "source" : "Lincolnshire County Council" },
               { "subject" : ["Tennyson, Emily Sellwood Tennyson, Baronness, 1813-1896—Musical settings.",
-                  "Tennyson, Alfred Tennyson, Baron, 1809-1892—Musical settings.",
-                  "Tennyson, Emily Sellwood Tennyson, Baronness, 1813-1896.",
-                  "Tennyson, Alfred Tennyson, Baron, 1809-1892.",
-                  "Tennyson family.",
-                  "Poets, English—19th century.",
-                  "Authors' spouses—Great Britain—Diaries.",
-                  "Songs with piano—19th century."] },
+              "Tennyson, Alfred Tennyson, Baron, 1809-1892—Musical settings.",
+              "Tennyson, Emily Sellwood Tennyson, Baronness, 1813-1896.",
+              "Tennyson, Alfred Tennyson, Baron, 1809-1892.",
+              "Tennyson family.",
+              "Poets, English—19th century.",
+              "Authors' spouses—Great Britain—Diaries.",
+              "Songs with piano—19th century."] },
               { "description" : 'Pink manuscript music book setting by Emily Lady Tennyson of Alfred Lord Tennyson\'s "Break, Break, Break”, written in black ink with pencil markings' },
               { "website" : "http://www.soundingtennyson.org" },
               { "contributing institution" : "Lincolnshire County Council" },
@@ -4300,7 +4300,7 @@ sounding.value('MANIFESTS', [
               "@id": "G_Manifest",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-        "label": 'Emily Tennyson, “Break," draft 3 (5312/2)',
+              "label": 'Emily Tennyson, “Break," draft 3 (5312/2)',
               "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, green MS music book, TRC/Music/5312/2, ff 5r-6r. Lincolnshire County Council, UK.',
               "resources": ["Break_Break_Break_AET"],
               "layers": ["PianoLayer"],
@@ -5038,7 +5038,7 @@ sounding.value('TEXT', [{
   "@id": "publishedText",
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@type": "cnt:chars",
-        "label": 'Alfred Tennyson, “Break” (published 1842)',
+  "label": 'Alfred Tennyson, “Break” (published 1842)',
         // Put all the text in one place and then annotate the stanzas,
         // lines, and words with offsets as needed.
         "@value": "Break, break, break,/" +
@@ -5107,7 +5107,7 @@ sounding.value('ESSAYS', [{
   },
   {
     "label": "subtitle",
-                "value": 'Emily Tennyson’s Scansion of “Break, Break, Break”'
+    "value": 'Emily Tennyson’s Scansion of “Break, Break, Break”'
   }
   ],
   "resource": "data/essayBreakToBreak.xml",
@@ -5119,36 +5119,36 @@ sounding.value('ESSAYS', [{
   "otherContent": []
 },
 {
-   "@context": "http://iiif.io/api/presentation/2/context.json",
-   "@id": "EssayManuscriptBooks",
-   "@type": "rr:Essay",
-   "label": "Emily Tennyson's Music Manuscript Books",
-   "metadataResources": [],
-   "metadata": [
-       {
-           "label": "author",
-           "value": "Phyllis Weliver"
-       },
+ "@context": "http://iiif.io/api/presentation/2/context.json",
+ "@id": "EssayManuscriptBooks",
+ "@type": "rr:Essay",
+ "label": "Emily Tennyson's Music Manuscript Books",
+ "metadataResources": [],
+ "metadata": [
+ {
+   "label": "author",
+   "value": "Phyllis Weliver"
+ },
+ {
+  "label":"citeAuthor",
+  "value":"Weliver, Phyllis"
+},
 {
-    "label":"citeAuthor",
-    "value":"Weliver, Phyllis"
-  },
-  {
-    "label":"publicationDate",
-    "value":"31 March 2016"
-  },
-         {
-           "label": "title",
-           "value": "Emily Tennyson's Music Manuscript Books"
-       }
-   ],
-   "resource": "data/essayManuscriptBooks.xml",
-   "style": "",
-   "footnotes": [],
-   "endnotes": [],
-   "indices": [],
-   "comments": [],
-   "otherContent": []
+  "label":"publicationDate",
+  "value":"31 March 2016"
+},
+{
+ "label": "title",
+ "value": "Emily Tennyson's Music Manuscript Books"
+}
+],
+"resource": "data/essayManuscriptBooks.xml",
+"style": "",
+"footnotes": [],
+"endnotes": [],
+"indices": [],
+"comments": [],
+"otherContent": []
 },
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
@@ -5161,7 +5161,7 @@ sounding.value('ESSAYS', [{
     "label": "author",
     "value": "Phyllis Weliver"
   },
-{
+  {
     "label":"citeAuthor",
     "value":"Weliver, Phyllis"
   },
@@ -5169,7 +5169,7 @@ sounding.value('ESSAYS', [{
     "label":"publicationDate",
     "value":"31 March 2016"
   },
-    {
+  {
     "label": "title",
     "value": "Variability and Musical Motion in ‘Break, Break, Break’"
   }
@@ -5183,125 +5183,125 @@ sounding.value('ESSAYS', [{
   "otherContent": []
 },
 {
-   "@context": "http://iiif.io/api/presentation/2/context.json",
-   "@id": "EssayEmilysMusic",
-   "@type": "rr:Essay",
-   "label": "Performance and Publication of Emily Tennyson’s Music",
-   "metadataResources": [],
-   "metadata": [
-       {
-           "label": "author",
-           "value": "Phyllis Weliver"
-       },
+ "@context": "http://iiif.io/api/presentation/2/context.json",
+ "@id": "EssayEmilysMusic",
+ "@type": "rr:Essay",
+ "label": "Performance and Publication of Emily Tennyson’s Music",
+ "metadataResources": [],
+ "metadata": [
+ {
+   "label": "author",
+   "value": "Phyllis Weliver"
+ },
+ {
+  "label":"citeAuthor",
+  "value":"Weliver, Phyllis"
+},
 {
-    "label":"citeAuthor",
-    "value":"Weliver, Phyllis"
-  },
-  {
-    "label":"publicationDate",
-    "value":"31 March 2016"
-  },
-         {
-           "label": "title",
-           "value": "Performance and Publication of Emily Tennyson’s Music"
-       }
-   ],
-   "resource": "data/essayEmilysMusic.xml",
-   "style": "data/essayStyle.xsl",
-   "footnotes": [],
-   "endnotes": [],
-   "indices": [],
-   "comments": [],
-   "otherContent": []
+  "label":"publicationDate",
+  "value":"31 March 2016"
+},
+{
+ "label": "title",
+ "value": "Performance and Publication of Emily Tennyson’s Music"
+}
+],
+"resource": "data/essayEmilysMusic.xml",
+"style": "data/essayStyle.xsl",
+"footnotes": [],
+"endnotes": [],
+"indices": [],
+"comments": [],
+"otherContent": []
 },{
-   "@context": "http://iiif.io/api/presentation/2/context.json",
-   "@id": "Cecilia1839",
-   "@type": "rr:Essay",
-   "label": "Cecilia Tennyson (poet’s sister) recites, 1839",
-   "metadata":[
-   {
-    "label":"title",
-    "value":"Cecilia Tennyson (poet’s sister) recites, 1839"
-   },{
-    "label":"citeAuthor",
-    "value":"unknown"
-   },{
-    "label":"publicationDate",
-    "value":"31 March 2016"
-   }],
-   "resource":"data/witnessCecilaTennyson.xml",
-   "note":{
-    "text":"Louisa Lanesborough stayed with Alfred Tennyson’s sisters in May 1839 at Beech Hill, having disguised herself as the nurse of her consumptive friend, Mrs. Neville (“Mimosa”), and assuming the name Marion Langlais. Mary and Emily Tennyson, Louisa Lanesborough, and Mary Neville together were part of a literary circle called “The Husks” who idolized the young Alfred Tennyson’s poetry.",
-    "citation":"Bartle Teeling, “A Visit to the Tennysons in 1839,” <cite>Blackwood’s Edinburgh Magazine</cite> CLV (May 1894): 605–21 (605–6)."
-   }
+ "@context": "http://iiif.io/api/presentation/2/context.json",
+ "@id": "Cecilia1839",
+ "@type": "rr:Essay",
+ "label": "Cecilia Tennyson (poet’s sister) recites, 1839",
+ "metadata":[
+ {
+  "label":"title",
+  "value":"Cecilia Tennyson (poet’s sister) recites, 1839"
 },{
-   "@context": "http://iiif.io/api/presentation/2/context.json",
-   "@id": "TennysonRecites",
-   "@type": "rr:Essay",
-   "label": "Tennyson recites, 1857, 1890",
-   "metadata":[
-   {
-    "label":"title",
-    "value":"Tennyson recites, 1857, 1890"
-   },{
-    "label":"citeAuthor",
-    "value":"unknown"
-   },{
-    "label":"publicationDate",
-    "value":"31 March 2016"
-   }],
-   "resource":"data/witnessTennysonRecites.xml"
+  "label":"citeAuthor",
+  "value":"unknown"
 },{
-   "@context": "http://iiif.io/api/presentation/2/context.json",
-   "@id": "ChildRecites",
-   "@type": "rr:Essay",
-   "label": "A child recites to Emily Tennyson, 1859",
-   "metadata":[
-   {
-    "label":"title",
-    "value":"A child recites to Emily Tennyson, 1859"
-   },{
-    "label":"citeAuthor",
-    "value":"unknown"
-   },{
-    "label":"publicationDate",
-    "value":"31 March 2016"
-   }],
-   "resource":"data/witnessChildRecites.xml"
+  "label":"publicationDate",
+  "value":"31 March 2016"
+}],
+"resource":"data/witnessCecilaTennyson.xml",
+"note":{
+  "text":"Louisa Lanesborough stayed with Alfred Tennyson’s sisters in May 1839 at Beech Hill, having disguised herself as the nurse of her consumptive friend, Mrs. Neville (“Mimosa”), and assuming the name Marion Langlais. Mary and Emily Tennyson, Louisa Lanesborough, and Mary Neville together were part of a literary circle called “The Husks” who idolized the young Alfred Tennyson’s poetry.",
+  "citation":"Bartle Teeling, “A Visit to the Tennysons in 1839,” <cite>Blackwood’s Edinburgh Magazine</cite> CLV (May 1894): 605–21 (605–6)."
+}
 },{
-   "@context": "http://iiif.io/api/presentation/2/context.json",
-   "@id": "JaneRecites",
-   "@type": "rr:Essay",
-   "label": "Elizabeth Jane, Lady Charlemont reads “Break, Break, Break” to Tennyson, 1871",
-   "metadata":[
-   {
-    "label":"title",
-    "value":"Elizabeth Jane, Lady Charlemont reads “Break, Break, Break” to Tennyson, 1871"
-   },{
-    "label":"citeAuthor",
-    "value":"unknown"
-   },{
-    "label":"publicationDate",
-    "value":"31 March 2016"
-   }],
-   "resource":"data/witnessJaneRecites.xml"
+ "@context": "http://iiif.io/api/presentation/2/context.json",
+ "@id": "TennysonRecites",
+ "@type": "rr:Essay",
+ "label": "Tennyson recites, 1857, 1890",
+ "metadata":[
+ {
+  "label":"title",
+  "value":"Tennyson recites, 1857, 1890"
 },{
-   "@context": "http://iiif.io/api/presentation/2/context.json",
-   "@id": "TennysonHearsGeorg",
-   "@type": "rr:Essay",
-   "label": "Tennyson hearing Georg Henschel sing his musical setting of “Break, Break, Break,” 1880",
-   "metadata":[
-   {
-    "label":"title",
-    "value":"Tennyson hearing Georg Henschel sing his musical setting of “Break, Break, Break,” 1880"
-   },{
-    "label":"citeAuthor",
-    "value":"unknown"
-   },{
-    "label":"publicationDate",
-    "value":"31 March 2016"
-   }],
-   "resource":"data/witnessTennysonHearsGeorg.xml"
+  "label":"citeAuthor",
+  "value":"unknown"
+},{
+  "label":"publicationDate",
+  "value":"31 March 2016"
+}],
+"resource":"data/witnessTennysonRecites.xml"
+},{
+ "@context": "http://iiif.io/api/presentation/2/context.json",
+ "@id": "ChildRecites",
+ "@type": "rr:Essay",
+ "label": "A child recites to Emily Tennyson, 1859",
+ "metadata":[
+ {
+  "label":"title",
+  "value":"A child recites to Emily Tennyson, 1859"
+},{
+  "label":"citeAuthor",
+  "value":"unknown"
+},{
+  "label":"publicationDate",
+  "value":"31 March 2016"
+}],
+"resource":"data/witnessChildRecites.xml"
+},{
+ "@context": "http://iiif.io/api/presentation/2/context.json",
+ "@id": "JaneRecites",
+ "@type": "rr:Essay",
+ "label": "Elizabeth Jane, Lady Charlemont reads “Break, Break, Break” to Tennyson, 1871",
+ "metadata":[
+ {
+  "label":"title",
+  "value":"Elizabeth Jane, Lady Charlemont reads “Break, Break, Break” to Tennyson, 1871"
+},{
+  "label":"citeAuthor",
+  "value":"unknown"
+},{
+  "label":"publicationDate",
+  "value":"31 March 2016"
+}],
+"resource":"data/witnessJaneRecites.xml"
+},{
+ "@context": "http://iiif.io/api/presentation/2/context.json",
+ "@id": "TennysonHearsGeorg",
+ "@type": "rr:Essay",
+ "label": "Tennyson hearing Georg Henschel sing his musical setting of “Break, Break, Break,” 1880",
+ "metadata":[
+ {
+  "label":"title",
+  "value":"Tennyson hearing Georg Henschel sing his musical setting of “Break, Break, Break,” 1880"
+},{
+  "label":"citeAuthor",
+  "value":"unknown"
+},{
+  "label":"publicationDate",
+  "value":"31 March 2016"
+}],
+"resource":"data/witnessTennysonHearsGeorg.xml"
 }
 ]);
 

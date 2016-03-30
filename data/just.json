@@ -1,5 +1,5 @@
 {
-    "@id": "RB_Manifest",
+    "@id": "AET-MSS-5321-001",
     "@context": "http://iiif.io/api/presentation/2/context.json",
     "@type": "sc:Manifest",
     "label": "Red Book (5312/3)",

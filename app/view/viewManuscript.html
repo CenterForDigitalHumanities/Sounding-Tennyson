@@ -12,7 +12,7 @@ class="btn btn-primary" tooltip="Show only the manuscript">
         <span ng-bind-html="vv.manifest.label|| text.label"></span>
     </h3>
     <div class="form-group">
-        <div class="btn-group pull-right">
+        <div class="btn-group pull-right" ng-hide="vv.manifest.sequences[0].canvases.length>6">
             <button type="button" class="btn btn-xs btn-default"
             ng-repeat="c in vv.manifest.sequences[0].canvases"
             ng-class="{active:vv.selectedCanvas.indexOf($index)+1}"
@@ -20,6 +20,20 @@ class="btn btn-primary" tooltip="Show only the manuscript">
             {{c.label||$index}}
         </button>
     </div>
+
+<div class="btn-group" dropdown ng-show="vv.manifest.sequences[0].canvases.length>6">
+      <button type="button" class="btn btn-default btn-sm btn-block dropdown-toggle" dropdown-toggle >
+        {{vv.manifest.sequences[0].canvases[vv.selectedCanvas].label||vv.selectedCanvas}} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li ng-repeat="c in vv.manifest.sequences[0].canvases">
+            <a ng-click="pickCanvas($index)">
+{{vv.manifest.sequences[0].canvases[$index].label||$index}}
+            </a>
+        </li>
+      </ul>
+    </div>
+
     <sc-canvas class="position-relative overflow-hidden btn-block"
     ng-class="{visible:vv.revealAnnotations}"
     ng-repeat="cindex in vv.selectedCanvas">
@@ -44,9 +58,13 @@ Metadata</button>
 <dl ng-class="{'dl-horizontal':!vv.showWav}">
     <span ng-repeat="m in vv.manifest.metadata">
     <dt ng-repeat-start="(key,value) in m" title={{key}}>{{key}}</dt>
-    <dd ng-repeat-end>{{value.join(',')||value}}</dd>
-</span>
-</span>
+    <dd ng-repeat-end>{{value.join(',')||value}}
+        <a ng-if="value.indexOf('htt')===0" target="_blank"
+           ng-href="{{value}}">
+            <i class="fa fa-external-link"></i>
+        </a>
+    </dd>
+    </span>
 </dl>
 </div>
 </div>
@@ -56,7 +74,7 @@ ng-show="thisOn(vv.manifest.resources,music['@id'])"
 ng-init="music=rerum.getResource(m);windex=$index;">
 <button ng-click="vv.showWav[music['@id']]=true" ng-if="!vv.showWav[music['@id']]"
 class="btn btn-default btn-block btn-responsive">
-    <div class="help-block"> <i class="fa fa-music"></i> Load audio file and interactive media</div>
+    <span class="help-block"> <i class="fa fa-music"></i> Load audio file and interactive media</span>
     {{music.label||'Music'}}</button>
 <wavesurfer ng-if="vv.showWav[music['@id']]"
 ng-attr-url="{{music.resource['@id']}}"

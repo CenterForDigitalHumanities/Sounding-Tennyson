@@ -112,7 +112,7 @@ var sounding = angular.module('sounding',
                             MANIFESTS[0]
                             ],isSubcat:true},
                             {label: "Poems", list: [MANIFESTS[4]],isSubcat:true},
-                            {label: "Correspondence", list: [],isSubcat:true},
+                            {label: "Correspondence", list: [MANIFESTS[7]],isSubcat:true},
                             {label: "Earwitness Accounts", list: ESSAYS.slice(4)},
                             {label: "Text", list: [TEXT[0]]},
                             {label: "Annotations", list: [ANNOTATIONS[0]]}
@@ -123,8 +123,8 @@ var sounding = angular.module('sounding',
                     templateUrl: 'app/static/music.html',
                     controller: function ($scope, MANIFESTS, RESOURCES, RERUM,Lists) {
                         $scope.music = {
-                            "Break_Break_Break_AET":["RB_Manifest","AET-MSS-5312-001","G_Manifest","AET_Engraving_Manifest"],
-                            "Break_Break_Break_Janotha":["Janotha_Manifest"],
+                            "Break_Break_Break_AET": ["AET-MSS-5321-001", "AET-MSS-5312-001", "AET-MSS-5312-002", "AET_Engraving_Manifest"],
+                            "Break_Break_Break_Janotha":["AET-MSS-2843-001"],
                             "Break_Break_Break_Henschel":["Henschel_Manifest"]
                         };
                         $scope.performances = RESOURCES;

@@ -43,13 +43,15 @@
     <x ng-include="vv.annotation.resource"></x>
     </div>
     <card class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='sc:Canvas'">
-    <a href="#/summary/{{rerum.manifestFromCanvas(vv.annotation['@id'],manifests)['@id']}}">Part of...</a>
+    Part of<a href="#/summary/{{rerum.manifestFromCanvas(vv.annotation['@id'],manifests)['@id']}}">
+{{rerum.manifestFromCanvas(vv.annotation['@id'],manifests).label || rerum.manifestFromCanvas(vv.annotation['@id'],manifests)['@id']}}
+    </a>
     <img selector="vv.annotation['@id']" width="100%">
     </card>
     <card class="btn-block fadeInOut" ng-if="vv.annotation['@type']==='sc:Manifest'">
         <a class="btn btn-primary btn-block" href="#/manuscript/{{vv.annotation['@id']}}">View Detail for {{vv.annotation.label||vv.annotation.title||vv.annotation['@id']}} </a>
     <a href="#/summary/{{c['@id']||c}}" ng-repeat="c in vv.annotation.sequences[0].canvases">
-            <img selector="c['@id']||c" class="col-sm-2 well">
+            <img selector="c['@id']||c" class="col-sm-2 well" tooltip="{{c.label||$index}}">
         </a>
         <div id="viewer"></div>
         <script>

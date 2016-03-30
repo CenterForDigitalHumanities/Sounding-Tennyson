@@ -40,9 +40,6 @@ sounding.value('MANIFESTS', [
   "description": 'from https://musopen.org/sheetmusic/17538/george-henschel/break-break-break/',
   "resources": ["Break_Break_Break_Henschel"],
   "layers": ["PianoLayer"],
-  "metadata":[
-  {}
-  ],
   "sequences": [{
     "@id": "Henschel normal sequence",
     "@type": "sc:Sequence",
@@ -969,7 +966,8 @@ sounding.value('MANIFESTS', [
   "@type": "sc:Manifest",
   "label": 'Emily Tennyson, “Break," Engraving',
   "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, Engraving',
-  "resources": ["Break_Break_Break_AET"],
+        "resources": ["Break_Break_Break_AET"],
+        "metadata": [{"MEI Link": "http://165.134.241.141/sounding/data/Break_MEI.xml"}],
   "layers": ["PianoLayer"],
   "sequences": [{
     "@id": "music album normal sequence",
@@ -1661,11 +1659,39 @@ sounding.value('MANIFESTS', [
           }]
         }]
       },   {
-        "@id": "RB_Manifest",
+        "@id": "AET-MSS-5321-001",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
         "label": 'Emily Tennyson, “Break," draft 1 (5321)',
         "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, red MS music album. TRC/Music/5321, ff 3r-4v. Lincolnshire County Council, UK.',
+        "metadata": [
+            {"title": "Emily Tennyson's music album"},
+            {"creator": "Tennyson, Lady Emily (1813-1896)"},
+            {"contributor": "Tennyson, Lord Alfred (1809-1892)"},
+            {"date": "1834"},
+            {"source": "Lincolnshire County Council"},
+            {"subject": ["Tennyson, Emily Sellwood Tennyson, Baronness, 1813-1896—Musical settings.",
+                    "Tennyson, Alfred Tennyson, Baron, 1809-1892—Musical settings.",
+                    "Tennyson, Emily Sellwood Tennyson, Baronness, 1813-1896.",
+                    "Tennyson, Alfred Tennyson, Baron, 1809-1892.",
+                    "Tennyson family.",
+                    "Poets, English—19th century.",
+                    "Authors' spouses—Great Britain—Diaries.",
+                    "Songs with piano—19th century."]},
+            {"description": 'Manuscript music book settings by Emily Lady Tennyson of Alfred Lord Tennyson\'s poems, written in black ink. 1 book, bound in red cover, half-calf on board, with blue marbled end papers. Binding, c.1920-1950.'},
+            {"website": "http://www.soundingtennyson.org"},
+            {"contributing institution": "Lincolnshire County Council"},
+            {"publisher": "Sounding Tennyson"},
+            {"rights": "This item is reproduced by permission of Lincolnshire County Council, UK."},
+            {"language": "German and English"},
+            {"media type": "Manuscript"},
+            {"type": "Music and Text"},
+            {"resource identifier": "AET-MSS-5321-001"},
+            {"note": '"VI" crossed out; IV added, I written in pencil; "copied on green book" written top right in pencil; pencilled line down center of page'},
+            {"bibliographic citation": "TRC/MSS 5321"},
+            {"digital collection (relation)": "Sounding Tennyson"},
+            {"digital assistant": "Heather Bozant Witcher"}
+        ],
         "resources": ["Break_Break_Break_AET"],
         "layers": ["PianoLayer"],
         "sequences": [{
@@ -2436,11 +2462,38 @@ sounding.value('MANIFESTS', [
           }]
         }]
       }, {
-        "@id": "Janotha_Manifest",
+        "@id": "AET-MSS-2843-001",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
         "label": 'Emily Tennyson / arr Janotha, “Break”',
         "description": '"Break, Break, Break," music by Emily Tennyson, arr. by Natalie Janotha, words by Alfred Tennyson, <i>Sunday Hours</i>, vol. 2 (1897): 568–72. P.P.357.fb, The British Library',
+        "metadata": [
+            {"title": '"Break, Break, Break" musical setting'},
+            {"creator": "Tennyson, Lady Emily (1813-1896)"},
+            {"contributor": ["Tennyson, Lord Alfred (1809-1892)", "Janotha, Natalie (1856-1932)"]},
+            {"date": "1897"},
+            {"source": "The British Library, London, England"},
+            {"subject": ["Tennyson, Emily Sellwood Tennyson, Baronness, 1813-1896—Musical settings.",
+                    "Tennyson, Alfred Tennyson, Baron, 1809-1892—Musical settings.",
+                    "Tennyson, Emily Sellwood Tennyson, Baronness, 1813-1896.",
+                    "Tennyson, Alfred Tennyson, Baron, 1809-1892.",
+                    "Janotha, Natalie, 1856-1932 (piano)",
+                    "Tennyson family.",
+                    "Poets, English—19th century.",
+                    "Authors' spouses—Great Britain—Diaries.",
+                    "Songs with piano—19th century."]},
+            {"description": 'Published musical score. Arranged by Natalie Jaotha.'},
+            {"website": "http://www.soundingtennyson.org"},
+            {"contributing institution": "The British Library"},
+            {"publisher": "Sounding Tennyson"},
+            {"language": "English"},
+            {"media type": "Periodical"},
+            {"type": "Music and Text"},
+            {"resource identifier": "AET-MSS-2853-001"},
+            {"bibliographic citation": "P.P.357.fb. The British Library, London, England"},
+            {"digital collection (relation)": "Sounding Tennyson"},
+            {"digital assistant": "Heather Bozant Witcher"}
+        ],
         "resources": ["Break_Break_Break_Janotha"],
         "layers": ["PianoLayer"],
         "sequences": [{
@@ -3455,12 +3508,34 @@ sounding.value('MANIFESTS', [
                 }]}]
               }]
             }, {
-              "@id": "ManuscriptPoem",
+              "@id": "AET-MSS-1949-001",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
               "label": 'Alfred Tennyson, “Break," Ms poem',
               "resources": ["Break_Break_Break_Janotha","Break_Break_Break_AET"],
-              "sequences": [{
+        "metadata": [
+            {"title": '"Break, break, break" manuscript poem'},
+            {"creator": "Tennyson, Lord Alfred (1809-1892)"},
+            {"date": "c.1842"},
+            {"source": "The Huntington Library, San Marino, California; Locker. Lampson, Bixby."},
+            {"subject": ['Tennyson, Alfred Tennyson, Baron, 1809-1892.',
+                    'English poetry--19th century.',
+                    'Poets, English--19th century--Manuscripts.']},
+            {"description": 'Autographed manuscript (not signed). Poem in four stanzas of four lines each.'},
+            {"website": "http://www.soundingtennyson.org"},
+            {"contributing institution": "The Huntington Library"},
+            {"publisher": "Sounding Tennyson"},
+            {"rights": 'Permission is hereby granted to reproduce the following items for the Huntington Library collections: HM 19490 Tennyson, Alfred, Lord. "Break, Break, Break."'},
+            {"language": "English"},
+            {"media type": "Manuscript"},
+            {"type": "Text"},
+            {"resource identifier": "AET-MSS-1949-001"},
+            {"note": "unreadable word (last letters 'rs') appears cut off from left margin of leaf, in line with stanza three."},
+            {"bibliographic citation": "HM 19490 The Huntington Library, San Marino, California."},
+            {"digital collection (relation)": "Sounding Tennyson"},
+            {"digital assistant": "Heather Bozant Witcher"}
+        ],
+        "sequences": [{
                 "@id": "handwritten poem normal sequence",
                 "@type": "sc:Sequence",
                 "canvases": [{
@@ -4297,12 +4372,40 @@ sounding.value('MANIFESTS', [
                 }]
               }]
             }, {
-              "@id": "G_Manifest",
+              "@id": "AET-MSS-5312-002",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
               "label": 'Emily Tennyson, “Break," draft 3 (5312/2)',
               "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, green MS music book, TRC/Music/5312/2, ff 5r-6r. Lincolnshire County Council, UK.',
-              "resources": ["Break_Break_Break_AET"],
+        "metadata": [
+            {"title": "Emily Tennyson's manuscript music notebook 2"},
+            {"creator": "Tennyson, Lady Emily (1813-1896)"},
+            {"contributor": "Tennyson, Lord Alfred (1809-1892)"},
+            {"date": "c.1834-c.1860"},
+            {"source": "Lincolnshire County Council"},
+            {"subject": ["Tennyson, Emily Sellwood Tennyson, Baronness, 1813-1896—Musical settings.",
+                    "Tennyson, Alfred Tennyson, Baron, 1809-1892—Musical settings.",
+                    "Tennyson, Emily Sellwood Tennyson, Baronness, 1813-1896.",
+                    "Tennyson, Alfred Tennyson, Baron, 1809-1892.",
+                    "Tennyson family.",
+                    "Poets, English—19th century.",
+                    "Authors' spouses—Great Britain—Diaries.",
+                    "Songs with piano—19th century."]},
+            {"description": 'Green manuscript music book setting by Emily Lady Tennyson of Alfred Lord Tennyson\'s "Break, Break, Break," written in black ink'},
+            {"website": "http://www.soundingtennyson.org"},
+            {"contributing institution": "Lincolnshire County Council"},
+            {"publisher": "Sounding Tennyson"},
+            {"rights": "This item is reproduced by permission of Lincolnshire County Council, UK."},
+            {"language": "English"},
+            {"media type": "Manuscript"},
+            {"type": "Music and Text"},
+            {"resource identifier": "AET-MSS-5312-002"},
+            {"note": '"copied by Lady Tennyson [???]" written in pencil at top left corner'},
+            {"bibliographic citation": "TRC/MSS 5312/2"},
+            {"digital collection (relation)": "Sounding Tennyson"},
+            {"digital assistant": "Heather Bozant Witcher"}
+        ],
+        "resources": ["Break_Break_Break_AET"],
               "layers": ["PianoLayer"],
               "sequences": [{
                 "@id": "green book normal sequence",
@@ -5032,7 +5135,326 @@ sounding.value('MANIFESTS', [
                         }]
                       }]
                     }]
-                  }]);
+                  },
+                  {
+  "@id": "Correspondence",
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@type": "sc:Manifest",
+  "label": 'Tennyson Letters',
+  "description": 'Letters from Tennyson collection. This item is reproduced by permission of Lincolnshire County Council, UK.',
+  "metadata":[
+  {}
+  ],
+  "sequences": [{
+    "@id": "Letters normal sequence",
+    "@type": "sc:Sequence",
+    "canvases": [{
+      "label": "Natalie Janotha to Emily Tennyson 1 of 2 leaves of 4pp",
+      "@id": "letter09",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter09",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter09.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Natalie Janotha to Emily Tennyson 2 of 2 leaves of 4pp",
+      "@id": "letter10",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter10",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter10.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Natalie Janotha to Emily Tennyson 1 of 2 leaves of 4pp",
+      "@id": "letter08",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter08",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter08.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Natalie Janotha to Emily Tennyson 2 of 2 leaves of 4pp",
+      "@id": "letter06",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter06",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter06.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Natalie Janotha to Hallam Tennyson 1 of 2 leaves of 4pp",
+      "@id": "letter03",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter03",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter03.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Natalie Janotha to Hallam Tennyson 2 of 2 leaves of 4pp",
+      "@id": "letter04",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter04",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter04.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Natalie Janotha to Hallam Tennyson 1 of 2 leaves of 4pp",
+      "@id": "letter13",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter13",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter13.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Natalie Janotha to Hallam Tennyson 2 of 2 leaves of 4pp",
+      "@id": "letter14",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter14",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter14.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Natalie Janotha to Emily Tennyson 1 of 2 leaves of 4pp",
+      "@id": "letter12",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter10",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter10.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Sir Charles Villiers Stanford to Emily Tennyson 1 of 2 leaves of 4pp",
+      "@id": "letter01",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter01",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter01.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Sir Charles Villiers Stanford to Emily Tennyson 2 of 2 leaves of 4pp",
+      "@id": "letter02",
+      "width": 2828,
+      "height": 2000,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter02",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2828,
+      "height": 2000,
+          "@id": "media/correspondence/letter02.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Emily Tennyson to Hallam Tennyson, p 1 of 2pp",
+      "@id": "letter15",
+      "width": 686,
+      "height": 567,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter15",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 686,
+      "height": 567,
+          "@id": "media/correspondence/letter15.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "Emily Tennyson to Hallam Tennyson, p 2 of 2pp",
+      "@id": "letter16",
+      "width": 567,
+      "height": 871,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter16",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 567,
+      "height": 871,
+          "@id": "media/correspondence/letter16.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "William Sterndale Bennett to Emily Tennyson, p 1 of 3pp",
+      "@id": "letter17",
+      "width": 2338,
+      "height": 1653,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter17",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2338,
+      "height": 1653,
+          "@id": "media/correspondence/letter17.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "William Sterndale Bennett to Emily Tennyson, p 2 of 3pp",
+      "@id": "letter18",
+      "width": 2338,
+      "height": 1653,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter18",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2338,
+      "height": 1653,
+          "@id": "media/correspondence/letter18.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }, {
+      "label": "William Sterndale Bennett to Emily Tennyson, p 3 of 3pp",
+      "@id": "letter19",
+      "width": 2338,
+      "height": 1653,
+      "@type": "sc:Canvas",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "letter19",
+        "resource": {
+          "format": "image/jpeg",
+      "width": 2338,
+      "height": 1653,
+          "@id": "media/correspondence/letter19.jpg",
+          "@type": "dcterms:Image"
+        }
+      }],
+      "otherContent": []
+    }]
+  }]
+}]);
 
 sounding.value('TEXT', [{
   "@id": "publishedText",

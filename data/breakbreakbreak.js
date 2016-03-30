@@ -5289,11 +5289,11 @@ sounding.value('ESSAYS', [{
  "@context": "http://iiif.io/api/presentation/2/context.json",
  "@id": "TennysonHearsGeorg",
  "@type": "rr:Essay",
- "label": "Tennyson hearing Georg Henschel sing his musical setting of “Break, Break, Break,” 1880",
+ "label": "Tennyson hearing Henschel sing his musical setting of “Break, Break, Break,” 1880",
  "metadata":[
  {
   "label":"title",
-  "value":"Tennyson hearing Georg Henschel sing his musical setting of “Break, Break, Break,” 1880"
+  "value":"Tennyson hearing Henschel sing his musical setting of “Break, Break, Break,” 1880"
 },{
   "label":"citeAuthor",
   "value":"unknown"

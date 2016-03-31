@@ -3,7 +3,7 @@
 sounding.value('RESOURCES', [{
   "@id": "Break_Break_Break_AET",
   "@type": "oa:Annotation",
-  "label": "Break, Break, Break (Emily Tennyson)",
+        "label": "“Break, Break, Break” (Emily Tennyson)",
   "motivation": "performance",
   "resource": {
     "@id": "media/audio/Break_Break_Break_AET.mp3",
@@ -13,7 +13,7 @@ sounding.value('RESOURCES', [{
 }, {
   "@id": "Break_Break_Break_Janotha",
   "@type": "oa:Annotation",
-  "label": "Break, Break, Break (arr Janotha)",
+        "label": "“Break, Break, Break” (arr Janotha)",
   "motivation": "performance",
   "resource": {
     "@id": "media/audio/Break_Break_Break_Janotha.mp3",
@@ -23,7 +23,7 @@ sounding.value('RESOURCES', [{
 }, {
   "@id": "Break_Break_Break_Henschel",
   "@type": "oa:Annotation",
-  "label": "Break, Break, Break (Henschel)",
+        "label": "“Break, Break, Break” (Henschel)",
   "motivation": "performance",
   "resource": {
     "@id": "media/audio/Break_Break_Break_Henschel.mp3",
@@ -36,7 +36,7 @@ sounding.value('MANIFESTS', [
   "@id": "AET-MSS-1880-001",
   "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": 'Henschel, “Break”',
+        "label": 'Henschel, “Break, Break, Break”',
         "description": 'Henschel, Georg. “Break, break, break.” Songs from the Published Writings of Alfred Tennyson: Set to Music by Various Composers. Ed. William George Cusins. New York: Harper, 1880.',
         "metadata": [
             {"title": '"Break, Break, Break" score from Songs from the Published Writings of Alfred Tennyson: Set to Music by Various Composers.'},
@@ -1711,7 +1711,7 @@ sounding.value('MANIFESTS', [
         "@id": "AET-MSS-5321-001",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": 'Emily Tennyson, “Break," draft 1 (5321)',
+        "label": 'Emily Tennyson, “Break, Break, Break” draft 1 (5321)',
         "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, red MS music album. TRC/Music/5321, ff 3r-4v. Lincolnshire County Council, UK.',
         "metadata": [
             {"title": "Emily Tennyson's music album"},
@@ -2514,7 +2514,7 @@ sounding.value('MANIFESTS', [
         "@id": "AET-MSS-2843-001",
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@type": "sc:Manifest",
-        "label": 'Emily Tennyson / arr Janotha, “Break”',
+        "label": 'Emily Tennyson / arr Janotha, “Break, Break, Break”',
         "description": '"Break, Break, Break," music by Emily Tennyson, arr. by Natalie Janotha, words by Alfred Tennyson, <i>Sunday Hours</i>, vol. 2 (1897): 568–72. P.P.357.fb, The British Library',
         "metadata": [
             {"title": '"Break, Break, Break" musical setting'},
@@ -3560,7 +3560,7 @@ sounding.value('MANIFESTS', [
               "@id": "AET-MSS-1949-001",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-              "label": 'Alfred Tennyson, “Break," Ms poem',
+        "label": 'Alfred Tennyson, “Break, Break, Break” Ms poem',
               "resources": ["Break_Break_Break_Janotha","Break_Break_Break_AET"],
         "metadata": [
             {"title": '"Break, break, break" manuscript poem'},
@@ -3630,7 +3630,7 @@ sounding.value('MANIFESTS', [
               "@id": "AET-MSS-5312-001",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-              "label": 'Emily Tennyson, “Break," draft 2 (5312/1)',
+        "label": 'Emily Tennyson, “Break, Break, Break” draft 2 (5312/1)',
               "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, Pink MS music book. TRC/Music/5312/1, ff 11r-12v, Lincolnshire County Council, UK.',
               "resources": ["Break_Break_Break_AET"],
               "metadata":[
@@ -4424,7 +4424,7 @@ sounding.value('MANIFESTS', [
               "@id": "AET-MSS-5312-002",
               "@context": "http://iiif.io/api/presentation/2/context.json",
               "@type": "sc:Manifest",
-              "label": 'Emily Tennyson, “Break," draft 3 (5312/2)',
+        "label": 'Emily Tennyson, “Break, Break, Break” draft 3 (5312/2)',
               "description": '"Break, Break, Break”, music by Emily Tennyson, words by Alfred Tennyson, green MS music book, TRC/Music/5312/2, ff 5r-6r. Lincolnshire County Council, UK.',
         "metadata": [
             {"title": "Emily Tennyson's manuscript music notebook 2"},
@@ -5509,7 +5509,7 @@ sounding.value('TEXT', [{
   "@id": "publishedText",
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@type": "cnt:chars",
-  "label": 'Alfred Tennyson, “Break” (published 1842)',
+        "label": 'Alfred Tennyson, “Break, Break, Break” (published 1842)',
         // Put all the text in one place and then annotate the stanzas,
         // lines, and words with offsets as needed.
         "@value": "Break, break, break,/" +

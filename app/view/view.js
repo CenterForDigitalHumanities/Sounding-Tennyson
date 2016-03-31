@@ -101,9 +101,12 @@ sounding.controller("viewController", function ($scope, $filter, ViewService, Vi
     ViewValues.selectedCanvas = [0];
     $scope.performances = [];
     $scope.about = {
-        citation: '<div style="text-align:left !important;text-indent: -2rem;padding-left: 2rem;"><i class="fa fa-quote-left fa-2x pull-right"></i> Weliver, Phyllis and Ewan Jones. "About <i>Sounding Tennyson</i>." <i>Sounding Tennyson</i>. 31 March 2016. Accessed ' + $filter('date')(Date.now(), 'dd MMMM yyyy') + '.</div>'
+        citation: '<div style="text-align:left !important;text-indent: -2rem;padding-left: 2rem;"><i class="fa fa-quote-left fa-2x pull-right"></i> Weliver, Phyllis and Ewan Jones. "About <i>Sounding Tennyson</i>." <i>Sounding Tennyson</i>. 31 March 2016. Accessed ' + $filter('date')(Date.now(), 'dd MMMM yyyy') + '. http://soundingtennyson.org.</div>'
     };
-    $scope.cite = function(res){
+    $scope.citeHistory = {
+        citation: '<div style="text-align:left !important;text-indent: -2rem;padding-left: 2rem;"><i class="fa fa-quote-left fa-2x pull-right"></i> Weliver, Phyllis. "Project History <i>Sounding Tennyson</i>." <i>Sounding Tennyson</i>. 31 March 2016. Accessed ' + $filter('date')(Date.now(), 'dd MMMM yyyy') + '. http://soundingtennyson.org.</div>'
+    };
+    $scope.cite = function (res) {
         var tmp_author = Lists.getAllByProp("label", "citeAuthor", res.metadata);
         if (!tmp_author.length) {
             return;

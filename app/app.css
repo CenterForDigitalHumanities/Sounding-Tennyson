@@ -104,6 +104,7 @@ footer {
     display: block;
     width:100%;
     clear:both;
+    padding: 18px 0;
 }
 footer a {
     color: lavender;

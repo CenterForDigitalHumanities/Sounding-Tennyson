@@ -127,7 +127,7 @@ var sounding = angular.module('sounding',
                         $scope.music = {
                             "Break_Break_Break_AET": ["AET-MSS-5321-001", "AET-MSS-5312-001", "AET-MSS-5312-002", "AET_Engraving_Manifest"],
                             "Break_Break_Break_Janotha":["AET-MSS-2843-001"],
-                            "Break_Break_Break_Henschel":["Henschel_Manifest"]
+                            "Break_Break_Break_Henschel":["AET-MSS-1880-001"]
                         };
                         $scope.performances = RESOURCES;
                         angular.forEach($scope.music, function(r,m){

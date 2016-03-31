@@ -3,6 +3,6 @@
     <h3 ng-bind-html="p.label"></h3>
         <dt ng-repeat-start="i in music[p['@id']]">
             <a ng-href="#/manuscript/{{i['@id']}}" ng-bind-html="i.label"></a></dt>
-                <dd ng-repeat-end ng-bind-html="i.description"></dd>
+            <dd ng-repeat-end ng-bind-html="i.description" class="citation"></dd>
     </dl>
 </div>

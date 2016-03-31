@@ -5741,7 +5741,7 @@ sounding.value('ANNOTATIONS', [{
         "@type": "ore:Aggregation",
         "description": "Emily Tennyson's settings showing enjambment",
         // targets, but no body, as it trickles up to intraAnno_02
-        "on": ["PB1#xywh=58,1018,1144,339", "RB1#xywh=8,862,961,380"]
+        "on": ["PB1#xywh=0,2026,2572.1,792", "RB2#xywh=0,94,1357.2,385", "GB1#xywh=0,1115,2443.5,655"]
       }, {
         "@id": "intraAnno_01",
         "@type": "oa:Annotation",

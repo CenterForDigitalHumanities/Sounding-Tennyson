@@ -76,8 +76,8 @@ ng-init="music=rerum.getResource(m);windex=$index;">
 class="btn btn-default btn-block btn-responsive">
     <span class="help-block"> <i class="fa fa-music"></i> Load audio file and interactive media</span>
     {{music.label||'Music'}}</button>
-<wavesurfer ng-if="vv.showWav[music['@id']]"
-ng-attr-url="{{music.resource['@id']}}"
+    <wavesurfer ng-if="vv.showWav[music['@id']]"
+                ng-attr-url="{{music.resource['@id']}}"
 wave-color="#333"
 progress-color="#002147"
 min-px-per-sec=1>
@@ -87,11 +87,13 @@ min-px-per-sec=1>
     <span class='timer'>{{vv.currentTime[music['@id']]|number:2}}
         <span ng-hide="vv.currentTime[music['@id']]">Play</span>
     </span>
-</button> {{music.label}}</h4>
-<div ng-class="{loader:!wavesurfer.ready,error:error}"
-ng-hide="wavesurfer.ready"
-class="clearfix">loading error...</div>
-</wavesurfer>
+    </button> {{music.label}}</h4>
+<div class="text-center">
+    <p class="error" ng-show="error">loading error...</p>
+    <i ng-hide="wavesurfer.ready"
+       class="fa fa-4x fa-circle-o-notch fa-spin"></i>
+        </div>
+    </wavesurfer>
 <div ng-controller="viewController">
 <card ng-repeat="line in vv.lines[vv.manifest.resources[windex]]"
  ng-if="vv.showWav[music['@id']]"

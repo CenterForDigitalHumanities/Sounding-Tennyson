@@ -116,9 +116,10 @@ var sounding = angular.module('sounding',
                             {label: "Poems", list: [MANIFESTS[4]],isSubcat:true},
                             {label: "Letters to Emily and Hallam Tennyson", list: [MANIFESTS[7]], isSubcat: true},
                             {label: "Earwitness Accounts", list: ESSAYS.slice(4)},
-                            {label: "Text", list: [TEXT[0]]},
-                            {label: "Annotations", list: [ANNOTATIONS[0]]}
-                        ]
+                            {label: "Text", list: [TEXT[0]]}
+//                            ,
+//                            {label: "Annotations", list: [ANNOTATIONS[0]]}
+                        ];
                     }
                 })
                 .when('/music', {

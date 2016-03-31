@@ -1,5 +1,13 @@
 <div>
-<div ng-repeat="category in categories">
+    <style>
+        div:not(:first-child)>h3 {
+            padding-top: 15px;
+        }
+        div:not(:first-child)>h4 {
+            padding-left: 15px;
+        }
+    </style>
+    <div ng-repeat="category in categories">
 	<h3 ng-hide="category.isSubcat">{{category.label}}</h3>
 	<h4 ng-show="category.isSubcat">{{category.label}}</h4>
 	<ul>

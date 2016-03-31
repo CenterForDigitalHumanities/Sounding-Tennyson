@@ -10,7 +10,7 @@
             {{agent['@id']}}
         </div>
     </attribution>
-    <attribution ng-show="vv.annotation['@type']==='rr:Essay'"
+    <attribution ng-show="cite(vv.annotation).length"
                  ng-class="{'expanded wide':readCite}">
         <i class="fa fa-quote-right" tooltip="Click for Citation" ng-click="readCite = !readCite" ng-hide="readCite"></i>
                  <div ng-show="readCite">

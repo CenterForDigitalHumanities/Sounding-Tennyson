@@ -5693,12 +5693,6 @@ sounding.value('ESSAYS', [{
  {
   "label":"title",
   "value":"Cecilia Tennyson (poet’s sister) recites, 1839"
-},{
-  "label":"citeAuthor",
-  "value":"unknown"
-},{
-  "label":"publicationDate",
-  "value":"31 March 2016"
 }],
 "resource":"data/witnessCecilaTennyson.xml",
 "note":{
@@ -5714,12 +5708,6 @@ sounding.value('ESSAYS', [{
  {
   "label":"title",
   "value":"Tennyson recites, 1857, 1890"
-},{
-  "label":"citeAuthor",
-  "value":"unknown"
-},{
-  "label":"publicationDate",
-  "value":"31 March 2016"
 }],
 "resource":"data/witnessTennysonRecites.xml"
 },{
@@ -5731,12 +5719,6 @@ sounding.value('ESSAYS', [{
  {
   "label":"title",
   "value":"A child recites to Emily Tennyson, 1859"
-},{
-  "label":"citeAuthor",
-  "value":"unknown"
-},{
-  "label":"publicationDate",
-  "value":"31 March 2016"
 }],
 "resource":"data/witnessChildRecites.xml"
 },{
@@ -5748,12 +5730,6 @@ sounding.value('ESSAYS', [{
  {
   "label":"title",
   "value":"Elizabeth Jane, Lady Charlemont reads “Break, Break, Break” to Tennyson, 1871"
-},{
-  "label":"citeAuthor",
-  "value":"unknown"
-},{
-  "label":"publicationDate",
-  "value":"31 March 2016"
 }],
 "resource":"data/witnessJaneRecites.xml"
 },{
@@ -5765,12 +5741,6 @@ sounding.value('ESSAYS', [{
  {
   "label":"title",
   "value":"Tennyson hearing Henschel sing his musical setting of “Break, Break, Break,” 1880"
-},{
-  "label":"citeAuthor",
-  "value":"unknown"
-},{
-  "label":"publicationDate",
-  "value":"31 March 2016"
 }],
 "resource":"data/witnessTennysonHearsGeorg.xml"
 }

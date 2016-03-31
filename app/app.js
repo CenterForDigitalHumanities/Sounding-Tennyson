@@ -114,7 +114,7 @@ var sounding = angular.module('sounding',
                             MANIFESTS[0]
                             ],isSubcat:true},
                             {label: "Poems", list: [MANIFESTS[4]],isSubcat:true},
-                            {label: "Correspondence", list: [MANIFESTS[7]],isSubcat:true},
+                            {label: "Letters to Emily and Hallam Tennyson", list: [MANIFESTS[7]], isSubcat: true},
                             {label: "Earwitness Accounts", list: ESSAYS.slice(4)},
                             {label: "Text", list: [TEXT[0]]},
                             {label: "Annotations", list: [ANNOTATIONS[0]]}

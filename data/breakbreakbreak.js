@@ -5189,8 +5189,8 @@ sounding.value('MANIFESTS', [
   "@id": "Correspondence",
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@type": "sc:Manifest",
-  "label": 'Tennyson Letters',
-  "description": 'Letters from Tennyson collection. This item is reproduced by permission of Lincolnshire County Council, UK.',
+        "label": 'Letters to Emily and Hallam Tennyson',
+        "description": 'Letters from Tennyson collection. These items are reproduced by permission of Lincolnshire County Council, UK.',
   "metadata":[
   {}
   ],

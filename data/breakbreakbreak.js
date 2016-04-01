@@ -5750,7 +5750,7 @@ sounding.value('ANNOTATIONS', [{
   "@id": "anno_01",
   "@type": "oa:Annotation",
   "motivation": "oa:commenting",
-  "label": "Enjambment variation",
+        "label": "“Break, Break, Break” (line 1)",
   "on": ["intraAnno_01", "intraAnno_02", "intraAnno_03"],
   "resource": "comment01",
         "evidence": ["intraAnno_01", "intraAnno_02", "intraAnno_03"], // These are what we show immediately

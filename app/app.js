@@ -50,6 +50,7 @@ var sounding = angular.module('sounding',
                         },
                         load: function ($route, MANIFESTS, ViewValues, RESOURCES, TEXT, ANNOTATIONS, ESSAYS, AGENTS, RERUM) {
                             var everything = MANIFESTS.concat(RESOURCES, TEXT, ANNOTATIONS, ESSAYS, AGENTS);
+
                             angular.forEach(everything, function (obj) {
                                 RERUM.extractResources(obj);
                             });
@@ -58,7 +59,10 @@ var sounding = angular.module('sounding',
                             ViewValues.manifest = (m)
                             ? RERUM.getResource(m)
                                 : MANIFESTS[0]; // default
-                                if(t){
+                            ga('set', 'page', '/viewManuscript.html');
+                            ga('send', 'pageview');
+                            ga('send', 'event', 'Manuscript', 'view', 'itemID', ViewValues.manifest['@id']);
+                            if (t) {
                                     ViewValues.currentTime[ViewValues.manifest.resources[0]]=parseFloat(t);
                                 }
                                 return ViewValues.manifest;
@@ -71,31 +75,73 @@ var sounding = angular.module('sounding',
                 })
                 .when('/about', {
                     templateUrl: 'app/static/about.html',
-                    controller: 'viewController'
+                    controller: 'viewController',
+                    resolve: {
+                        tracker: function () {
+                            ga('set', 'page', '/about.html');
+                            ga('send', 'pageview');
+                        }
+                    }
                 })
                 .when('/acknowledgments', {
                     templateUrl: 'app/static/acknowledgment.html',
-                    controller: 'viewController'
+                    controller: 'viewController',
+                    resolve: {
+                        tracker: function () {
+                            ga('set', 'page', '/acknowledgment.html');
+                            ga('send', 'pageview');
+                        }
+                    }
                 })
                 .when('/permissions', {
                     templateUrl: 'app/static/permissions.html',
-                    controller: 'viewController'
+                    controller: 'viewController',
+                    resolve: {
+                        tracker: function () {
+                            ga('set', 'page', '/permissions.html');
+                            ga('send', 'pageview');
+                        }
+                    }
                 })
                 .when('/funding', {
                     templateUrl: 'app/static/funding.html',
-                    controller: 'viewController'
+                    controller: 'viewController',
+                    resolve: {
+                        tracker: function () {
+                            ga('set', 'page', '/funding.html');
+                            ga('send', 'pageview');
+                        }
+                    }
                 })
                 .when('/glossary', {
                     templateUrl: 'app/static/glossary.html',
-                    controller: 'viewController'
+                    controller: 'viewController',
+                    resolve: {
+                        tracker: function () {
+                            ga('set', 'page', '/glossary.html');
+                            ga('send', 'pageview');
+                        }
+                    }
                 })
                 .when('/history', {
                     templateUrl: 'app/static/history.html',
-                    controller: 'viewController'
+                    controller: 'viewController',
+                    resolve: {
+                        tracker: function () {
+                            ga('set', 'page', '/history.html');
+                            ga('send', 'pageview');
+                        }
+                    }
                 })
                 .when('/team', {
                     templateUrl: 'app/static/team.html',
-                    controller: 'viewController'
+                    controller: 'viewController',
+                    resolve: {
+                        tracker: function () {
+                            ga('set', 'page', '/team.html');
+                            ga('send', 'pageview');
+                        }
+                    }
                 })
                 .when('/archive', {
                     templateUrl: 'app/static/archive.html',
@@ -120,7 +166,10 @@ var sounding = angular.module('sounding',
 //                            ,
 //                            {label: "Annotations", list: [ANNOTATIONS[0]]}
                         ];
-                    }
+
+                                                ga('set', 'page', '/archive.html');
+                            ga('send', 'pageview');
+ }
                 })
                 .when('/music', {
                     templateUrl: 'app/static/music.html',
@@ -137,7 +186,9 @@ var sounding = angular.module('sounding',
                             });
                         });
                         $scope.Lists = Lists;
-                    }
+                                                ga('set', 'page', '/music.html');
+                            ga('send', 'pageview');
+                            }
                 })
                 .when('/essays', {
                     templateUrl: 'app/static/essays.html',
@@ -153,6 +204,8 @@ var sounding = angular.module('sounding',
                             list:[ESSAYS[1],ESSAYS[3]]
                         }
                         ];
+                            ga('set', 'page', '/essays.html');
+                            ga('send', 'pageview');
                     }
                 })
                 .when('/summary/:id', {
@@ -172,6 +225,9 @@ var sounding = angular.module('sounding',
                             ViewValues.annotation = (a)
                                 ? RERUM.getResource(a)
                                 : ANNOTATIONS[0]; // default to Break, Break observation
+                            ga('set', 'page', '/viewAnnotation.html');
+                            ga('send', 'pageview');
+                            ga('send', 'event', 'Annotation', 'view', 'itemID', ViewValues.annotation['@id']);
                         }
                     }
                 })

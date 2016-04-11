@@ -27,6 +27,20 @@ h1,h2{
 body{
     background-color: rgb(132,140,103);
 }
+a[target='_blank']:not(.no-link)::after{
+    content: "\f08e";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+    top: -.5em;
+}
 [ng-click]{
     cursor: pointer;
 }

@@ -5349,25 +5349,43 @@ sounding.value('MANIFESTS', [
         }
       }],
       "otherContent": []
-    }, {
-      "label": "Natalie Janotha to Emily Tennyson 1 of 2 leaves of 4pp",
-      "@id": "letter12",
-      "width": 2828,
-      "height": 2000,
-      "@type": "sc:Canvas",
-      "images": [{
-        "@type": "oa:Annotation",
-        "motivation": "sc:painting",
-        "on": "letter10",
-        "resource": {
-          "format": "image/jpeg",
-      "width": 2828,
-      "height": 2000,
-          "@id": "media/correspondence/letter10.jpg",
-          "@type": "dcterms:Image"
-        }
-      }],
-      "otherContent": []
+                    }, {
+                        "label": "Natalie Janotha to Emily Tennyson 1 of 2 leaves of 4pp",
+                        "@id": "letter21",
+                        "width": 2401,
+                        "height": 1815,
+                        "@type": "sc:Canvas",
+                        "images": [{
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "on": "letter21",
+                                "resource": {
+                                    "format": "image/jpeg",
+                                    "width": 2401,
+                                    "height": 1815,
+                                    "@id": "media/correspondence/letter21.jpg",
+                                    "@type": "dcterms:Image"
+                                }
+                            }],
+                        "otherContent": []}, {
+                        "label": "Natalie Janotha to Emily Tennyson 2 of 2 leaves of 4pp",
+                        "@id": "letter20",
+                        "width": 2421,
+                        "height": 1847,
+                        "@type": "sc:Canvas",
+                        "images": [{
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "on": "letter20",
+                                "resource": {
+                                    "format": "image/jpeg",
+                                    "width": 2421,
+                                    "height": 1847,
+                                    "@id": "media/correspondence/letter20.jpg",
+                                    "@type": "dcterms:Image"
+                                }
+                            }],
+                        "otherContent": []
     }, {
       "label": "Sir Charles Villiers Stanford to Emily Tennyson 1 of 2 leaves of 4pp",
       "@id": "letter01",

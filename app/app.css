@@ -29,7 +29,7 @@ body{
 }
 a[target='_blank']:not(.no-link)::after{
     content: "\f08e";
-    display: inline-block;
+    display: inline;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;

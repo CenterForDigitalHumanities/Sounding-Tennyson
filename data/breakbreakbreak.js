@@ -5572,41 +5572,41 @@ sounding.value('AGENTS', [{
 }]);
 
 sounding.value('ESSAYS', [{
-  "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "EssayToBreak",
-  "@type": "rr:Essay",
-  "label": "To Break or not to Break?",
-  "metadataResources": [],
-  "metadata": [
-  {
-    "label": "author",
-    "value": "Phyllis Weliver"
-  },
-  {
-    "label":"citeAuthor",
-    "value":"Weliver, Phyllis"
-  },
-  {
-    "label":"publicationDate",
-    "value":"31 March 2016"
-  },
-  {
-    "label": "title",
-    "value": "To Break or not to Break?"
-  },
-  {
-    "label": "subtitle",
-    "value": 'Emily Tennyson’s Scansion of “Break, Break, Break”'
-  }
-  ],
-  "resource": "data/essayBreakToBreak.xml",
-  "style": "",
-  "footnotes": [],
-  "endnotes": [],
-  "indices": [],
-  "comments": [],
-  "otherContent": []
-},
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@id": "EssayToBreak",
+        "@type": "rr:Essay",
+        "label": "To Break or not to Break?",
+        "metadataResources": [],
+        "metadata": [
+            {
+                "label": "author",
+                "value": "Phyllis Weliver"
+            },
+            {
+                "label": "citeAuthor",
+                "value": "Weliver, Phyllis"
+            },
+            {
+                "label": "publicationDate",
+                "value": "31 March 2016"
+            },
+            {
+                "label": "title",
+                "value": "To Break or not to Break?"
+            },
+            {
+                "label": "subtitle",
+                "value": 'Emily Tennyson’s Scansion of “Break, Break, Break”'
+            }
+        ],
+        "resource": "data/essayBreakToBreak.xml",
+        "style": "",
+        "footnotes": [],
+        "endnotes": [],
+        "indices": [],
+        "comments": [],
+        "otherContent": []
+    },
 {
  "@context": "http://iiif.io/api/presentation/2/context.json",
  "@id": "EssayManuscriptBooks",
@@ -5761,7 +5761,38 @@ sounding.value('ESSAYS', [{
   "value":"Tennyson hearing Henschel sing his musical setting of “Break, Break, Break,” 1880"
 }],
 "resource":"data/witnessTennysonHearsGeorg.xml"
-}
+    }, {
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@id": "EssayPhantomBeat",
+        "@type": "rr:Essay",
+        "label": "Tennyson's Phantom Beat",
+        "metadataResources": [],
+        "metadata": [
+            {
+                "label": "author",
+                "value": "Ewan Jones"
+            },
+            {
+                "label": "citeAuthor",
+                "value": "Jones, Ewan"
+            },
+            {
+                "label": "publicationDate",
+                "value": "27 June 2016"
+            },
+            {
+                "label": "title",
+                "value": "Tennyson's Phantom Beat"
+            }
+        ],
+        "resource": "data/essayPhantomBeat.xml",
+        "style": "",
+        "footnotes": [],
+        "endnotes": [],
+        "indices": [],
+        "comments": [],
+        "otherContent": []
+    }
 ]);
 
 sounding.value('ANNOTATIONS', [{

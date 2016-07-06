@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='UTF-8' ?> 
-<!-- was: <?xml version="1.0" ?> -->
 <?xml-stylesheet type="text/xsl" href="essayStyle.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -94,8 +93,6 @@
             <p>
                 This strong evidence suggests that Tennyson’s strong desire to preserve the sound meaning of the poem (by double recordings of “Break, Break, Break” in Emily’s music and on the phonograph’s wax cylinder) may have been because the poem had several uncommon sonorous moments that included, but were not limited to, how to read the first line. The musical setting, for example, helps us to understand how Emily heard Tennyson say the poem in a free anapaestic <rr-footnote>meter.</rr-footnote>  Mostly iambs (slack-stress) alternate with the anapests (slack-slack-stress) in “Break, Break, Break.” However, the poem also has an amphibrach (slack-stress-slack) line or two, a pyrrhic (two slacks) and, in early drafts, a catalytic line (the trochee at the end lacks the final slack):
 
-                <?xml version='1.0' encoding='UTF-8' ?> 
-<!-- was: no XML declaration present -->
             <rr-slack-map>
                 <rr-slack-block>
                     <rr-slack-line>

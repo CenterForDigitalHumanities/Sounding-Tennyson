@@ -508,27 +508,51 @@ rr-float-l-fig{
     position: relative;
     float: left;
 }
-syl-short{
-    line-height: 2px;
+
+syl-short, syl-long, rr-beat{
+    line-height: 3em;
     position: relative;
     display: inline-block;
-}
-syl-long{
-    line-height: 2px;
-    position: relative;
-    display: inline-block;
+    text-indent: initial;
 }
 syl-short::after{
     content:"u";
-    top: -12px;
+    top: -1em;
     position: absolute;
     left:50%;
 }
 syl-long::after{
     content:"/";
-    top: -12px;
+    top: -1em;
     position: absolute;
     left:50%;
+}
+rr-beat::after{
+    content: attr(note);
+    bottom: -.25em;
+    position: absolute;
+    left: 50%;
+    line-height: initial;
+    font-size: smaller;
+}
+rr-beat.double::after{
+    border-bottom-style:double;
+}
+span.double{
+    border-bottom-style:double;
+}
+hr[character]{
+    border: none;
+    height: 2em;
+}
+hr[character]::after{
+    content: attr(character);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    opacity: .5;
+    font-size: 2em;
 }
 n_f_p,n_t_p{
     display: none;

@@ -50,11 +50,11 @@
                 as "lyric"; rather, they develop (and explode) a number of generic conventions, most 
                 prominent of which is the common metre that we find in hymns. 
             </p>
-            <p>So what about Tennyson’s poem? Its Wikipedia entry calls it “an elegy,” on the grounds
-                that “it describes Tennyson's feelings of loss after Arthur Hallam died,” and is 
-                “minimalistic in terms of detail and style.”<rr-footnote></rr-footnote> Fair enough—but this description really
-                says more about the poem’s theme than it does the poem’s form. “Elegy” here means general
-                sadness; the rather vague description of “minimalistic style” in reality has little in 
+            <p>So what about Tennyson's poem? Its Wikipedia entry calls it "an elegy," on the grounds
+                that "it describes Tennyson's feelings of loss after Arthur Hallam died," and is 
+                "minimalistic in terms of detail and style."<rr-footnote></rr-footnote> Fair enough—but this description really
+                says more about the poem's theme than it does the poem's form. "Elegy" here means general
+                sadness; the rather vague description of "minimalistic style" in reality has little in 
                 common with the specific genre of elegy, which developed in antiquity, being associated
                 with poets such as Propertius, Tibullus and Ovid, and had a specific metrical structure
                 in the form of the elegiac couplet.
@@ -62,12 +62,12 @@
             <p>Elegy changed a great deal in the intervening years between Ovid and Tennyson, 
                 of course; and we certainly can read <rr-title type="poem">Break, break, break</rr-title>
                 as one important document in that continuing tradition. But as Christopher Ricks
-                observes, something in Tennyson’s poem resists obvious thematic or generic markers. 
+                observes, something in Tennyson's poem resists obvious thematic or generic markers. 
                 If this is a poem about mourning, it is not altogether transparent who or what is 
-                being mourned, or the relation that such grief bears to the fisherman’s boy or 
-                sailor’s lad (5, 7). “The dissociative gulf,” writes Ricks, “between the outer scene
+                being mourned, or the relation that such grief bears to the fisherman's boy or 
+                sailor's lad (5, 7). "The dissociative gulf," writes Ricks, "between the outer scene
                 and the inner pain is one which the sturdy words of reason like <cite>And</cite> and 
-                <cite>But</cite> can ultimately only pretend to bridge.”<rr-footnote></rr-footnote>
+                <cite>But</cite> can ultimately only pretend to bridge."<rr-footnote></rr-footnote>
             </p>
             <p>With that quote in mind, I want to suggest that we read <rr-title type="poem">Break, break, break</rr-title>
                 instead as a formal hybrid, a poem with its feet caught in separate generic and metrical 
@@ -79,25 +79,25 @@
                 antiquarians such as Francis James Child collected and edited hundreds of orally transmitted 
                 variants. In practice, the mode enabled the nineteenth century to lay claim to a longstanding 
                 tradition, often nationally inflected; but also to smooth out what were frequently perceived 
-                as the rougher contours of this early mode of expression. Thomas Babington Macauley’s wildly
-                popular <cite>Lays of Ancient Rome</cite>, for instance, translated the “rugged” Saturnian 
+                as the rougher contours of this early mode of expression. Thomas Babington Macauley's wildly
+                popular <cite>Lays of Ancient Rome</cite>, for instance, translated the "rugged" Saturnian 
                 measure of early Latin verse into smooth, regular quatrains that alternate between iambic 
                 tetrameter and trimeter. This procession of lines of eight, six, eight, and six syllables was
-                what many nineteenth-century observers called the “ballad stanza.” 
+                what many nineteenth-century observers called the "ballad stanza." 
             </p>
-            <p>Viewed from this perspective, <rr-title type="poem">Break, break, break</rr-title> doesn’t 
+            <p>Viewed from this perspective, <rr-title type="poem">Break, break, break</rr-title> doesn't 
                 seem particularly ballad-like at all, despite its conformity to the <i>abcb</i> rhyme-scheme
                 that we often associate with the mode. Its famous opening shows just how few syllables a single
-                line can contain, while “But the tender grace of a day that is dead” (15) swells out into eleven,
-                a license that Macaulay would never have permitted. Yet there is another way to read Tennyson’s
+                line can contain, while "But the tender grace of a day that is dead" (15) swells out into eleven,
+                a license that Macaulay would never have permitted. Yet there is another way to read Tennyson's
                 work as being indebted to ballad—one that reads not by counting the number of syllables, but by
                 attending rather to rhythmical beats. Derek Attridge is the most forceful and consistent
-                prosecutor for such a view, arguing on numerous occasions that English verse is “naturally” drawn
+                prosecutor for such a view, arguing on numerous occasions that English verse is "naturally" drawn
                 not to the iambic pentameter line (which again requires us to count syllables), but rather to
                 recurring units of four beats; a pattern that manifests itself in many cultural forms that include 
                 ballad.  
             </p>
-            <p>When we apply Attridge’s terminology and practice, <rr-title type="poem">Break, break, break</rr-title>
+            <p>When we apply Attridge's terminology and practice, <rr-title type="poem">Break, break, break</rr-title>
                 suddenly makes more sense as a quasi- or pseudo-ballad.  Even lines that are syllabically truncated
                 clearly contain four strong beats: indeed, even a line that contains but three syllables can contain
                 four beats, with the fourth and final beat coinciding not with a voiced syllable, but with silence:
@@ -109,7 +109,7 @@
                         <rr-beat note="[B]">&nbsp;&nbsp;&nbsp;</rr-beat>
                     </rr-slack-line>
                 </rr-slack-block>
-                I here employ Attridge’s own system of notation, where B represents a beat, and [B] an unrealized beat,
+                I here employ Attridge's own system of notation, where B represents a beat, and [B] an unrealized beat,
                 an unsounded interval in which we might feel compelled to strike our knee or the table before us.
                 Lines with far greater numbers of syllables nonetheless similarly contain four beats; and, more
                 unusually, the fourth of those beats remains unrealized:
@@ -130,24 +130,24 @@
                 beats in the syllables given, with the result that we again pause significantly (as the unrealized 
                 offbeat [<span class="double">o</span>] suggests) before another unrealized beat. The prevalence of
                 double offbeats generates a skipping triple rhythm that often produces a sensation of levity, but which
-                here contrasts grimly with the stated content (see also “But the tender grace of a day that is dead”). 
-                Our tendency to pause solemnly at the end of the line is further compounded by the vocal force of Tennyson’s
+                here contrasts grimly with the stated content (see also "But the tender grace of a day that is dead"). 
+                Our tendency to pause solemnly at the end of the line is further compounded by the vocal force of Tennyson's
                 verse, as the line above, like many before and after it, ends with an exclamation mark. This, then, is music
                 that sings itself rapidly into abrupt stops. 
             </p>
             <p>While Attridge does cite the opening line of <rr-title type="poem">Break, break, break</rr-title>
             as an exemplary instance of the four-beat line, he neglects to consider its broader stanzaic organization.
             <cite>The Rhythms of English Poetry</cite> does, however, imply the effect of such a unit, in its contrast 
-            with another of Tennyson’s famous pieces. “The In Memoriam stanza,” Attridge goes on to state, “achieves its 
+            with another of Tennyson's famous pieces. "The In Memoriam stanza," Attridge goes on to state, "achieves its 
             special character by postponing a sense of finality until the last word by means of an <i>abba</i>
             rhyme-scheme but it is more typical of popular verse that the various aspects of form should reinforce
-            one another, allowing the simple hierarchical organization of the 4 X 4 structure to be fully experienced.”
-            <rr-title type="poem">Break, break, break,</rr-title> then, might be seen to enable such “hierarchical 
-            organization,” insofar as it, unlike <cite>In Memoriam</cite>, pursues the more recognizable <i>abcb</i>
-            rhyme-scheme. But I wish to conclude this short reading of Tennyson’s poem by suggesting that it never does 
+            one another, allowing the simple hierarchical organization of the 4 X 4 structure to be fully experienced."
+            <rr-title type="poem">Break, break, break,</rr-title> then, might be seen to enable such "hierarchical 
+            organization," insofar as it, unlike <cite>In Memoriam</cite>, pursues the more recognizable <i>abcb</i>
+            rhyme-scheme. But I wish to conclude this short reading of Tennyson's poem by suggesting that it never does 
             fit quite so snugly into ballad form, just as its formal hybridity also resisted classification as elegy.
             </p>
-            <p>This resistance arises most concertedly in the poem’s third stanza:
+            <p>This resistance arises most concertedly in the poem's third stanza:
                 <rr-slack-block class="publishedText">
                     <rr-slack-line>And the stately ships go on</rr-slack-line>
                     <rr-slack-line>To their haven under the hill;<rr-line-note>10</rr-line-note></rr-slack-line>
@@ -167,24 +167,24 @@
                         <rr-beat note="B">hand,</rr-beat>
                     </rr-slack-line>
                 </rr-slack-block>
-            Here, for the one and only time in the poem, the line’s fourth beat is realized in a voiced syllable,
-                the “hand” that appropriately materializes (or which the speaker would have materialize), with
-                the vocal accentuation that we lend to the word compounded by its assonance with “vanish’d.” 
-                This “vanish’d”-“hand” echo teases together presence and absence; as such, it anticipates the ambivalence
+            Here, for the one and only time in the poem, the line's fourth beat is realized in a voiced syllable,
+                the "hand" that appropriately materializes (or which the speaker would have materialize), with
+                the vocal accentuation that we lend to the word compounded by its assonance with "vanish'd." 
+                This "vanish'd"-"hand" echo teases together presence and absence; as such, it anticipates the ambivalence
                 that we then feel at the end of the line, caught as we are between the tendency to pause significantly,
                 just as we have at each previous unit; and the sudden conviction that this realization of the beat in 
-                the word, of the word in the flesh of the “hand,” allows us to plunge immediately into the following line. 
+                the word, of the word in the flesh of the "hand," allows us to plunge immediately into the following line. 
             </p>
-            <p>The following line (“And the sound of a voice that is still!”) seems to break that phantasy, 
+            <p>The following line ("And the sound of a voice that is still!") seems to break that phantasy, 
                 as the poem settles back into its triple rhythm and unrealized fourth beat. Yet even here 
-                a trace of ambivalence remains. On first read, the line seems to say something like, “If 
-                only I could hear the voice that is fated, however, to remain silent.” But the ambiguous 
+                a trace of ambivalence remains. On first read, the line seems to say something like, "If 
+                only I could hear the voice that is fated, however, to remain silent." But the ambiguous 
                 syntax also contains another reading, equally if differently disconcerting, in which the 
-                speaker says something more like, “I desire silence itself.” The emphatic pause that follows
+                speaker says something more like, "I desire silence itself." The emphatic pause that follows
                 at the end of the line, which contrasts so strikingly with the possibility of immediate 
                 continuance that its predecessor had extended, would then represent the speaker recovering 
                 a vocal control and reserve from a plaintive desire that had threatened to get out of hand 
-                (through the “hand”). 
+                (through the "hand"). 
             </p>
             <p>We could, in short, read <rr-title type="poem">Break, break, break</rr-title> as a poem that
             teases the limits of ballad, whether ballad is taken as a syllabic or accentual form. The 
@@ -192,61 +192,61 @@
             poetry across the ages conforms, so much as a holding structure whose significance increases to 
             the extent that we inevitably depart from it. So in the case of the eleventh line, we must either 
             disregard the pauses that had previously operated as an iron law; or else enforce them with a 
-            fifth unrealized beat whose excessiveness confesses the speaker’s attempt to gain mastery over 
-            loss. In this dilemma, what might otherwise be seen simply as Tennyson’s technical virtuosity 
+            fifth unrealized beat whose excessiveness confesses the speaker's attempt to gain mastery over 
+            loss. In this dilemma, what might otherwise be seen simply as Tennyson's technical virtuosity 
             reveals an affective depth that might remain unguessed on a first quick reading.
             </p>
             <hr character="*"></hr>
-            <p>Until this point we have observed the ambiguous possibilities for vocal performance of Tennyson’s
+            <p>Until this point we have observed the ambiguous possibilities for vocal performance of Tennyson's
                 poem, which hold structural parallels with the various musical settings that Phyllis Weliver
                 explores <a href="#/summary/EssayToBreak">elsewhere on this site</a>. But this productive ambiguity does not simply exist in the 
-                mind or throat of some imagined, generic “reader”; rather, it unfolds in the concrete history 
-                of performances of Tennyson’s poem. The poet’s own wife both contributes to, and sheds light on,
+                mind or throat of some imagined, generic "reader"; rather, it unfolds in the concrete history 
+                of performances of Tennyson's poem. The poet's own wife both contributes to, and sheds light on,
                 this performance. In addition to herself setting <rr-title type="poem">Break, break, break</rr-title>
                 to music, Emily records a number of spoken (or declaimed) performances, whose sociability often 
-                challenges the prevailing notion of Tennyson as a poet unusually concerned to control the “correct”
+                challenges the prevailing notion of Tennyson as a poet unusually concerned to control the "correct"
                 performance of his verse. 
             </p>
-            <p>The social dynamics that underlie such recitations are various: on 3 October 1857, Emily’s journal
-                records that “A. reads the ‘Morte ‘Arthur’ & ‘Break, Break’ after he has sent me to bed.” Elsewhere,
+            <p>The social dynamics that underlie such recitations are various: on 3 October 1857, Emily's journal
+                records that "A. reads the 'Morte 'Arthur' & 'Break, Break' after he has sent me to bed." Elsewhere,
                 however, the poem permits (or arises from) a more inclusive common space: at a luncheon on 30 June
-                1871, “A. reads ‘Boädicea’ & parts of ‘Maud’ to them & Lady Charlemont recites or rather acts ‘the Sisters’
-                after A. has at her request read it & then she reads ‘Break, break, break.’”<rr-footnote></rr-footnote>
+                1871, "A. reads 'Boädicea' & parts of 'Maud' to them & Lady Charlemont recites or rather acts 'the Sisters'
+                after A. has at her request read it & then she reads 'Break, break, break.'"<rr-footnote></rr-footnote>
                 Such successive performances suggest a range of vocal interpretations that traverse individuals 
                 (as Tennyson abandons his poem to Lady Charlemont), alongside the divide between recitation and acting. 
                 Perhaps it is this variety that enables Emily Tennyson and others to commend what would otherwise seem 
-                rather odd or unfitting performances: on 1 July 1859, she records that “little Carry,” the child of an
-                acquaintance, “says ‘Break, Break’ to me in such a touching sweet voice.”<rr-footnote></rr-footnote>
+                rather odd or unfitting performances: on 1 July 1859, she records that "little Carry," the child of an
+                acquaintance, "says 'Break, Break' to me in such a touching sweet voice."<rr-footnote></rr-footnote>
 </p>
 <p>Now there might seem something rather incongruous about having a child recite a work whose subtle 
-    despondency we have charted above—as if we were to imagine an eight-year-old declaiming Lear’s 
-    “Never, never, never, never, never.” But perhaps this response says something about our own presuppositions
+    despondency we have charted above—as if we were to imagine an eight-year-old declaiming Lear's 
+    "Never, never, never, never, never." But perhaps this response says something about our own presuppositions
     regarding childhood, for all that we think of the Victorians as the foremost idealizers of early life. 
-    Indeed, Alfred and Emily Tennyson often encouraged their children to recite many of the former’s poems,
+    Indeed, Alfred and Emily Tennyson often encouraged their children to recite many of the former's poems,
     whose themes and emotion often appear far removed from the concerns of childhood. Rather than see this 
-    suitability for infantile performance as a lessening of the poems’ original unsettling force, however,
-    we might see it as further evidence for the vocal variability that we saw both in Emily Tennyson’s diary
+    suitability for infantile performance as a lessening of the poems' original unsettling force, however,
+    we might see it as further evidence for the vocal variability that we saw both in Emily Tennyson's diary
     anecdotes, and in the rhythmical analysis of <rr-title type="poem">Break, break, break</rr-title> itself.
 </p>
-<p>In this manner, I want to conclude by linking the “touching sweet voice” of Carry back to the
+<p>In this manner, I want to conclude by linking the "touching sweet voice" of Carry back to the
     questions of genre and meter with which I commenced. We might see this harmonious recitation 
     as but one end of the spectrum of possible vocalizations, whose unusual breadth would constitute
-    the major significance of “Break, break, break.” A moment ago we saw how different possible
+    the major significance of "Break, break, break." A moment ago we saw how different possible
     performances crystallized in line 11 of the poem; but comparable moments occur elsewhere, albeit
-    that they employ different means from the realized or unrealized beat. Take the poem’s title and 
+    that they employ different means from the realized or unrealized beat. Take the poem's title and 
     very first line, for example. As Phyllis Weliver observes, the Tennyson family often referred to 
     the poem without any punctuation separating its single repeated word. By the time that Tennyson 
     himself came to compose the <a href="#/manuscript/AET-MSS-1949-001">manuscript version</a> that is now held at the Huntingdon Library, we 
-    find two commas, yet none after the third “break.” 
+    find two commas, yet none after the third "break." 
 </p>
-<p>What’s in a comma? Potentially a great deal. For while it’s possible to imagine a confident,
+<p>What's in a comma? Potentially a great deal. For while it's possible to imagine a confident,
     declamatory recitation that pauses between each reiterated word (and again at the end of the
     line), so too can we envisage a performance far less controlled, which nervously gulps
-    “Break, break, break” before crashing with appropriate abruptness onto the next “on.” A childhood
+    "Break, break, break" before crashing with appropriate abruptness onto the next "on." A childhood
     recitation need not correspond to either of these possibilities: rather it could very conceivably
     cut across them, as the infant in question spaces out the line in a sing-song-like fashion, or 
     more precipitously dashes from one unit to the next. We will never know precisely what little 
-    Carry’s “touching sweet voice” truly comprised. But that uncertainty continues to haunt our own 
+    Carry's "touching sweet voice" truly comprised. But that uncertainty continues to haunt our own 
     performance of <rr-title type="poem">Break, break, break</rr-title>: it forms part of the complex
     histories and expressive possibilities that underlie the apparently simple question of how
     to read a line.
@@ -276,7 +276,7 @@
     </rr-bib-entry>
     <rr-bib-entry>
         <rr-footnote>
-            <cite>Lady Tennyson’s Journal</cite>, ed. James O. Hoge (Charlottesville, 1981), 104, 326.
+            <cite>Lady Tennyson's Journal</cite>, ed. James O. Hoge (Charlottesville, 1981), 104, 326.
         </rr-footnote>
     </rr-bib-entry>
     <rr-bib-entry>

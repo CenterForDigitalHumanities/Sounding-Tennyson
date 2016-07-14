@@ -483,6 +483,10 @@ rr-slack-map{
 rr-slack-block{
     display: block;
 }
+.publishedText rr-slack-line {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 rr-slack-line{
     display: block;
     margin: 15px 0px;

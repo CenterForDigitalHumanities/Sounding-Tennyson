@@ -148,7 +148,7 @@ var sounding = angular.module('sounding',
                     controller: function ($scope, MANIFESTS, RESOURCES, ANNOTATIONS, ESSAYS, TEXT) {
                         $scope.categories = [
                             {label: "Essays", list: []},
-                            {label: "“Break, Break, Break”", list: [ESSAYS[0], ESSAYS[2], ESSAYS[4]], isSubcat: true},
+                            {label: "“Break, Break, Break”", list: [ESSAYS[0], ESSAYS[2], ESSAYS[9]], isSubcat: true},
                             {label: "Contextual Essays", list: [ESSAYS[1], ESSAYS[3]], isSubcat: true},
                             {label: "Manuscripts", list: []}, // subcats follow
                             {label: "Music", list: [
@@ -198,7 +198,7 @@ var sounding = angular.module('sounding',
                         $scope.categories = [
                         {
                             label: '“Break, Break, Break”',
-                                list: [ESSAYS[0], ESSAYS[2], ESSAYS[4]]
+                                list: [ESSAYS[0], ESSAYS[2], ESSAYS[9]]
                         },{
                             label: 'Contextual Essays',
                             list:[ESSAYS[1],ESSAYS[3]]

@@ -69,6 +69,33 @@ var sounding = angular.module('sounding',
                             }
                         }
                     })
+                .when('/recording/:id', {
+                    templateUrl: 'app/view/viewAudio.html',
+                    controller: 'viewController',
+                    resolve: {
+                        authkey: function ($route) {
+                            return authorize($route);
+                        },
+                        load: function ($route, ViewValues, RESOURCES, RERUM) {
+
+                            angular.forEach(RESOURCES, function (obj) {
+                                RERUM.extractResources(obj);
+                            });
+                            var m = $route.current.params.id;
+                            var t = $route.current.params.t;
+                            ViewValues.recording = (m)
+                            ? RERUM.getResource(m)
+                                : RESOURCES[0]; // default
+                            ga('set', 'page', '/viewAudio.html');
+                            ga('send', 'pageview');
+                            ga('send', 'event', 'Recording', 'view', 'itemID', ViewValues.recording['@id']);
+                            if (t) {
+                                    ViewValues.currentTime[ViewValues.recording['@id']]=parseFloat(t);
+                                }
+                                return ViewValues.recording;
+                            }
+                        }
+                    })
 .when('/annotate', {
     templateUrl: 'app/annotation/annotation.html',
                     controller: 'viewController'

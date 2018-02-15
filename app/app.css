@@ -716,8 +716,8 @@ cite {
   }
 }
 @keyframes load1 {
-  0%,
-  80%,
+    0%,
+    80%,
   100% {
     box-shadow: 0 0 #002147;
     height: 4em;

@@ -57,19 +57,19 @@ var sounding = angular.module('sounding',
                             var m = $route.current.params.id;
                             var t = $route.current.params.t;
                             ViewValues.manifest = (m)
-                            ? RERUM.getResource(m)
+                                ? RERUM.getResource(m)
                                 : MANIFESTS[0]; // default
                             ga('set', 'page', '/viewManuscript.html');
                             ga('send', 'pageview');
                             ga('send', 'event', 'Manuscript', 'view', 'itemID', ViewValues.manifest['@id']);
                             if (t) {
-                                    ViewValues.currentTime[ViewValues.manifest.resources[0]]=parseFloat(t);
-                                }
-                                return ViewValues.manifest;
+                                ViewValues.currentTime[ViewValues.manifest.resources[0]] = parseFloat(t);
                             }
+                            return ViewValues.manifest;
                         }
-                    })
-                .when('/recording/:id', {
+                    }
+                })
+                .when('/recording/:id?', {
                     templateUrl: 'app/view/viewAudio.html',
                     controller: 'viewController',
                     resolve: {
@@ -84,20 +84,23 @@ var sounding = angular.module('sounding',
                             var m = $route.current.params.id;
                             var t = $route.current.params.t;
                             ViewValues.recording = (m)
-                            ? RERUM.getResource(m)
+                                ? RERUM.getResource(m)
                                 : RESOURCES[0]; // default
+                            if(!angular.isObject(ViewValues.recording)){
+                                ViewValues.recording = RESOURCES[0];
+                            }
                             ga('set', 'page', '/viewAudio.html');
                             ga('send', 'pageview');
                             ga('send', 'event', 'Recording', 'view', 'itemID', ViewValues.recording['@id']);
                             if (t) {
-                                    ViewValues.currentTime[ViewValues.recording['@id']]=parseFloat(t);
-                                }
-                                return ViewValues.recording;
+                                ViewValues.currentTime[ViewValues.recording['@id']] = parseFloat(t);
                             }
+                            return ViewValues.recording;
                         }
-                    })
-.when('/annotate', {
-    templateUrl: 'app/annotation/annotation.html',
+                    }
+                })
+                .when('/annotate', {
+                    templateUrl: 'app/annotation/annotation.html',
                     controller: 'viewController'
                 })
                 .when('/about', {
@@ -174,48 +177,66 @@ var sounding = angular.module('sounding',
                     templateUrl: 'app/static/archive.html',
                     controller: function ($scope, MANIFESTS, RESOURCES, ANNOTATIONS, ESSAYS, TEXT) {
                         $scope.categories = [
-                            {label: "Essays", list: []},
-                            {label: "“Break, Break, Break”", list: [ESSAYS[9], ESSAYS[0], ESSAYS[2]], isSubcat: true},
-                            {label: "Contextual Essays", list: [ESSAYS[1], ESSAYS[3]], isSubcat: true},
-                            {label: "Manuscripts", list: []}, // subcats follow
-                            {label: "Music", list: [
-                            MANIFESTS[2],
-                            MANIFESTS[5],
-                            MANIFESTS[6],
-                            MANIFESTS[1],
-                            MANIFESTS[3],
-                            MANIFESTS[0]
-                            ],isSubcat:true},
-                            {label: "Poems", list: [MANIFESTS[4]],isSubcat:true},
-                            {label: "Letters to Emily and Hallam Tennyson", list: [MANIFESTS[7]], isSubcat: true},
-                            {label: "Earwitness Accounts", list: ESSAYS.slice(4)},
-                            {label: "Text", list: [TEXT[0]]}
+                            {
+                                label: "Essays", list: []
+                            },
+                            {
+                                label: "“Break, Break, Break”", list: [ESSAYS[9], ESSAYS[0], ESSAYS[2]], isSubcat: true
+                            },
+                            {
+                                label: "Contextual Essays", list: [ESSAYS[1], ESSAYS[3]], isSubcat: true
+                            },
+                            {
+                                label: "Manuscripts", list: []
+                            }, // subcats follow
+                            {
+                                label: "Music", list: [
+                                    MANIFESTS[2],
+                                    MANIFESTS[5],
+                                    MANIFESTS[6],
+                                    MANIFESTS[1],
+                                    MANIFESTS[3],
+                                    MANIFESTS[0]
+                                ], isSubcat: true
+                            },
+                            {
+                                label: "Poems", list: [MANIFESTS[4]], isSubcat: true
+                            },
+                            {
+                                label: "Letters to Emily and Hallam Tennyson", list: [MANIFESTS[7]], isSubcat: true
+                            },
+                            {
+                                label: "Earwitness Accounts", list: ESSAYS.slice(4)
+                            },
+                            {
+                                label: "Text", list: [TEXT[0]]
+                            }
 //                            ,
 //                            {label: "Annotations", list: [ANNOTATIONS[0]]}
                         ];
 
-                                                ga('set', 'page', '/archive.html');
-                            ga('send', 'pageview');
- }
+                        ga('set', 'page', '/archive.html');
+                        ga('send', 'pageview');
+                    }
                 })
                 .when('/music', {
                     templateUrl: 'app/static/music.html',
-                    controller: function ($scope, MANIFESTS, RESOURCES, RERUM,Lists) {
+                    controller: function ($scope, MANIFESTS, RESOURCES, RERUM, Lists) {
                         $scope.music = {
                             "Break_Break_Break_AET": ["AET-MSS-5321-001", "AET-MSS-5312-001", "AET-MSS-5312-002", "AET-MSS-2015-001"],
-                            "Break_Break_Break_Janotha":["AET-MSS-2843-001"],
-                            "Break_Break_Break_Henschel":["AET-MSS-1880-001"]
+                            "Break_Break_Break_Janotha": ["AET-MSS-2843-001"],
+                            "Break_Break_Break_Henschel": ["AET-MSS-1880-001"]
                         };
                         $scope.performances = RESOURCES;
-                        angular.forEach($scope.music, function(r,m){
-                            angular.forEach(r, function(man,i){
-                                $scope.music[m][i]=Lists.getAllByProp("@id",man,MANIFESTS)[0];
+                        angular.forEach($scope.music, function (r, m) {
+                            angular.forEach(r, function (man, i) {
+                                $scope.music[m][i] = Lists.getAllByProp("@id", man, MANIFESTS)[0];
                             });
                         });
                         $scope.Lists = Lists;
-                                                ga('set', 'page', '/music.html');
-                            ga('send', 'pageview');
-                            }
+                        ga('set', 'page', '/music.html');
+                        ga('send', 'pageview');
+                    }
                 })
                 .when('/essays', {
                     templateUrl: 'app/static/essays.html',
@@ -223,16 +244,16 @@ var sounding = angular.module('sounding',
                         $scope.essays = ESSAYS;
                         $scope.Lists = Lists;
                         $scope.categories = [
-                        {
-                            label: '“Break, Break, Break”',
+                            {
+                                label: '“Break, Break, Break”',
                                 list: [ESSAYS[9], ESSAYS[0], ESSAYS[2]]
-                        },{
-                            label: 'Contextual Essays',
-                            list:[ESSAYS[1],ESSAYS[3]]
-                        }
+                            }, {
+                                label: 'Contextual Essays',
+                                list: [ESSAYS[1], ESSAYS[3]]
+                            }
                         ];
-                            ga('set', 'page', '/essays.html');
-                            ga('send', 'pageview');
+                        ga('set', 'page', '/essays.html');
+                        ga('send', 'pageview');
                     }
                 })
                 .when('/summary/:id', {
@@ -258,7 +279,9 @@ var sounding = angular.module('sounding',
                         }
                     }
                 })
-                .otherwise(({redirectTo: '404'}));
+                .otherwise(({
+                    redirectTo: '404'
+                }));
         }]);
 sounding.controller('mainController', function ($scope, ViewValues) {
 });
@@ -298,5 +321,7 @@ String.prototype.startsWith || !function () {
                 return!1;
         return!0
     };
-    t ? t(String.prototype, "startsWith", {value: e, configurable: !0, writable: !0}) : String.prototype.startsWith = e
+    t ? t(String.prototype, "startsWith", {
+        value: e, configurable: !0, writable: !0
+    }) : String.prototype.startsWith = e
 }();

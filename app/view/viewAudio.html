@@ -12,22 +12,27 @@
         </div>
     </wavesurfer>
 
-    <button class="btn btn-primary" ng-click="wavesurfer.playPause()"
-            ng-show="wavesurfer.ready">
-        <i class="fa" ng-class="{'fa-play':paused,'fa-pause':!paused}"></i>
-        <span class='timer'>{{vv.currentTime[music['@id']]|number:2}}
-            <span ng-hide="vv.currentTime[music['@id']]">Play</span>
-        </span>
-    </button>
+    <div class="form-group">
+        <button class="btn btn-primary" ng-click="wavesurfer.playPause()"
+                ng-show="wavesurfer.ready">
+            <i class="fa" ng-class="{'fa-play':paused,'fa-pause':!paused}"></i>
+            <span class='timer'>{{vv.currentTime[music['@id']]|number:2}}
+                <span ng-hide="vv.currentTime[music['@id']]">Play</span>
+            </span>
+        </button>
+        <a class="btn btn-default" href="#/music">Browse Available Scores</a>
+    </div>
 
-    <h4>Other Available Recordings</h4>
-    <ul class="list-unstyled">
-        <li ng-repeat="p in performances">
-            <a ng-href="#/recording/{{p['@id']}}">{{p.label}}</a>
-            <a title="Listen directly in your browser" target="_blank"
-               ng-href="{{p.resource['@id']}}"></a>
-        </li>
-    </ul>
+    <div class="well">
+        <h4>Other Recordings</h4>
+        <ul class="list-unstyled">
+            <li ng-repeat="p in performances">
+                <a ng-href="#/recording/{{p['@id']}}">{{p.label}}</a>
+                <a title="Listen directly in your browser" target="_blank"
+                   ng-href="{{p.resource['@id']}}"></a>
+            </li>
+        </ul>
+    </div>
 
     <!--    Thanks, Augmented Notes! The code was not used here, but was useful in the preparation of the musical annotations.
     <a class="license" rel="license" href="http://creativecommons.org/licenses/by/3.0/">
@@ -39,10 +44,10 @@
     -->
 
     <script>
-            ga('ec:addImpression', {
-                'name': vv.manifest['@id']
-            });
-            ga('set', 'page', '/viewManifest.html');
-            ga('send', 'pageview');
+                ga('ec:addImpression', {
+                    'name': vv.manifest['@id']
+                });
+                ga('set', 'page', '/viewManifest.html');
+                ga('send', 'pageview');
     </script>
 </div>

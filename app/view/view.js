@@ -101,10 +101,10 @@ sounding.controller("viewController", function ($scope, $filter, ViewService, Vi
     ViewValues.selectedCanvas = [0];
     $scope.performances = [];
     $scope.about = {
-        citation: '<div style="text-align:left !important;text-indent: -2rem;padding-left: 2rem;"><i class="fa fa-quote-left fa-2x pull-right"></i> Weliver, Phyllis and Ewan Jones. "About <i>Sounding Tennyson</i>." <i>Sounding Tennyson</i>. 31 March 2016. Accessed ' + $filter('date')(Date.now(), 'dd MMMM yyyy') + '. http://soundingtennyson.orgapp.html#/about.</div>'
+        citation: '<div style="text-align:left !important;text-indent: -2rem;padding-left: 2rem;"><i class="fa fa-quote-left fa-2x pull-right"></i> Weliver, Phyllis and Ewan Jones. "About <i>Sounding Tennyson</i>." <i>Sounding Tennyson</i>. 31 March 2016. Accessed ' + $filter('date')(Date.now(), 'dd MMMM yyyy') + '. https://soundingtennyson.org/app.html#/about.</div>'
     };
     $scope.citeHistory = {
-        citation: '<div style="text-align:left !important;text-indent: -2rem;padding-left: 2rem;"><i class="fa fa-quote-left fa-2x pull-right"></i> Weliver, Phyllis. "<i>Sounding Tennyson</i>: The case study, “Break, Break, Break”." <i>Sounding Tennyson</i>. 31 March 2016. Accessed ' + $filter('date')(Date.now(), 'dd MMMM yyyy') + '. http://soundingtennyson.org/app.html#/history.</div>'
+        citation: '<div style="text-align:left !important;text-indent: -2rem;padding-left: 2rem;"><i class="fa fa-quote-left fa-2x pull-right"></i> Weliver, Phyllis. "<i>Sounding Tennyson</i>: The case study, “Break, Break, Break”." <i>Sounding Tennyson</i>. 31 March 2016. Accessed ' + $filter('date')(Date.now(), 'dd MMMM yyyy') + '. https://soundingtennyson.org/app.html#/history.</div>'
     };
     $scope.cite = function (res) {
         var tmp_author = Lists.getAllByProp("label", "citeAuthor", res.metadata);

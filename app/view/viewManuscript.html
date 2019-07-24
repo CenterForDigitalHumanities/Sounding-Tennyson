@@ -1,4 +1,4 @@
-<div reveal-annotations>
+<div reveal-annotations ng-init="vv.showWav[music['@id']]=true">
     <div class="col-sm-9" ng-class="{'col-sm-6':vv.showWav}">
         <h3>
             <button ng-click="vv.showWav=undefined" ng-show="vv.showWav"
@@ -72,7 +72,12 @@ Metadata</button>
 <div class="col-sm-6" ng-class="{'col-sm-3':!vv.showWav}" ng-repeat="m in vv.manifest.resources"
 ng-show="thisOn(vv.manifest.resources,music['@id'])"
 ng-init="music=rerum.getResource(m);windex=$index;">
-    <wavesurfer ng-attr-url="{{music.resource['@id']}}"
+    <button ng-click="vv.showWav[music['@id']]=true;ga('send', 'event','Music','request','itemID',music['@id']);" ng-if="!vv.showWav[music['@id']]"
+            class="btn btn-default btn-block btn-responsive">
+    <span class="help-block"> <i class="fa fa-music"></i> Load audio file and interactive media</span>
+    {{music.label||'Music'}}</button>
+    <wavesurfer ng-if="vv.showWav[music['@id']]"
+                ng-attr-url="{{music.resource['@id']}}"
                 wave-color="#333"
                 progress-color="#002147"
                 backend="MediaElement"
@@ -92,6 +97,7 @@ ng-init="music=rerum.getResource(m);windex=$index;">
     </wavesurfer>
 <div ng-controller="viewController">
 <card ng-repeat="line in vv.lines[vv.manifest.resources[windex]]"
+ ng-if="vv.showWav[music['@id']]"
  ng-show="(line.selector.indexOf(vv.manifest.sequences[0].canvases[vv.selectedCanvas]['@id']) === -1 ) && thisOn(vv.manifest.resources,line.mid[0]).length && inTime(line.mid.join('#t='))">
 <a ng-click="pickM(rerum.getResource(findManifest(line.label,'@id')))">
     <span ng-bind-html="findManifest(line.label,'label')"></span>

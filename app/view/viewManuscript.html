@@ -80,7 +80,7 @@ ng-init="music=rerum.getResource(m);windex=$index;">
                 ng-attr-url="{{music.resource['@id']}}"
                 wave-color="#333"
                 progress-color="#002147"
-                partial-render="true"
+                backend="MediaElement"
                 min-px-per-sec=1>
 <h4><button class="btn btn-default pull-right" ng-click="wavesurfer.playPause()"
     ng-show="wavesurfer.ready">
